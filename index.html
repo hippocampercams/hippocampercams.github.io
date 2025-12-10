@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="hippocampercams – your y2k digicam bestie, based in Singapore.">
   <style>
-        /* Custom synthpixel font for logo text */
+    /* Custom synthpixel font for logo text */
     @font-face {
       font-family: 'synthpixel';
       src: url('SynthPixel-R922e.ttf') format('truetype');
@@ -26,81 +26,69 @@
       line-height: 1.5;
     }
 
-    /* --- TWO-COLUMN LAYOUT --- */
+    /* --- PAGE LAYOUT --- */
 
-   .layout {
-  min-height: 100vh;
-}
-
-/* LEFT COLUMN = FIXED PANEL */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 25vw;              /* about a quarter of the screen */
-  min-width: 240px;
-  max-width: 320px;
-  height: 100vh;
-  padding: 24px 20px 32px;
-  color: #2b1a09;
-
-  /* rustic brown "kraft paper" look */
-  background-color: #b58b5b;
-  background-image:
-    radial-gradient(circle at 0 0, rgba(255,255,255,0.25) 0, transparent 55%),
-    radial-gradient(circle at 100% 0, rgba(255,255,255,0.16) 0, transparent 60%),
-    radial-gradient(circle at 0 100%, rgba(0,0,0,0.15) 0, transparent 55%),
-    radial-gradient(circle at 100% 100%, rgba(0,0,0,0.12) 0, transparent 60%);
-  background-blend-mode: multiply;
-  box-shadow: 4px 0 12px rgba(0,0,0,0.18);
-}
-
-/* RIGHT COLUMN SHIFTS RIGHT TO MAKE SPACE */
-.main {
-  margin-left: 25vw;        /* same as sidebar width */
-  padding: 32px 24px 40px;
-
-  /* off-white "drawing paper" texture */
-  background-color: #f6f3ed;
-  background-image:
-    linear-gradient(135deg, rgba(255,255,255,0.35) 0, transparent 55%),
-    linear-gradient(225deg, rgba(204,196,184,0.18) 0, transparent 60%);
-}
-
-@media (max-width: 800px) {
-  .sidebar {
-    position: static;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    box-shadow: none;
-  }
-  .main {
-    margin-left: 0;
-    padding-top: 20px;
-  }
-}
-
-
-      /* off-white "drawing paper" texture */
-      background-color: #f6f3ed;
-      background-image:
-        linear-gradient(135deg, rgba(255,255,255,0.35) 0, transparent 55%),
-        linear-gradient(225deg, rgba(204,196,184,0.18) 0, transparent 60%);
+    .layout {
+      min-height: 100vh;
     }
 
+    /* LEFT COLUMN = FIXED KRAFT PANEL */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 300px;          /* fixed width */
+      height: 100vh;
+      padding: 24px 20px 32px;
+      color: #2b1a09;
+
+      /* crinkled kraft paper effect */
+      background-color: #b5834f;
+      background-image:
+        linear-gradient(135deg, rgba(255,255,255,0.18) 0, transparent 55%),
+        linear-gradient(225deg, rgba(0,0,0,0.18) 0, transparent 60%),
+        repeating-linear-gradient(45deg,
+          rgba(255,255,255,0.2) 0,
+          rgba(255,255,255,0.2) 1px,
+          transparent 1px,
+          transparent 4px),
+        repeating-linear-gradient(-45deg,
+          rgba(0,0,0,0.06) 0,
+          rgba(0,0,0,0.06) 2px,
+          transparent 2px,
+          transparent 7px),
+        radial-gradient(circle at 20% 15%, rgba(255,255,255,0.18) 0, transparent 55%),
+        radial-gradient(circle at 80% 85%, rgba(0,0,0,0.12) 0, transparent 60%);
+      background-blend-mode: multiply;
+      box-shadow: 4px 0 14px rgba(0,0,0,0.22);
+    }
+
+    /* RIGHT COLUMN = CONTENT ON DRAWING PAPER */
+    .main {
+      margin-left: 300px;    /* matches sidebar width */
+      padding: 32px 24px 40px;
+
+      background-color: #f6f3ed;
+      background-image:
+        linear-gradient(135deg, rgba(255,255,255,0.4) 0, transparent 55%),
+        linear-gradient(225deg, rgba(204,196,184,0.2) 0, transparent 60%),
+        repeating-linear-gradient(0deg,
+          rgba(0,0,0,0.03) 0,
+          rgba(0,0,0,0.03) 1px,
+          transparent 1px,
+          transparent 3px);
+    }
+
+    /* Mobile: stack them, no fixed panel */
     @media (max-width: 800px) {
-      .layout {
-        flex-direction: column;
-      }
       .sidebar {
         position: static;
         width: 100%;
-        max-width: none;
-        min-height: auto;
+        height: auto;
         box-shadow: none;
       }
       .main {
+        margin-left: 0;
         padding-top: 20px;
       }
     }
@@ -209,7 +197,7 @@
 </head>
 <body>
   <div class="layout">
-    <!-- LEFT STATIC COLUMN -->
+    <!-- LEFT FIXED COLUMN -->
     <aside class="sidebar">
       <header>
         <h1 class="site-title">hippocampercams</h1>
