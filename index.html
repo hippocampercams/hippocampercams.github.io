@@ -77,19 +77,33 @@
             background-position: -616px -283px;
         }
 
-        .icon_label {
-            font-family: "Courier New", Courier, monospace;
-            padding-top: 6px;
-            color: #ffffff;
-            text-align: center;
-        }
+        /* LEFT SIDEBAR LABELS – force same font as right box text */
+.icons {
+    margin: 0 0 0 10px;
+    list-style-type: none;
+    padding: 0;
+    width: 100px;
+    float: left;
+    position: fixed;
+    z-index: 2;
+    font-family: "Courier New", Courier, monospace !important;  /* <– key line */
+}
 
-        .icons a {
-            color: #ffffff;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 15px;
-        }
+.icons a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.icon_label {
+    font-family: "Courier New", Courier, monospace !important;  /* hard override */
+    font-size: 12px;
+    letter-spacing: 0.005em;
+    padding-top: 6px;
+    color: #ffffff;
+    text-align: center;
+}
 
         /* CUSTOM ICON IMAGES (you can change URLs to your own PNGs later) */
         .sidebar_icon {
