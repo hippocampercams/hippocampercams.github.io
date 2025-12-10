@@ -2,109 +2,566 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hippocamper Cams</title>
+  <title>Hippocamper Cams • Y2K Digicams from Singapore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curated Y2K & 2000s digital cameras from Singapore. Tested, cleaned and ready to shoot.">
   <style>
+    :root {
+      --bg: #f7f5f3;
+      --card: #ffffff;
+      --accent: #111111;
+      --accent-soft: #e3d7ff;
+      --text-main: #222222;
+      --text-muted: #666666;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --shadow-soft: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #222;
-    }
-    header {
-      padding: 24px 16px;
-      text-align: center;
-      background: #111;
-      color: #fff;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 16px;
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: 28px;
-    }
-    h2 {
-      margin-top: 32px;
-      font-size: 22px;
-    }
-    p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
       line-height: 1.5;
     }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      background: radial-gradient(circle at top left, #fcd5ff 0, #f4e6ff 30%, #111111 80%);
+      color: #ffffff;
+      padding: 20px 16px 40px;
+    }
+
+    .header-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand-title {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 4px 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: rgba(255,255,255,0.7);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .hero-text h1 {
+      font-size: clamp(28px, 5vw, 38px);
+      margin: 0 0 8px;
+    }
+
+    .hero-text p {
+      margin: 0 0 14px;
+      font-size: 15px;
+      max-width: 520px;
+    }
+
+    .hero-tagline {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.9;
+      margin-bottom: 4px;
+    }
+
+    .hero-buttons {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.8);
+      background: rgba(0,0,0,0.12);
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+      backdrop-filter: blur(6px);
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #111111;
+      border-color: #ffffff;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background-color: rgba(255,255,255,0.16);
+    }
+
+    .btn-primary:hover {
+      background-color: #f3f3f3;
+    }
+
+    .hero-card {
+      background: rgba(17,17,17,0.85);
+      border-radius: var(--radius-lg);
+      padding: 18px 16px 16px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.4);
+      font-size: 13px;
+    }
+
+    .hero-card h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .hero-grid div {
+      background: #111;
+      border-radius: 8px;
+      padding: 16px 8px 10px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .hero-grid span {
+      display: block;
+      font-size: 11px;
+      opacity: 0.9;
+    }
+
+    .hero-grid strong {
+      display: block;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .hero-note {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .hero-note strong {
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 26px 16px 40px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2.section-title {
+      font-size: 20px;
+      margin: 0 0 6px;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
     .camera-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin-top: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
     }
+
     .camera-card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      background: var(--card);
+      border-radius: var(--radius-md);
+      padding: 10px 10px 12px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
     }
-    .camera-card img {
+
+    .camera-image {
       width: 100%;
-      height: 180px;
+      height: 190px;
+      border-radius: 10px;
       object-fit: cover;
-      border-radius: 6px;
       margin-bottom: 8px;
+      background: #ddd;
     }
+
+    .camera-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin: 2px 0 6px;
+    }
+
+    .price-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4px 0 6px;
+      font-size: 13px;
+    }
+
     .price {
       font-weight: 600;
-      margin: 4px 0;
     }
-    .camera-card a {
-      display: inline-block;
+
+    .status-pill {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid #d4d4d4;
+      color: #444;
+      background: #f5f5f5;
+    }
+
+    .status-pill.sold {
+      border-color: #e27b7b;
+      background: #ffe5e5;
+      color: #b00020;
+    }
+
+    .card-actions {
       margin-top: 6px;
-      font-size: 14px;
-      text-decoration: none;
-      border-radius: 4px;
-      padding: 6px 10px;
-      border: 1px solid #111;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
     }
+
+    .card-actions a {
+      flex: 1 1 auto;
+      min-width: 120px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      padding: 7px 8px;
+      border-radius: 999px;
+      border: 1px solid #111111;
+    }
+
+    .pill-secondary {
+      border-style: dashed;
+      color: #444;
+    }
+
+    .pill-secondary:hover {
+      background: #f1f1f1;
+    }
+
+    .how-to {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 800px) {
+      .how-to {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .how-card {
+      background: var(--card);
+      padding: 14px 14px 12px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-soft);
+      font-size: 14px;
+    }
+
+    .how-card h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+
+    .how-card ol,
+    .how-card ul {
+      padding-left: 20px;
+      margin: 6px 0;
+    }
+
+    .how-card li {
+      margin-bottom: 4px;
+    }
+
+    .guide-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .guide-card {
+      background: var(--card);
+      padding: 12px 12px 10px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .guide-card h3 {
+      margin: 0 0 4px;
+      font-size: 15px;
+    }
+
+    .guide-card p {
+      margin: 0 0 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .guide-card a {
+      font-size: 12px;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .contact {
+      font-size: 14px;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 8px 0 0;
+    }
+
+    .contact-list li {
+      margin-bottom: 4px;
+    }
+
     footer {
       text-align: center;
-      padding: 16px;
-      font-size: 12px;
-      color: #666;
+      padding: 14px 12px 22px;
+      font-size: 11px;
+      color: var(--text-muted);
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hippocamper Cams</h1>
-    <p>Curated vintage digital cameras from Singapore</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-title">HIPPOCAMPER CAMS</div>
+        <nav>
+          <a href="#shop">Shop cameras</a>
+          <a href="#how">How it works</a>
+          <a href="#guides">Tips & guides</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="hero">
+        <div class="hero-text">
+          <div class="hero-tagline">Y2K DIGITAL · TESTED · READY TO SHOOT</div>
+          <h1>Vintage digicams from Singapore, curated with love.</h1>
+          <p>
+            I hunt down, clean, and test early-2000s digital cameras so you can enjoy
+            that crunchy CCD, built-in flash and timestamp vibes — without gambling on
+            untested “as-is” listings.
+          </p>
+          <div class="hero-buttons">
+            <!-- TODO: replace # with your real links -->
+            <a class="btn btn-primary" href="#" target="_blank">Shop on Carousell</a>
+            <a class="btn" href="#" target="_blank">Follow on Instagram</a>
+            <a class="btn" href="#" target="_blank">Follow on TikTok</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h2>What you get</h2>
+          <div class="hero-grid">
+            <div>
+              <span>Every camera</span>
+              <strong>Tested & cleaned</strong>
+            </div>
+            <div>
+              <span>For Gen Z & millennial</span>
+              <strong>Photo dumps</strong>
+            </div>
+            <div>
+              <span>Based in</span>
+              <strong>Singapore 🇸🇬</strong>
+            </div>
+          </div>
+          <p class="hero-note">
+            <strong>No gatekeeping:</strong> each listing includes specs, honest notes on
+            condition and sample shots whenever possible, so you know exactly what
+            kind of vibe you’re buying.
+          </p>
+        </aside>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>Welcome</h2>
-      <p>
-        This is a placeholder homepage. Soon this will show my available cameras,
-        links to Carousell, and tips on using old digicams.
+  <main>
+    <section id="shop">
+      <h2 class="section-title">Available cameras</h2>
+      <p class="section-subtitle">
+        All prices in SGD. DM me on Carousell or Instagram to reserve. Local meet-up
+        or tracked delivery within Singapore.
       </p>
+
+      <div class="camera-list">
+        <!-- ↓↓↓ CAMERA LISTINGS START — DUPLICATE THIS BLOCK PER CAMERA ↓↓↓ -->
+
+        <article class="camera-card">
+          <img class="camera-image" src="https://via.placeholder.com/500x350?text=Camera+Photo" alt="Sample camera">
+          <h3>Sample Camera Name</h3>
+          <p class="camera-meta">7.1MP · 3x zoom · CCD sensor · Built-in flash</p>
+          <p>Short description of the vibe, condition and what this camera is great for (e.g. flash party photos, daytime city walks, etc.).</p>
+          <div class="price-row">
+            <span class="price">$80</span>
+            <span class="status-pill">Available</span>
+          </div>
+          <div class="card-actions">
+            <!-- TODO: replace # with your actual Carousell listing link -->
+            <a href="#" target="_blank">View on Carousell</a>
+            <a class="pill-secondary" href="#" target="_blank">Sample photos</a>
+          </div>
+        </article>
+
+        <!-- ↑↑↑ CAMERA LISTINGS END — ADD MORE CARDS ABOVE THIS COMMENT ↑↑↑ -->
+      </div>
     </section>
 
-    <section>
-      <h2>Sample Cameras (demo)</h2>
-      <div class="camera-list">
-        <article class="camera-card">
-          <img src="https://via.placeholder.com/400x300?text=Camera+Photo" alt="Sample camera">
-          <h3>Sample Camera Name</h3>
-          <p>Short description of the camera, specs, vibe, etc.</p>
-          <p class="price">$80</p>
-          <a href="#" target="_blank">View on Carousell</a>
+    <section id="how">
+      <h2 class="section-title">How it works</h2>
+      <p class="section-subtitle">
+        Simple process, no nonsense. Especially for first-time digicam users.
+      </p>
+
+      <div class="how-to">
+        <div class="how-card">
+          <h3>Buying a camera</h3>
+          <ol>
+            <li>Browse the cameras above and tap <strong>“View on Carousell”</strong> for the full listing.</li>
+            <li>DM me on Carousell or Instagram to ask questions or reserve.</li>
+            <li>Choose <strong>meet-up</strong> or <strong>tracked delivery</strong> within Singapore.</li>
+            <li>Once confirmed, I do a final test before handing it over or shipping.</li>
+          </ol>
+        </div>
+
+        <div class="how-card">
+          <h3>What I check before listing</h3>
+          <ul>
+            <li>Lens condition, focus and zoom</li>
+            <li>Screen, buttons and basic functions</li>
+            <li>Battery compartment & memory card slot</li>
+            <li>Quick test shots to confirm everything works</li>
+          </ul>
+          <p style="margin-top:6px;font-size:13px;color:var(--text-muted);">
+            If there’s anything quirky (e.g. worn cosmetic condition, tiny LCD marks),
+            I call it out clearly in the listing so there are <strong>no surprises</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides">
+      <h2 class="section-title">Tips & guides</h2>
+      <p class="section-subtitle">
+        New to old digicams? Start here. I’ll keep adding simple guides as I go.
+      </p>
+
+      <div class="guide-list">
+        <article class="guide-card">
+          <h3>Digicam basics for beginners</h3>
+          <p>How to turn it on, use flash, avoid blurry photos and transfer pictures to your phone or laptop.</p>
+          <!-- TODO: replace # with your guide link (TikTok / Lemon8 / Tumblr / etc.) -->
+          <a href="#" target="_blank">Read / watch the guide →</a>
         </article>
+
+        <article class="guide-card">
+          <h3>Choosing your first camera</h3>
+          <p>Quick cheat-sheet for which models are best for parties, travel, low light, or “soft girl” selfies.</p>
+          <a href="#" target="_blank">See recommendations →</a>
+        </article>
+
+        <article class="guide-card">
+          <h3>Battery & memory card tips</h3>
+          <p>What batteries and cards you need, and how to avoid dodgy chargers or incompatible sizes.</p>
+          <a href="#" target="_blank">Learn more →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact & socials</h2>
+      <p class="section-subtitle">
+        The fastest way to reach me is via DM. I’m friendly, promise.
+      </p>
+      <div class="contact">
+        <p>For questions, holds or custom recommendations:</p>
+        <ul class="contact-list">
+          <!-- TODO: replace # with your real links / handle text -->
+          <li>Carousell: <a href="#" target="_blank">@yourcarousellhandle</a></li>
+          <li>Instagram: <a href="#" target="_blank">@yourinstagram</a></li>
+          <li>TikTok: <a href="#" target="_blank">@yourtiktok</a></li>
+          <li>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer>
-    &copy; <span id="year"></span> Hippocamper Cams
+    &copy; <span id="year"></span> Hippocamper Cams · Built on GitHub Pages
   </footer>
 
   <script>
