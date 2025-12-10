@@ -2,22 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>hippocampercams • your y2k digicam bestie</title>
+  <title>Hippocamper Cams</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="hippocampercams – your Y2K digicam bestie, based in Singapore.">
+  <meta name="description" content="Curated vintage digital cameras from Singapore.">
   <style>
-    :root {
-      --bg: #f7f4f1;
-      --card: #ffffff;
-      --accent: #111111;
-      --accent-soft: #e3d7ff;
-      --text-main: #222222;
-      --text-muted: #666666;
-      --radius-lg: 18px;
-      --radius-md: 12px;
-      --shadow-soft: 0 14px 35px rgba(0,0,0,0.09);
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -25,290 +13,217 @@
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #ffe7fd 0, #f7f4f1 45%, #f7f4f1 70%);
-      color: var(--text-main);
-      line-height: 1.6;
+      color: #222222;
+      background: #d9d4c8;
+      line-height: 1.5;
     }
 
-    a {
-      color: inherit;
-    }
-
-    .page {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 28px 16px 40px;
-    }
+    /* --- TWO-COLUMN LAYOUT --- */
 
     .layout {
-      display: grid;
-      grid-template-columns: minmax(230px, 260px) minmax(0, 1fr);
-      gap: 32px;
-      align-items: flex-start;
-    }
-
-    @media (max-width: 820px) {
-      .layout {
-        grid-template-columns: 1fr;
-      }
-      .sidebar {
-        position: static;
-      }
+      display: flex;
+      min-height: 100vh;
     }
 
     .sidebar {
+      width: 25%;
+      min-width: 240px;
+      max-width: 320px;
       position: sticky;
-      top: 24px;
+      top: 0;
       align-self: flex-start;
-      background: rgba(17,17,17,0.92);
-      color: #ffffff;
-      padding: 18px 18px 20px;
-      border-radius: var(--radius-lg);
-      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+      min-height: 100vh;
+      padding: 24px 20px 32px;
+      color: #2b1a09;
+
+      /* rustic brown "kraft paper" look */
+      background-color: #b58b5b;
+      background-image:
+        radial-gradient(circle at 0 0, rgba(255,255,255,0.25) 0, transparent 55%),
+        radial-gradient(circle at 100% 0, rgba(255,255,255,0.16) 0, transparent 60%),
+        radial-gradient(circle at 0 100%, rgba(0,0,0,0.15) 0, transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(0,0,0,0.12) 0, transparent 60%);
+      background-blend-mode: multiply;
+      box-shadow: 4px 0 12px rgba(0,0,0,0.18);
     }
 
-    .brand-title {
-      font-size: 22px;
+    .main {
+      flex: 1;
+      padding: 32px 24px 40px;
+
+      /* off-white "drawing paper" texture */
+      background-color: #f6f3ed;
+      background-image:
+        linear-gradient(135deg, rgba(255,255,255,0.35) 0, transparent 55%),
+        linear-gradient(225deg, rgba(204,196,184,0.18) 0, transparent 60%);
+    }
+
+    @media (max-width: 800px) {
+      .layout {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: static;
+        width: 100%;
+        max-width: none;
+        min-height: auto;
+        box-shadow: none;
+      }
+      .main {
+        padding-top: 20px;
+      }
+    }
+
+    /* --- SIDEBAR CONTENT --- */
+
+    .site-title {
+      margin: 0;
+      font-size: 24px;
       font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: lowercase;
-      margin-bottom: 4px;
-    }
-
-    .brand-tagline {
-      font-size: 13px;
-      margin-bottom: 16px;
-      word-break: break-word;
-    }
-
-    .welcome-heading {
-      font-size: 15px;
-      font-weight: 600;
-      margin: 10px 0 4px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      opacity: 0.86;
     }
 
-    .welcome-text {
+    .site-subtitle {
+      margin: 4px 0 20px;
       font-size: 13px;
       opacity: 0.9;
-      margin: 0 0 14px;
     }
 
-    .sidebar-list {
-      list-style: none;
-      padding-left: 0;
-      margin: 10px 0 0;
+    .sidebar h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .sidebar p {
+      margin: 0 0 10px;
+      font-size: 13px;
+    }
+
+    .sidebar-small {
       font-size: 12px;
       opacity: 0.9;
-    }
-
-    .sidebar-list li {
-      margin-bottom: 4px;
-    }
-
-    .sidebar-nav {
       margin-top: 14px;
-      border-top: 1px solid rgba(255,255,255,0.14);
-      padding-top: 10px;
     }
 
-    .sidebar-nav a {
-      display: inline-block;
-      font-size: 12px;
-      text-decoration: none;
-      padding: 4px 0;
-      border-bottom: 1px solid transparent;
-    }
+    /* --- MAIN CONTENT / CARDS --- */
 
-    .sidebar-nav a:hover {
-      border-color: rgba(255,255,255,0.8);
-    }
-
-    .content {
-      min-height: 60vh;
-    }
-
-    h2 {
-      margin: 0 0 8px;
-      font-size: 20px;
+    h1.main-heading {
+      font-size: 22px;
+      margin: 0 0 4px;
     }
 
     .section-subtitle {
       font-size: 13px;
-      color: var(--text-muted);
-      margin: 0 0 16px;
+      color: #6b645a;
+      margin: 0 0 18px;
     }
 
     .camera-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 18px;
     }
 
     .camera-card {
-      background: var(--card);
-      border-radius: var(--radius-md);
-      padding: 10px 10px 12px;
-      box-shadow: var(--shadow-soft);
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 12px 12px 14px;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+      font-size: 14px;
       display: flex;
       flex-direction: column;
-      font-size: 14px;
     }
 
-    .camera-image {
+    .camera-card img {
       width: 100%;
       height: 190px;
-      border-radius: 10px;
       object-fit: cover;
-      margin-bottom: 8px;
+      border-radius: 8px;
       background: #ddd;
+      margin-bottom: 10px;
     }
 
     .camera-meta {
       font-size: 12px;
-      color: var(--text-muted);
+      color: #777;
       margin: 2px 0 6px;
-    }
-
-    .price-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 4px 0 6px;
-      font-size: 13px;
     }
 
     .price {
       font-weight: 600;
+      margin: 4px 0;
     }
 
-    .status-pill {
-      font-size: 11px;
-      padding: 3px 8px;
-      border-radius: 999px;
-      border: 1px solid #d4d4d4;
-      color: #444;
-      background: #f5f5f5;
-    }
-
-    .card-actions {
+    .camera-card a {
+      align-self: flex-start;
+      display: inline-block;
       margin-top: 6px;
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .card-actions a {
-      flex: 1 1 auto;
-      min-width: 120px;
-      text-align: center;
+      font-size: 13px;
       text-decoration: none;
-      font-size: 12px;
-      padding: 7px 8px;
+      padding: 7px 10px;
       border-radius: 999px;
-      border: 1px solid #111111;
-      background: #ffffff;
-    }
-
-    .pill-secondary {
-      border-style: dashed;
-      color: #444;
-      background: #fafafa;
-    }
-
-    .pill-secondary:hover {
-      background: #f1f1f1;
+      border: 1px solid #111;
+      background: #fff;
     }
 
     footer {
       text-align: center;
-      padding: 18px 12px 26px;
+      padding: 14px 12px 20px;
       font-size: 11px;
-      color: var(--text-muted);
+      color: #7b746a;
     }
   </style>
 </head>
 <body>
-  <div class="page">
-    <div class="layout">
-      <!-- LEFT FROZEN PANEL -->
-      <aside class="sidebar">
-        <div class="brand-title">hippocampercams</div>
-        <div class="brand-tagline">
-          ༚˚*⁎⁺˳✧༚ your y2k digicam bestie ༚˚*⁎⁺˳✧༚
-        </div>
+  <div class="layout">
+    <!-- LEFT STATIC COLUMN -->
+    <aside class="sidebar">
+      <header>
+        <h1 class="site-title">Hippocamper Cams</h1>
+        <p class="site-subtitle">Curated vintage digital cameras from Singapore</p>
+      </header>
 
-        <div class="welcome-heading">Welcome</div>
-        <p class="welcome-text">
-          I curate, clean and test early-2000s digital cameras so you can enjoy
-          crunchy CCD colours, built-in flash and timestamp vibes without
-          gambling on random untested listings.
+      <section>
+        <h2>Welcome</h2>
+        <p>
+          This is a placeholder homepage. Soon this will show my available cameras,
+          links to Carousell, and tips on using old digicams.
+        </p>
+        <p class="sidebar-small">
+          The panel on the left stays here while you scroll, so you always know
+          where you are and what this site is about.
+        </p>
+      </section>
+    </aside>
+
+    <!-- RIGHT SCROLLING COLUMN -->
+    <main class="main">
+      <section>
+        <h1 class="main-heading">Sample Cameras (demo)</h1>
+        <p class="section-subtitle">
+          This section will become the main shop area with real listings, specs and links.
         </p>
 
-        <ul class="sidebar-list">
-          <li>📍 Singapore-based</li>
-          <li>📸 Y2K & 2000s digicams</li>
-          <li>✨ Perfect for photo dumps, parties & trips</li>
-        </ul>
-
-        <div class="sidebar-nav">
-          <a href="#shop">shop cameras →</a><br>
-          <a href="#guides">read tips & guides →</a>
+        <div class="camera-list">
+          <article class="camera-card">
+            <img src="https://via.placeholder.com/500x350?text=Camera+Photo" alt="Sample camera">
+            <h3>Sample Camera Name</h3>
+            <p class="camera-meta">7.1MP · 3x zoom · CCD sensor · Built-in flash</p>
+            <p>
+              Short description of the camera, specs, vibe, etc. For example:
+              perfect for flash party photos and nostalgic photo dumps.
+            </p>
+            <p class="price">$80</p>
+            <a href="#" target="_blank">View on Carousell</a>
+          </article>
         </div>
-      </aside>
-
-      <!-- RIGHT MAIN CONTENT -->
-      <main class="content">
-        <section id="shop">
-          <h2>Available cameras</h2>
-          <p class="section-subtitle">
-            All prices in SGD. DM me on Carousell or Instagram to reserve.
-          </p>
-
-          <div class="camera-list">
-            <!-- ↓↓↓ CAMERA LISTINGS START — DUPLICATE THIS BLOCK PER CAMERA ↓↓↓ -->
-
-            <article class="camera-card">
-              <img class="camera-image"
-                   src="https://via.placeholder.com/500x350?text=Camera+Photo"
-                   alt="Sample camera">
-              <h3>Sample Camera Name</h3>
-              <p class="camera-meta">7.1MP · 3x zoom · CCD sensor · Built-in flash</p>
-              <p>
-                Short description of the camera, specs and vibe (e.g. perfect for flash
-                party pics, moody night shots, or soft daylight selfies).
-              </p>
-              <div class="price-row">
-                <span class="price">$80</span>
-                <span class="status-pill">Available</span>
-              </div>
-              <div class="card-actions">
-                <!-- TODO: replace # with your Carousell listing link -->
-                <a href="#" target="_blank">View on Carousell</a>
-                <!-- TODO: replace # with link to sample photos (TikTok / IG / drive) or leave as # -->
-                <a class="pill-secondary" href="#" target="_blank">Sample photos</a>
-              </div>
-            </article>
-
-            <!-- ↑↑↑ CAMERA LISTINGS END — ADD MORE CARDS ABOVE THIS COMMENT ↑↑↑ -->
-          </div>
-        </section>
-
-        <section id="guides" style="margin-top:32px;">
-          <h2>Tips & guides (coming soon)</h2>
-          <p class="section-subtitle">
-            I’ll add simple guides here – how to pick your first digicam, how to
-            avoid blurry photos, and how to move pics to your phone or laptop.
-          </p>
-        </section>
-      </main>
-    </div>
+      </section>
+    </main>
   </div>
 
   <footer>
-    &copy; <span id="year"></span> hippocampercams · built on GitHub Pages
+    &copy; <span id="year"></span> Hippocamper Cams
   </footer>
 
   <script>
