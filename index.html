@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hippocamper Cams</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      padding: 24px 16px;
+      text-align: center;
+      background: #111;
+      color: #fff;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+    h2 {
+      margin-top: 32px;
+      font-size: 22px;
+    }
+    p {
+      line-height: 1.5;
+    }
+    .camera-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .camera-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .camera-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .price {
+      font-weight: 600;
+      margin: 4px 0;
+    }
+    .camera-card a {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 6px 10px;
+      border: 1px solid #111;
+    }
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hippocamper Cams</h1>
+    <p>Curated vintage digital cameras from Singapore</p>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        This is a placeholder homepage. Soon this will show my available cameras,
+        links to Carousell, and tips on using old digicams.
+      </p>
+    </section>
+
+    <section>
+      <h2>Sample Cameras (demo)</h2>
+      <div class="camera-list">
+        <article class="camera-card">
+          <img src="https://via.placeholder.com/400x300?text=Camera+Photo" alt="Sample camera">
+          <h3>Sample Camera Name</h3>
+          <p>Short description of the camera, specs, vibe, etc.</p>
+          <p class="price">$80</p>
+          <a href="#" target="_blank">View on Carousell</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Hippocamper Cams
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
