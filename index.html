@@ -105,35 +105,14 @@
     text-align: center;
 }
 
-        /* CUSTOM ICON IMAGES (you can change URLs to your own PNGs later) */
-        .sidebar_icon {
-            width: 32px;
-            height: 32px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            margin: auto;
-        }
-
-        .listings_icon {
-            background-image: url('https://via.placeholder.com/32x32?text=L'); /* TODO: swap to your 3D list icon */
-        }
-
-        .mustread_icon {
-            background-image: url('https://via.placeholder.com/32x32?text=!'); /* warning */
-        }
-
-        .faqs_icon {
-            background-image: url('https://via.placeholder.com/32x32?text=?'); /* question */
-        }
-
-        .instantpics_icon {
-            background-image: url('https://via.placeholder.com/32x32?text=📷'); /* camera */
-        }
-
-        .doomscroll_icon {
-            background-image: url('https://via.placeholder.com/32x32?text=☠'); /* skull */
-        }
+        /* CUSTOM ICON IMAGES – real 3D icon files */
+.icon-img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    image-rendering: pixelated;       /* keeps that crunchy Win98 look */
+}
 
         /* MAIN POSTS DESKTOP AREA */
         #desktop,
@@ -529,35 +508,35 @@
             </a>
 
             <!-- CUSTOM LINKS -->
-            <a href="#listings" class="listings">
-                <div class="sidebar_icon listings_icon"></div>
-                <div class="icon_label">FAQs</div>
-            </a>
+<a href="#listings" class="listings">
+    <img src="img/icons/faqs.png" alt="" class="icon-img">
+    <div class="icon_label">FAQs</div>
+</a>
 
-            <a href="#mustread" class="mustread">
-                <div class="sidebar_icon mustread_icon"></div>
-                <div class="icon_label">adopt a cam</div>
-            </a>
+<a href="#mustread" class="mustread">
+    <img src="img/icons/adoptacam.png" alt="" class="icon-img">
+    <div class="icon_label">adopt a cam</div>
+</a>
 
-            <a href="https://instagram.com/hippocampercams" class="insta">
-                <div class="sidebar_icon faqs_icon"></div>
-                <div class="icon_label">insta</div>
-            </a>
+<a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+    <img src="img/icons/insta.png" alt="" class="icon-img">
+    <div class="icon_label">insta</div>
+</a>
 
-            <a href="https://www.tiktok.com/@hangryhippocamper" target="_blank" rel="noopener" class="tiktok">
-                <div class="sidebar_icon instantpics_icon"></div>
-                <div class="icon_label">tiktok</div>
-            </a>
+<a href="https://www.tiktok.com/@hangryhippocamper" target="_blank" rel="noopener" class="tiktok">
+    <img src="img/icons/tiktok.png" alt="" class="icon-img">
+    <div class="icon_label">tiktok</div>
+</a>
 
-            <a href="#lemon8" target="_blank" rel="noopener" class="lemon8">
-                <div class="sidebar_icon doomscroll_icon"></div>
-                <div class="icon_label">lemon8</div>
-            </a>
+<a href="#lemon8" target="_blank" rel="noopener" class="lemon8">
+    <img src="img/icons/lemon8.png" alt="" class="icon-img">
+    <div class="icon_label">lemon8</div>
+</a>
 
-            <a href="#contact" class="contact">
-                <div class="phone"></div>
-                <div class="icon_label">contact</div>
-            </a>
+<a href="#contact" class="contact">
+    <img src="img/icons/contact.png" alt="" class="icon-img">
+    <div class="icon_label">contact</div>
+</a>
         </div>
 
         <!-- MAIN DESKTOP WINDOWS -->
