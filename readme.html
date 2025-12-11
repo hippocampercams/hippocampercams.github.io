@@ -103,19 +103,20 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA – centered single window */
+        /* MAIN DESKTOP AREA – two centered windows */
         #desktop {
             margin: 20px auto 40px auto;  /* same top margin as home page */
             z-index: 3;
             position: relative;
-            max-width: 900px;
+            max-width: 1000px;           /* 480 + 480 + 40px gap */
             width: 100%;
             display: flex;
             justify-content: center;
+            gap: 40px;                   /* visible teal between windows */
         }
 
         .window {
-            width: 480px;             /* match original Win98 window width */
+            width: 480px;                /* match original Win98 window width */
             max-width: 480px;
             float: none;
             margin: 0 auto 20px auto;
@@ -502,8 +503,9 @@
             </a>
         </div>
 
-        <!-- MAIN DESKTOP WINDOW -->
+        <!-- MAIN DESKTOP WINDOWS -->
         <div id="desktop" class="container">
+            <!-- Window 1 -->
             <div class="window post-text">
                 <a href="#">
                     <div class="top">
@@ -543,6 +545,45 @@
                         you’re adopting tiny time-capsule gadgets with plenty of character. i’ll always do my best to describe them honestly – if you’re ever unsure, DM me on
                         <a href="https://instagram.com/hippocampercams" target="_blank">instagram</a> or
                         <a href="https://www.tiktok.com/@hangryhippocamper" target="_blank">tiktok</a> before buying ♡</p>
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+
+            <!-- Window 2 -->
+            <div class="window post-text">
+                <a href="#">
+                    <div class="top">
+                        <div class="info">
+                            house rules • read before adopting
+                        </div>
+                    </div>
+                </a>
+                <div class="middle">
+                    <div class="title">shop notes – Notepad</div>
+                    <div class="content">
+                        <p><b>ordering.</b><br>
+                        DMs are first-come-first-served. i’ll hold a cam for a short agreed window once we’ve confirmed details – after that it may go back up for adoption.</p>
+
+                        <p><b>payment.</b><br>
+                        default is paynow / bank transfer in SGD. please always wait for confirmation + final total (including delivery, if any) before sending payment.</p>
+
+                        <p><b>delivery / meetups.</b><br>
+                        local SG: options usually include normal mail, tracked mail or meetup at agreed MRT stations. details will be in each listing or confirmed over DM.</p>
+
+                        <p><b>packaging.</b><br>
+                        cams are wrapped snugly in bubble wrap / padding and boxed wherever possible. i try to reuse clean packing materials to be a little kinder to the planet.</p>
+
+                        <p><b>DOA window.</b><br>
+                        if your cam arrives completely not working (DOA), please contact me within 48 hours with clear pics / videos so we can troubleshoot or work something out together.</p>
+
+                        <p><b>expectations.</b><br>
+                        these are nostalgic toys first, serious workhorses second. if you need mission-critical gear, please consider buying new – hippocampercams is mainly for fun, vibes and memories.</p>
+
+                        <p><i>questions?</i><br>
+                        i’m always happy to chat about which cam fits your moodboard or trip plans. just hop into my
+                        <a href="https://instagram.com/hippocampercams" target="_blank">instagram</a> or
+                        <a href="https://www.tiktok.com/@hangryhippocamper" target="_blank">tiktok</a> DMs ♡</p>
                     </div>
                 </div>
                 <div class="bottom"></div>
