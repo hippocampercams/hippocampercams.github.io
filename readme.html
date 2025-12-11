@@ -103,19 +103,14 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA – two centered windows */
-        /* MAIN DESKTOP AREA – two centered windows, same offset as main page */
-/* MAIN DESKTOP AREA – two centered windows, same offset as main page */
-    #desktop {
-    margin: 20px auto 40px auto;  /* same top/bottom as home page */
+        /* MAIN DESKTOP AREA – same as main page */
+#desktop {
+    margin: 20px auto;
     z-index: 3;
     position: relative;
-    width: 1000px;                /* same as main page */
+    width: 1000px;          /* two-column layout, same as main page */
     left: 0;
-    transform: translateX(-60px); /* pull everything left toward icons */
-    display: flex;
-    justify-content: flex-start;  /* align windows to the left, like floats */
-    column-gap: 20px;             /* same spacing as main page (.window margin-right: 20px) */
+    transform: translateX(-60px); /* pull posts left toward icons */
 }
 
         .window {
