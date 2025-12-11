@@ -27,17 +27,17 @@
             text-decoration: underline;
         }
 
-        /* LEFT DESKTOP ICONS COLUMN */
-.icons {
-    margin: 0 0 0 10px;
-    list-style-type: none;
-    padding: 0;
-    width: 100px;
-    float: left;
-    position: fixed;
-    z-index: 2;
-    font-family: "Courier New", Courier, monospace !important;
-}
+        /* LEFT DESKTOP ICONS COLUMN (same as other pages) */
+        .icons {
+            margin: 0 0 0 10px;
+            list-style-type: none;
+            padding: 0;
+            width: 100px;
+            float: left;
+            position: fixed;
+            z-index: 2;
+            font-family: "Courier New", Courier, monospace !important;
+        }
 
         .my_computer, .my_documents, .network_neighborhood, .folder,
         .recycle_bin, .start_menu, .application_icons,
@@ -94,7 +94,6 @@
             text-align: center;
         }
 
-        /* CUSTOM ICON IMAGES – real 3D icon files */
         .icon-img {
             display: block;
             width: 32px;
@@ -103,213 +102,95 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA – centered single window */
-        #desktop {
-    margin: 20px auto 40px auto;  /* same top margin as home page */
-    z-index: 3;
-    position: relative;
-    max-width: 900px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-        .window {
-    width: 480px;             /* match original Win98 window width */
-    max-width: 480px;
-    float: none;
-    margin: 0 auto 20px auto;
-    font-family: "Courier New", Courier, monospace;
-}
-
-        .window .title,
-        .window .content,
-        .window .content p,
-        .window .caption,
-        .window .info {
-            font-family: "Courier New", Courier, monospace !important;
-        }
-
-        .window .top {
-            height: 44px;
-            background-position: -168px 0px;
-        }
-
-        .window .top .info {
-            top: 26px;
-            left: 10px;
-            position: relative;
-            width: 300px;
-            z-index: 4;
-            font-size: 11px;
-            line-height: 13px;
-        }
-
-        .window > a {
-            color: #000000;
-            text-decoration: none;
-        }
-
-        .window .top a:hover {
-            text-decoration: underline;
-        }
-
-        .window .middle,
-        div.notes,
-        div.attribution,
-        div.tags {
-            background: url('https://static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png');
-            background-repeat: repeat-y;
-            padding: 4px 26px 4px 10px;
-        }
-
-        .window .bottom {
-            background-position: -168px -46px;
-            height: 22px;
-        }
-
-        .title {
-            display: block;
-            font-size: 1.25em;
-            margin-bottom: 5px;
-        }
-
-        .middle .caption {
-            margin-top: 5px;
-        }
-
-        .tagged {
-            font-size: 0.8em;
-            margin-top: 8px;
-            opacity: 0.8;
-        }
-
-        /* TOP-RIGHT WARNING BOX (same as index) */
-        .top-banner {
+        /* CLIPPY AREA */
+        .clippy-container {
             position: fixed;
-            top: 150px;
-            right: 6px;
-            z-index: 5;
-            pointer-events: auto;
-        }
-
-        .top-banner-window {
-            width: 300px;
-            max-width: 90%;
-            border: 1px solid #000000;
-            background-color: #d4d0c8;
-            box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            color: #000000;
-        }
-
-        .tb-titlebar {
-            height: 30px;
-            background: linear-gradient(to right, #0a3a8b, #4f80d4);
-            border-bottom: 1px solid #000000;
+            bottom: 40px;           /* just above the start bar */
+            left: 140px;            /* to the right of the icon column */
+            z-index: 3;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 4px;
-            box-sizing: border-box;
-            color: #ffffff;
-            font-size: 11px;
+            align-items: flex-end;
+            gap: 12px;
         }
 
-        .tb-title-text {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-family: "Courier New", Courier, monospace;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .tb-close {
-            width: 16px;
-            height: 14px;
-            background-color: #d4d0c8;
-            border-top: 1px solid #ffffff;
-            border-left: 1px solid #ffffff;
-            border-right: 1px solid #404040;
-            border-bottom: 1px solid #404040;
-            text-align: center;
-            line-height: 12px;
-            color: #000000;
-            font-size: 10px;
-            cursor: default;
-        }
-
-        .tb-body {
-            display: flex;
-            align-items: center;
-            padding: 16px 16px 10px;
-            box-sizing: border-box;
-        }
-
-        .tb-icon {
-            position: relative;
-            width: 36px;
-            height: 32px;
-            margin-right: 12px;
-            background: none;
-        }
-
-        .tb-icon::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -55%);
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-bottom: 26px solid #ffff00;
-        }
-
-        .tb-icon::after {
-            content: "!";
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 18px;
-            font-weight: bold;
-            color: #000000;
-            line-height: 1;
-        }
-
-        .tb-text {
+        .clippy-bubble {
+            background: #fff9c4;    /* soft yellow like Office balloon */
+            border: 1px solid #808080;
+            padding: 10px 12px;
+            max-width: 420px;
             font-family: "Courier New", Courier, monospace;
             font-size: 12px;
-            line-height: 1;
-            letter-spacing: 0.005em;
+            line-height: 1.25;
+            position: relative;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
         }
 
-        .tb-footer {
-            padding: 0 16px 12px;
-            text-align: center;
+        /* little triangular "tail" pointing at Clippy */
+        .clippy-bubble::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 40px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid #fff9c4;
+            border-left: 10px solid transparent;
+            border-right: 0 solid transparent;
         }
 
-        .tb-button {
-            font-family: "Courier New", Courier, monospace;
-            font-size: 15px;
-            font-weight: bold;
-            min-width: 75px;
-            padding: 2px 10px;
-            background-color: #d4d0c8;
-            border-top: 1px solid #ffffff;
-            border-left: 1px solid #ffffff;
-            border-right: 1px solid #404040;
-            border-bottom: 1px solid #404040;
+        .clippy-bubble::before {
+            /* border for the tail */
+            content: "";
+            position: absolute;
+            bottom: -11px;
+            left: 39px;
+            width: 0;
+            height: 0;
+            border-top: 11px solid #808080;
+            border-left: 11px solid transparent;
+            border-right: 0 solid transparent;
         }
 
-        .tb-button:active {
-            border-top: 1px solid #404040;
-            border-left: 1px solid #404040;
-            border-right: 1px solid #ffffff;
-            border-bottom: 1px solid #ffffff;
+        .clippy-intro {
+            margin-bottom: 8px;
+        }
+
+        .clippy-qa {
+            margin: 0 0 4px 0;
+        }
+
+        /* blue 3D spheres before each Q: */
+        .clippy-qa .question {
+            display: inline-block;
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .clippy-qa .question::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #ffffff, #1b5fd8);
+            box-shadow: 0 0 1px #002366;
+        }
+
+        .clippy-qa .answer {
+            display: block;
+            margin-left: 14px;
+        }
+
+        .clippy-footnote {
+            margin-top: 6px;
+        }
+
+        .clippy-img {
+            width: 70px;
+            height: auto;
+            image-rendering: pixelated;
         }
 
         /* START BAR */
@@ -428,30 +309,16 @@
             body {
                 overflow-x: auto;
             }
+
+            .clippy-container {
+                position: static;
+                margin: 80px 10px 40px 130px;
+            }
         }
     </style>
 </head>
 
 <body class="win98 two_column">
-
-    <!-- TOP-RIGHT DIALOG (unchanged) -->
-    <div class="top-banner">
-        <div class="top-banner-window">
-            <div class="tb-titlebar">
-                <span class="tb-title-text">hippocampercams</span>
-                <span class="tb-close">x</span>
-            </div>
-            <div class="tb-body">
-                <div class="tb-icon"></div>
-                <div class="tb-text">
-                    °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
-                </div>
-            </div>
-            <div class="tb-footer">
-                <button class="tb-button">COOLBEANS</button>
-            </div>
-        </div>
-    </div>
 
     <div class="wrapper">
         <!-- LEFT ICONS COLUMN -->
@@ -472,10 +339,9 @@
             </a>
 
             <a href="faqs.html" class="listings">
-    <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
-    <div class="icon_label">FAQs</div>
-</a>
-
+                <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                <div class="icon_label">FAQs</div>
+            </a>
 
             <a href="adoptacam.html" class="mustread">
                 <img src="/img/icons/adoptacam.png" alt="adopt a cam" class="icon-img">
@@ -503,43 +369,51 @@
             </a>
         </div>
 
-        <!-- MAIN DESKTOP WINDOWS -->
-        <div id="desktop" class="container">
-            <div class="window post-text">
-                <a href="#">
-                    <div class="top">
-                        <div class="info">
-                            FAQs • updated 2025
-                        </div>
-                    </div>
-                </a>
-                <div class="middle">
-                    <div class="title">FAQs – Notepad</div>
-                    <div class="content">
-                        <p><b>Q: where are you based?</b><br>
-                        A: singapore! all prices are in SGD unless otherwise stated.</p>
-
-                        <p><b>Q: do you ship?</b><br>
-                        A: default is local SG delivery / meetup. overseas shipping possible for some cams – DM on insta or tiktok for a quote.</p>
-
-                        <p><b>Q: are the cameras tested?</b><br>
-                        A: yes – each cam is tested for power-on, basic shooting, flash, zoom and playback. any quirks will be listed clearly in the product description.</p>
-
-                        <p><b>Q: do the listings include SD / memory cards &amp; batteries?</b><br>
-                        A: depends on the cam. some come as body-only, some with card + batteries. check each listing – i’ll always spell it out.</p>
-
-                        <p><b>Q: refund / return policy?</b><br>
-                        A: vintage digicams are babes from the 2000s – minor cosmetic wear is normal. no refunds for aesthetic wear, but if a cam arrives DOA (completely not working), contact me within 48 hours with pics / video and we’ll work it out.</p>
-
-                        <p><b>Q: can you recommend a cam for my budget / vibe?</b><br>
-                        A: yes pls!! DM me with your budget, aesthetic (soft girl / cyber y2k / grunge, etc.) and whether you care more about photos, video or both.</p>
-
-                        <p><i>more questions?</i><br>
-                        ping me on <a href="https://instagram.com/hippocampercams" target="_blank">instagram</a> or <a href="https://www.tiktok.com/@hangryhippocamper" target="_blank">tiktok</a> ♡</p>
-                    </div>
+        <!-- CLIPPY + SPEECH BUBBLE -->
+        <div class="clippy-container">
+            <div class="clippy-bubble">
+                <div class="clippy-intro">
+                    It looks like you are considering adopting one of our digicams (impeccable taste by the way).<br><br>
+                    Would you like help?
                 </div>
-                <div class="bottom"></div>
+
+                <p class="clippy-qa">
+                    <span class="question">Q: where are you based?</span>
+                    <span class="answer">A: singapore! all prices are in SGD unless otherwise stated.</span>
+                </p>
+
+                <p class="clippy-qa">
+                    <span class="question">Q: do you ship?</span>
+                    <span class="answer">A: default is local SG delivery / meetup. overseas shipping possible for some cams – DM on insta or tiktok for a quote.</span>
+                </p>
+
+                <p class="clippy-qa">
+                    <span class="question">Q: are the cameras tested?</span>
+                    <span class="answer">A: yes – each cam is tested for power-on, basic shooting, flash, zoom and playback. any quirks will be listed clearly in the product description.</span>
+                </p>
+
+                <p class="clippy-qa">
+                    <span class="question">Q: do the listings include SD / memory cards &amp; batteries?</span>
+                    <span class="answer">A: depends on the cam. some come as body-only, some with card + batteries. check each listing – i’ll always spell it out.</span>
+                </p>
+
+                <p class="clippy-qa">
+                    <span class="question">Q: refund / return policy?</span>
+                    <span class="answer">A: vintage digicams are babes from the 2000s – minor cosmetic wear is normal. no refunds for aesthetic wear, but if a cam arrives DOA (completely not working), contact me within 48 hours with pics / video and we’ll work it out.</span>
+                </p>
+
+                <p class="clippy-qa">
+                    <span class="question">Q: can you recommend a cam for my budget / vibe?</span>
+                    <span class="answer">A: yes pls!! DM me with your budget, aesthetic (soft girl / cyber y2k / grunge, etc.) and whether you care more about photos, video or both.</span>
+                </p>
+
+                <div class="clippy-footnote">
+                    more questions?<br>
+                    ping me on instagram or tiktok ♡
+                </div>
             </div>
+
+            <img src="img/clippy.png" alt="Clippy" class="clippy-img">
         </div>
 
         <!-- START BAR -->
@@ -562,7 +436,7 @@
         </div>
     </div>
 
-    <!-- Just the clock JS – no win98.js, so no ghost windows -->
+    <!-- Just the clock JS – no win98.js -->
     <script>
         function updateClock() {
             var now = new Date();
