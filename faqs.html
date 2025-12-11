@@ -5,11 +5,13 @@
     <title>hippocampercams • FAQs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- optional favicon -->
     <link rel="icon" href="favicon.ico">
+
+    <!-- Win98 base CSS Tumblr used -->
     <link rel="stylesheet" href="https://static.tumblr.com/fpdiq1j/N3Zmkjmqn/theme_generic.css">
 
     <style>
-        /* ---- COPY of your current CSS (shortened to just what we need) ---- */
         body {
             background: #008080;
             margin: 0;
@@ -21,7 +23,21 @@
             text-decoration: none;
         }
 
-        a:hover { text-decoration: underline; }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* LEFT DESKTOP ICONS COLUMN */
+        .icons {
+            margin: 0 0 0 10px;
+            list-style-type: none;
+            padding: 0;
+            width: 100px;
+            float: left;
+            position: fixed;
+            z-index: 2;
+            font-family: "Courier New", Courier, monospace !important;
+        }
 
         .my_computer, .my_documents, .network_neighborhood, .folder,
         .recycle_bin, .start_menu, .application_icons,
@@ -33,32 +49,33 @@
         }
 
         .my_computer {
-            height: 32px; width: 32px;
+            height: 32px;
+            width: 32px;
             background-position: -616px -157px;
         }
+
         .my_documents {
-            height: 30px; width: 32px;
+            height: 30px;
+            width: 32px;
             background-position: -616px -189px;
         }
+
         .network_neighborhood {
-            height: 32px; width: 32px;
+            height: 32px;
+            width: 32px;
             background-position: -616px -219px;
         }
+
         .recycle_bin {
-            height: 32px; width: 30px;
+            height: 32px;
+            width: 30px;
             background-position: -616px -251px;
         }
 
-        /* LEFT SIDEBAR */
-        .icons {
-            margin: 0 0 0 10px;
-            list-style-type: none;
-            padding: 0;
-            width: 100px;
-            float: left;
-            position: fixed;
-            z-index: 2;
-            font-family: "Courier New", Courier, monospace !important;
+        .folder {
+            height: 27px;
+            width: 32px;
+            background-position: -616px -283px;
         }
 
         .icons a {
@@ -77,22 +94,24 @@
             text-align: center;
         }
 
+        /* CUSTOM ICON IMAGES – real 3D icon files */
         .icon-img {
             display: block;
             width: 32px;
             height: 32px;
             margin: 0 auto;
-            image-rendering: pixelated;
+            image-rendering: pixelated;       /* keeps that crunchy Win98 look */
         }
 
-        /* MAIN DESKTOP AREA */
-        #desktop {
+        /* MAIN POSTS DESKTOP AREA */
+        #desktop,
+        .navigation {
             margin: 20px auto;
             z-index: 3;
             position: relative;
-            width: 480px;         /* single column for FAQ page */
+            width: 1000px;     /* two-column layout */
             left: 0;
-            transform: translateX(-60px);
+            transform: translateX(-60px); /* pull posts left toward icons */
         }
 
         .window {
@@ -101,6 +120,14 @@
             float: left;
             margin: 0 20px 20px 0;
             font-family: "Courier New", Courier, monospace;
+        }
+
+        .window .title,
+        .window .content,
+        .window .content p,
+        .window .caption,
+        .window .info {
+            font-family: "Courier New", Courier, monospace !important;
         }
 
         .window .top {
@@ -118,8 +145,21 @@
             line-height: 13px;
         }
 
-        .window .middle {
-            background: url('https://static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png') repeat-y;
+        .window > a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .window .top a:hover {
+            text-decoration: underline;
+        }
+
+        .window .middle,
+        div.notes,
+        div.attribution,
+        div.tags {
+            background: url('https://static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png');
+            background-repeat: repeat-y;
             padding: 4px 26px 4px 10px;
         }
 
@@ -134,7 +174,41 @@
             margin-bottom: 5px;
         }
 
-        /* TOP-RIGHT BOX & START BAR – same as index (short version) */
+        img.full_image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .middle .caption {
+            margin-top: 5px;
+        }
+
+        .tagged {
+            font-size: 0.8em;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+
+        .navigation {
+            overflow: hidden;
+            font-weight: bold;
+            clear: both;
+            float: none;
+            margin-bottom: 40px !important;
+        }
+
+        .navigation .next,
+        .navigation .prev {
+            background-color: #FFFFFF;
+            padding: 6px 8px;
+        }
+
+        .navigation .next {
+            float: right;
+        }
+
+        /* TOP-RIGHT WARNING BOX */
         .top-banner {
             position: fixed;
             top: 150px;
@@ -142,6 +216,7 @@
             z-index: 5;
             pointer-events: auto;
         }
+
         .top-banner-window {
             width: 300px;
             max-width: 90%;
@@ -151,6 +226,7 @@
             font-family: "Helvetica Neue", Arial, sans-serif;
             color: #000000;
         }
+
         .tb-titlebar {
             height: 30px;
             background: linear-gradient(to right, #0a3a8b, #4f80d4);
@@ -159,9 +235,11 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 4px;
+            box-sizing: border-box;
             color: #ffffff;
             font-size: 11px;
         }
+
         .tb-title-text {
             white-space: nowrap;
             overflow: hidden;
@@ -170,6 +248,7 @@
             font-size: 16px;
             font-weight: bold;
         }
+
         .tb-close {
             width: 16px;
             height: 14px;
@@ -182,34 +261,60 @@
             line-height: 12px;
             color: #000000;
             font-size: 10px;
+            cursor: default;
         }
-        .tb-body { display: flex; align-items: center; padding: 16px 16px 10px; }
-        .tb-icon { position: relative; width: 36px; height: 32px; margin-right: 12px; }
+
+        .tb-body {
+            display: flex;
+            align-items: center;
+            padding: 16px 16px 10px;
+            box-sizing: border-box;
+        }
+
+        .tb-icon {
+            position: relative;
+            width: 36px;
+            height: 32px;
+            margin-right: 12px;
+            background: none;
+        }
+
         .tb-icon::before {
             content: "";
             position: absolute;
-            top: 50%; left: 50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -55%);
-            width: 0; height: 0;
+            width: 0;
+            height: 0;
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
             border-bottom: 26px solid #ffff00;
         }
+
         .tb-icon::after {
-            content: "!";
+            content: "?";
             position: absolute;
-            top: 55%; left: 50%;
+            top: 55%;
+            left: 50%;
             transform: translate(-50%, -50%);
             font-size: 18px;
             font-weight: bold;
             color: #000000;
+            line-height: 1;
         }
+
         .tb-text {
             font-family: "Courier New", Courier, monospace;
             font-size: 12px;
             line-height: 1;
+            letter-spacing: 0.005em;
         }
-        .tb-footer { padding: 0 16px 12px; text-align: center; }
+
+        .tb-footer {
+            padding: 0 16px 12px;
+            text-align: center;
+        }
 
         .tb-button {
             font-family: "Courier New", Courier, monospace;
@@ -224,6 +329,14 @@
             border-bottom: 1px solid #404040;
         }
 
+        .tb-button:active {
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        /* START BAR */
         .start_bar {
             position: fixed;
             background-color: rgb(192,192,192);
@@ -232,6 +345,7 @@
             width: 100%;
             z-index: 4;
         }
+
         .start_menu {
             position: fixed;
             z-index: 3;
@@ -239,8 +353,105 @@
             display: none;
         }
 
+        .start_bar .top_border {
+            border-bottom: 1px solid rgb(255,255,255);
+            border-top: 1px solid rgb(223,223,223);
+        }
+
+        .start_bar .start_button {
+            float: left;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-bottom: 2px solid gray;
+            border-right: 2px solid gray;
+            height: 18px;
+            width: 54px;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+
+        .start_bar .start_button .text {
+            float: right;
+            display: inline;
+            margin-right: 4px;
+            line-height: 18px;
+            font-weight: bold;
+        }
+
+        .start_bar .start_button .logo {
+            float: left;
+            margin-top: 2px;
+            margin-left: 2px;
+            width: 16px;
+            height: 14px;
+            background-position: -633px -103px;
+        }
+
+        .start_bar .big_seperator {
+            float: left;
+            border-left: 1px solid rgb(128,128,128);
+            border-right: 1px solid rgb(255,255,255);
+            height: 22px;
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+
+        .start_bar .small_seperator {
+            float: left;
+            border-left: 1px solid rgb(255,255,255);
+            border-top: 1px solid rgb(255,255,255);
+            border-right: 1px solid rgb(128,128,128);
+            border-bottom: 1px solid rgb(128,128,128);
+            background-color: rgb(192,192,192);
+            width: 1px;
+            height: 16px;
+            margin-top: 4px;
+            margin-left: 2px;
+        }
+
+        .start_bar .application_icons {
+            float: left;
+            margin-top: 5px;
+            margin-left: 7px;
+            margin-right: 7px;
+            height: 16px;
+            width: 84px;
+            background-position: -565px -69px;
+        }
+
+        .start_bar .tray {
+            float: right;
+            border-top: 1px solid rgb(128,128,128);
+            border-left: 1px solid rgb(128,128,128);
+            border-bottom: 1px solid rgb(255,255,255);
+            border-right: 1px solid rgb(255,255,255);
+            height: 18px;
+            width: 79px;
+            margin-right: 5px;
+            margin-top: 2px;
+        }
+
+        .start_bar .tray .time {
+            line-height: 18px;
+            float: right;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        .start_bar .tray .calendar {
+            float: left;
+            margin-top: 1px;
+            margin-left: 3px;
+            width: 16px;
+            height: 16px;
+            background-position: -632px -87px;
+        }
+
+        /* BASIC RESPONSIVENESS */
         @media (max-width: 768px) {
-            body { overflow-x: auto; }
+            body {
+                overflow-x: auto;
+            }
         }
     </style>
 </head>
@@ -251,25 +462,25 @@
     <div class="top-banner">
         <div class="top-banner-window">
             <div class="tb-titlebar">
-                <span class="tb-title-text">hippocampercams</span>
+                <span class="tb-title-text">FAQs.txt</span>
                 <span class="tb-close">x</span>
             </div>
             <div class="tb-body">
                 <div class="tb-icon"></div>
                 <div class="tb-text">
-                    °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
+                    frequently asked qns about buying + adopting a y2k digicam from hippocampercams (singapore-based) ｡ﾟ
                 </div>
             </div>
             <div class="tb-footer">
-                <button class="tb-button">COOLBEANS</button>
+                <button class="tb-button">OK</button>
             </div>
         </div>
     </div>
 
     <div class="wrapper">
-        <!-- LEFT ICONS COLUMN (same as index.html, but links adjusted) -->
+        <!-- LEFT ICONS COLUMN -->
         <div class="icons">
-            <a href="index.html" class="home">
+            <a href="https://hippocampercams.github.io" class="home">
                 <div class="my_computer"></div>
                 <div class="icon_label">hippocampercams</div>
             </a>
@@ -284,55 +495,72 @@
                 <div class="icon_label">masterlist</div>
             </a>
 
+            <!-- CUSTOM LINKS (same as index) -->
             <a href="faqs.html" class="listings">
-                <img src="img/icons/FAQs.png" alt="" class="icon-img">
+                <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
                 <div class="icon_label">FAQs</div>
             </a>
 
             <a href="adoptacam.html" class="mustread">
-                <img src="img/icons/adoptacam.png" alt="" class="icon-img">
+                <img src="img/icons/adoptacam.png" alt="adopt a cam" class="icon-img">
                 <div class="icon_label">adopt a cam</div>
             </a>
 
             <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
-                <img src="img/icons/insta.png" alt="" class="icon-img">
+                <img src="img/icons/insta.png" alt="insta" class="icon-img">
                 <div class="icon_label">insta</div>
             </a>
 
             <a href="https://www.tiktok.com/@hangryhippocamper" target="_blank" rel="noopener" class="tiktok">
-                <img src="img/icons/tiktok.png" alt="" class="icon-img">
+                <img src="img/icons/tiktok.png" alt="tiktok" class="icon-img">
                 <div class="icon_label">tiktok</div>
             </a>
 
-            <a href="lemon8.html" target="_blank" rel="noopener" class="lemon8">
-                <img src="img/icons/lemon8.png" alt="" class="icon-img">
+            <a href="lemon8.html" class="lemon8">
+                <img src="img/icons/lemon8.png" alt="lemon8" class="icon-img">
                 <div class="icon_label">lemon8</div>
             </a>
 
             <a href="contact.html" class="contact">
-                <img src="img/icons/contact.png" alt="" class="icon-img">
+                <img src="img/icons/contact.png" alt="contact" class="icon-img">
                 <div class="icon_label">contact</div>
             </a>
         </div>
 
-        <!-- MAIN DESKTOP WINDOWS – FAQ CONTENT -->
+        <!-- MAIN DESKTOP WINDOWS -->
         <div id="desktop" class="container">
-            <div class="window">
+            <!-- FAQs Window -->
+            <div class="window post-text">
                 <a href="#">
                     <div class="top">
-                        <div class="info">FAQs</div>
+                        <div class="info">
+                            FAQs • updated 2024
+                        </div>
                     </div>
                 </a>
                 <div class="middle">
                     <div class="title">FAQs – Notepad</div>
                     <div class="content">
-                        <p>Q: How do I adopt a cam?</p>
-                        <p>A: (Put your answer here)</p>
+                        <p><b>Q: where are you based?</b><br>
+                        A: singapore! all prices are in SGD unless otherwise stated.</p>
 
-                        <p>Q: Do you ship internationally?</p>
-                        <p>A: (Your answer here)</p>
+                        <p><b>Q: do you ship?</b><br>
+                        A: default is local SG delivery / meetup. overseas shipping possible for some cams – DM on insta or tiktok for a quote.</p>
 
-                        <!-- Add as many Q&As as you want -->
+                        <p><b>Q: are the cameras tested?</b><br>
+                        A: yes – each cam is tested for power-on, basic shooting, flash, zoom and playback. any quirks will be listed clearly in the product description.</p>
+
+                        <p><b>Q: do the listings include SD / memory cards &amp; batteries?</b><br>
+                        A: depends on the cam. some come as body-only, some with card + batteries. check each listing – i’ll always spell it out.</p>
+
+                        <p><b>Q: refund / return policy?</b><br>
+                        A: vintage digicams are babes from the 2000s – minor cosmetic wear is normal. no refunds for aesthetic wear, but if a cam arrives DOA (completely not working), contact me within 48 hours with pics / video and we’ll work it out.</p>
+
+                        <p><b>Q: can you recommend a cam for my budget / vibe?</b><br>
+                        A: yes pls!! DM me with your budget, aesthetic (soft girl / cyber y2k / grunge, etc.) and whether you care more about photos, video or both.</p>
+
+                        <p><i>more questions?</i><br>
+                        ping me on <a href="https://instagram.com/hippocampercams" target="_blank">instagram</a> or <a href="https://www.tiktok.com/@hangryhippocamper" target="_blank">tiktok</a> ♡</p>
                     </div>
                 </div>
                 <div class="bottom"></div>
@@ -359,6 +587,7 @@
         </div>
     </div>
 
+    <!-- JS: basic clock + optional Win98 behaviour -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
     <script>
