@@ -104,16 +104,19 @@
         }
 
         /* MAIN DESKTOP AREA – two centered windows */
-        #desktop {
-            margin: 20px auto 40px auto;  /* same top margin as home page */
-            z-index: 3;
-            position: relative;
-            max-width: 1000px;           /* 480 + 480 + 40px gap */
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 40px;                   /* visible teal between windows */
-        }
+        /* MAIN DESKTOP AREA – two centered windows, same offset as main page */
+#desktop {
+    margin: 20px auto 40px auto;  /* same top/bottom as home page */
+    z-index: 3;
+    position: relative;
+    width: 1000px;                /* same as main page */
+    left: 0;
+    transform: translateX(-60px); /* pull everything left toward icons */
+    display: flex;
+    justify-content: center;
+    gap: 40px;                    /* teal gap between the two windows */
+}
+
 
         .window {
             width: 480px;                /* match original Win98 window width */
