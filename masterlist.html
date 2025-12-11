@@ -103,23 +103,27 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA – same as READ ME: two-column float layout */
-        #desktop {
-            margin: 20px auto;
-            z-index: 3;
-            position: relative;
-            width: 1000px;              /* two 480px windows + 20px gap */
-            left: 0;
-            transform: translateX(-60px); /* pull posts left toward icons (same offset) */
-        }
+        /* MAIN DESKTOP AREA – two-column flex layout */
+#desktop {
+    margin: 20px auto;
+    z-index: 3;
+    position: relative;
+    width: 1000px;              /* two 480px windows + 20px gap */
+    left: 0;
+    transform: translateX(-60px); /* pull posts left toward icons (same offset) */
+
+    display: flex;
+    flex-wrap: wrap;            /* allow a second row */
+    column-gap: 20px;           /* 20px between columns */
+    row-gap: 20px;              /* 20px between rows */
+}
 
         .window {
-            width: 480px;                /* match original Win98 window width */
-            max-width: 480px;
-            float: left;                 /* two-column layout */
-            margin: 0 20px 20px 0;       /* 20px gap between windows */
-            font-family: "Courier New", Courier, monospace;
-        }
+    width: 480px;                /* match original Win98 window width */
+    max-width: 480px;
+    font-family: "Courier New", Courier, monospace;
+    /* no float or margins – flex gap handles spacing */
+}
 
         .window .title,
         .window .content,
@@ -229,10 +233,6 @@
             vertical-align: text-bottom;
             margin-right: 4px;
         }
-                /* Nudge ACCESSORIES window up to match the FILM CAMERAS gap */
-.accessories-window {
-    margin-top: -250px;  /* adjust -80 / -100 if you want tiny tweaks */
-}
 
         /* TOP-RIGHT WARNING BOX (same as other pages) */
         .top-banner {
