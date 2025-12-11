@@ -105,17 +105,15 @@
 
         /* MAIN DESKTOP AREA */
         #desktop {
-            margin: 20px auto;
+            margin: 20px 0 0 140px; /* sit to the right of the icons */
             z-index: 3;
             position: relative;
-            width: 1360px;          /* wide enough for: error + 2 notepad windows */
-            left: 0;
-            transform: translateX(-60px); /* pull posts left toward icons */
+            width: 1300px;          /* wide enough for: error + 2 notepad windows */
         }
 
         .window {
-            width: 480px;                /* match original Win98 window width */
-            max-width: 480px;
+            width: 420px;                /* slightly narrower so 3 fit in a row */
+            max-width: 420px;
             float: left;
             margin: 0 20px 20px 0;       /* 20px gap between windows */
             font-family: "Courier New", Courier, monospace;
@@ -183,18 +181,16 @@
             opacity: 0.8;
         }
 
-        /* TOP-RIGHT WARNING BOX – now a normal column window */
+        /* hippocaмpercams warning box – now a normal column (2nd column) */
         .top-banner {
             float: left;               /* sits as second column after icons */
             margin: 0 20px 20px 0;
             position: relative;
-            top: auto;
-            right: auto;
             z-index: 3;
         }
 
         .top-banner-window {
-            width: 340px;              /* wider error window */
+            width: 300px;              /* wider than before but narrower than full window */
             max-width: 100%;
             border: 1px solid #000000;
             background-color: #d4d0c8;
@@ -485,7 +481,7 @@
 
         <!-- MAIN DESKTOP WINDOWS -->
         <div id="desktop" class="container">
-            <!-- COLUMN 2: hippocaмpercams error-style box -->
+            <!-- COLUMN 2: hippocaмpercams warning box -->
             <div class="top-banner">
                 <div class="top-banner-window">
                     <div class="tb-titlebar">
