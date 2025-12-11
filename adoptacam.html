@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hippocampercams • adopt a cam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- optional favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Win98 base CSS Tumblr used -->
+    <link rel="stylesheet" href="https://static.tumblr.com/fpdiq1j/N3Zmkjmqn/theme_generic.css">
+
+    <style>
+        body {
+            background: #008080;
+            margin: 0;
+            font: normal 13px/1.3 "Helvetica Neue", Arial, sans-serif;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* LEFT DESKTOP ICONS COLUMN (same as other pages) */
+        .icons {
+            margin: 0 0 0 10px;
+            list-style-type: none;
+            padding: 0;
+            width: 100px;
+            float: left;
+            position: fixed;
+            z-index: 2;
+            font-family: "Courier New", Courier, monospace !important;
+        }
+
+        .my_computer, .my_documents, .network_neighborhood, .folder,
+        .recycle_bin, .start_menu, .application_icons,
+        .start_bar .start_button .logo, .start_bar .tray .calendar,
+        .start_menu, .window .top, .window .middle, .window .bottom,
+        .description .top, .description .ok_button, .description .bottom {
+            background-image: url('https://static.tumblr.com/fpdiq1j/O6Um4f3al/master_sprite.png');
+            margin: auto;
+        }
+
+        .my_computer {
+            height: 32px;
+            width: 32px;
+            background-position: -616px -157px;
+        }
+
+        .my_documents {
+            height: 30px;
+            width: 32px;
+            background-position: -616px -189px;
+        }
+
+        .network_neighborhood {
+            height: 32px;
+            width: 32px;
+            background-position: -616px -219px;
+        }
+
+        .recycle_bin {
+            height: 32px;
+            width: 30px;
+            background-position: -616px -251px;
+        }
+
+        .folder {
+            height: 27px;
+            width: 32px;
+            background-position: -616px -283px;
+        }
+
+        .icons a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .icon_label {
+            font-family: "Courier New", Courier, monospace !important;
+            font-size: 12px;
+            letter-spacing: 0.005em;
+            padding-top: 6px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .icon-img {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin: 0 auto;
+            image-rendering: pixelated;
+        }
+
+        /* MAIN DESKTOP AREA */
+        #desktop {
+            margin: 20px auto;
+            z-index: 3;
+            position: relative;
+            width: 1000px;
+            left: 0;
+            transform: translateX(-60px);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /* ADOPT A CAM WINDOW = Win98 error style */
+        .adopt-window {
+            width: 480px;
+            max-width: 90%;
+            border: 1px solid #000000;
+            background-color: #d4d0c8;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .adopt-titlebar {
+            height: 30px;
+            background: linear-gradient(to right, #0a3a8b, #4f80d4);
+            border-bottom: 1px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4px;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-size: 11px;
+        }
+
+        .adopt-title-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .adopt-close {
+            width: 16px;
+            height: 14px;
+            background-color: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            text-align: center;
+            line-height: 12px;
+            color: #000000;
+            font-size: 10px;
+        }
+
+        .adopt-body {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px 16px 6px;
+            box-sizing: border-box;
+            gap: 10px;
+        }
+
+        /* Warning icon on the left */
+        .adopt-icon {
+            position: relative;
+            width: 36px;
+            height: 32px;
+            margin-top: 4px;
+        }
+
+        .adopt-icon::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 26px solid #ffff00;
+        }
+
+        .adopt-icon::after {
+            content: "!";
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            line-height: 1;
+        }
+
+        .adopt-fields {
+            flex: 1;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        .form-row {
+            margin-bottom: 8px;
+        }
+
+        .form-row label {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            box-sizing: border-box;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            padding: 2px 4px;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            background-color: #ffffff;
+        }
+
+        .form-textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .checkbox-row {
+            display: flex;
+            gap: 16px;
+            margin-top: 4px;
+            font-size: 12px;
+        }
+
+        .adopt-footer {
+            padding: 0 16px 12px;
+            text-align: right;
+        }
+
+        .tb-button {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 15px;
+            font-weight: bold;
+            min-width: 120px;
+            padding: 2px 10px;
+            background-color: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+        }
+
+        .tb-button:active {
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+
+<body class="win98 two_column">
+
+    <div class="wrapper">
+        <!-- LEFT ICONS COLUMN (same links as other pages) -->
+        <div class="icons">
+            <a href="https://hippocampercams.github.io" class="home">
+                <div class="my_computer"></div>
+                <div class="icon_label">hippocampercams</div>
+            </a>
+
+            <a href="readme.html" class="ask">
+                <div class="my_documents"></div>
+                <div class="icon_label">READ ME</div>
+            </a>
+
+            <a href="masterlist.html" class="submit">
+                <div class="network_neighborhood"></div>
+                <div class="icon_label">masterlist</div>
+            </a>
+
+            <a href="faqs.html" class="listings">
+                <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                <div class="icon_label">FAQs</div>
+            </a>
+
+            <a href="adoptacam.html" class="mustread">
+                <img src="img/icons/adoptacam.png" alt="adopt a cam" class="icon-img">
+                <div class="icon_label">adopt a cam</div>
+            </a>
+
+            <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+                <img src="/img/icons/insta.png" alt="insta" class="icon-img">
+                <div class="icon_label">insta</div>
+            </a>
+
+            <a href="https://www.tiktok.com/@hangryhippocamper" target="_blank" rel="noopener" class="tiktok">
+                <img src="/img/icons/tiktok.png" alt="tiktok" class="icon-img">
+                <div class="icon_label">tiktok</div>
+            </a>
+
+            <a href="lemon8.html" class="lemon8">
+                <img src="/img/icons/lemon8.png" alt="lemon8" class="icon-img">
+                <div class="icon_label">lemon8</div>
+            </a>
+
+            <a href="contact.html" class="contact">
+                <img src="/img/icons/contact.png" alt="contact" class="icon-img">
+                <div class="icon_label">contact</div>
+            </a>
+        </div>
+
+        <!-- MAIN DESKTOP AREA -->
+        <div id="desktop" class="container">
+            <!-- ADOPT A CAM FORM -->
+            <!-- Replace ACTION with your form service endpoint if/when you wire email -->
+            <form id="adoptForm" class="adopt-window" method="post" action="#">
+                <div class="adopt-titlebar">
+                    <span class="adopt-title-text">adopt a cam</span>
+                    <span class="adopt-close">x</span>
+                </div>
+
+                <div class="adopt-body">
+                    <div class="adopt-icon"></div>
+
+                    <div class="adopt-fields">
+                        <div class="form-row">
+                            <label for="name">your name:</label>
+                            <input id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="contact">your contact number:</label>
+                            <input id="contact" name="contact" class="form-input">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">your email:</label>
+                            <input id="email" name="email" type="email" class="form-input" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="baby_link">link to your new baby:</label>
+                            <input id="baby_link" name="baby_link" type="url" class="form-input" placeholder="carousell / listing / post URL">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="handle">your preferred name/nickname/handle:</label>
+                            <input id="handle" name="handle" class="form-input">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="address">your mailing address:</label>
+                            <textarea id="address" name="address" class="form-textarea"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <label>method of collection:</label>
+                            <div class="checkbox-row">
+                                <label>
+                                    <input type="checkbox" name="collection[]" value="mailing">
+                                    mailing
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="collection[]" value="meet_up">
+                                    meet up
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="details">details:</label>
+                            <textarea id="details" name="details"
+                                      class="form-textarea"
+                                      placeholder="requested meet up location, preferred mode of contact, additional comments or requests"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adopt-footer">
+                    <button type="submit" class="tb-button">SUBMIT ORDER</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- START BAR (optional – copy from other pages if you want it here too) -->
+        <!-- you can paste your existing start bar HTML here if you want consistency -->
+    </div>
+
+    <script>
+        // Handle submit: show Win98-style alert and clear the form.
+        document.getElementById('adoptForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // stop actual submit for now
+
+            alert(
+                "PLEASE NOTE YOUR ORDER IS NOT CONFIRMED YET\n" +
+                "please look out for our message to you via your preferred method of contact\n" +
+                "THANK YOU FOR YOUR ORDER ♡"
+            );
+
+            this.reset();
+        });
+    </script>
+</body>
+</html>
