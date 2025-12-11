@@ -103,23 +103,23 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA – same as main page */
-#desktop {
-    margin: 20px auto;
-    z-index: 3;
-    position: relative;
-    width: 1000px;          /* two-column layout, same as main page */
-    left: 0;
-    transform: translateX(-60px); /* pull posts left toward icons */
-}
+        /* MAIN DESKTOP AREA */
+        #desktop {
+            margin: 20px auto;
+            z-index: 3;
+            position: relative;
+            width: 1360px;          /* wide enough for: error + 2 notepad windows */
+            left: 0;
+            transform: translateX(-60px); /* pull posts left toward icons */
+        }
 
         .window {
-    width: 480px;                /* match original Win98 window width */
-    max-width: 480px;
-    float: left;                 /* two-column layout */
-    margin: 0 20px 20px 0;       /* 20px gap between windows */
-    font-family: "Courier New", Courier, monospace;
-}
+            width: 480px;                /* match original Win98 window width */
+            max-width: 480px;
+            float: left;
+            margin: 0 20px 20px 0;       /* 20px gap between windows */
+            font-family: "Courier New", Courier, monospace;
+        }
 
         .window .title,
         .window .content,
@@ -183,18 +183,19 @@
             opacity: 0.8;
         }
 
-        /* TOP-RIGHT WARNING BOX (same as index) */
+        /* TOP-RIGHT WARNING BOX – now a normal column window */
         .top-banner {
-            position: fixed;
-            top: 150px;
-            right: 6px;
-            z-index: 5;
-            pointer-events: auto;
+            float: left;               /* sits as second column after icons */
+            margin: 0 20px 20px 0;
+            position: relative;
+            top: auto;
+            right: auto;
+            z-index: 3;
         }
 
         .top-banner-window {
-            width: 300px;
-            max-width: 90%;
+            width: 340px;              /* wider error window */
+            max-width: 100%;
             border: 1px solid #000000;
             background-color: #d4d0c8;
             box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
@@ -433,25 +434,6 @@
 
 <body class="win98 two_column">
 
-    <!-- TOP-RIGHT DIALOG (unchanged) -->
-    <div class="top-banner">
-        <div class="top-banner-window">
-            <div class="tb-titlebar">
-                <span class="tb-title-text">hippocampercams</span>
-                <span class="tb-close">x</span>
-            </div>
-            <div class="tb-body">
-                <div class="tb-icon"></div>
-                <div class="tb-text">
-                    °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
-                </div>
-            </div>
-            <div class="tb-footer">
-                <button class="tb-button">COOLBEANS</button>
-            </div>
-        </div>
-    </div>
-
     <div class="wrapper">
         <!-- LEFT ICONS COLUMN -->
         <div class="icons">
@@ -503,7 +485,26 @@
 
         <!-- MAIN DESKTOP WINDOWS -->
         <div id="desktop" class="container">
-            <!-- Window 1 -->
+            <!-- COLUMN 2: hippocaмpercams error-style box -->
+            <div class="top-banner">
+                <div class="top-banner-window">
+                    <div class="tb-titlebar">
+                        <span class="tb-title-text">hippocampercams</span>
+                        <span class="tb-close">x</span>
+                    </div>
+                    <div class="tb-body">
+                        <div class="tb-icon"></div>
+                        <div class="tb-text">
+                            °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
+                        </div>
+                    </div>
+                    <div class="tb-footer">
+                        <button class="tb-button">COOLBEANS</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMN 3: READ ME -->
             <div class="window post-text">
                 <a href="#">
                     <div class="top">
@@ -548,7 +549,7 @@
                 <div class="bottom"></div>
             </div>
 
-            <!-- Window 2 -->
+            <!-- COLUMN 4: shop notes -->
             <div class="window post-text">
                 <a href="#">
                     <div class="top">
