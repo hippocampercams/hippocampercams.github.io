@@ -183,17 +183,18 @@
             opacity: 0.8;
         }
 
-        /* WORDART STYLES FOR POST HEADERS */
+                /* WORDART STYLES FOR POST HEADERS */
         .wordart {
             display: inline-block;
             font-family: "Arial Black", Impact, "Helvetica Neue", Arial, sans-serif;
-            font-size: 26px;
+            font-weight: 900;
+            font-size: 30px;
             text-transform: uppercase;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.04em;
             line-height: 1;
         }
 
-        /* Rainbow gradient WordArt (DIGICAMS) */
+        /* Rainbow vertical-stripe WordArt (DIGICAMS) */
         .wordart-rainbow {
             background: linear-gradient(
                 90deg,
@@ -201,6 +202,7 @@
                 #ff7f00,
                 #ffff00,
                 #00ff00,
+                #00b0ff,
                 #0000ff,
                 #4b0082,
                 #8b00ff
@@ -208,19 +210,31 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            /* white outline + chunky black shadow = WordArt feel */
             text-shadow:
-                2px 2px 0 #000000,
-                3px 3px 0 rgba(0,0,0,0.5);
+                -1px -1px 0 #ffffff,
+                 1px -1px 0 #ffffff,
+                -1px  1px 0 #ffffff,
+                 1px  1px 0 #ffffff,
+                 3px  3px 0 rgba(0,0,0,0.8),
+                 5px  5px 0 rgba(0,0,0,0.6);
+            transform: skewX(-12deg);
         }
 
         /* Wavy blue 3D WordArt (SHOP DIGICAMS BY AESTHETIC) */
         .wordart-blue {
             color: #00b0ff;
             text-shadow:
-                2px 2px 0 #0040aa,
-                4px 4px 0 #00164d;
-            transform: skewX(-8deg);
+                -1px -1px 0 #ffffff,
+                 1px -1px 0 #ffffff,
+                -1px  1px 0 #ffffff,
+                 1px  1px 0 #ffffff,
+                 3px  3px 0 #0040aa,
+                 5px  5px 0 #00296d,
+                 7px  7px 0 #00164d;
+            transform: skewX(-10deg) rotate(-3deg);
             position: relative;
+            white-space: nowrap;
         }
 
         .wordart-blue span {
@@ -228,7 +242,7 @@
         }
 
         .wordart-blue span:nth-child(odd) {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
 
         .wordart-blue span:nth-child(even) {
@@ -237,24 +251,34 @@
 
         /* Orange 3D block WordArt (FILM CAMERAS) */
         .wordart-orange {
-            background: linear-gradient(to bottom, #ffe76a, #ff9800);
+            background: linear-gradient(to bottom, #ffe97a, #ff9800);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             text-shadow:
-                2px 2px 0 #b85a00,
-                4px 4px 0 #7a3a00;
+                -1px -1px 0 #ffffff,
+                 1px -1px 0 #ffffff,
+                -1px  1px 0 #ffffff,
+                 1px  1px 0 #ffffff,
+                 3px  3px 0 #b85a00,
+                 5px  5px 0 #7a3a00;
+            transform: skewX(-10deg);
         }
 
         /* Purple gradient WordArt (ACCESSORIES) */
         .wordart-purple {
-            background: linear-gradient(to bottom, #ff7bff, #a000ff);
+            background: linear-gradient(to bottom, #ff9bff, #c050ff, #7b00c8);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             text-shadow:
-                2px 2px 0 #5c0096,
-                4px 4px 0 #36005c;
+                -1px -1px 0 #ffffff,
+                 1px -1px 0 #ffffff,
+                -1px  1px 0 #ffffff,
+                 1px  1px 0 #ffffff,
+                 3px  3px 0 #5a0099,
+                 5px  5px 0 #36005c;
+            transform: skewX(-12deg);
         }
 
         /* AESTHETIC GRID (Post 2) */
