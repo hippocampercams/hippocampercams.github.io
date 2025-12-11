@@ -114,16 +114,16 @@
     image-rendering: pixelated;       /* keeps that crunchy Win98 look */
 }
 
-        /* MAIN POSTS DESKTOP AREA */
-        #desktop,
-        .navigation {
-            margin: 20px auto;
-            z-index: 3;
-            position: relative;
-            width: 1000px;     /* two-column layout */
-            left: 0;
-            transform: translateX(-60px); /* pull posts left toward icons */
-        }
+        /* MAIN DESKTOP AREA – two windows, same offset as main page but wide enough for both */
+    #desktop {
+    margin: 20px auto 40px auto;
+    z-index: 3;
+    position: relative;
+    width: 1040px;               /* wider so two 480px windows + gap fit on one row */
+    left: 0;
+    transform: translateX(-60px); /* same left shift as main page */
+}
+
 
         .window {
     width: 480px;
