@@ -105,7 +105,8 @@
 
         /* MAIN DESKTOP AREA – two centered windows */
         /* MAIN DESKTOP AREA – two centered windows, same offset as main page */
-#desktop {
+/* MAIN DESKTOP AREA – two centered windows, same offset as main page */
+    #desktop {
     margin: 20px auto 40px auto;  /* same top/bottom as home page */
     z-index: 3;
     position: relative;
@@ -113,10 +114,9 @@
     left: 0;
     transform: translateX(-60px); /* pull everything left toward icons */
     display: flex;
-    justify-content: center;
-    gap: 40px;                    /* teal gap between the two windows */
+    justify-content: flex-start;  /* align windows to the left, like floats */
+    column-gap: 20px;             /* same spacing as main page (.window margin-right: 20px) */
 }
-
 
         .window {
             width: 480px;                /* match original Win98 window width */
