@@ -103,22 +103,21 @@
             image-rendering: pixelated;       /* keeps that crunchy Win98 look */
         }
 
-        /* MAIN POSTS DESKTOP AREA */
+        /* MAIN POSTS DESKTOP AREA – centered + wider */
         #desktop,
         .navigation {
-            margin: 20px auto;
+            margin: 60px auto 40px auto;
             z-index: 3;
             position: relative;
-            width: 1000px;     /* two-column layout */
-            left: 0;
-            transform: translateX(-60px); /* pull posts left toward icons */
+            max-width: 900px;          /* broader area */
+            width: 100%;
         }
 
         .window {
-            width: 480px;
-            max-width: 480px;
-            float: left;
-            margin: 0 20px 20px 0;
+            width: 680px;              /* broader window */
+            max-width: 100%;
+            float: none;               /* no float – allows centering */
+            margin: 0 auto 20px auto;  /* center window */
             font-family: "Courier New", Courier, monospace;
         }
 
@@ -534,7 +533,7 @@
                 <a href="#">
                     <div class="top">
                         <div class="info">
-                            FAQs • updated 2024
+                            FAQs • updated 2025
                         </div>
                     </div>
                 </a>
