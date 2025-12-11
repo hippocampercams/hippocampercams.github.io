@@ -100,24 +100,25 @@
             width: 32px;
             height: 32px;
             margin: 0 auto;
-            image-rendering: pixelated;       /* keeps that crunchy Win98 look */
+            image-rendering: pixelated;
         }
 
-        /* MAIN POSTS DESKTOP AREA – centered + wider */
-        #desktop,
-        .navigation {
+        /* MAIN DESKTOP AREA – centered single window */
+        #desktop {
             margin: 60px auto 40px auto;
             z-index: 3;
             position: relative;
-            max-width: 900px;          /* broader area */
+            max-width: 900px;
             width: 100%;
+            display: flex;
+            justify-content: center;  /* center the window */
         }
 
         .window {
-            width: 680px;              /* broader window */
+            width: 640px;             /* broader but still neat */
             max-width: 100%;
-            float: none;               /* no float – allows centering */
-            margin: 0 auto 20px auto;  /* center window */
+            float: none;
+            margin: 0 auto 20px auto;
             font-family: "Courier New", Courier, monospace;
         }
 
@@ -173,12 +174,6 @@
             margin-bottom: 5px;
         }
 
-        img.full_image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
         .middle .caption {
             margin-top: 5px;
         }
@@ -189,25 +184,7 @@
             opacity: 0.8;
         }
 
-        .navigation {
-            overflow: hidden;
-            font-weight: bold;
-            clear: both;
-            float: none;
-            margin-bottom: 40px !important;
-        }
-
-        .navigation .next,
-        .navigation .prev {
-            background-color: #FFFFFF;
-            padding: 6px 8px;
-        }
-
-        .navigation .next {
-            float: right;
-        }
-
-        /* TOP-RIGHT WARNING BOX (same as index.html) */
+        /* TOP-RIGHT WARNING BOX (same as index) */
         .top-banner {
             position: fixed;
             top: 150px;
@@ -457,7 +434,7 @@
 
 <body class="win98 two_column">
 
-    <!-- TOP-RIGHT DIALOG (unchanged from index.html) -->
+    <!-- TOP-RIGHT DIALOG (unchanged) -->
     <div class="top-banner">
         <div class="top-banner-window">
             <div class="tb-titlebar">
@@ -494,7 +471,6 @@
                 <div class="icon_label">masterlist</div>
             </a>
 
-            <!-- CUSTOM LINKS -->
             <a href="faqs.html" class="listings">
                 <img src="img/icons/FAQs.png" alt="FAQs icon" class="icon-img">
                 <div class="icon_label">FAQs</div>
@@ -528,7 +504,6 @@
 
         <!-- MAIN DESKTOP WINDOWS -->
         <div id="desktop" class="container">
-            <!-- FAQs Window -->
             <div class="window post-text">
                 <a href="#">
                     <div class="top">
@@ -586,9 +561,7 @@
         </div>
     </div>
 
-    <!-- JS: basic clock + optional Win98 behaviour -->
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
+    <!-- Just the clock JS – no win98.js, so no ghost windows -->
     <script>
         function updateClock() {
             var now = new Date();
