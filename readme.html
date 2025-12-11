@@ -105,7 +105,7 @@
 
         /* MAIN DESKTOP AREA */
         #desktop {
-            margin: 20px 0 0 140px; /* sit to the right of the icons */
+            margin: 20px 0 0 460px;  /* CHANGED: push notepad windows right so they clear the fixed warning box */
             z-index: 3;
             position: relative;
             width: 1300px;          /* wide enough for: error + 2 notepad windows */
@@ -181,12 +181,15 @@
             opacity: 0.8;
         }
 
-        /* hippocaмpercams warning box – now a normal column (2nd column) */
+        /* hippocaмpercams warning box – now fixed & vertically centred */
         .top-banner {
-            float: left;               /* sits as second column after icons */
-            margin: 0 20px 20px 0;
-            position: relative;
-            z-index: 3;
+            position: fixed;             /* CHANGED: keep visible on scroll */
+            left: 140px;                 /* same horizontal column as before (right of icons) */
+            top: 50%;                    /* center vertically in viewport */
+            transform: translateY(-50%);
+            z-index: 5;
+            margin: 0;                   /* float not needed anymore */
+            float: none;
         }
 
         .top-banner-window {
@@ -481,7 +484,7 @@
 
         <!-- MAIN DESKTOP WINDOWS -->
         <div id="desktop" class="container">
-            <!-- COLUMN 2: hippocaмpercams warning box -->
+            <!-- COLUMN 2: hippocampercams warning box -->
             <div class="top-banner">
                 <div class="top-banner-window">
                     <div class="tb-titlebar">
@@ -512,6 +515,7 @@
                 <div class="middle">
                     <div class="title">READ ME – Notepad</div>
                     <div class="content">
+                        <!-- content unchanged -->
                         <p><b>hi! welcome to hippocampercams ♡</b><br>
                         this is a tiny hobby shop run by one human being. everything here is curated, cleaned and tested with lots of love, but there are a few things you should know before you adopt a cam.</p>
 
@@ -557,6 +561,7 @@
                 <div class="middle">
                     <div class="title">shop notes – Notepad</div>
                     <div class="content">
+                        <!-- content unchanged -->
                         <p><b>ordering.</b><br>
                         DMs are first-come-first-served. i’ll hold a cam for a short agreed window once we’ve confirmed details – after that it may go back up for adoption.</p>
 
