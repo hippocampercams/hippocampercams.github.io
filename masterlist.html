@@ -184,78 +184,13 @@
             opacity: 0.8;
         }
 
-        /* WORDART STYLES FOR POST HEADERS */
-        .wordart {
-            display: inline-block;
-            font-family: "Arial Black", Impact, "Helvetica Neue", Arial, sans-serif;
-            font-size: 26px;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            line-height: 1;
-        }
-
-        /* Rainbow gradient WordArt (DIGICAMS) */
-        .wordart-rainbow {
-            background: linear-gradient(
-                90deg,
-                #ff0000,
-                #ff7f00,
-                #ffff00,
-                #00ff00,
-                #0000ff,
-                #4b0082,
-                #8b00ff
-            );
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow:
-                2px 2px 0 #000000,
-                3px 3px 0 rgba(0,0,0,0.5);
-        }
-
-        /* Wavy blue 3D WordArt (SHOP DIGICAMS BY AESTHETIC) */
-        .wordart-blue {
-            color: #00b0ff;
-            text-shadow:
-                2px 2px 0 #0040aa,
-                4px 4px 0 #00164d;
-            transform: skewX(-8deg);
-            position: relative;
-        }
-
-        .wordart-blue span {
-            display: inline-block;
-        }
-
-        .wordart-blue span:nth-child(odd) {
-            transform: translateY(-2px);
-        }
-
-        .wordart-blue span:nth-child(even) {
-            transform: translateY(2px);
-        }
-
-        /* Orange 3D block WordArt (FILM CAMERAS) */
-        .wordart-orange {
-            background: linear-gradient(to bottom, #ffe76a, #ff9800);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow:
-                2px 2px 0 #b85a00,
-                4px 4px 0 #7a3a00;
-        }
-
-        /* Purple gradient WordArt (ACCESSORIES) */
-        .wordart-purple {
-            background: linear-gradient(to bottom, #ff7bff, #a000ff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow:
-                2px 2px 0 #5c0096,
-                4px 4px 0 #36005c;
+        /* IMAGE WORDART – HEADER IMAGES */
+        .title-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 2px auto;
+            image-rendering: pixelated; /* keep that crunchy vibe if you export low-res */
         }
 
         /* AESTHETIC GRID (Post 2) */
@@ -626,7 +561,9 @@
                 </a>
                 <div class="middle">
                     <div class="title">
-                        <span class="wordart wordart-rainbow">DIGICAMS</span>
+                        <img src="img/headers/digicams-wordart.png"
+                             alt="DIGICAMS"
+                             class="title-img">
                     </div>
                     <div class="content">
                         <p><a href="digicams-fujifilm.html">❤︎ FUJIFILM</a><br></p>
@@ -652,15 +589,9 @@
                 </a>
                 <div class="middle">
                     <div class="title">
-                        <span class="wordart wordart-blue">
-                            <span>S</span><span>H</span><span>O</span><span>P</span>
-                            <span>&nbsp;</span>
-                            <span>D</span><span>I</span><span>G</span><span>I</span><span>C</span><span>A</span><span>M</span><span>S</span>
-                            <span>&nbsp;</span>
-                            <span>B</span><span>Y</span>
-                            <br>
-                            <span>A</span><span>E</span><span>S</span><span>T</span><span>H</span><span>E</span><span>T</span><span>I</span><span>C</span>
-                        </span>
+                        <img src="img/headers/shop-digicams-aesthetic-wordart.png"
+                             alt="SHOP DIGICAMS BY AESTHETIC"
+                             class="title-img">
                     </div>
                     <div class="content">
                         <div class="aesthetic-grid">
@@ -711,7 +642,9 @@
                 </a>
                 <div class="middle">
                     <div class="title">
-                        <span class="wordart wordart-orange">FILM CAMERAS</span>
+                        <img src="img/headers/film-cameras-wordart.png"
+                             alt="FILM CAMERAS"
+                             class="title-img">
                     </div>
                     <div class="content">
                         <p><a href="film-lomography.html">❤︎ LOMOGRAPHY CAMERAS</a><br></p>
@@ -732,7 +665,9 @@
                 </a>
                 <div class="middle">
                     <div class="title">
-                        <span class="wordart wordart-purple">ACCESSORIES</span>
+                        <img src="img/headers/accessories-wordart.png"
+                             alt="ACCESSORIES"
+                             class="title-img">
                     </div>
                     <div class="content">
                         <p><a href="accessories-chargers.html">
