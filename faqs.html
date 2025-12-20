@@ -127,19 +127,31 @@
             line-height: 1.3;
             box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
         }
-
-        /* diagonal tail pointing toward Clippy */
+/* outer border for the speech-bubble tail */
+.clippy-bubble::before {
+    content: "";
+    position: absolute;
+    right: -19px;        /* how far it sticks out from the bubble */
+    bottom: 34px;        /* vertical position – tweak a bit if needed */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    /* big triangle (border colour = outline) pointing right */
+    border-width: 16px 0 0 18px;
+    border-color: transparent transparent transparent #c0b67a;
+}
+        /* inner fill of the tail, slightly smaller so the border shows */
 .clippy-bubble::after {
     content: "";
     position: absolute;
-    right: -10px;          /* sticks out from the right edge */
-    bottom: 32px;          /* vertical position – tweak if needed */
-    width: 18px;
-    height: 18px;
-    background: #fffacd;   /* same yellow as the bubble */
-    border-right: 1px solid #c0b67a;
-    border-bottom: 1px solid #c0b67a;
-    transform: rotate(45deg);  /* makes it a diamond = diagonal pointer */
+    right: -17px;        /* a bit inside the border triangle */
+    bottom: 35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    /* smaller triangle, same direction */
+    border-width: 14px 0 0 16px;
+    border-color: transparent transparent transparent #fffacd;
 }
 
         .clippy-character {
