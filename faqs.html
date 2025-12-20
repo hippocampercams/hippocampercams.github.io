@@ -106,13 +106,15 @@
         /* CLIPPY + SPEECH BUBBLE */
 
         .clippy-wrapper {
-            position: fixed;              /* always visible when scrolling */
-            left: 140px;                  /* to the right of the desktop icons */
-            bottom: 40px;                 /* a bit above the Start bar */
-            display: flex;
-            align-items: flex-end;
-            z-index: 5;
-        }
+    position: fixed;
+    /* move the whole thing to the right side of the screen */
+    right: 260px;        /* tweak this if you want it closer/further from the edge */
+    bottom: 90px;        /* high enough to clear the Start bar */
+
+    display: flex;
+    align-items: flex-end;
+    z-index: 5;
+}
 
         /* yellow speech bubble */
         .clippy-bubble {
@@ -130,14 +132,16 @@
 
         /* tail pointing down towards Clippy */
         .clippy-bubble::after {
-            content: "";
-            position: absolute;
-            bottom: -18px;
-            left: 70%;                    /* move left/right to tweak tail position */
-            border-width: 18px 14px 0 14px;
-            border-style: solid;
-            border-color: #fffacd transparent transparent transparent;
-        }
+    content: "";
+    position: absolute;
+    bottom: -14px;   /* slightly closer so it doesn’t poke the taskbar */
+    right: 55px;     /* adjust if you want the tail closer to Clippy */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 12px 0 12px;
+    border-color: #fffacd transparent transparent transparent;
+}
 
         .clippy-character {
             position: relative;
