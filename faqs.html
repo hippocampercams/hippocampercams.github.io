@@ -128,17 +128,18 @@
             box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
         }
 
-        /* tail pointing down towards Clippy */
+        /* diagonal tail pointing toward Clippy */
 .clippy-bubble::after {
     content: "";
     position: absolute;
-    bottom: -12px;      /* drop it slightly below the bubble */
-    right: -30px;       /* move it out towards Clippy on the right */
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 18px 12px 0 12px;  /* downward-pointing triangle */
-    border-color: #fffacd transparent transparent transparent;
+    right: -10px;          /* sticks out from the right edge */
+    bottom: 32px;          /* vertical position – tweak if needed */
+    width: 18px;
+    height: 18px;
+    background: #fffacd;   /* same yellow as the bubble */
+    border-right: 1px solid #c0b67a;
+    border-bottom: 1px solid #c0b67a;
+    transform: rotate(45deg);  /* makes it a diamond = diagonal pointer */
 }
 
         .clippy-character {
