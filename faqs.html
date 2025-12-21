@@ -104,112 +104,6 @@
             image-rendering: pixelated;
         }
 
-        /* WIN98 ALERT BOX – EXACT HEADER WINDOW */
-
-.top-banner {
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    z-index: 6;
-    font-family: "Courier New", monospace;
-}
-
-.top-banner-window {
-    width: 360px;
-    background-color: #c0c0c0;
-    border: 2px solid #000000;
-    box-shadow: 2px 2px 0 #000000;
-}
-
-/* blue title bar */
-.tb-titlebar {
-    background: #0054aa;
-    color: #ffffff;
-    padding: 4px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 13px;
-    border-bottom: 1px solid #000000;
-}
-
-.tb-title-text {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* little grey X button */
-.tb-close {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    line-height: 16px;
-    text-align: center;
-    background-color: #c0c0c0;
-    color: #000000;
-    border: 1px solid #000000;
-    font-size: 12px;
-    cursor: default;
-}
-
-/* body with icon + text stacked vertically */
-.tb-body {
-    padding: 18px 24px 12px;
-    background-color: #c0c0c0;
-    text-align: center;
-    font-size: 13px;
-}
-
-/* yellow warning triangle */
-.tb-icon {
-    margin: 0 auto 12px;
-    width: 0;
-    height: 0;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-bottom: 26px solid #ffeb3b; /* yellow */
-    position: relative;
-}
-
-.tb-icon::after {
-    content: "!";
-    position: absolute;
-    top: 3px;
-    left: -3px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    color: #000000;
-}
-
-.tb-text {
-    line-height: 1.3;
-    margin-bottom: 18px;
-}
-
-/* footer with centred OK button */
-.tb-footer {
-    padding: 0 0 18px;
-    background-color: #c0c0c0;
-    text-align: center;
-    border-top: 1px solid #808080;
-}
-
-.tb-button {
-    min-width: 80px;
-    padding: 4px 22px;
-    font-size: 13px;
-    text-transform: lowercase;
-    font-family: "Courier New", monospace;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #808080;
-    border-bottom: 2px solid #808080;
-    background-color: #c0c0c0;
-}
         /* CLIPPY + SPEECH BUBBLE */
 
         .clippy-wrapper {
@@ -229,7 +123,7 @@
             background: #fffacd;   /* pale yellow like OG Office helper */
             border: 1px solid #c0b67a;
             padding: 40px 38px;    /* more padding top & bottom */
-            min-height: 580px;     /* taller bubble box */
+            min-height: 580px;     /* forces a taller bubble box */
             font-family: "Courier New", Courier, monospace;
             font-size: 12px;
             line-height: 1.3;
@@ -241,7 +135,7 @@
             content: "";
             position: absolute;
             right: -19px;
-            bottom: 60px;          /* mid-height on taller bubble */
+            bottom: 60px;          /* move tail up to sit mid-height on taller bubble */
             width: 0;
             height: 0;
             border-style: solid;
@@ -422,26 +316,6 @@
 <body class="win98 two_column">
 
     <div class="wrapper">
-
-        <!-- TOP-RIGHT DIALOG -->
-        <div class="top-banner">
-            <div class="top-banner-window">
-                <div class="tb-titlebar">
-                    <span class="tb-title-text">hippocampercams</span>
-                    <span class="tb-close">x</span>
-                </div>
-                <div class="tb-body">
-                    <div class="tb-icon"></div>
-                    <div class="tb-text">
-                        °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
-                    </div>
-                </div>
-                <div class="tb-footer">
-                    <button class="tb-button">ok</button>
-                </div>
-            </div>
-        </div>
-
         <!-- LEFT ICONS COLUMN -->
         <div class="icons">
             <a href="https://hippocampercams.github.io" class="home">
