@@ -115,42 +115,43 @@
     z-index: 5;
 }
 
-        /* yellow speech bubble */
+        /* yellow speech bubble – wider + TALLER */
 .clippy-bubble {
     position: relative;
-    width: 660px;          /* was 460px – wider */
+    width: 660px;          /* already wider */
     max-width: 100%;
     background: #fffacd;   /* pale yellow like OG Office helper */
     border: 1px solid #c0b67a;
-    padding: 30px 32px;    /* was 16px 18px – taller with more padding */
+    padding: 40px 38px;    /* more padding top & bottom */
+    min-height: 420px;     /* <<< forces a taller bubble box */
     font-family: "Courier New", Courier, monospace;
     font-size: 12px;
     line-height: 1.3;
     box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
 }
+
 /* outer border for the speech-bubble tail */
 .clippy-bubble::before {
     content: "";
     position: absolute;
-    right: -19px;        /* how far it sticks out from the bubble */
-    bottom: 34px;        /* vertical position – tweak a bit if needed */
+    right: -19px;
+    bottom: 60px;          /* move tail up to sit mid-height on taller bubble */
     width: 0;
     height: 0;
     border-style: solid;
-    /* big triangle (border colour = outline) pointing right */
     border-width: 16px 0 0 18px;
     border-color: transparent transparent transparent #c0b67a;
 }
-        /* inner fill of the tail, slightly smaller so the border shows */
+
+/* inner fill of the tail */
 .clippy-bubble::after {
     content: "";
     position: absolute;
-    right: -17px;        /* a bit inside the border triangle */
-    bottom: 35px;
+    right: -17px;
+    bottom: 61px;
     width: 0;
     height: 0;
     border-style: solid;
-    /* smaller triangle, same direction */
     border-width: 14px 0 0 16px;
     border-color: transparent transparent transparent #fffacd;
 }
