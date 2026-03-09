@@ -111,7 +111,7 @@
             position: relative;
 
             /* 2 columns of the original 480px window width */
-            width: 1040px;                /* enough for 2x480 + 20px gap + some padding */
+            width: 1040px; /* 2 * 480 + 20px gap + a bit of padding */
             left: 0;
             transform: translateX(-60px);
 
@@ -122,7 +122,7 @@
         }
 
         .window {
-            width: 480px;                  /* keep original sprite width */
+            width: 480px;
             max-width: 480px;
             margin: 0;
             font-family: "Courier New", Courier, monospace;
@@ -665,7 +665,7 @@
             <div class="polaroid-wrap">
                 <!-- this src is filled in by JS -->
                 <img src="" alt="enlarged photo" class="polaroid-photo">
-                <!-- change path if you save the frame elsewhere -->
+                <!-- put your actual PNG here -->
                 <img src="img/polaroid-frame.png" alt="" class="polaroid-frame">
             </div>
         </div>
@@ -690,15 +690,12 @@
         </div>
     </div> <!-- end .wrapper -->
 
-    <!-- JS: basic clock + lightbox -->
+    <!-- JS: jQuery + win98 + clock + lightbox -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
+
+    <script>
+    (function () {
         /* CLOCK */
         function updateClock() {
             var now = new Date();
@@ -714,20 +711,21 @@
         setInterval(updateClock, 60000);
 
         /* LIGHTBOX WITH POLAROID FRAME */
-        var lightbox   = document.getElementById('lightbox');
-        var photo      = document.querySelector('#lightbox .polaroid-photo');
-        var frameWrap  = document.querySelector('#lightbox .polaroid-wrap');
-        var imgs       = document.getElementsByClassName('full_image');
 
-        // add click handler to every post image
-        for (var i = 0; i < imgs.length; i++) {
-            imgs[i].addEventListener('click', function (e) {
-                e.preventDefault();   // stop <a href="#"> from taking over
-                e.stopPropagation();
-                photo.src = this.src;
+        var lightbox  = document.getElementById('lightbox');
+        var photo     = lightbox.querySelector('.polaroid-photo');
+        var frameWrap = lightbox.querySelector('.polaroid-wrap');
+
+        // Capture-phase event so other scripts can't swallow it
+        document.addEventListener('click', function (e) {
+            var target = e.target;
+
+            if (target.classList && target.classList.contains('full_image')) {
+                e.preventDefault();
+                photo.src = target.src;
                 lightbox.style.display = 'flex';  // show overlay + centre polaroid
-            });
-        }
+            }
+        }, true);
 
         // clicking the dark overlay closes the lightbox
         lightbox.addEventListener('click', function () {
@@ -739,7 +737,7 @@
         frameWrap.addEventListener('click', function (e) {
             e.stopPropagation();
         });
-    });
-</script>
+    })();
+    </script>
 </body>
 </html>
