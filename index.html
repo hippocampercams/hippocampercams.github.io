@@ -109,8 +109,6 @@
             margin: 20px auto 40px auto;
             z-index: 3;
             position: relative;
-
-            /* 2 columns of the original 480px window width */
             width: 1040px; /* 2 * 480 + 20px gap + a bit of padding */
             left: 0;
             transform: translateX(-60px);
@@ -614,7 +612,9 @@
                     <div class="title">FUJIFILM FINEPIX A500 – Notepad</div>
                     <div class="content">
                         <img src="https://64.media.tumblr.com/a2678466141ef3ccb62d3ecbde202a0e/95cbb7785805f725-72/s1280x1920/2d0d385ff60bef1e6d7bf91863cfbfe8e7f70ec1.jpg"
-                             class="full_image" alt="FUJIFILM FINEPIX A500">
+                             class="full_image"
+                             alt="FUJIFILM FINEPIX A500"
+                             onclick="openHpcLightbox(this)">
                         <div class="caption">Example caption for your listing / inspo board / etc.</div>
                     </div>
                 </div>
@@ -652,7 +652,9 @@
                     <div class="title">Post – Notepad</div>
                     <div class="content">
                         <img src="https://via.placeholder.com/480x320?text=Photo+1"
-                             class="full_image" alt="photo 1">
+                             class="full_image"
+                             alt="photo 1"
+                             onclick="openHpcLightbox(this)">
                         <div class="caption">Example caption for your listing / inspo board / etc.</div>
                     </div>
                 </div>
@@ -661,8 +663,8 @@
         </div> <!-- end of #desktop -->
 
         <!-- LIGHTBOX OVERLAY WITH POLAROID -->
-        <div id="hpc-lightbox">
-            <div class="polaroid-wrap">
+        <div id="hpc-lightbox" onclick="closeHpcLightbox()">
+            <div class="polaroid-wrap" onclick="event.stopPropagation()">
                 <!-- this src is filled in by JS -->
                 <img src="" alt="enlarged photo" class="polaroid-photo">
                 <!-- put your actual PNG here -->
@@ -690,11 +692,11 @@
         </div>
     </div> <!-- end .wrapper -->
 
+    <!-- JS: jQuery + win98 + clock + lightbox -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
+    <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
+    <script>
     /* CLOCK */
     function updateClock() {
         var now = new Date();
@@ -704,42 +706,36 @@ document.addEventListener('DOMContentLoaded', function () {
         h = h % 12;
         if (h === 0) h = 12;
         if (m < 10) m = "0" + m;
-        document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
+        var el = document.getElementById("showClock");
+        if (el) {
+            el.textContent = h + ":" + m + " " + ampm;
+        }
     }
     updateClock();
     setInterval(updateClock, 60000);
 
-    /* LIGHTBOX WITH POLAROID FRAME */
-    var lightbox  = document.getElementById('hpc-lightbox');
-    if (!lightbox) return;  // safety
+    /* LIGHTBOX FUNCTIONS – SIMPLE + GLOBAL */
+    function openHpcLightbox(imgEl) {
+        var lightbox = document.getElementById('hpc-lightbox');
+        if (!lightbox) return;
 
-    var photo     = lightbox.querySelector('.polaroid-photo');
-    var frameWrap = lightbox.querySelector('.polaroid-wrap');
-    var imgs      = document.querySelectorAll('img.full_image');
+        var photo = lightbox.querySelector('.polaroid-photo');
+        if (!photo) return;
 
-    // add click handler to every post image
-    imgs.forEach(function (img) {
-        img.addEventListener('click', function (e) {
-            e.preventDefault();
-            if (!photo) return;
-            photo.src = this.src;
-            lightbox.style.display = 'flex';
-        });
-    });
-
-    // clicking the dark overlay closes the lightbox
-    lightbox.addEventListener('click', function () {
-        lightbox.style.display = 'none';
-        if (photo) photo.src = '';
-    });
-
-    // but clicking *on* the polaroid itself should NOT close it
-    if (frameWrap) {
-        frameWrap.addEventListener('click', function (e) {
-            e.stopPropagation();
-        });
+        photo.src = imgEl.src;
+        lightbox.style.display = 'flex';
     }
-});
-</script>
+
+    function closeHpcLightbox() {
+        var lightbox = document.getElementById('hpc-lightbox');
+        if (!lightbox) return;
+
+        var photo = lightbox.querySelector('.polaroid-photo');
+        lightbox.style.display = 'none';
+        if (photo) {
+            photo.src = '';
+        }
+    }
+    </script>
 </body>
 </html>
