@@ -112,6 +112,7 @@
             width: 1040px; /* 2 * 480 + 20px gap + a bit of padding */
             left: 0;
             transform: translateX(-60px);
+
             display: grid;
             grid-template-columns: repeat(2, 480px);
             column-gap: 20px;
@@ -457,63 +458,49 @@
             background-position: -632px -87px;
         }
 
-        /* ================================
-           CLICK-TO-ENLARGE POLAROID LIGHTBOX
-           ================================ */
-
+        /* CLICK-TO-ENLARGE LIGHTBOX WITH POLAROID FRAME */
         #hpc-lightbox {
             display: none;
             position: fixed;
-            inset: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(0, 0, 0, 0.7);
             z-index: 9999;
             justify-content: center;
             align-items: center;
         }
 
-        /* The PNG from pngall is 400x467.
-           We use that aspect ratio and place the photo
-           exactly inside the transparent inner square. */
+        /* The wrapper scales the frame image; all percentages below are
+           calculated from the actual PNG size (400x467) so the photo
+           sits inside the “window”. */
         #hpc-lightbox .polaroid-wrap {
             position: relative;
-            width: 400px;
-            height: 467px;
+            width: min(90vw, 400px);
+            /* height is driven by the frame image’s aspect ratio */
         }
 
-        /* photo sits inside the "hole" of the frame */
+        #hpc-lightbox .polaroid-frame {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
         #hpc-lightbox .polaroid-photo {
             position: absolute;
-            /* these percentages are computed from the PNG:
-               inner hole approx x:49–353, y:44–355 */
+            /* approximately the black inner square of the PNG */
             top: 9.5%;
-            left: 12.3%;
-            width: 76%;
-            height: 66.5%;
+            left: 12.5%;
+            width: 75%;
+            height: 64%;
             object-fit: cover;
-            z-index: 1;
-            display: block;
-        }
-
-        /* the actual frame PNG from pngall, on top */
-        #hpc-lightbox .polaroid-frame {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            pointer-events: none; /* clicks go through to wrapper */
         }
 
         /* BASIC RESPONSIVENESS */
         @media (max-width: 768px) {
             body {
                 overflow-x: auto;
-            }
-
-            #hpc-lightbox .polaroid-wrap {
-                width: 80vw;
-                height: calc(80vw * 467 / 400); /* keep aspect ratio */
             }
         }
     </style>
@@ -552,8 +539,8 @@
                 <div class="tb-text">
                     <p>all our cameras have been lovingly sourced and tested personally ♡</p>
                     <p>we do our best to get these little pieces of history into your hands in as good a condition as possible, but they are <i>✧ genuinely vintage and pre-loved ✧</i> unless stated otherwise, so <b>you will see signs of use and age, like scuffs, scratches, dinks and imperfections</b>.</p>
-                    <p>🙏🏻<b><u>please read all notices on our site & the full description of each item carefully & thoroughly, & examine all product pictures closely before making any purchases.</u></b>🙏🏻</p>
-                    <p>please also note that we are selling digicams themselves; any accessories included are shown in the listing pictures & stated in the description. these are freebies just for you at no cost, we cannot guarantee and are not liable for their condition, function or usability.</p>
+                    <p>🙏🏻<b><u>please read all notices on our site &amp; the full description of each item carefully &amp; thoroughly, &amp; examine all product pictures closely before making any purchases.</u></b>🙏🏻</p>
+                    <p>please also note that we are selling digicams themselves; any accessories included are shown in the listing pictures &amp; stated in the description. these are freebies just for you at no cost, we cannot guarantee and are not liable for their condition, function or usability.</p>
                     ♡ enjoy finding your forever cam ♡
                 </div>
             </div>
@@ -683,8 +670,8 @@
             <div class="polaroid-wrap" onclick="event.stopPropagation()">
                 <!-- this src is filled in by JS -->
                 <img src="" alt="enlarged photo" class="polaroid-photo">
-                <!-- the exact PNG from pngall, saved locally -->
-                <img src="img/polaroid-frame.png" alt="" class="polaroid-frame">
+                <!-- your PNGall frame: saved as img/polaroid-frame.png -->
+                <img src="img/polaroid-frame.png" alt="polaroid frame" class="polaroid-frame">
             </div>
         </div>
 
