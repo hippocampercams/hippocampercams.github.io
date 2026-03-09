@@ -461,7 +461,7 @@
         }
 
         /* CLICK-TO-ENLARGE LIGHTBOX WITH POLAROID FRAME */
-        #lightbox {
+        #hpc-lightbox {
             display: none;
             position: fixed;
             inset: 0;
@@ -471,14 +471,14 @@
             align-items: center;
         }
 
-        #lightbox .polaroid-wrap {
+        #hpc-lightbox .polaroid-wrap {
             position: relative;
             max-width: 600px;
             width: 80%;
         }
 
         /* actual photo inside frame */
-        #lightbox .polaroid-photo {
+        #hpc-lightbox .polaroid-photo {
             position: absolute;
             top: 14%;              /* adjust to fit frame opening */
             left: 50%;
@@ -490,7 +490,7 @@
         }
 
         /* frame image */
-        #lightbox .polaroid-frame {
+        #hpc-lightbox .polaroid-frame {
             width: 100%;
             height: auto;
             display: block;
@@ -661,7 +661,7 @@
         </div> <!-- end of #desktop -->
 
         <!-- LIGHTBOX OVERLAY WITH POLAROID -->
-        <div id="lightbox">
+        <div id="hpc-lightbox">
             <div class="polaroid-wrap">
                 <!-- this src is filled in by JS -->
                 <img src="" alt="enlarged photo" class="polaroid-photo">
@@ -711,21 +711,19 @@
         setInterval(updateClock, 60000);
 
         /* LIGHTBOX WITH POLAROID FRAME */
-
-        var lightbox  = document.getElementById('lightbox');
+        var lightbox  = document.getElementById('hpc-lightbox');
         var photo     = lightbox.querySelector('.polaroid-photo');
         var frameWrap = lightbox.querySelector('.polaroid-wrap');
 
-        // Capture-phase event so other scripts can't swallow it
-        document.addEventListener('click', function (e) {
-            var target = e.target;
-
-            if (target.classList && target.classList.contains('full_image')) {
+        // add click handler to every post image
+        var imgs = document.querySelectorAll('img.full_image');
+        imgs.forEach(function (img) {
+            img.addEventListener('click', function (e) {
                 e.preventDefault();
-                photo.src = target.src;
-                lightbox.style.display = 'flex';  // show overlay + centre polaroid
-            }
-        }, true);
+                photo.src = this.src;
+                lightbox.style.display = 'flex';
+            });
+        });
 
         // clicking the dark overlay closes the lightbox
         lightbox.addEventListener('click', function () {
