@@ -112,7 +112,6 @@
             width: 1040px; /* 2 * 480 + 20px gap + a bit of padding */
             left: 0;
             transform: translateX(-60px);
-
             display: grid;
             grid-template-columns: repeat(2, 480px);
             column-gap: 20px;
@@ -458,54 +457,63 @@
             background-position: -632px -87px;
         }
 
-        /* CLICK-TO-ENLARGE LIGHTBOX WITH POLAROID FRAME */
+        /* ================================
+           CLICK-TO-ENLARGE POLAROID LIGHTBOX
+           ================================ */
+
         #hpc-lightbox {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            inset: 0;
             background: rgba(0, 0, 0, 0.7);
             z-index: 9999;
             justify-content: center;
             align-items: center;
         }
 
+        /* The PNG from pngall is 400x467.
+           We use that aspect ratio and place the photo
+           exactly inside the transparent inner square. */
         #hpc-lightbox .polaroid-wrap {
             position: relative;
-            max-width: 600px;
-            width: 90%;
-            background: #ffffff;
-            padding: 20px 20px 30px;
-            box-shadow: 0 0 15px #000;
-            box-sizing: border-box;
+            width: 400px;
+            height: 467px;
         }
 
+        /* photo sits inside the "hole" of the frame */
         #hpc-lightbox .polaroid-photo {
+            position: absolute;
+            /* these percentages are computed from the PNG:
+               inner hole approx x:49–353, y:44–355 */
+            top: 9.5%;
+            left: 12.3%;
+            width: 76%;
+            height: 66.5%;
+            object-fit: cover;
+            z-index: 1;
             display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto;
-            /* you can tweak these for aesthetic */
         }
 
+        /* the actual frame PNG from pngall, on top */
         #hpc-lightbox .polaroid-frame {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: auto;
-            pointer-events: none;
-            /* if your PNG is fully opaque and you can't see the photo,
-               temporarily comment this out to check: */
-            /* opacity: 0.9; */
+            height: 100%;
+            z-index: 2;
+            pointer-events: none; /* clicks go through to wrapper */
         }
 
         /* BASIC RESPONSIVENESS */
         @media (max-width: 768px) {
             body {
                 overflow-x: auto;
+            }
+
+            #hpc-lightbox .polaroid-wrap {
+                width: 80vw;
+                height: calc(80vw * 467 / 400); /* keep aspect ratio */
             }
         }
     </style>
@@ -675,7 +683,7 @@
             <div class="polaroid-wrap" onclick="event.stopPropagation()">
                 <!-- this src is filled in by JS -->
                 <img src="" alt="enlarged photo" class="polaroid-photo">
-                <!-- optional frame overlay: make sure centre is transparent -->
+                <!-- the exact PNG from pngall, saved locally -->
                 <img src="img/polaroid-frame.png" alt="" class="polaroid-frame">
             </div>
         </div>
