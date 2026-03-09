@@ -462,7 +462,10 @@
         #hpc-lightbox {
             display: none;
             position: fixed;
-            inset: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(0, 0, 0, 0.7);
             z-index: 9999;
             justify-content: center;
@@ -472,26 +475,31 @@
         #hpc-lightbox .polaroid-wrap {
             position: relative;
             max-width: 600px;
-            width: 80%;
+            width: 90%;
+            background: #ffffff;
+            padding: 20px 20px 30px;
+            box-shadow: 0 0 15px #000;
+            box-sizing: border-box;
         }
 
-        /* actual photo inside frame */
         #hpc-lightbox .polaroid-photo {
-            position: absolute;
-            top: 14%;              /* adjust to fit frame opening */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 70%;            /* adjust until it sits nicely in the hole */
-            height: 60%;
-            object-fit: cover;
-            box-shadow: 0 0 10px #000;
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            /* you can tweak these for aesthetic */
         }
 
-        /* frame image */
         #hpc-lightbox .polaroid-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: auto;
-            display: block;
+            pointer-events: none;
+            /* if your PNG is fully opaque and you can't see the photo,
+               temporarily comment this out to check: */
+            /* opacity: 0.9; */
         }
 
         /* BASIC RESPONSIVENESS */
@@ -667,7 +675,7 @@
             <div class="polaroid-wrap" onclick="event.stopPropagation()">
                 <!-- this src is filled in by JS -->
                 <img src="" alt="enlarged photo" class="polaroid-photo">
-                <!-- put your actual PNG here -->
+                <!-- optional frame overlay: make sure centre is transparent -->
                 <img src="img/polaroid-frame.png" alt="" class="polaroid-frame">
             </div>
         </div>
