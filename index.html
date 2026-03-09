@@ -185,10 +185,12 @@
         }
 
         img.full_image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+    width: 60%;          /* smaller in the Notepad window */
+    height: auto;
+    display: block;
+    margin: 0 auto;      /* centre inside the window */
+    cursor: pointer;     /* shows it’s clickable */
+}
 
         .middle .caption {
             margin-top: 5px;
@@ -462,6 +464,14 @@
             background-position: -632px -87px;
         }
 
+        img.full_image {
+    width: 60%;          /* smaller in the Notepad window */
+    height: auto;
+    display: block;
+    margin: 0 auto;      /* centre inside the window */
+    cursor: pointer;     /* shows it’s clickable */
+}
+
         /* BASIC RESPONSIVENESS */
         @media (max-width: 768px) {
             body {
@@ -603,7 +613,15 @@
                 </div>
                 <div class="bottom"></div>
             </div>
+        </div>  <!-- end of #desktop -->
 
+        <!-- LIGHTBOX OVERLAY -->
+        <div id="lightbox">
+            <img src="" alt="enlarged photo">
+        </div>
+
+        <!-- START BAR -->
+        <div class="start_menu"></div>
             <!-- Sample Window 2 (example photo post) -->
             <div class="window post-photo">
                 <a href="#">
@@ -648,18 +666,38 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
     <script>
-        function updateClock() {
-            var now = new Date();
-            var h = now.getHours();
-            var m = now.getMinutes();
-            var ampm = h >= 12 ? "PM" : "AM";
-            h = h % 12;
-            if (h === 0) h = 12;
-            if (m < 10) m = "0" + m;
-            document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
-        }
-        updateClock();
-        setInterval(updateClock, 60000);
-    </script>
+    function updateClock() {
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var ampm = h >= 12 ? "PM" : "AM";
+        h = h % 12;
+        if (h === 0) h = 12;
+        if (m < 10) m = "0" + m;
+        document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
+    }
+    updateClock();
+    setInterval(updateClock, 60000);
+
+    // simple lightbox for .full_image photos
+    document.addEventListener('DOMContentLoaded', function () {
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImg = lightbox.querySelector('img');
+
+        // when any .full_image is clicked, show it big
+        document.querySelectorAll('.full_image').forEach(function (img) {
+            img.addEventListener('click', function () {
+                lightboxImg.src = this.src;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        // click anywhere on overlay to close
+        lightbox.addEventListener('click', function () {
+            lightbox.style.display = 'none';
+            lightboxImg.src = '';
+        });
+    });
+</script>
 </body>
 </html>
