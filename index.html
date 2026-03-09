@@ -36,8 +36,26 @@
             float: left;
             position: fixed;
             z-index: 2;
+            font-family: "Courier New", Courier, monospace !important;
         }
 
+        .icons a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .icon_label {
+            font-family: "Courier New", Courier, monospace !important;
+            font-size: 12px;
+            letter-spacing: 0.005em;
+            padding-top: 6px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* DESKTOP SPRITES */
         .my_computer, .my_documents, .network_neighborhood, .folder,
         .recycle_bin, .start_menu, .application_icons,
         .start_bar .start_button .logo, .start_bar .tray .calendar,
@@ -77,34 +95,6 @@
             background-position: -616px -283px;
         }
 
-        /* LEFT SIDEBAR LABELS – force same font as right box text */
-        .icons {
-            margin: 0 0 0 10px;
-            list-style-type: none;
-            padding: 0;
-            width: 100px;
-            float: left;
-            position: fixed;
-            z-index: 2;
-            font-family: "Courier New", Courier, monospace !important;
-        }
-
-        .icons a {
-            color: #ffffff;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 15px;
-        }
-
-        .icon_label {
-            font-family: "Courier New", Courier, monospace !important;
-            font-size: 12px;
-            letter-spacing: 0.005em;
-            padding-top: 6px;
-            color: #ffffff;
-            text-align: center;
-        }
-
         /* CUSTOM ICON IMAGES – real 3D icon files */
         .icon-img {
             display: block;
@@ -114,27 +104,27 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA – two windows */
-       #desktop {
-    margin: 20px auto 40px auto;
-    z-index: 3;
-    position: relative;
-    width: 1040px;
-    left: 0;
-    transform: translateX(-60px);
+        /* MAIN DESKTOP AREA – 2-column grid of "windows" */
+        #desktop {
+            margin: 20px auto 40px auto;
+            z-index: 3;
+            position: relative;
+            width: 1040px;
+            left: 0;
+            transform: translateX(-60px);
 
-    /* 2-column grid layout for posts */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
-    column-gap: 20px;
-    row-gap: 20px;
-}
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+
         .window {
-    width: 100%;                      /* takes full column width */
-    max-width: none;
-    margin: 0;                        /* spacing now handled by grid gaps */
-    font-family: "Courier New", Courier, monospace;
-}
+            width: 100%;                  /* fills its column */
+            max-width: none;
+            margin: 0;
+            font-family: "Courier New", Courier, monospace;
+        }
 
         .window .title,
         .window .content,
@@ -188,13 +178,14 @@
             margin-bottom: 5px;
         }
 
+        /* post image inside Notepad window */
         img.full_image {
-    width: 60%;          /* smaller in the Notepad window */
-    height: auto;
-    display: block;
-    margin: 0 auto;      /* centre inside the window */
-    cursor: pointer;     /* shows it’s clickable */
-}
+            width: 60%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer; /* clickable for lightbox */
+        }
 
         .middle .caption {
             margin-top: 5px;
@@ -225,18 +216,17 @@
         }
 
         /* TOP-RIGHT WARNING BOXES (hippocampercams) */
-.top-banner {
-    position: fixed;
-    top: 40px;   /* moved a little higher */
-    right: 6px;
-    z-index: 5;
-    pointer-events: auto;
-}
+        .top-banner {
+            position: fixed;
+            top: 40px;
+            right: 6px;
+            z-index: 5;
+            pointer-events: auto;
+        }
 
-/* second box sits just below the first one */
-.top-banner.second {
-    top: 210px;  /* moved a little higher */
-}
+        .top-banner.second {
+            top: 210px;
+        }
 
         .top-banner-window {
             width: 300px;
@@ -468,32 +458,24 @@
             background-position: -632px -87px;
         }
 
-        img.full_image {
-    width: 50%;          /* smaller in the Notepad window */
-    height: auto;
-    display: block;
-    margin: 0 auto;      /* centre inside the window */
-    cursor: pointer;     /* shows it’s clickable */
-}
+        /* CLICK-TO-ENLARGE LIGHTBOX */
+        #lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* CLICK-TO-ENLARGE LIGHTBOX */
-#lightbox {
-    display: none;                     /* hidden by default */
-    position: fixed;
-    inset: 0;                          /* top:0; right:0; bottom:0; left:0 */
-    background: rgba(0, 0, 0, 0.7);    /* dim the whole screen */
-    z-index: 9999;                     /* above all windows & taskbar */
-    justify-content: center;
-    align-items: center;
-}
+        #lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 10px #000;
+            border: 4px solid #ffffff;
+        }
 
-#lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0 0 10px #000;
-    border: 4px solid #ffffff;
-}
-        
         /* BASIC RESPONSIVENESS */
         @media (max-width: 768px) {
             body {
@@ -524,7 +506,7 @@
         </div>
     </div>
 
-    <!-- TOP-RIGHT DIALOG #2 (duplicate box, lower position) -->
+    <!-- TOP-RIGHT DIALOG #2 -->
     <div class="top-banner second">
         <div class="top-banner-window">
             <div class="tb-titlebar">
@@ -535,9 +517,9 @@
                 <div class="tb-icon"></div>
                 <div class="tb-text">
                     <p>all our cameras have been lovingly sourced and tested personally ♡</p>
-                    <p>we do our best to get these little pieces of history into your hands in as good a condition as possible, but they are <i>✧ genuinely vintage and pre-loved ✧</i> unless stated otherwise, so <b> you will see signs of use and age, like scuffs, scratches, dinks and imperfections</b>.</p>
+                    <p>we do our best to get these little pieces of history into your hands in as good a condition as possible, but they are <i>✧ genuinely vintage and pre-loved ✧</i> unless stated otherwise, so <b>you will see signs of use and age, like scuffs, scratches, dinks and imperfections</b>.</p>
                     <p>🙏🏻<b><u>please read all notices on our site & the full description of each item carefully & thoroughly, & examine all product pictures closely before making any purchases.</u></b>🙏🏻</p>
-                    <p>please also note that we are selling digicams themselves, any accessories included are shown in the listing pictures & stated in the description. these are freebies just for you at no cost, we cannot guarantee and are not liable for their condition, function or usability.</p>
+                    <p>please also note that we are selling digicams themselves; any accessories included are shown in the listing pictures & stated in the description. these are freebies just for you at no cost, we cannot guarantee and are not liable for their condition, function or usability.</p>
                     ♡ enjoy finding your forever cam ♡
                 </div>
             </div>
@@ -597,7 +579,7 @@
             </a>
         </div>
 
-        <!-- MAIN DESKTOP WINDOWS -->
+        <!-- MAIN DESKTOP WINDOWS (2-column grid) -->
         <div id="desktop" class="container">
             <!-- Post 1 -->
             <div class="window post-photo">
@@ -611,14 +593,15 @@
                 <div class="middle">
                     <div class="title">FUJIFILM FINEPIX A500 – Notepad</div>
                     <div class="content">
-                        <img src="https://64.media.tumblr.com/a2678466141ef3ccb62d3ecbde202a0e/95cbb7785805f725-72/s1280x1920/2d0d385ff60bef1e6d7bf91863cfbfe8e7f70ec1.jpg" class="full_image" alt="FUJIFILM FINEPIX A500">
+                        <img src="https://64.media.tumblr.com/a2678466141ef3ccb62d3ecbde202a0e/95cbb7785805f725-72/s1280x1920/2d0d385ff60bef1e6d7bf91863cfbfe8e7f70ec1.jpg"
+                             class="full_image" alt="FUJIFILM FINEPIX A500">
                         <div class="caption">Example caption for your listing / inspo board / etc.</div>
                     </div>
                 </div>
                 <div class="bottom"></div>
             </div>
-            
-            <!-- Sample Window 1 -->
+
+            <!-- Sample Window 1 (text post) -->
             <div class="window post-text">
                 <a href="#">
                     <div class="top">
@@ -635,16 +618,8 @@
                 </div>
                 <div class="bottom"></div>
             </div>
-               </div> <!-- end of #desktop -->
 
-        <!-- LIGHTBOX OVERLAY -->
-        <div id="lightbox">
-            <img src="" alt="enlarged photo">
-        </div>
-
-        <!-- START BAR -->
-        <div class="start_menu"></div>
-            <!-- Sample Window 2 (example photo post) -->
+            <!-- Sample Window 2 (photo post) -->
             <div class="window post-photo">
                 <a href="#">
                     <div class="top">
@@ -656,12 +631,18 @@
                 <div class="middle">
                     <div class="title">Post – Notepad</div>
                     <div class="content">
-                        <img src="https://via.placeholder.com/480x320?text=Photo+1" class="full_image" alt="photo 1">
+                        <img src="https://via.placeholder.com/480x320?text=Photo+1"
+                             class="full_image" alt="photo 1">
                         <div class="caption">Example caption for your listing / inspo board / etc.</div>
                     </div>
                 </div>
                 <div class="bottom"></div>
             </div>
+        </div> <!-- end of #desktop -->
+
+        <!-- LIGHTBOX OVERLAY -->
+        <div id="lightbox">
+            <img src="" alt="enlarged photo">
         </div>
 
         <!-- START BAR -->
@@ -682,44 +663,42 @@
                 <span class="time" id="showClock">00:00 AM</span>
             </div>
         </div>
-    </div>
+    </div> <!-- end .wrapper -->
 
-    <!-- JS: basic clock + optional Win98 behaviour -->
+    <!-- JS: basic clock + lightbox -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
     <script>
-    function updateClock() {
-        var now = new Date();
-        var h = now.getHours();
-        var m = now.getMinutes();
-        var ampm = h >= 12 ? "PM" : "AM";
-        h = h % 12;
-        if (h === 0) h = 12;
-        if (m < 10) m = "0" + m;
-        document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
-    }
-    updateClock();
-    setInterval(updateClock, 60000);
+        function updateClock() {
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var ampm = h >= 12 ? "PM" : "AM";
+            h = h % 12;
+            if (h === 0) h = 12;
+            if (m < 10) m = "0" + m;
+            document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
+        }
+        updateClock();
+        setInterval(updateClock, 60000);
 
-    // simple lightbox for .full_image photos
-    document.addEventListener('DOMContentLoaded', function () {
-        var lightbox = document.getElementById('lightbox');
-        var lightboxImg = lightbox.querySelector('img');
+        // simple lightbox for .full_image photos
+        document.addEventListener('DOMContentLoaded', function () {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = lightbox.querySelector('img');
 
-        // when any .full_image is clicked, show big version
-        document.querySelectorAll('.full_image').forEach(function (img) {
-            img.addEventListener('click', function () {
-                lightboxImg.src = this.src;
-                lightbox.style.display = 'flex';   // center using flexbox
+            document.querySelectorAll('.full_image').forEach(function (img) {
+                img.addEventListener('click', function () {
+                    lightboxImg.src = this.src;
+                    lightbox.style.display = 'flex';
+                });
+            });
+
+            lightbox.addEventListener('click', function () {
+                lightbox.style.display = 'none';
+                lightboxImg.src = '';
             });
         });
-
-        // click anywhere on the overlay to close
-        lightbox.addEventListener('click', function () {
-            lightbox.style.display = 'none';
-            lightboxImg.src = '';
-        });
-    });
-</script>
+    </script>
 </body>
 </html>
