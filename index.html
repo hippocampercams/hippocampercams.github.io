@@ -109,19 +109,21 @@
             margin: 20px auto 40px auto;
             z-index: 3;
             position: relative;
-            width: 1040px;
+
+            /* 2 columns of the original 480px window width */
+            width: 1040px;                /* enough for 2x480 + 20px gap + some padding */
             left: 0;
             transform: translateX(-60px);
 
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+            grid-template-columns: repeat(2, 480px);
             column-gap: 20px;
             row-gap: 20px;
         }
 
         .window {
-            width: 100%;                  /* fills its column */
-            max-width: none;
+            width: 480px;                  /* keep original sprite width */
+            max-width: 480px;
             margin: 0;
             font-family: "Courier New", Courier, monospace;
         }
@@ -458,7 +460,7 @@
             background-position: -632px -87px;
         }
 
-        /* CLICK-TO-ENLARGE LIGHTBOX */
+        /* CLICK-TO-ENLARGE LIGHTBOX WITH POLAROID FRAME */
         #lightbox {
             display: none;
             position: fixed;
@@ -469,11 +471,29 @@
             align-items: center;
         }
 
-        #lightbox img {
-            max-width: 90%;
-            max-height: 90%;
+        #lightbox .polaroid-wrap {
+            position: relative;
+            max-width: 600px;
+            width: 80%;
+        }
+
+        /* actual photo inside frame */
+        #lightbox .polaroid-photo {
+            position: absolute;
+            top: 14%;              /* adjust to fit frame opening */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;            /* adjust until it sits nicely in the hole */
+            height: 60%;
+            object-fit: cover;
             box-shadow: 0 0 10px #000;
-            border: 4px solid #ffffff;
+        }
+
+        /* frame image */
+        #lightbox .polaroid-frame {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* BASIC RESPONSIVENESS */
@@ -640,9 +660,14 @@
             </div>
         </div> <!-- end of #desktop -->
 
-        <!-- LIGHTBOX OVERLAY -->
+        <!-- LIGHTBOX OVERLAY WITH POLAROID -->
         <div id="lightbox">
-            <img src="" alt="enlarged photo">
+            <div class="polaroid-wrap">
+                <!-- this src is filled in by JS -->
+                <img src="" alt="enlarged photo" class="polaroid-photo">
+                <!-- change path if you save the frame elsewhere -->
+                <img src="img/polaroid-frame.png" alt="" class="polaroid-frame">
+            </div>
         </div>
 
         <!-- START BAR -->
@@ -682,21 +707,29 @@
         updateClock();
         setInterval(updateClock, 60000);
 
-        // simple lightbox for .full_image photos
+        // lightbox with polaroid frame
         document.addEventListener('DOMContentLoaded', function () {
             var lightbox = document.getElementById('lightbox');
-            var lightboxImg = lightbox.querySelector('img');
+            var photo = document.querySelector('#lightbox .polaroid-photo');
+            var frameWrap = document.querySelector('#lightbox .polaroid-wrap');
 
+            // open on click
             document.querySelectorAll('.full_image').forEach(function (img) {
                 img.addEventListener('click', function () {
-                    lightboxImg.src = this.src;
+                    photo.src = this.src;
                     lightbox.style.display = 'flex';
                 });
             });
 
+            // close when clicking outside the polaroid
             lightbox.addEventListener('click', function () {
                 lightbox.style.display = 'none';
-                lightboxImg.src = '';
+                photo.src = '';
+            });
+
+            // prevent closing when clicking on the frame itself
+            frameWrap.addEventListener('click', function (e) {
+                e.stopPropagation();
             });
         });
     </script>
