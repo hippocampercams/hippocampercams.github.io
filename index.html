@@ -693,7 +693,11 @@
     <!-- JS: basic clock + lightbox -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
-    <script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        /* CLOCK */
         function updateClock() {
             var now = new Date();
             var h = now.getHours();
@@ -707,31 +711,33 @@
         updateClock();
         setInterval(updateClock, 60000);
 
-        // lightbox with polaroid frame
-        document.addEventListener('DOMContentLoaded', function () {
-            var lightbox = document.getElementById('lightbox');
-            var photo = document.querySelector('#lightbox .polaroid-photo');
-            var frameWrap = document.querySelector('#lightbox .polaroid-wrap');
+        /* LIGHTBOX WITH POLAROID FRAME */
+        var lightbox   = document.getElementById('lightbox');
+        var photo      = document.querySelector('#lightbox .polaroid-photo');
+        var frameWrap  = document.querySelector('#lightbox .polaroid-wrap');
+        var imgs       = document.getElementsByClassName('full_image');
 
-            // open on click
-            document.querySelectorAll('.full_image').forEach(function (img) {
-                img.addEventListener('click', function () {
-                    photo.src = this.src;
-                    lightbox.style.display = 'flex';
-                });
-            });
-
-            // close when clicking outside the polaroid
-            lightbox.addEventListener('click', function () {
-                lightbox.style.display = 'none';
-                photo.src = '';
-            });
-
-            // prevent closing when clicking on the frame itself
-            frameWrap.addEventListener('click', function (e) {
+        // add click handler to every post image
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].addEventListener('click', function (e) {
+                e.preventDefault();   // stop <a href="#"> from taking over
                 e.stopPropagation();
+                photo.src = this.src;
+                lightbox.style.display = 'flex';  // show overlay + centre polaroid
             });
+        }
+
+        // clicking the dark overlay closes the lightbox
+        lightbox.addEventListener('click', function () {
+            lightbox.style.display = 'none';
+            photo.src = '';
         });
-    </script>
+
+        // but clicking *on* the polaroid itself should NOT close it
+        frameWrap.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+    });
+</script>
 </body>
 </html>
