@@ -690,52 +690,56 @@
         </div>
     </div> <!-- end .wrapper -->
 
-    <!-- JS: jQuery + win98 + clock + lightbox -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
+<script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
 
-    <script>
-    (function () {
-        /* CLOCK */
-        function updateClock() {
-            var now = new Date();
-            var h = now.getHours();
-            var m = now.getMinutes();
-            var ampm = h >= 12 ? "PM" : "AM";
-            h = h % 12;
-            if (h === 0) h = 12;
-            if (m < 10) m = "0" + m;
-            document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
-        }
-        updateClock();
-        setInterval(updateClock, 60000);
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    /* CLOCK */
+    function updateClock() {
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var ampm = h >= 12 ? "PM" : "AM";
+        h = h % 12;
+        if (h === 0) h = 12;
+        if (m < 10) m = "0" + m;
+        document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
+    }
+    updateClock();
+    setInterval(updateClock, 60000);
 
-        /* LIGHTBOX WITH POLAROID FRAME */
-        var lightbox  = document.getElementById('hpc-lightbox');
-        var photo     = lightbox.querySelector('.polaroid-photo');
-        var frameWrap = lightbox.querySelector('.polaroid-wrap');
+    /* LIGHTBOX WITH POLAROID FRAME */
+    var lightbox  = document.getElementById('hpc-lightbox');
+    if (!lightbox) return;  // safety
 
-        // add click handler to every post image
-        var imgs = document.querySelectorAll('img.full_image');
-        imgs.forEach(function (img) {
-            img.addEventListener('click', function (e) {
-                e.preventDefault();
-                photo.src = this.src;
-                lightbox.style.display = 'flex';
-            });
+    var photo     = lightbox.querySelector('.polaroid-photo');
+    var frameWrap = lightbox.querySelector('.polaroid-wrap');
+    var imgs      = document.querySelectorAll('img.full_image');
+
+    // add click handler to every post image
+    imgs.forEach(function (img) {
+        img.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (!photo) return;
+            photo.src = this.src;
+            lightbox.style.display = 'flex';
         });
+    });
 
-        // clicking the dark overlay closes the lightbox
-        lightbox.addEventListener('click', function () {
-            lightbox.style.display = 'none';
-            photo.src = '';
-        });
+    // clicking the dark overlay closes the lightbox
+    lightbox.addEventListener('click', function () {
+        lightbox.style.display = 'none';
+        if (photo) photo.src = '';
+    });
 
-        // but clicking *on* the polaroid itself should NOT close it
+    // but clicking *on* the polaroid itself should NOT close it
+    if (frameWrap) {
         frameWrap.addEventListener('click', function (e) {
             e.stopPropagation();
         });
-    })();
-    </script>
+    }
+});
+</script>
 </body>
 </html>
