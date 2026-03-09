@@ -115,22 +115,26 @@
         }
 
         /* MAIN DESKTOP AREA – two windows */
-        #desktop {
-            margin: 20px auto 40px auto;
-            z-index: 3;
-            position: relative;
-            width: 1040px;
-            left: 0;
-            transform: translateX(-60px);
-        }
+       #desktop {
+    margin: 20px auto 40px auto;
+    z-index: 3;
+    position: relative;
+    width: 1040px;
+    left: 0;
+    transform: translateX(-60px);
 
+    /* 2-column grid layout for posts */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
+    column-gap: 20px;
+    row-gap: 20px;
+}
         .window {
-            width: 480px;
-            max-width: 480px;
-            float: left;
-            margin: 0 20px 20px 0;
-            font-family: "Courier New", Courier, monospace;
-        }
+    width: 100%;                      /* takes full column width */
+    max-width: none;
+    margin: 0;                        /* spacing now handled by grid gaps */
+    font-family: "Courier New", Courier, monospace;
+}
 
         .window .title,
         .window .content,
@@ -465,13 +469,31 @@
         }
 
         img.full_image {
-    width: 60%;          /* smaller in the Notepad window */
+    width: 50%;          /* smaller in the Notepad window */
     height: auto;
     display: block;
     margin: 0 auto;      /* centre inside the window */
     cursor: pointer;     /* shows it’s clickable */
 }
 
+/* CLICK-TO-ENLARGE LIGHTBOX */
+#lightbox {
+    display: none;                     /* hidden by default */
+    position: fixed;
+    inset: 0;                          /* top:0; right:0; bottom:0; left:0 */
+    background: rgba(0, 0, 0, 0.7);    /* dim the whole screen */
+    z-index: 9999;                     /* above all windows & taskbar */
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 10px #000;
+    border: 4px solid #ffffff;
+}
+        
         /* BASIC RESPONSIVENESS */
         @media (max-width: 768px) {
             body {
@@ -613,7 +635,7 @@
                 </div>
                 <div class="bottom"></div>
             </div>
-        </div>  <!-- end of #desktop -->
+               </div> <!-- end of #desktop -->
 
         <!-- LIGHTBOX OVERLAY -->
         <div id="lightbox">
@@ -684,15 +706,15 @@
         var lightbox = document.getElementById('lightbox');
         var lightboxImg = lightbox.querySelector('img');
 
-        // when any .full_image is clicked, show it big
+        // when any .full_image is clicked, show big version
         document.querySelectorAll('.full_image').forEach(function (img) {
             img.addEventListener('click', function () {
                 lightboxImg.src = this.src;
-                lightbox.style.display = 'flex';
+                lightbox.style.display = 'flex';   // center using flexbox
             });
         });
 
-        // click anywhere on overlay to close
+        // click anywhere on the overlay to close
         lightbox.addEventListener('click', function () {
             lightbox.style.display = 'none';
             lightboxImg.src = '';
