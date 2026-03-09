@@ -472,29 +472,38 @@
             align-items: center;
         }
 
-        /* The wrapper scales the frame image; all percentages below are
-           calculated from the actual PNG size (400x467) so the photo
-           sits inside the “window”. */
+        /* Keep a fixed aspect ratio for the polaroid frame (original ~400x467) */
         #hpc-lightbox .polaroid-wrap {
             position: relative;
             width: min(90vw, 400px);
-            /* height is driven by the frame image’s aspect ratio */
+            max-width: 400px;
         }
 
-        #hpc-lightbox .polaroid-frame {
+        /* Aspect-ratio hack so the wrapper has height even before the image loads */
+        #hpc-lightbox .polaroid-wrap::before {
+            content: "";
             display: block;
-            width: 100%;
-            height: auto;
+            padding-top: 116.75%; /* 467 / 400 * 100 */
         }
 
+        /* Frame fills the wrapper */
+        #hpc-lightbox .polaroid-frame {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Photo sits inside the "hole" of the frame */
         #hpc-lightbox .polaroid-photo {
             position: absolute;
-            /* approximately the black inner square of the PNG */
-            top: 9.5%;
-            left: 12.5%;
-            width: 75%;
-            height: 64%;
+            top: 13%;    /* tweak these if you want the fit slightly different */
+            left: 12%;
+            width: 76%;
+            height: 66%;
             object-fit: cover;
+            display: block;
         }
 
         /* BASIC RESPONSIVENESS */
@@ -668,9 +677,9 @@
         <!-- LIGHTBOX OVERLAY WITH POLAROID -->
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
             <div class="polaroid-wrap" onclick="event.stopPropagation()">
-                <!-- this src is filled in by JS -->
+                <!-- enlarged photo -->
                 <img src="" alt="enlarged photo" class="polaroid-photo">
-                <!-- your PNGall frame: saved as img/polaroid-frame.png -->
+                <!-- PNGall frame: save as img/polaroid-frame.png in your repo -->
                 <img src="img/polaroid-frame.png" alt="polaroid frame" class="polaroid-frame">
             </div>
         </div>
