@@ -187,32 +187,26 @@
             margin-top: 5px;
         }
 
-        /* RIGHT SIDEBAR POPUPS */
-        .right-popups {
-            position: fixed;
-            top: 40px;
-            right: 6px;
-            bottom: 34px; /* always above taskbar */
-            width: 300px;
-            z-index: 5;
+        /* RIGHT SIDEBAR POPUPS – moved up, no scrollbar */
+.right-popups {
+    position: fixed;
+    top: 20px;
+    right: 6px;
+    width: 300px;
+    z-index: 5;
 
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
 
-            overflow-y: auto;
-            overflow-x: hidden;
-            box-sizing: border-box;
-            padding-bottom: 4px;
+    pointer-events: none;
+}
 
-            pointer-events: none;
-        }
-
-        .top-banner {
-            pointer-events: auto;
-            flex: 0 0 auto;
-        }
+.top-banner {
+    pointer-events: auto;
+    flex: 0 0 auto;
+}
 
         .top-banner-window {
             width: 100%;
