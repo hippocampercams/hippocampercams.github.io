@@ -458,51 +458,23 @@
             background-position: -632px -87px;
         }
 
-        /* CLICK-TO-ENLARGE LIGHTBOX WITH POLAROID FRAME */
+        /* SIMPLE FULL-SIZE LIGHTBOX (NO FRAME) */
         #hpc-lightbox {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
             z-index: 9999;
             justify-content: center;
             align-items: center;
+            cursor: zoom-out; /* hint you can click to close */
         }
 
-        /* Keep a fixed aspect ratio for the polaroid frame (original ~400x467) */
-        #hpc-lightbox .polaroid-wrap {
-            position: relative;
-            width: min(90vw, 400px);
-            max-width: 400px;
-        }
-
-        /* Aspect-ratio hack so the wrapper has height even before the image loads */
-        #hpc-lightbox .polaroid-wrap::before {
-            content: "";
-            display: block;
-            padding-top: 116.75%; /* 467 / 400 * 100 */
-        }
-
-        /* Frame fills the wrapper */
-        #hpc-lightbox .polaroid-frame {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        /* Photo sits inside the "hole" of the frame */
-        #hpc-lightbox .polaroid-photo {
-            position: absolute;
-            top: 13%;    /* tweak these if you want the fit slightly different */
-            left: 12%;
-            width: 76%;
-            height: 66%;
-            object-fit: cover;
+        #hpc-lightbox img {
+            max-width: 95vw;
+            max-height: 95vh;
+            width: auto;
+            height: auto;
             display: block;
         }
 
@@ -674,14 +646,9 @@
             </div>
         </div> <!-- end of #desktop -->
 
-        <!-- LIGHTBOX OVERLAY WITH POLAROID -->
+        <!-- LIGHTBOX OVERLAY (NO FRAME) -->
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
-            <div class="polaroid-wrap" onclick="event.stopPropagation()">
-                <!-- enlarged photo -->
-                <img src="" alt="enlarged photo" class="polaroid-photo">
-                <!-- PNGall frame: save as img/polaroid-frame.png in your repo -->
-                <img src="img/polaroid-frame.png" alt="polaroid frame" class="polaroid-frame">
-            </div>
+            <img src="" alt="enlarged photo" id="hpc-lightbox-img">
         </div>
 
         <!-- START BAR -->
@@ -731,10 +698,10 @@
         var lightbox = document.getElementById('hpc-lightbox');
         if (!lightbox) return;
 
-        var photo = lightbox.querySelector('.polaroid-photo');
+        var photo = document.getElementById('hpc-lightbox-img');
         if (!photo) return;
 
-        photo.src = imgEl.src;
+        photo.src = imgEl.src;      // same image URL, just displayed bigger
         lightbox.style.display = 'flex';
     }
 
@@ -742,7 +709,7 @@
         var lightbox = document.getElementById('hpc-lightbox');
         if (!lightbox) return;
 
-        var photo = lightbox.querySelector('.polaroid-photo');
+        var photo = document.getElementById('hpc-lightbox-img');
         lightbox.style.display = 'none';
         if (photo) {
             photo.src = '';
