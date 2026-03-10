@@ -215,17 +215,22 @@
             float: right;
         }
 
-        /* TOP-RIGHT WARNING BOXES (hippocampercams) */
-        .top-banner {
+        /* RIGHT POPUPS COLUMN – keeps boxes above taskbar */
+        .right-popups {
             position: fixed;
-            top: 40px;
             right: 6px;
+            top: 40px;
+            bottom: 40px; /* leaves space above the taskbar */
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: flex-end;
             z-index: 5;
-            pointer-events: auto;
+            pointer-events: none; /* let children handle clicks */
         }
 
-        .top-banner.second {
-            top: 210px;
+        .top-banner {
+            pointer-events: auto;
         }
 
         .top-banner-window {
@@ -489,44 +494,47 @@
 
 <body class="win98 two_column">
 
-    <!-- TOP-RIGHT DIALOG #1 -->
-    <div class="top-banner">
-        <div class="top-banner-window">
-            <div class="tb-titlebar">
-                <span class="tb-title-text">hippocampercams</span>
-                <span class="tb-close">x</span>
-            </div>
-            <div class="tb-body">
-                <div class="tb-icon"></div>
-                <div class="tb-text">
-                    °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
+    <!-- RIGHT POPUPS (both dialogs) -->
+    <div class="right-popups">
+        <!-- TOP-RIGHT DIALOG #1 -->
+        <div class="top-banner">
+            <div class="top-banner-window">
+                <div class="tb-titlebar">
+                    <span class="tb-title-text">hippocampercams</span>
+                    <span class="tb-close">x</span>
                 </div>
-            </div>
-            <div class="tb-footer">
-                <button class="tb-button">ok</button>
+                <div class="tb-body">
+                    <div class="tb-icon"></div>
+                    <div class="tb-text">
+                        °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
+                    </div>
+                </div>
+                <div class="tb-footer">
+                    <button class="tb-button">ok</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- TOP-RIGHT DIALOG #2 -->
-    <div class="top-banner second">
-        <div class="top-banner-window">
-            <div class="tb-titlebar">
-                <span class="tb-title-text">⚠️ PLEASE READ ⚠️ </span>
-                <span class="tb-close">x</span>
-            </div>
-            <div class="tb-body">
-                <div class="tb-icon"></div>
-                <div class="tb-text">
-                    <p>all our cameras have been lovingly sourced and tested personally ♡</p>
-                    <p>we do our best to get these little pieces of history into your hands in as good a condition as possible, but they are <i>✧ genuinely vintage and pre-loved ✧</i> unless stated otherwise, so <b>you will see signs of use and age, like scuffs, scratches, dinks and imperfections</b>.</p>
-                    <p>🙏🏻<b><u>please read all notices on our site &amp; the full description of each item carefully &amp; thoroughly, &amp; examine all product pictures closely before making any purchases.</u></b>🙏🏻</p>
-                    <p>please also note that we are selling digicams themselves; any accessories included are shown in the listing pictures &amp; stated in the description. these are freebies just for you at no cost, we cannot guarantee and are not liable for their condition, function or usability.</p>
-                    ♡ enjoy finding your forever cam ♡
+        <!-- TOP-RIGHT DIALOG #2 -->
+        <div class="top-banner second">
+            <div class="top-banner-window">
+                <div class="tb-titlebar">
+                    <span class="tb-title-text">⚠️ PLEASE READ ⚠️ </span>
+                    <span class="tb-close">x</span>
                 </div>
-            </div>
-            <div class="tb-footer">
-                <button class="tb-button">ok</button>
+                <div class="tb-body">
+                    <div class="tb-icon"></div>
+                    <div class="tb-text">
+                        <p>all our cameras have been lovingly sourced and tested personally ♡</p>
+                        <p>we do our best to get these little pieces of history into your hands in as good a condition as possible, but they are <i>✧ genuinely vintage and pre-loved ✧</i> unless stated otherwise, so <b>you will see signs of use and age, like scuffs, scratches, dinks and imperfections</b>.</p>
+                        <p>🙏🏻<b><u>please read all notices on our site &amp; the full description of each item carefully &amp; thoroughly, &amp; examine all product pictures closely before making any purchases.</u></b>🙏🏻</p>
+                        <p>please also note that we are selling digicams themselves; any accessories included are shown in the listing pictures &amp; stated in the description. these are freebies just for you at no cost, we cannot guarantee and are not liable for their condition, function or usability.</p>
+                        ♡ enjoy finding your forever cam ♡
+                    </div>
+                </div>
+                <div class="tb-footer">
+                    <button class="tb-button">ok</button>
+                </div>
             </div>
         </div>
     </div>
