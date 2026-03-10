@@ -5,10 +5,7 @@
     <title>hippocampercams • your y2k digicam bestie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- optional favicon -->
     <link rel="icon" href="favicon.ico">
-
-    <!-- Win98 base CSS Tumblr used -->
     <link rel="stylesheet" href="https://static.tumblr.com/fpdiq1j/N3Zmkjmqn/theme_generic.css">
 
     <style>
@@ -16,6 +13,7 @@
             background: #008080;
             margin: 0;
             font: normal 13px/1.3 "Helvetica Neue", Arial, sans-serif;
+            overflow-x: auto;
         }
 
         a {
@@ -95,7 +93,6 @@
             background-position: -616px -283px;
         }
 
-        /* CUSTOM ICON IMAGES – real 3D icon files */
         .icon-img {
             display: block;
             width: 32px;
@@ -104,12 +101,12 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA – 2-column grid of "windows" */
+        /* MAIN DESKTOP AREA */
         #desktop {
-            margin: 20px auto 40px auto;
+            margin: 20px auto 60px auto;
             z-index: 3;
             position: relative;
-            width: 1040px; /* 2 * 480 + 20px gap + a bit of padding */
+            width: 1040px;
             left: 0;
             transform: translateX(-60px);
 
@@ -178,64 +175,48 @@
             margin-bottom: 5px;
         }
 
-        /* post image inside Notepad window */
         img.full_image {
             width: 60%;
             height: auto;
             display: block;
             margin: 0 auto;
-            cursor: pointer; /* clickable for lightbox */
+            cursor: pointer;
         }
 
         .middle .caption {
             margin-top: 5px;
         }
 
-        .tagged {
-            font-size: 0.8em;
-            margin-top: 8px;
-            opacity: 0.8;
-        }
-
-        .navigation {
-            overflow: hidden;
-            font-weight: bold;
-            clear: both;
-            float: none;
-            margin-bottom: 40px !important;
-        }
-
-        .navigation .next,
-        .navigation .prev {
-            background-color: #FFFFFF;
-            padding: 6px 8px;
-        }
-
-        .navigation .next {
-            float: right;
-        }
-
-        /* RIGHT POPUPS COLUMN – keeps boxes above taskbar */
+        /* RIGHT SIDEBAR POPUPS */
         .right-popups {
             position: fixed;
-            right: 6px;
             top: 40px;
-            bottom: 40px; /* leaves space above the taskbar */
+            right: 6px;
+            bottom: 34px; /* always above taskbar */
+            width: 300px;
+            z-index: 5;
+
             display: flex;
             flex-direction: column;
             gap: 16px;
-            align-items: flex-end;
-            z-index: 5;
-            pointer-events: none; /* let children handle clicks */
+            align-items: stretch;
+
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            padding-bottom: 4px;
+
+            pointer-events: none;
         }
 
         .top-banner {
             pointer-events: auto;
+            flex: 0 0 auto;
         }
 
         .top-banner-window {
-            width: 300px;
-            max-width: 90%;
+            width: 100%;
+            box-sizing: border-box;
             border: 1px solid #000000;
             background-color: #d4d0c8;
             box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
@@ -278,6 +259,7 @@
             color: #000000;
             font-size: 10px;
             cursor: default;
+            box-sizing: border-box;
         }
 
         .tb-body {
@@ -293,6 +275,7 @@
             height: 32px;
             margin-right: 12px;
             background: none;
+            flex: 0 0 auto;
         }
 
         .tb-icon::before {
@@ -325,11 +308,17 @@
             font-size: 12px;
             line-height: 1;
             letter-spacing: 0.005em;
+            box-sizing: border-box;
+        }
+
+        .tb-text p {
+            margin-top: 0;
         }
 
         .tb-footer {
             padding: 0 16px 12px;
             text-align: center;
+            box-sizing: border-box;
         }
 
         .tb-button {
@@ -463,7 +452,7 @@
             background-position: -632px -87px;
         }
 
-        /* SIMPLE FULL-SIZE LIGHTBOX (NO FRAME) */
+        /* LIGHTBOX */
         #hpc-lightbox {
             display: none;
             position: fixed;
@@ -472,7 +461,7 @@
             z-index: 9999;
             justify-content: center;
             align-items: center;
-            cursor: zoom-out; /* hint you can click to close */
+            cursor: zoom-out;
         }
 
         #hpc-lightbox img {
@@ -483,7 +472,6 @@
             display: block;
         }
 
-        /* BASIC RESPONSIVENESS */
         @media (max-width: 768px) {
             body {
                 overflow-x: auto;
@@ -494,9 +482,7 @@
 
 <body class="win98 two_column">
 
-    <!-- RIGHT POPUPS (both dialogs) -->
     <div class="right-popups">
-        <!-- TOP-RIGHT DIALOG #1 -->
         <div class="top-banner">
             <div class="top-banner-window">
                 <div class="tb-titlebar">
@@ -515,8 +501,7 @@
             </div>
         </div>
 
-        <!-- TOP-RIGHT DIALOG #2 -->
-        <div class="top-banner second">
+        <div class="top-banner">
             <div class="top-banner-window">
                 <div class="tb-titlebar">
                     <span class="tb-title-text">⚠️ PLEASE READ ⚠️ </span>
@@ -540,7 +525,6 @@
     </div>
 
     <div class="wrapper">
-        <!-- LEFT ICONS COLUMN -->
         <div class="icons">
             <a href="https://hippocampercams.github.io" class="home">
                 <div class="my_computer"></div>
@@ -557,7 +541,6 @@
                 <div class="icon_label">masterlist</div>
             </a>
 
-            <!-- CUSTOM LINKS -->
             <a href="faqs.html" class="listings">
                 <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
                 <div class="icon_label">FAQs</div>
@@ -589,9 +572,7 @@
             </a>
         </div>
 
-        <!-- MAIN DESKTOP WINDOWS (2-column grid) -->
         <div id="desktop" class="container">
-            <!-- Post 1 -->
             <div class="window post-photo">
                 <a href="#">
                     <div class="top">
@@ -603,7 +584,7 @@
                 <div class="middle">
                     <div class="title">FUJIFILM FINEPIX A500 – Notepad</div>
                     <div class="content">
-                        <img src="https://64.media.tumblr.com/a2678466141ef3ccb62d3ecbde202a0e/95cbb7785805f725-72/s1280x1920/2d0d385ff60bef1e6d7bf91863cfbfe8e7f70ec1.jpg"
+                        <img src="https://64.media.tumblr.com/fed7e8350733b5445ebfec37d2a3f7b4/b697605a47f236c2-29/s2048x3072/a47dd832a56d5848ee0c471f597e6128183735f3.jpg"
                              class="full_image"
                              alt="FUJIFILM FINEPIX A500"
                              onclick="openHpcLightbox(this)">
@@ -613,7 +594,6 @@
                 <div class="bottom"></div>
             </div>
 
-            <!-- Sample Window 1 (text post) -->
             <div class="window post-text">
                 <a href="#">
                     <div class="top">
@@ -631,7 +611,6 @@
                 <div class="bottom"></div>
             </div>
 
-            <!-- Sample Window 2 (photo post) -->
             <div class="window post-photo">
                 <a href="#">
                     <div class="top">
@@ -652,14 +631,12 @@
                 </div>
                 <div class="bottom"></div>
             </div>
-        </div> <!-- end of #desktop -->
+        </div>
 
-        <!-- LIGHTBOX OVERLAY (NO FRAME) -->
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
             <img src="" alt="enlarged photo" id="hpc-lightbox-img">
         </div>
 
-        <!-- START BAR -->
         <div class="start_menu"></div>
         <div class="start_bar">
             <div class="top_border"></div>
@@ -677,14 +654,12 @@
                 <span class="time" id="showClock">00:00 AM</span>
             </div>
         </div>
-    </div> <!-- end .wrapper -->
+    </div>
 
-    <!-- JS: jQuery + win98 + clock + lightbox -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
 
     <script>
-    /* CLOCK */
     function updateClock() {
         var now = new Date();
         var h = now.getHours();
@@ -701,27 +676,20 @@
     updateClock();
     setInterval(updateClock, 60000);
 
-    /* LIGHTBOX FUNCTIONS – SIMPLE + GLOBAL */
     function openHpcLightbox(imgEl) {
         var lightbox = document.getElementById('hpc-lightbox');
-        if (!lightbox) return;
-
         var photo = document.getElementById('hpc-lightbox-img');
-        if (!photo) return;
-
-        photo.src = imgEl.src;      // same image URL, just displayed bigger
+        if (!lightbox || !photo) return;
+        photo.src = imgEl.src;
         lightbox.style.display = 'flex';
     }
 
     function closeHpcLightbox() {
         var lightbox = document.getElementById('hpc-lightbox');
-        if (!lightbox) return;
-
         var photo = document.getElementById('hpc-lightbox-img');
+        if (!lightbox || !photo) return;
         lightbox.style.display = 'none';
-        if (photo) {
-            photo.src = '';
-        }
+        photo.src = '';
     }
     </script>
 </body>
