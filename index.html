@@ -104,11 +104,11 @@
         #desktop {
             margin-top: 20px;
             margin-bottom: 60px;
-            margin-left: 280px;
+            margin-left: 245px;
             margin-right: 0;
-            width: 1040px;
-            max-width: 1040px;
-            min-width: 1040px;
+            width: 1120px;
+            max-width: 1120px;
+            min-width: 1120px;
             z-index: 3;
             position: relative;
             display: flex;
@@ -118,9 +118,9 @@
 
         /* POST WINDOWS */
         .window {
-            width: 1040px;
-            max-width: 1040px;
-            min-width: 1040px;
+            width: 1120px;
+            max-width: 1120px;
+            min-width: 1120px;
             margin: 0;
             font-family: "Courier New", Courier, monospace;
             background: #ffffff;
@@ -196,7 +196,7 @@
 
         .window .middle {
             background: #ffffff !important;
-            padding: 16px 18px 14px 18px;
+            padding: 16px 18px 18px 18px;
             box-sizing: border-box;
         }
 
@@ -221,20 +221,39 @@
             margin-bottom: 10px;
         }
 
-        img.full_image {
-            width: 78%;
-            height: auto;
-            display: block;
-            margin: 0 auto 12px auto;
-            cursor: pointer;
-        }
-
         .middle .caption {
             margin-top: 8px;
         }
 
         .content p {
             margin: 0 0 10px;
+        }
+
+        /* PHOTO GRID: 3 columns, equal gaps, 960x1280 ratio */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .photo-grid img.full_image {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+            cursor: pointer;
+            background: #f3f3f3;
+        }
+
+        /* fallback for non-grid single images */
+        img.full_image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            cursor: pointer;
         }
 
         /* RIGHT SIDEBAR POPUPS – moved up, no scrollbar */
@@ -521,10 +540,10 @@
         }
 
         .feed-loading {
-            margin: 0 0 20px 280px;
-            width: 1040px;
-            max-width: 1040px;
-            min-width: 1040px;
+            margin: 0 0 20px 245px;
+            width: 1120px;
+            max-width: 1120px;
+            min-width: 1120px;
             text-align: center;
             font-family: "Courier New", Courier, monospace;
             color: #ffffff;
@@ -532,75 +551,78 @@
             display: none;
         }
 
-        @media (max-width: 1700px) {
+        @media (max-width: 1780px) {
             #desktop,
             .window,
             .feed-loading {
-                width: 980px;
-                max-width: 980px;
-                min-width: 980px;
+                width: 1060px;
+                max-width: 1060px;
+                min-width: 1060px;
             }
 
-            #desktop {
-                margin-left: 250px;
-            }
-
+            #desktop,
             .feed-loading {
-                margin-left: 250px;
+                margin-left: 225px;
             }
         }
 
-        @media (max-width: 1550px) {
+        @media (max-width: 1660px) {
             #desktop,
             .window,
             .feed-loading {
-                width: 920px;
-                max-width: 920px;
-                min-width: 920px;
+                width: 1000px;
+                max-width: 1000px;
+                min-width: 1000px;
             }
 
-            #desktop {
-                margin-left: 220px;
-            }
-
+            #desktop,
             .feed-loading {
-                margin-left: 220px;
+                margin-left: 205px;
             }
         }
 
-        @media (max-width: 1400px) {
+        @media (max-width: 1540px) {
             #desktop,
             .window,
             .feed-loading {
-                width: 840px;
-                max-width: 840px;
-                min-width: 840px;
+                width: 940px;
+                max-width: 940px;
+                min-width: 940px;
             }
 
-            #desktop {
-                margin-left: 190px;
-            }
-
+            #desktop,
             .feed-loading {
-                margin-left: 190px;
+                margin-left: 185px;
             }
         }
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1420px) {
             #desktop,
             .window,
             .feed-loading {
-                width: 760px;
-                max-width: 760px;
-                min-width: 760px;
+                width: 860px;
+                max-width: 860px;
+                min-width: 860px;
             }
 
-            #desktop {
-                margin-left: 150px;
-            }
-
+            #desktop,
             .feed-loading {
-                margin-left: 150px;
+                margin-left: 170px;
+            }
+        }
+
+        @media (max-width: 1220px) {
+            #desktop,
+            .window,
+            .feed-loading {
+                width: 780px;
+                max-width: 780px;
+                min-width: 780px;
+            }
+
+            #desktop,
+            .feed-loading {
+                margin-left: 145px;
             }
         }
 
@@ -627,14 +649,18 @@
                 right: 10px;
             }
 
-            img.full_image {
-                width: 86%;
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (max-width: 768px) {
             body {
                 overflow-x: auto;
+            }
+
+            .photo-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -743,14 +769,32 @@
                     <div class="title">FUJIFILM FINEPIX A500</div>
                     <div class="caption">striking, moody, aesthetic</div>
                     <div class="content">
-                        <img src="https://64.media.tumblr.com/7f70cc6985134fc5e7688832753ca046/827363805da02c57-cc/s2048x3072/00fe6d97c110a30deb33465abdef45aee2379520.jpg"
-                             class="full_image"
-                             alt="FUJIFILM FINEPIX A500 collage"
-                             onclick="openHpcLightbox(this)">
-                        <img src="https://64.media.tumblr.com/fed7e8350733b5445ebfec37d2a3f7b4/b697605a47f236c2-29/s2048x3072/a47dd832a56d5848ee0c471f597e6128183735f3.jpg"
-                             class="full_image"
-                             alt="FUJIFILM FINEPIX A500"
-                             onclick="openHpcLightbox(this)">
+                        <div class="photo-grid">
+                            <img src="https://64.media.tumblr.com/7f70cc6985134fc5e7688832753ca046/827363805da02c57-cc/s2048x3072/00fe6d97c110a30deb33465abdef45aee2379520.jpg"
+                                 class="full_image"
+                                 alt="FUJIFILM FINEPIX A500 collage"
+                                 onclick="openHpcLightbox(this)">
+                            <img src="https://64.media.tumblr.com/fed7e8350733b5445ebfec37d2a3f7b4/b697605a47f236c2-29/s2048x3072/a47dd832a56d5848ee0c471f597e6128183735f3.jpg"
+                                 class="full_image"
+                                 alt="FUJIFILM FINEPIX A500"
+                                 onclick="openHpcLightbox(this)">
+                            <img src="https://64.media.tumblr.com/ff3ecf24923684b1e6f780fa3fe841e4/8f15677795d9ae9a-11/s2048x3072/15d7badcd307a9ecf554c3bcbfb84d8bd7fc00b1.jpg"
+                                 class="full_image"
+                                 alt="FUJIFILM FINEPIX A500 photo 3"
+                                 onclick="openHpcLightbox(this)">
+                            <img src="https://64.media.tumblr.com/40f3948775a3f9f49ed6c03ba3616698/8f15677795d9ae9a-ad/s2048x3072/7dbdea2d0b465cdda97b0e8076e6135181540d2a.jpg"
+                                 class="full_image"
+                                 alt="FUJIFILM FINEPIX A500 photo 4"
+                                 onclick="openHpcLightbox(this)">
+                            <img src="https://64.media.tumblr.com/a061ef0d07620c74b6d22b85329e0435/8f15677795d9ae9a-60/s2048x3072/3e7e37696f898aba7065a38bba2bb1a49cae74b2.jpg"
+                                 class="full_image"
+                                 alt="FUJIFILM FINEPIX A500 photo 5"
+                                 onclick="openHpcLightbox(this)">
+                            <img src="https://via.placeholder.com/960x1280?text=Photo+6"
+                                 class="full_image"
+                                 alt="FUJIFILM FINEPIX A500 photo 6"
+                                 onclick="openHpcLightbox(this)">
+                        </div>
                         <div class="caption">Example caption for your listing / inspo board / etc.</div>
                     </div>
                 </div>
@@ -781,10 +825,20 @@
                 <div class="middle">
                     <div class="title">Post – Notepad</div>
                     <div class="content">
-                        <img src="https://via.placeholder.com/640x420?text=Photo+1"
-                             class="full_image"
-                             alt="photo 1"
-                             onclick="openHpcLightbox(this)">
+                        <div class="photo-grid">
+                            <img src="https://via.placeholder.com/960x1280?text=Photo+1"
+                                 class="full_image"
+                                 alt="photo 1"
+                                 onclick="openHpcLightbox(this)">
+                            <img src="https://via.placeholder.com/960x1280?text=Photo+2"
+                                 class="full_image"
+                                 alt="photo 2"
+                                 onclick="openHpcLightbox(this)">
+                            <img src="https://via.placeholder.com/960x1280?text=Photo+3"
+                                 class="full_image"
+                                 alt="photo 3"
+                                 onclick="openHpcLightbox(this)">
+                        </div>
                         <div class="caption">Example caption for your listing / inspo board / etc.</div>
                     </div>
                 </div>
@@ -866,10 +920,12 @@
             title: "canon powershot moodboard",
             meta: "Posted 58 minutes ago • 34 notes",
             images: [
-                {
-                    src: "https://via.placeholder.com/900x600?text=Canon+PowerShot+1",
-                    alt: "canon powershot moodboard image 1"
-                }
+                { src: "https://via.placeholder.com/960x1280?text=Canon+1", alt: "canon powershot moodboard image 1" },
+                { src: "https://via.placeholder.com/960x1280?text=Canon+2", alt: "canon powershot moodboard image 2" },
+                { src: "https://via.placeholder.com/960x1280?text=Canon+3", alt: "canon powershot moodboard image 3" },
+                { src: "https://via.placeholder.com/960x1280?text=Canon+4", alt: "canon powershot moodboard image 4" },
+                { src: "https://via.placeholder.com/960x1280?text=Canon+5", alt: "canon powershot moodboard image 5" },
+                { src: "https://via.placeholder.com/960x1280?text=Canon+6", alt: "canon powershot moodboard image 6" }
             ],
             caption: "soft flash, silver body, very 2000s"
         },
@@ -884,19 +940,23 @@
     var postCursor = 0;
     var isAppending = false;
 
-    function createPhotoPost(post) {
-        var imageHtml = "";
-        for (var i = 0; i < post.images.length; i++) {
-            imageHtml += '<img src="' + post.images[i].src + '" class="full_image" alt="' + post.images[i].alt + '" onclick="openHpcLightbox(this)">';
+    function buildPhotoGrid(images) {
+        var imageHtml = '<div class="photo-grid">';
+        for (var i = 0; i < images.length; i++) {
+            imageHtml += '<img src="' + images[i].src + '" class="full_image" alt="' + images[i].alt + '" onclick="openHpcLightbox(this)">';
         }
+        imageHtml += '</div>';
+        return imageHtml;
+    }
 
+    function createPhotoPost(post) {
         return '' +
             '<div class="window post-photo">' +
                 '<a href="#"><div class="top"><div class="info">' + post.meta + '</div></div></a>' +
                 '<div class="middle">' +
                     '<div class="title">' + post.title + '</div>' +
                     '<div class="content">' +
-                        imageHtml +
+                        buildPhotoGrid(post.images) +
                         '<div class="caption">' + (post.caption || "") + '</div>' +
                     '</div>' +
                 '</div>' +
