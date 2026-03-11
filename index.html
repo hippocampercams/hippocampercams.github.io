@@ -101,24 +101,23 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA */
+        /* MAIN DESKTOP AREA - SINGLE COLUMN FEED */
         #desktop {
             margin: 20px auto 60px auto;
             z-index: 3;
             position: relative;
-            width: 1040px;
+            width: 760px;
             left: 0;
-            transform: translateX(-60px);
+            transform: none;
 
-            display: grid;
-            grid-template-columns: repeat(2, 480px);
-            column-gap: 20px;
-            row-gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .window {
-            width: 480px;
-            max-width: 480px;
+            width: 760px;
+            max-width: 760px;
             margin: 0;
             font-family: "Courier New", Courier, monospace;
         }
@@ -140,7 +139,7 @@
             top: 26px;
             left: 10px;
             position: relative;
-            width: 300px;
+            width: 500px;
             z-index: 4;
             font-size: 11px;
             line-height: 13px;
@@ -161,7 +160,7 @@
         div.tags {
             background: url('https://static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png');
             background-repeat: repeat-y;
-            padding: 4px 26px 4px 10px;
+            padding: 10px 26px 10px 10px;
         }
 
         .window .bottom {
@@ -171,42 +170,46 @@
 
         .title {
             display: block;
-            font-size: 1.25em;
-            margin-bottom: 5px;
+            font-size: 1.35em;
+            margin-bottom: 8px;
         }
 
         img.full_image {
-            width: 60%;
+            width: 72%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 0 auto 12px auto;
             cursor: pointer;
         }
 
         .middle .caption {
-            margin-top: 5px;
+            margin-top: 8px;
+        }
+
+        .content p {
+            margin: 0 0 10px;
         }
 
         /* RIGHT SIDEBAR POPUPS – moved up, no scrollbar */
-.right-popups {
-    position: fixed;
-    top: 20px;
-    right: 6px;
-    width: 300px;
-    z-index: 5;
+        .right-popups {
+            position: fixed;
+            top: 10px;
+            right: 6px;
+            width: 300px;
+            z-index: 5;
 
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: stretch;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
 
-    pointer-events: none;
-}
+            pointer-events: none;
+        }
 
-.top-banner {
-    pointer-events: auto;
-    flex: 0 0 auto;
-}
+        .top-banner {
+            pointer-events: auto;
+            flex: 0 0 auto;
+        }
 
         .top-banner-window {
             width: 100%;
@@ -300,7 +303,7 @@
         .tb-text {
             font-family: "Courier New", Courier, monospace;
             font-size: 12px;
-            line-height: 1;
+            line-height: 1.2;
             letter-spacing: 0.005em;
             box-sizing: border-box;
         }
@@ -342,7 +345,7 @@
             bottom: 0;
             height: 28px;
             width: 100%;
-            z-index: 4;
+            z-index: 1000;
         }
 
         .start_menu {
@@ -466,6 +469,48 @@
             display: block;
         }
 
+        /* INFINITE SCROLL LOADER */
+        #feed-sentinel {
+            height: 1px;
+            width: 100%;
+        }
+
+        .feed-loading {
+            width: 760px;
+            max-width: 760px;
+            margin: 0 auto 20px;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        @media (max-width: 1200px) {
+            #desktop,
+            .window,
+            .feed-loading {
+                width: 680px;
+                max-width: 680px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #desktop,
+            .window,
+            .feed-loading {
+                width: 88vw;
+                max-width: 88vw;
+            }
+
+            .right-popups {
+                right: 10px;
+            }
+
+            img.full_image {
+                width: 82%;
+            }
+        }
+
         @media (max-width: 768px) {
             body {
                 overflow-x: auto;
@@ -474,7 +519,7 @@
     </style>
 </head>
 
-<body class="win98 two_column">
+<body class="win98 one_column">
 
     <div class="right-popups">
         <div class="top-banner">
@@ -498,17 +543,17 @@
         <div class="top-banner">
             <div class="top-banner-window">
                 <div class="tb-titlebar">
-                    <span class="tb-title-text">⚠️ PLEASE READ ⚠️ </span>
+                    <span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>
                     <span class="tb-close">x</span>
                 </div>
                 <div class="tb-body">
                     <div class="tb-icon"></div>
                     <div class="tb-text">
                         <p>all our cameras are lovingly sourced and tested personally ♡</p>
-                        <p>we do our best to get these little pieces of history to you in as good a condition as possible, but they are <i>✧ genuinely vintage & pre-loved ✧</i>, so <b>you'll see signs of use & age, e.g. scuffs, scratches, dinks & imperfections</b>.</p>
-                        <p>🙏🏻<b><u>please read all notices on our site &amp; the full description of each item carefully &amp; thoroughly, &amp; examine all pictures closely before purchasing.</u></b>🙏🏻</p>
-                        <p>we are selling digicams themselves; any accessories included are shown in listing pictures &amp; stated in the description. these are freebies for you at no cost, we cannot guarantee and are not liable for their condition, function or usability.</p>
-                        ♡ enjoy finding your forever cam ♡
+                        <p>we do our best to get these little pieces of history into your hands in as good a condition as possible, but they are <i>✧ genuinely vintage &amp; pre-loved ✧</i>, so <b>you’ll see signs of use &amp; age, e.g. scuffs, scratches, dinks &amp; imperfections</b>.</p>
+                        <p>🙏🏻<b><u>please read all notices on our site &amp; the full description of each item carefully &amp; thoroughly, and examine all pictures closely before purchasing.</u></b>🙏🏻</p>
+                        <p>we are selling the digicams themselves; any accessories included are shown in listing pictures and stated in the description. these are freebies at no extra cost, and we cannot guarantee or be liable for their condition, function or usability.</p>
+                        <p>♡ enjoy finding your forever cam ♡</p>
                     </div>
                 </div>
                 <div class="tb-footer">
@@ -576,7 +621,7 @@
                     </div>
                 </a>
                 <div class="middle">
-                    <div class="title">FUJIFILM FINEPIX A500 </div>
+                    <div class="title">FUJIFILM FINEPIX A500</div>
                     <div class="caption">striking, moody, aesthetic</div>
                     <div class="content">
                         <img src="https://64.media.tumblr.com/7f70cc6985134fc5e7688832753ca046/827363805da02c57-cc/s2048x3072/00fe6d97c110a30deb33465abdef45aee2379520.jpg"
@@ -621,7 +666,7 @@
                 <div class="middle">
                     <div class="title">Post – Notepad</div>
                     <div class="content">
-                        <img src="https://via.placeholder.com/480x320?text=Photo+1"
+                        <img src="https://via.placeholder.com/640x420?text=Photo+1"
                              class="full_image"
                              alt="photo 1"
                              onclick="openHpcLightbox(this)">
@@ -632,12 +677,15 @@
             </div>
         </div>
 
+        <div class="feed-loading" id="feed-loading">loading more posts...</div>
+        <div id="feed-sentinel"></div>
+
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
             <img src="" alt="enlarged photo" id="hpc-lightbox-img">
         </div>
 
         <div class="start_menu"></div>
-        <div class="start_bar">
+        <div class="start_bar" id="taskbar">
             <div class="top_border"></div>
             <div class="start_button">
                 <span class="logo"></span>
@@ -676,20 +724,170 @@
     setInterval(updateClock, 60000);
 
     function openHpcLightbox(imgEl) {
-        var lightbox = document.getElementById('hpc-lightbox');
-        var photo = document.getElementById('hpc-lightbox-img');
+        var lightbox = document.getElementById("hpc-lightbox");
+        var photo = document.getElementById("hpc-lightbox-img");
         if (!lightbox || !photo) return;
         photo.src = imgEl.src;
-        lightbox.style.display = 'flex';
+        lightbox.style.display = "flex";
     }
 
     function closeHpcLightbox() {
-        var lightbox = document.getElementById('hpc-lightbox');
-        var photo = document.getElementById('hpc-lightbox-img');
+        var lightbox = document.getElementById("hpc-lightbox");
+        var photo = document.getElementById("hpc-lightbox-img");
         if (!lightbox || !photo) return;
-        lightbox.style.display = 'none';
-        photo.src = '';
+        lightbox.style.display = "none";
+        photo.src = "";
     }
+
+    var infinitePosts = [
+        {
+            type: "text",
+            title: "why we love older digicams",
+            meta: "Posted 1 hour ago • 12 notes",
+            content: "<p>older digital cameras have a look that newer devices often smooth out or erase — harsher flash, moodier colour, unexpected bloom, weird noise, and all the charm that comes with it.</p><p>we’re here for photos that feel lived in, not over-processed.</p>"
+        },
+        {
+            type: "photo",
+            title: "canon powershot moodboard",
+            meta: "Posted 58 minutes ago • 34 notes",
+            images: [
+                {
+                    src: "https://via.placeholder.com/900x600?text=Canon+PowerShot+1",
+                    alt: "canon powershot moodboard image 1"
+                }
+            ],
+            caption: "soft flash, silver body, very 2000s"
+        },
+        {
+            type: "text",
+            title: "before you adopt a cam",
+            meta: "Posted 47 minutes ago • 8 notes",
+            content: "<p>please expect genuine vintage wear. cosmetic flaws are normal and part of the history of these cameras.</p><p>always review the full listing and photos closely before purchasing.</p>"
+        },
+        {
+            type: "photo",
+            title: "sony cybershot inspo",
+            meta: "Posted 31 minutes ago • 19 notes",
+            images: [
+                {
+                    src: "https://via.placeholder.com/900x600?text=Sony+Cyber-shot+1",
+                    alt: "sony cybershot image 1"
+                },
+                {
+                    src: "https://via.placeholder.com/900x600?text=Sony+Cyber-shot+2",
+                    alt: "sony cybershot image 2"
+                }
+            ],
+            caption: "compact, shiny, iconic"
+        },
+        {
+            type: "text",
+            title: "tested personally ♡",
+            meta: "Posted 18 minutes ago • 5 notes",
+            content: "<p>every camera we list is personally sourced and tested by us before it goes up.</p><p>we try our best to be clear, accurate and honest about condition so you know exactly what you’re getting.</p>"
+        }
+    ];
+
+    var postCursor = 0;
+    var isAppending = false;
+
+    function createPhotoPost(post) {
+        var imageHtml = "";
+        for (var i = 0; i < post.images.length; i++) {
+            imageHtml += '<img src="' + post.images[i].src + '" class="full_image" alt="' + post.images[i].alt + '" onclick="openHpcLightbox(this)">';
+        }
+
+        return '' +
+            '<div class="window post-photo">' +
+                '<a href="#">' +
+                    '<div class="top">' +
+                        '<div class="info">' + post.meta + '</div>' +
+                    '</div>' +
+                '</a>' +
+                '<div class="middle">' +
+                    '<div class="title">' + post.title + '</div>' +
+                    '<div class="content">' +
+                        imageHtml +
+                        '<div class="caption">' + (post.caption || "") + '</div>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="bottom"></div>' +
+            '</div>';
+    }
+
+    function createTextPost(post) {
+        return '' +
+            '<div class="window post-text">' +
+                '<a href="#">' +
+                    '<div class="top">' +
+                        '<div class="info">' + post.meta + '</div>' +
+                    '</div>' +
+                '</a>' +
+                '<div class="middle">' +
+                    '<div class="title">' + post.title + '</div>' +
+                    '<div class="content">' + post.content + '</div>' +
+                '</div>' +
+                '<div class="bottom"></div>' +
+            '</div>';
+    }
+
+    function appendMorePosts(count) {
+        if (isAppending) return;
+        isAppending = true;
+
+        var desktop = document.getElementById("desktop");
+        var loading = document.getElementById("feed-loading");
+        if (!desktop) {
+            isAppending = false;
+            return;
+        }
+
+        if (loading) {
+            loading.style.display = "block";
+        }
+
+        var html = "";
+        for (var i = 0; i < count; i++) {
+            var post = infinitePosts[postCursor % infinitePosts.length];
+            if (post.type === "photo") {
+                html += createPhotoPost(post);
+            } else {
+                html += createTextPost(post);
+            }
+            postCursor++;
+        }
+
+        setTimeout(function() {
+            desktop.insertAdjacentHTML("beforeend", html);
+            isAppending = false;
+        }, 250);
+    }
+
+    function setupInfiniteScroll() {
+        var sentinel = document.getElementById("feed-sentinel");
+        var loading = document.getElementById("feed-loading");
+
+        if (!sentinel || !("IntersectionObserver" in window)) {
+            if (loading) loading.style.display = "none";
+            return;
+        }
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    appendMorePosts(3);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: "300px 0px",
+            threshold: 0
+        });
+
+        observer.observe(sentinel);
+    }
+
+    setupInfiniteScroll();
     </script>
 </body>
 </html>
