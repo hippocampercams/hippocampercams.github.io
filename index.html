@@ -276,14 +276,14 @@
         }
 
         .top-banner-window {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-    background-color: #d4d0c8;
-    box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    color: #000000;
-}
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            background-color: #d4d0c8;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            color: #000000;
+        }
 
         .tb-titlebar {
             height: 30px;
@@ -410,6 +410,19 @@
             height: 28px;
             width: 100%;
             z-index: 1000;
+        }
+
+        .taskbar-center-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            color: #000000;
+            line-height: 1;
+            white-space: nowrap;
+            pointer-events: none;
         }
 
         .start_menu {
@@ -672,24 +685,6 @@
         <div class="top-banner">
             <div class="top-banner-window">
                 <div class="tb-titlebar">
-                    <span class="tb-title-text">hippocampercams</span>
-                    <span class="tb-close">x</span>
-                </div>
-                <div class="tb-body">
-                    <div class="tb-icon"></div>
-                    <div class="tb-text">
-                        °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
-                    </div>
-                </div>
-                <div class="tb-footer">
-                    <button class="tb-button">ok</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="top-banner">
-            <div class="top-banner-window">
-                <div class="tb-titlebar">
                     <span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>
                     <span class="tb-close">x</span>
                 </div>
@@ -701,6 +696,30 @@
                         <p>🙏🏻<b><u>please read all notices on our site &amp; the full description of each item carefully &amp; thoroughly, and examine all pictures closely before purchasing.</u></b>🙏🏻</p>
                         <p>we are selling the digicams themselves; any accessories included are shown in listing pictures and stated in the description. these are freebies at no extra cost, and we cannot guarantee or be liable for their condition, function or usability.</p>
                         <p>♡ enjoy finding your forever cam ♡</p>
+                    </div>
+                </div>
+                <div class="tb-footer">
+                    <button class="tb-button">ok</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-banner">
+            <div class="top-banner-window">
+                <div class="tb-titlebar">
+                    <span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>
+                    <span class="tb-close">x</span>
+                </div>
+                <div class="tb-body">
+                    <div class="tb-icon"></div>
+                    <div class="tb-text">
+                        <p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>
+                        <p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>
+                        <p>⋆⋆⋆⋆ - pretty darn good; minor cosmetic flaws</p>
+                        <p>⋆⋆⋆ - good; cosmetic flaws characteristic of preloved vintage cams</p>
+                        <p>⋆⋆ - it's seen things and it's a little worn out and/or minor functional issues</p>
+                        <p>⋆ - it's a veteran and has battle scars and/or functional issues</p>
+                        <p>♻️ - it's a pretty display piece, maybe you can get it to work again if you fix it?</p>
                     </div>
                 </div>
                 <div class="tb-footer">
@@ -891,6 +910,9 @@
             <span class="big_seperator"></span>
             <span class="small_seperator"></span>
             <span class="application_icons"></span>
+
+            <div class="taskbar-center-text">°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。</div>
+
             <span class="big_seperator"></span>
             <span class="small_seperator"></span>
             <div class="tray">
@@ -1059,3 +1081,6 @@
     </script>
 </body>
 </html>
+
+it doesnt show
+why? i want it in the middle of the taskbar so why doesnt it show? fix it in the whole updated code please
