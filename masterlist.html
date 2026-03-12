@@ -104,26 +104,30 @@
         }
 
         /* MAIN DESKTOP AREA – two-column flex layout */
-#desktop {
-    margin: 20px auto;
-    z-index: 3;
-    position: relative;
-    width: 1000px;              /* two 480px windows + 20px gap */
-    left: 0;
-    transform: translateX(-60px); /* pull posts left toward icons (same offset) */
+        #desktop {
+            margin: 20px auto;
+            z-index: 3;
+            position: relative;
+            width: 1000px;
+            left: 0;
+            transform: translateX(-60px);
 
-    display: flex;
-    flex-wrap: wrap;            /* allow a second row */
-    column-gap: 20px;           /* 20px between columns */
-    row-gap: 20px;              /* 20px between rows */
-}
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
 
         .window {
-    width: 480px;                /* match original Win98 window width */
-    max-width: 480px;
-    font-family: "Courier New", Courier, monospace;
-    /* no float or margins – flex gap handles spacing */
-}
+            width: 480px;
+            max-width: 480px;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .wide-window {
+            width: 980px;
+            max-width: 980px;
+        }
 
         .window .title,
         .window .content,
@@ -175,7 +179,7 @@
             display: block;
             font-size: 1.25em;
             margin-bottom: 5px;
-            text-align: center;   /* center all post titles */
+            text-align: center;
         }
 
         .middle .caption {
@@ -194,7 +198,7 @@
             height: auto;
             display: block;
             margin: 0 auto 2px auto;
-            image-rendering: pixelated; /* keep that crunchy vibe if you export low-res */
+            image-rendering: pixelated;
         }
 
         /* AESTHETIC GRID (Post 2) */
@@ -207,7 +211,7 @@
 
         .aesthetic-item {
             display: block;
-            width: 145px;        /* 3 items per row within 480px, with gaps */
+            width: 145px;
             text-align: center;
             text-decoration: none;
         }
@@ -217,7 +221,7 @@
             height: auto;
             display: block;
             image-rendering: pixelated;
-            border: 1px solid #000000;
+            border: none;
         }
 
         .aesthetic-label {
@@ -554,36 +558,8 @@
 
         <!-- MAIN DESKTOP WINDOWS -->
         <div id="desktop" class="container">
-            <!-- POST 1: DIGICAMS -->
-            <div class="window post-text">
-                <a href="#">
-                    <div class="top">
-                        <div class="info">
-                            masterlist • digicams
-                        </div>
-                    </div>
-                </a>
-                <div class="middle">
-                    <div class="title">
-                        <img src="img/icons/digicams-wordart.png"
-                             alt="DIGICAMS"
-                             class="title-img">
-                    </div>
-                    <div class="content">
-                        <p><a href="digicams-fujifilm.html">❤︎ FUJIFILM</a><br></p>
-                        <p><a href="digicams-nikon.html">❤︎ NIKON</a><br></p>
-                        <p><a href="digicams-canon.html">❤︎ CANON</a><br></p>
-                        <p><a href="digicams-sony.html">❤︎ SONY</a><br></p>
-                        <p><a href="digicams-olympus.html">❤︎ OLYMPUS</a><br></p>
-                        <p><a href="digicams-panasonic.html">❤︎ PANASONIC</a><br></p>
-                        <p><a href="digicams-ricoh.html">❤︎ RICOH</a></p>
-                    </div>
-                </div>
-                <div class="bottom"></div>
-            </div>
-
             <!-- POST 2: SHOP DIGICAMS BY AESTHETIC -->
-            <div class="window post-text">
+            <div class="window post-text wide-window">
                 <a href="#">
                     <div class="top">
                         <div class="info">
@@ -599,7 +575,6 @@
                     </div>
                     <div class="content">
                         <div class="aesthetic-grid">
-                            <!-- Replace image paths & hrefs with your real pages/photos -->
                             <a href="aesthetic-sunset-glow.html" class="aesthetic-item">
                                 <img src="img/aesthetic-sunset-glow.jpg" alt="sunset glow" class="aesthetic-thumb">
                                 <div class="aesthetic-label">sunset glow</div>
@@ -631,15 +606,43 @@
                             </a>
 
                             <a href="aesthetic-clean-girl.html" class="aesthetic-item">
-                                <img src="img/aesthetic-clean-girl.jpg" alt="clean girl" class="aesthetic-thumb">
+                                <img src="https://64.media.tumblr.com/40f3948775a3f9f49ed6c03ba3616698/8f15677795d9ae9a-ad/s1280x1920/095f2491f73335eb6385407d287ace20366721c0.jpg" alt="clean girl" class="aesthetic-thumb">
                                 <div class="aesthetic-label">clean girl</div>
                             </a>
 
                             <a href="aesthetic-simple-elegance.html" class="aesthetic-item">
-                                <img src="https://64.media.tumblr.com/5627429eeaa8fb7217de976992844470/2527f28ed92627d9-f2/s1280x1920/e1b0f9f0dd05419daebd03aa191b632ed1776ba3.jpg" alt="simple elegance" class="aesthetic-thumb">
+                                <img src="https://64.media.tumblr.com/a4ef30b0053a9dd5365c4158ec10c0f9/fab800c49e64a484-b9/s1280x1920/cbfa12df844827230927842a869790c72af6faff.jpg" alt="simple elegance" class="aesthetic-thumb">
                                 <div class="aesthetic-label">simple elegance</div>
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+
+            <!-- POST 1: DIGICAMS -->
+            <div class="window post-text">
+                <a href="#">
+                    <div class="top">
+                        <div class="info">
+                            masterlist • digicams
+                        </div>
+                    </div>
+                </a>
+                <div class="middle">
+                    <div class="title">
+                        <img src="img/icons/digicams-wordart.png"
+                             alt="DIGICAMS"
+                             class="title-img">
+                    </div>
+                    <div class="content">
+                        <p><a href="digicams-fujifilm.html">❤︎ FUJIFILM</a><br></p>
+                        <p><a href="digicams-nikon.html">❤︎ NIKON</a><br></p>
+                        <p><a href="digicams-canon.html">❤︎ CANON</a><br></p>
+                        <p><a href="digicams-sony.html">❤︎ SONY</a><br></p>
+                        <p><a href="digicams-olympus.html">❤︎ OLYMPUS</a><br></p>
+                        <p><a href="digicams-panasonic.html">❤︎ PANASONIC</a><br></p>
+                        <p><a href="digicams-ricoh.html">❤︎ RICOH</a></p>
                     </div>
                 </div>
                 <div class="bottom"></div>
@@ -668,7 +671,7 @@
                 <div class="bottom"></div>
             </div>
 
-                        <!-- POST 4: ACCESSORIES -->
+            <!-- POST 4: ACCESSORIES -->
             <div class="window post-text accessories-window">
                 <a href="#">
                     <div class="top">
