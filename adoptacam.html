@@ -328,8 +328,6 @@
 
         <!-- MAIN DESKTOP AREA -->
         <div id="desktop" class="container">
-            <!-- ADOPT A CAM FORM -->
-            <!-- Replace ACTION with your form service endpoint if/when you wire email -->
             <form id="adoptForm" class="adopt-window" method="post" action="#">
                 <div class="adopt-titlebar">
                     <span class="adopt-title-text">adopt a cam</span>
@@ -357,7 +355,7 @@
 
                         <div class="form-row">
                             <label for="baby_link">link to your new baby:</label>
-                            <input id="baby_link" name="baby_link" type="url" class="form-input" placeholder="carousell / listing / post URL">
+                            <input id="baby_link" name="baby_link" class="form-input" placeholder="camera name / listing / post URL">
                         </div>
 
                         <div class="form-row">
@@ -398,15 +396,22 @@
                 </div>
             </form>
         </div>
-
-        <!-- START BAR (optional – copy from other pages if you want it here too) -->
-        <!-- you can paste your existing start bar HTML here if you want consistency -->
     </div>
 
     <script>
-        // Handle submit: show Win98-style alert and clear the form.
+        document.addEventListener("DOMContentLoaded", function () {
+            var params = new URLSearchParams(window.location.search);
+            var camName = params.get("newbaby");
+            if (camName) {
+                var babyField = document.getElementById("baby_link");
+                if (babyField) {
+                    babyField.value = camName;
+                }
+            }
+        });
+
         document.getElementById('adoptForm').addEventListener('submit', function (e) {
-            e.preventDefault(); // stop actual submit for now
+            e.preventDefault();
 
             alert(
                 "PLEASE NOTE YOUR ORDER IS NOT CONFIRMED YET\n" +
