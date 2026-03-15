@@ -143,7 +143,6 @@
             background-image: none !important;
         }
 
-        /* EXACT SAME TITLEBAR FEEL AS RIGHT SIDEBAR */
         .window .top {
             height: 30px;
             background: linear-gradient(to right, #0a3a8b, #4f80d4) !important;
@@ -229,7 +228,7 @@
             margin: 0 0 10px;
         }
 
-        /* PHOTO GRID: 3 columns, equal gaps, 960x1280 ratio */
+        /* PHOTO GRID */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -247,7 +246,6 @@
             background: #f3f3f3;
         }
 
-        /* fallback for non-grid single images */
         img.full_image {
             width: 100%;
             height: auto;
@@ -256,7 +254,91 @@
             cursor: pointer;
         }
 
-        /* RIGHT SIDEBAR POPUPS – moved up, no scrollbar */
+        /* CONDITION DETAILS + ADOPT BUTTON */
+        .post-actions {
+            margin-top: 14px;
+        }
+
+        .condition-details {
+            width: 94%;
+            margin: 0 auto 12px auto;
+            background: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            box-sizing: border-box;
+        }
+
+        .condition-details summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 6px 10px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 13px;
+            font-weight: bold;
+            position: relative;
+            user-select: none;
+        }
+
+        .condition-details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .condition-details summary::after {
+            content: "▼";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 11px;
+            font-weight: normal;
+        }
+
+        .condition-details[open] summary::after {
+            content: "▲";
+        }
+
+        .condition-body {
+            padding: 2px 10px 10px 10px;
+            font-size: 12px;
+            line-height: 1.35;
+            border-top: 1px solid #808080;
+        }
+
+        .condition-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .adopt-wrap {
+            text-align: center;
+        }
+
+        .adopt-button {
+            display: inline-block;
+            min-width: 280px;
+            padding: 6px 18px;
+            background-color: #d4d0c8;
+            color: #000000;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            box-sizing: border-box;
+        }
+
+        .adopt-button:active {
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        /* RIGHT SIDEBAR POPUPS */
         .right-popups {
             position: fixed;
             top: 10px;
@@ -666,6 +748,15 @@
             .photo-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .condition-details {
+                width: 100%;
+            }
+
+            .adopt-button {
+                min-width: 220px;
+                width: 100%;
+            }
         }
 
         @media (max-width: 768px) {
@@ -816,32 +907,46 @@
                         <div class="caption"><p>item condition: ⋆⋆⋆⋆ (pretty good!)</p>
                         <p>this easy-to-use point and shoot cam functions normally and is in great condition for its age (announced in 2006 !!!) there are scratches at the shutter and the back on the right, small dents at the top and sides, and minor scratches and scuffs consistent with a used vintage item</p></div>
                     </div>
-                     <div class="photo-grid">
-                            <img src="INSERT PHOTO"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 condition 1"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="INSERT PHOTO"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 condition 2"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="INSERT PHOTO"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 condition 3"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="INSERT PHOTO"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 condition 4"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="INSERT PHOTO"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 condition 5"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="INSERT PHOTO"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 condition 6"
-                                 onclick="openHpcLightbox(this)">
+                    <div class="photo-grid">
+                        <img src="INSERT PHOTO"
+                             class="full_image"
+                             alt="FUJIFILM FINEPIX A500 condition 1"
+                             onclick="openHpcLightbox(this)">
+                        <img src="INSERT PHOTO"
+                             class="full_image"
+                             alt="FUJIFILM FINEPIX A500 condition 2"
+                             onclick="openHpcLightbox(this)">
+                        <img src="INSERT PHOTO"
+                             class="full_image"
+                             alt="FUJIFILM FINEPIX A500 condition 3"
+                             onclick="openHpcLightbox(this)">
+                        <img src="INSERT PHOTO"
+                             class="full_image"
+                             alt="FUJIFILM FINEPIX A500 condition 4"
+                             onclick="openHpcLightbox(this)">
+                        <img src="INSERT PHOTO"
+                             class="full_image"
+                             alt="FUJIFILM FINEPIX A500 condition 5"
+                             onclick="openHpcLightbox(this)">
+                        <img src="INSERT PHOTO"
+                             class="full_image"
+                             alt="FUJIFILM FINEPIX A500 condition 6"
+                             onclick="openHpcLightbox(this)">
+                    </div>
+
+                    <div class="post-actions">
+                        <details class="condition-details">
+                            <summary>condition details</summary>
+                            <div class="condition-body">
+                                <p>item condition: ⋆⋆⋆⋆ (pretty good!)</p>
+                                <p>this easy-to-use point and shoot cam functions normally and is in great condition for its age. there are scratches at the shutter and the back on the right, small dents at the top and sides, and minor scratches and scuffs consistent with a used vintage item.</p>
+                            </div>
+                        </details>
+
+                        <div class="adopt-wrap">
+                            <a class="adopt-button" href="adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20A500">ADOPT THIS CAM ❥</a>
                         </div>
+                    </div>
                 </div>
                 <div class="bottom"></div>
             </div>
@@ -856,6 +961,20 @@
                     <div class="title">Post – Notepad</div>
                     <div class="content">
                         <p>This is a sample text post. Replace this with your own content, images, etc.</p>
+                    </div>
+
+                    <div class="post-actions">
+                        <details class="condition-details">
+                            <summary>condition details</summary>
+                            <div class="condition-body">
+                                <p>sample condition notes go here.</p>
+                                <p>use this drop-down for cosmetic flaws, functional quirks, included freebies, and anything buyers should read before adopting.</p>
+                            </div>
+                        </details>
+
+                        <div class="adopt-wrap">
+                            <a class="adopt-button" href="adoptacam.html?newbaby=Post%20%E2%80%93%20Notepad">ADOPT THIS CAM ❥</a>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom"></div>
@@ -885,6 +1004,20 @@
                                  onclick="openHpcLightbox(this)">
                         </div>
                         <div class="caption">Example caption for your listing / inspo board / etc.</div>
+                    </div>
+
+                    <div class="post-actions">
+                        <details class="condition-details">
+                            <summary>condition details</summary>
+                            <div class="condition-body">
+                                <p>sample condition notes go here.</p>
+                                <p>for example: light scratches, fully working flash, clean battery compartment, or whatever applies to this cam.</p>
+                            </div>
+                        </details>
+
+                        <div class="adopt-wrap">
+                            <a class="adopt-button" href="adoptacam.html?newbaby=Post%20%E2%80%93%20Notepad">ADOPT THIS CAM ❥</a>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom"></div>
@@ -961,7 +1094,8 @@
             type: "text",
             title: "why we love older digicams",
             meta: "Posted 1 hour ago • 12 notes",
-            content: "<p>older digital cameras have a look that newer devices often smooth out or erase — harsher flash, moodier colour, unexpected bloom, weird noise, and all the charm that comes with it.</p><p>we’re here for photos that feel lived in, not over-processed.</p>"
+            content: "<p>older digital cameras have a look that newer devices often smooth out or erase — harsher flash, moodier colour, unexpected bloom, weird noise, and all the charm that comes with it.</p><p>we’re here for photos that feel lived in, not over-processed.</p>",
+            conditionDetails: "<p>sample condition notes go here.</p><p>use this area for wear notes, testing details, freebies included, or any quirks buyers should know.</p>"
         },
         {
             type: "photo",
@@ -975,15 +1109,34 @@
                 { src: "https://via.placeholder.com/960x1280?text=Canon+5", alt: "canon powershot moodboard image 5" },
                 { src: "https://via.placeholder.com/960x1280?text=Canon+6", alt: "canon powershot moodboard image 6" }
             ],
-            caption: "soft flash, silver body, very 2000s"
+            caption: "soft flash, silver body, very 2000s",
+            conditionDetails: "<p>sample condition notes go here.</p><p>for example: tested power-on, flash works, light cosmetic wear, and minor screen marks only.</p>"
         },
         {
             type: "text",
             title: "before you adopt a cam",
             meta: "Posted 47 minutes ago • 8 notes",
-            content: "<p>please expect genuine vintage wear. cosmetic flaws are normal and part of the history of these cameras.</p><p>always review the full listing and photos closely before purchasing.</p>"
+            content: "<p>please expect genuine vintage wear. cosmetic flaws are normal and part of the history of these cameras.</p><p>always review the full listing and photos closely before purchasing.</p>",
+            conditionDetails: "<p>sample condition notes go here.</p><p>drop any extra notes here that are too long to sit in the main caption.</p>"
         }
     ];
+
+    function camQueryValue(name) {
+        return encodeURIComponent(name);
+    }
+
+    function buildConditionAndAdopt(postTitle, conditionHtml) {
+        return '' +
+            '<div class="post-actions">' +
+                '<details class="condition-details">' +
+                    '<summary>condition details</summary>' +
+                    '<div class="condition-body">' + (conditionHtml || '<p>sample condition notes go here.</p>') + '</div>' +
+                '</details>' +
+                '<div class="adopt-wrap">' +
+                    '<a class="adopt-button" href="adoptacam.html?newbaby=' + camQueryValue(postTitle) + '">ADOPT THIS CAM ❥</a>' +
+                '</div>' +
+            '</div>';
+    }
 
     var postCursor = 0;
     var isAppending = false;
@@ -1007,6 +1160,7 @@
                         buildPhotoGrid(post.images) +
                         '<div class="caption">' + (post.caption || "") + '</div>' +
                     '</div>' +
+                    buildConditionAndAdopt(post.title, post.conditionDetails) +
                 '</div>' +
                 '<div class="bottom"></div>' +
             '</div>';
@@ -1019,6 +1173,7 @@
                 '<div class="middle">' +
                     '<div class="title">' + post.title + '</div>' +
                     '<div class="content">' + post.content + '</div>' +
+                    buildConditionAndAdopt(post.title, post.conditionDetails) +
                 '</div>' +
                 '<div class="bottom"></div>' +
             '</div>';
