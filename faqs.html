@@ -105,28 +105,28 @@
 
         /* CLIPPY + SPEECH BUBBLE */
         .clippy-wrapper {
-    position: fixed;
-    right: 70px;
-    bottom: 70px;
-    display: flex;
-    align-items: flex-end;
-    z-index: 5;
-    max-width: calc(100vw - 180px);
-}
+            position: fixed;
+            right: 70px;
+            bottom: 70px;
+            display: flex;
+            align-items: flex-end;
+            z-index: 5;
+            max-width: calc(100vw - 180px);
+        }
 
-.clippy-bubble {
-    position: relative;
-    width: min(760px, calc(100vw - 300px));
-    max-width: 100%;
-    background: #fffacd;
-    border: 1px solid #c0b67a;
-    padding: 24px 28px;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 12px;
-    line-height: 1.3;
-    box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
-    box-sizing: border-box;
-}
+        .clippy-bubble {
+            position: relative;
+            width: min(760px, calc(100vw - 300px));
+            max-width: 100%;
+            background: #fffacd;
+            border: 1px solid #c0b67a;
+            padding: 24px 28px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            line-height: 1.3;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
+            box-sizing: border-box;
+        }
 
         .clippy-bubble::before {
             content: "";
@@ -185,6 +185,51 @@
             border-radius: 50%;
             background: radial-gradient(circle at 30% 30%, #ffffff, #4a79c8 60%, #1b3b7c 100%);
             vertical-align: middle;
+        }
+
+        /* FAQ DROPDOWNS */
+        .faq-list {
+            margin-top: 10px;
+        }
+
+        .faq-item {
+            margin: 0 0 10px 0;
+        }
+
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
+            line-height: 1.3;
+            padding: 0;
+            position: relative;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "►";
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 11px;
+            color: #000000;
+        }
+
+        .faq-item[open] summary::after {
+            content: "▼";
+        }
+
+        .faq-answer {
+            margin-top: 6px;
+            padding-left: 14px;
+        }
+
+        .faq-answer p {
+            margin: 0;
         }
 
         /* START BAR */
@@ -311,8 +356,8 @@
             }
 
             .clippy-bubble {
-               width: calc(100vw - 220px);
-    padding: 18px 20px;
+                width: calc(100vw - 220px);
+                padding: 18px 20px;
             }
 
             .clippy-img {
@@ -385,35 +430,61 @@
 
                 <p>Would you like help?</p>
 
-                <p>
-                    <span class="faq-bullet"></span><b>Q: how do i make an order?</b><br>
-                    A: DM me on <u><a href="https://instagram.com/hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">instagram</a></u> or <u><a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">tiktok</a></u> with the name of the cam that you want and the listing link, or fill our adoption form (the heart icon at the left saying "adopt a cam")
-                </p>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary><span class="faq-bullet"></span><b>Q: how do i make an order?</b></summary>
+                        <div class="faq-answer">
+                            <p>
+                                A: DM me on <u><a href="https://instagram.com/hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">instagram</a></u> or <u><a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">tiktok</a></u> with the name of the cam that you want and the listing link, or fill our adoption form (the heart icon at the left saying "adopt a cam")
+                            </p>
+                        </div>
+                    </details>
 
-                <p>
-                    <span class="faq-bullet"></span><b>Q: do you include batteries, chargers, and memory cards?</b><br>
-                    A: GENERALLY, most of our cams come with their own battery (unless it's a generic battery or we state it's not included). chargers and memory cards may not be included - check the listing!
-                </p>
+                    <details class="faq-item">
+                        <summary><span class="faq-bullet"></span><b>Q: do you include batteries, chargers, and memory cards?</b></summary>
+                        <div class="faq-answer">
+                            <p>
+                                A: GENERALLY, most of our cams come with their own battery (unless it's a generic battery or we state it's not included). chargers and memory cards may not be included - check the listing!
+                            </p>
+                        </div>
+                    </details>
 
-                <p>
-                    <span class="faq-bullet"></span><b>Q: do your cameras work?</b><br>
-                    A: unless stated otherwise, each cam is functional, meaning that power-on, basic shooting, flash, zoom and playback have been tested and work! any quirks in these functions will be listed clearly in the product description. we do not guarantee other advanced functions or the lifespan of the cams (they are vintage, after all!)
-                </p>
+                    <details class="faq-item">
+                        <summary><span class="faq-bullet"></span><b>Q: do your cameras work?</b></summary>
+                        <div class="faq-answer">
+                            <p>
+                                A: unless stated otherwise, each cam is functional, meaning that power-on, basic shooting, flash, zoom and playback have been tested and work! any quirks in these functions will be listed clearly in the product description. we do not guarantee other advanced functions or the lifespan of the cams (they are vintage, after all!)
+                            </p>
+                        </div>
+                    </details>
 
-                <p>
-                    <span class="faq-bullet"></span><b>Q: can i return my cam and/or get a refund?</b><br>
-                    A: sorry, unless any of the functions we test for (i.e. power-on, basic shooting, flash, zoom and playback) doesn't work AND we did not point this out in the listing, we do not accept returns or give refunds :(
-                </p>
+                    <details class="faq-item">
+                        <summary><span class="faq-bullet"></span><b>Q: can i return my cam and/or get a refund?</b></summary>
+                        <div class="faq-answer">
+                            <p>
+                                A: sorry, unless any of the functions we test for (i.e. power-on, basic shooting, flash, zoom and playback) doesn't work AND we did not point this out in the listing, we do not accept returns or give refunds :(
+                            </p>
+                        </div>
+                    </details>
 
-                <p>
-                    <span class="faq-bullet"></span><b>Q: can you recommend a cam for my vibe/budget?</b><br>
-                    A: definitely! just drop me a DM and we'll fix you up with your dream digicam!
-                </p>
+                    <details class="faq-item">
+                        <summary><span class="faq-bullet"></span><b>Q: can you recommend a cam for my vibe/budget?</b></summary>
+                        <div class="faq-answer">
+                            <p>
+                                A: definitely! just drop me a DM and we'll fix you up with your dream digicam!
+                            </p>
+                        </div>
+                    </details>
 
-                <p>
-                    <span class="faq-bullet"></span><b>Q: i don't see the cam i want, what should i do?</b><br>
-                    A: DON'T FRET! i usually have stocks that haven't been posted, or i can help you source! just drop me a DM!
-                </p>
+                    <details class="faq-item">
+                        <summary><span class="faq-bullet"></span><b>Q: i don't see the cam i want, what should i do?</b></summary>
+                        <div class="faq-answer">
+                            <p>
+                                A: DON'T FRET! i usually have stocks that haven't been posted, or i can help you source! just drop me a DM!
+                            </p>
+                        </div>
+                    </details>
+                </div>
 
                 <p>more questions?<br>
                 hmu on <u><a href="https://instagram.com/hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">instagram</a></u> or <u><a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">tiktok</a></u>! ♡</p>
