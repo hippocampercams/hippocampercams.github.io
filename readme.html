@@ -108,16 +108,18 @@
             z-index: 3;
             position: relative;
             display: flex;
+            flex-direction: column;
             gap: 20px;
             align-items: flex-start;
-            flex-wrap: nowrap;
             box-sizing: border-box;
+            width: 1060px;
+            max-width: 1060px;
         }
 
         .window {
-            width: 500px;
-            max-width: 500px;
-            min-width: 500px;
+            width: 1060px;
+            max-width: 1060px;
+            min-width: 1060px;
             font-family: "Courier New", Courier, monospace;
             background: #ffffff;
             border: 1px solid #000000;
@@ -195,7 +197,6 @@
             border-left: 1px solid #808080;
             border-right: 1px solid #808080;
             box-sizing: border-box;
-            min-height: 700px;
         }
 
         .window .content,
@@ -512,17 +513,47 @@
             display: block;
         }
 
+        /* INFINITE SCROLL */
+        #feed-sentinel {
+            height: 1px;
+            width: 100%;
+        }
+
+        .feed-loading {
+            margin: 0 40px 20px 470px;
+            width: 1060px;
+            max-width: 1060px;
+            min-width: 1060px;
+            text-align: center;
+            font-family: "Courier New", Courier, monospace;
+            color: #ffffff;
+            font-size: 12px;
+            display: none;
+        }
+
+        @media (max-width: 1600px) {
+            #desktop,
+            .feed-loading {
+                width: 1000px;
+                max-width: 1000px;
+            }
+
+            .window {
+                width: 1000px;
+                max-width: 1000px;
+                min-width: 1000px;
+            }
+        }
+
         @media (max-width: 1500px) {
             #desktop {
                 margin-left: 450px;
                 margin-right: 20px;
-                gap: 16px;
             }
 
-            .window {
-                width: 470px;
-                max-width: 470px;
-                min-width: 470px;
+            .feed-loading {
+                margin-left: 450px;
+                margin-right: 20px;
             }
         }
 
@@ -619,7 +650,7 @@
                         <b>please expect signs of age & wear: scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc.</b><br> please note: we'll remove deteriorated/sticky rubber caps. we’ll always flag any bigger quirks in the listing.</p>
 
                         <p><b>2. testing &amp; functionality.</b><br></p>
-                        each cam is tested for power-on, basic shooting, flash, zoom & playback; once these functions work, we deem the cam FUNCTIONAL (any issues with these functions will be stated in the item description). <b>we do not guarantee any other functions</b>.<br> these are old electronics; please treat them gently, expect small personality traits & note we cannot guarantee their longevity & there is a possibility of them malfunctioning over time. note: battery capacity decreases over time and may need to be <span class="hover-pop" tabindex="0"><u><b>replaced</b></u><span class="hover-box">please don't hesitate to reach out if you need help sourcing for replacements!</span></span></p>
+                        <p>each cam is tested for power-on, basic shooting, flash, zoom & playback; once these functions work, we deem the cam FUNCTIONAL (any issues with these functions will be stated in the item description). <b>we do not guarantee any other functions</b>.<br> these are old electronics; please treat them gently, expect small personality traits & note we cannot guarantee their longevity & there is a possibility of them malfunctioning over time. note: battery capacity decreases over time and may need to be <span class="hover-pop" tabindex="0"><u><b>replaced</b></u><span class="hover-box">please don't hesitate to reach out if you need help sourcing for replacements!</span></span></p>
                         
                         <p><b>3. physical condition</b><br>
                         we clean & inspect each cam thoroughly and will list any <span class="hover-pop" tabindex="0"><u><b>major defects</b></u><span class="hover-box">defects other than the standard signs of age and wear like scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc.</span></span> in the item description.</p>
@@ -630,7 +661,7 @@
                         <p><b>5. what's in the box?</b><br>
                         our cams usually come with their battery unless stated otherwise OR the cam uses generic batteries. <b>nothing else is included unless the listing specifically states so</b>, and if we include any chargers, accessories, etc., we don't guarantee their usability/compatibility, these are just freebies included because we like you</p>
 
-                         <p><b>6. memory cards &amp; files.</b><br>
+                        <p><b>6. memory cards &amp; files.</b><br>
                         if a cam ships with a memory card, we'll format / wipe it before sending. anyway please ALWAYS format your memory cards before shooting, or you risk losing your pics T.T</p>
 
                         <p><b>7. first come first served</b><br>
@@ -639,7 +670,6 @@
                         <p><b>8. colours, vibes &amp; sample pics.</b><br>
                         colours may look slightly different across screens and lighting. any sample photos or videos just show the cam’s general vibe & capabilities – they’re not a promise that every shot will look exactly the same.</p>
                  
-                       
                         <p><b>8. safety stuff.</b><br>
                         don’t open the body or try to repair electronics yourself unless you know what you’re doing. keep batteries away from heat/water & remove them if you’re not using the cam for a while to avoid leaks. cams generally don't do well with drops, knocks, water, heat, extreme cold, etc. just. please treat these senior citizens with care :')</p>
 
@@ -692,6 +722,9 @@
             </div>
         </div>
 
+        <div class="feed-loading" id="feed-loading">loading more posts...</div>
+        <div id="feed-sentinel"></div>
+
         <div class="start_menu"></div>
         <div class="start_bar">
             <div class="top_border"></div>
@@ -742,6 +775,102 @@
             item.classList.remove('is-open');
         });
     });
+    </script>
+
+    <script>
+    var infinitePosts = [
+        {
+            info: "READ ME • updated 2025",
+            title: "⚠️ IMPORTANT STUFF TO READ BEFORE PURCHASING⚠️",
+            content:
+                '<p><b>1. vinatge & pre-loved, not brand new.</b><br><b>please expect signs of age & wear: scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc.</b><br> please note: we\\'ll remove deteriorated/sticky rubber caps. we’ll always flag any bigger quirks in the listing.</p>' +
+                '<p><b>2. testing &amp; functionality.</b><br></p>' +
+                '<p>each cam is tested for power-on, basic shooting, flash, zoom & playback; once these functions work, we deem the cam FUNCTIONAL (any issues with these functions will be stated in the item description). <b>we do not guarantee any other functions</b>.<br> these are old electronics; please treat them gently, expect small personality traits & note we cannot guarantee their longevity & there is a possibility of them malfunctioning over time.</p>' +
+                '<p><b>3. physical condition</b><br>we clean & inspect each cam thoroughly and will list any major defects in the item description.</p>' +
+                '<p><b>4. no refunds or returns, unless...</b><br>we don\\'t accept returns or issue refunds unless you provide a full unboxing video showing a tested function does not work or there is a major defect that we did not mention.</p>' +
+                '<p><b>5. what\\'s in the box?</b><br>our cams usually come with their battery unless stated otherwise OR the cam uses generic batteries. <b>nothing else is included unless the listing specifically states so</b>.</p>' +
+                '<p><i>tl;dr:</i><br>you’re adopting tiny time-capsule gadgets with plenty of character. when in doubt, DM us before buying ♡</p>'
+        },
+        {
+            info: "house rules • read before adopting",
+            title: "shop notes – Notepad",
+            content:
+                '<p><b>ordering.</b><br>DMs are first-come-first-served. i’ll hold a cam for a short agreed window once we’ve confirmed details – after that it may go back up for adoption.</p>' +
+                '<p><b>payment.</b><br>default is paynow / bank transfer in SGD. please always wait for confirmation + final total before sending payment.</p>' +
+                '<p><b>delivery / meetups.</b><br>local SG options usually include normal mail, tracked mail or meetup at agreed MRT stations.</p>' +
+                '<p><b>packaging.</b><br>cams are wrapped snugly in bubble wrap / padding and boxed wherever possible.</p>' +
+                '<p><b>DOA window.</b><br>if your cam arrives completely not working (DOA), please contact me within 48 hours with clear pics / videos so we can troubleshoot or work something out together.</p>' +
+                '<p><b>expectations.</b><br>these are nostalgic toys first, serious workhorses second. if you need mission-critical gear, please consider buying new.</p>'
+        }
+    ];
+
+    var postCursor = 0;
+    var isAppending = false;
+
+    function createTextPost(post) {
+        return '' +
+            '<div class="window post-text">' +
+                '<a href="#"><div class="top"><div class="info">' + post.info + '</div></div></a>' +
+                '<div class="middle">' +
+                    '<div class="title"><p>' + post.title + '</p></div>' +
+                    '<div class="content">' + post.content + '</div>' +
+                '</div>' +
+                '<div class="bottom"></div>' +
+            '</div>';
+    }
+
+    function appendMorePosts(count) {
+        if (isAppending) return;
+        isAppending = true;
+
+        var desktop = document.getElementById("desktop");
+        var loading = document.getElementById("feed-loading");
+        if (!desktop) {
+            isAppending = false;
+            return;
+        }
+
+        if (loading) loading.style.display = "block";
+
+        var html = "";
+        for (var i = 0; i < count; i++) {
+            var post = infinitePosts[postCursor % infinitePosts.length];
+            html += createTextPost(post);
+            postCursor++;
+        }
+
+        setTimeout(function() {
+            desktop.insertAdjacentHTML("beforeend", html);
+            if (loading) loading.style.display = "none";
+            isAppending = false;
+        }, 250);
+    }
+
+    function setupInfiniteScroll() {
+        var sentinel = document.getElementById("feed-sentinel");
+        var loading = document.getElementById("feed-loading");
+
+        if (!sentinel || !("IntersectionObserver" in window)) {
+            if (loading) loading.style.display = "none";
+            return;
+        }
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    appendMorePosts(2);
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: "300px 0px",
+            threshold: 0
+        });
+
+        observer.observe(sentinel);
+    }
+
+    setupInfiniteScroll();
     </script>
 </body>
 </html>
