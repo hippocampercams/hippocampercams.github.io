@@ -450,6 +450,35 @@
                 overflow-x: auto;
             }
         }
+
+        .hover-pop {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.hover-pop .hover-box {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 6px);
+    z-index: 999;
+    min-width: 220px;
+    max-width: 320px;
+    padding: 8px 10px;
+    background: #fffacd;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 0 rgba(0,0,0,0.35);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.hover-pop:hover .hover-box,
+.hover-pop.is-open .hover-box {
+    display: block;
+}
     </style>
 </head>
 
@@ -538,19 +567,20 @@
                     </div>
                 </a>
                 <div class="middle">
-                    <div class="title">⚠️ IMPORTANT STUFF ⚠️</div>
+                    <div class="title"><p>⚠️ IMPORTANT STUFF ⚠️</p>
+                    <p> 🚨 <b>please read carefully before purchasing</b> 🚨 </p></div>
                     <div class="content">
-                        <p><b>hi! welcome to hippocampercams ♡</b><br>
-                        this is a tiny hobby shop run by one human being. everything here is curated, cleaned and tested with lots of love, but there are a few things you should know before you adopt a cam.</p>
-
-                        <p><b>1. pre-loved, not brand new.</b><br>
-                        all cams are vintage / y2k era digital cameras. light scuffs, dust in corners, tiny screen marks, yellowing plastic etc. are normal for their age. i’ll always flag any bigger quirks in the listing.</p>
+                        <p><b>1. vinatge & pre-loved, not brand new.</b><br>
+                        unless otherwise stated, all our cams are vintage and preloved. <b>please expect signs of age and wear like scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc.</b> generally, we remove rubber caps on the cams where they have deteriorated or become sticky. we’ll always flag any bigger quirks in the listing.</p>
 
                         <p><b>2. testing &amp; functionality.</b><br>
-                        each cam is tested for: power-on, basic shooting, flash, zoom and playback (unless clearly listed as “for parts / not working”). these are still old electronics, so please treat them gently and expect small personality traits rather than factory-fresh perfection.</p>
+                        each cam is tested for power-on, basic shooting, flash, zoom and playback; once these functions work, we deem the cam FUNCTIONAL (any issues with these functions will be stated in the item description). <b>we do not guarantee any other functions</b>. however, these are still old electronics, so please treat them gently and expect small personality traits rather than factory-fresh perfection. as with older items, we cannot guarantee their longevity, and there is a possibility of them malfunctioning over time. if we can't get the cam to work, we will mark it ♻️ or “not working”.</p>
+                        
+                        <p><b>3. physical condition</b><br>
+                        we clean and inspect each cam thoroughly and will list any <span class="hover-pop" tabindex="0"><u><b>major defects</b></u><span class="hover-box">defects other than the standard signs of age and wear like scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc.</span></span>. </p>
 
-                        <p><b>3. no official warranty.</b><br>
-                        hippocampercams is not an authorised service centre for any brand. there is no manufacturer warranty, and i’m not able to guarantee how long a 20-year-old cam will last. see the FAQs for my DOA / returns policy.</p>
+                        <p><b>4. no refunds or returns, unless...</b><br>
+                        we are confident in our testing protocols so you can be assured that all cams listed FUNCTIONAL have the functions mentioned above, and any major defects will be listed. so we don't accept returns or issue refunds UNLESS you provide us with a full unboxing video which includes you showing either (a) that the functions tested for (see above) do not work or (b) that there are any major defects in the physical condition of the cam, AND that <b>that we did not mention the non-functionality or major defect</b>.</p>
 
                         <p><b>4. colours, vibes &amp; sample pics.</b><br>
                         colours may look slightly different across screens and lighting. any sample photos or videos are just to show the cam’s general vibe – they’re not a promise that every shot will look exactly the same.</p>
@@ -637,7 +667,7 @@
     </div>
 
     <!-- Just the clock JS – no win98.js, so no ghost windows -->
-    <script>
+        <script>
         function updateClock() {
             var now = new Date();
             var h = now.getHours();
@@ -650,6 +680,21 @@
         }
         updateClock();
         setInterval(updateClock, 60000);
+    </script>
+
+    <script>
+    document.querySelectorAll('.hover-pop').forEach(function (item) {
+        item.addEventListener('click', function (e) {
+            e.stopPropagation();
+            item.classList.toggle('is-open');
+        });
+    });
+
+    document.addEventListener('click', function () {
+        document.querySelectorAll('.hover-pop.is-open').forEach(function (item) {
+            item.classList.remove('is-open');
+        });
+    });
     </script>
 </body>
 </html>
