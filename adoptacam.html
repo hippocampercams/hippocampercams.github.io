@@ -529,11 +529,11 @@
                             <label>method of collection:</label>
                             <div class="checkbox-row">
                                 <label>
-                                    <input type="checkbox" name="collection_mailing" value="yes">
-                                    mailing
+                                    <input type="checkbox" id="collection_mailing" name="collection_mailing" value="yes">
+                                    delivery
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="collection_meet_up" value="yes">
+                                    <input type="checkbox" id="collection_meet_up" name="collection_meet_up" value="yes">
                                     meet up
                                 </label>
                             </div>
@@ -638,12 +638,41 @@
             var confirmChecks = document.querySelectorAll(".confirm-required");
             var confirmError = document.getElementById("confirmError");
 
+            var collectionMailing = document.getElementById("collection_mailing");
+            var collectionMeetUp = document.getElementById("collection_meet_up");
+            var detailsField = document.getElementById("details");
+
+            function validateCollectionDetails() {
+                var collectionChosen = collectionMailing.checked || collectionMeetUp.checked;
+
+                collectionMailing.setCustomValidity("");
+                collectionMeetUp.setCustomValidity("");
+                detailsField.setCustomValidity("");
+
+                if (!collectionChosen) {
+                    collectionMeetUp.setCustomValidity("please choose delivery or meet up!");
+                }
+
+                if (collectionMeetUp.checked && detailsField.value.trim() === "") {
+                    detailsField.setCustomValidity("please lmk where you wanna meet!");
+                }
+
+                return collectionChosen && !(collectionMeetUp.checked && detailsField.value.trim() === "");
+            }
+
+            collectionMailing.addEventListener("change", validateCollectionDetails);
+            collectionMeetUp.addEventListener("change", validateCollectionDetails);
+            detailsField.addEventListener("input", validateCollectionDetails);
+
             if (openConfirm && confirmOverlay) {
                 openConfirm.addEventListener("click", function () {
+                    validateCollectionDetails();
+
                     if (!form.checkValidity()) {
                         form.reportValidity();
                         return;
                     }
+
                     confirmError.classList.remove("show");
                     confirmOverlay.classList.add("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "false");
