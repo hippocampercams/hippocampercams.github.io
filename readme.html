@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://static.tumblr.com/fpdiq1j/N3Zmkjmqn/theme_generic.css">
 
     <style>
+        @font-face {
+            font-family: "Mouse Deco";
+            src: url("https://dl.dafont.com/dl/?f=mouse_deco") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
         html, body {
             overflow-x: hidden;
         }
@@ -134,6 +141,19 @@
         .window .caption,
         .window .info {
             font-family: "Courier New", Courier, monospace !important;
+        }
+
+        .window.post-text .title,
+        .window.post-text .title p,
+        .window.post-text .content,
+        .window.post-text .content p,
+        .window.post-text .content a,
+        .window.post-text .content b,
+        .window.post-text .content i,
+        .window.post-text .content u,
+        .window.post-text .info,
+        .window.post-text .hover-box {
+            font-family: "Mouse Deco", "Courier New", Courier, monospace !important;
         }
 
         .window .top,
