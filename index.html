@@ -23,6 +23,10 @@
             overflow-x: auto;
         }
 
+        body.mobile-menu-open {
+            overflow: hidden;
+        }
+
         a {
             color: #000000;
             text-decoration: none;
@@ -660,6 +664,15 @@
             display: none;
         }
 
+        /* MOBILE MENU */
+        .mobile-menu-button {
+            display: none;
+        }
+
+        .mobile-menu-overlay {
+            display: none;
+        }
+
         @media (max-width: 1780px) {
             #desktop,
             .window,
@@ -736,30 +749,52 @@
         }
 
         @media (max-width: 900px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .icons {
+                display: none;
+            }
+
+            .right-popups {
+                display: none;
+            }
+
             #desktop {
-                margin-left: 120px;
-                width: calc(100vw - 140px);
-                max-width: calc(100vw - 140px);
+                margin: 8px 8px 52px 8px;
+                width: calc(100vw - 16px);
+                max-width: calc(100vw - 16px);
                 min-width: 0;
+                gap: 8px;
             }
 
             .window,
             .feed-loading {
-                width: calc(100vw - 140px);
-                max-width: calc(100vw - 140px);
+                width: calc(100vw - 16px);
+                max-width: calc(100vw - 16px);
                 min-width: 0;
             }
 
-            .feed-loading {
-                margin-left: 120px;
+            .window {
+                box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
             }
 
-            .right-popups {
-                right: 10px;
+            .window .middle {
+                padding: 10px 10px 12px 10px;
+            }
+
+            .feed-loading {
+                margin: 0 8px 52px 8px;
             }
 
             .photo-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .photo-grid img.full_image {
+                aspect-ratio: auto;
             }
 
             .condition-details {
@@ -767,18 +802,97 @@
             }
 
             .adopt-button {
-                min-width: 220px;
+                min-width: 0;
                 width: 100%;
             }
-        }
 
-        @media (max-width: 768px) {
-            body {
-                overflow-x: auto;
+            .start_bar {
+                display: none;
             }
 
-            .photo-grid {
-                grid-template-columns: 1fr;
+            .mobile-menu-button {
+                position: fixed;
+                left: 8px;
+                bottom: 8px;
+                z-index: 10020;
+                display: block;
+                text-decoration: none;
+                color: #ffffff;
+                width: 48px;
+            }
+
+            .mobile-menu-button .folder {
+                margin: 0 auto;
+            }
+
+            .mobile-menu-button .icon_label {
+                padding-top: 4px;
+                font-size: 12px;
+            }
+
+            .mobile-menu-overlay {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.45);
+                z-index: 10030;
+                display: none;
+            }
+
+            .mobile-menu-overlay.is-open {
+                display: block;
+            }
+
+            .mobile-menu-panel {
+                position: absolute;
+                inset: 0 auto 0 0;
+                width: 170px;
+                max-width: 80vw;
+                background: #008080;
+                padding: 12px 10px 16px 10px;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 12px;
+            }
+
+            .mobile-menu-close {
+                width: 16px;
+                height: 14px;
+                background-color: #d4d0c8;
+                border-top: 1px solid #ffffff;
+                border-left: 1px solid #ffffff;
+                border-right: 1px solid #404040;
+                border-bottom: 1px solid #404040;
+                text-align: center;
+                line-height: 12px;
+                color: #000000;
+                font-size: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-family: "Mouse Deco";
+            }
+
+            .mobile-menu-icons {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: "Mouse Deco" !important;
+            }
+
+            .mobile-menu-icons a {
+                color: #ffffff;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .mobile-menu-icons .icon_label {
+                color: #ffffff;
             }
         }
     </style>
@@ -1042,6 +1156,65 @@
             <img src="" alt="enlarged photo" id="hpc-lightbox-img">
         </div>
 
+        <a href="#" class="mobile-menu-button" id="mobileMenuButton">
+            <div class="folder"></div>
+            <div class="icon_label">menu</div>
+        </a>
+
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-panel">
+                <div class="mobile-menu-header">
+                    <button type="button" class="mobile-menu-close" id="mobileMenuClose">x</button>
+                </div>
+                <div class="mobile-menu-icons">
+                    <a href="https://hippocampercams.github.io" class="home">
+                        <div class="my_computer"></div>
+                        <div class="icon_label">hippocampercams</div>
+                    </a>
+
+                    <a href="readme.html" class="ask">
+                        <div class="my_documents"></div>
+                        <div class="icon_label">READ ME</div>
+                    </a>
+
+                    <a href="masterlist.html" class="submit">
+                        <div class="network_neighborhood"></div>
+                        <div class="icon_label">masterlist</div>
+                    </a>
+
+                    <a href="faqs.html" class="listings">
+                        <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                        <div class="icon_label">FAQs</div>
+                    </a>
+
+                    <a href="adoptacam.html" class="mustread">
+                        <img src="img/icons/adoptacam.png" alt="" class="icon-img">
+                        <div class="icon_label">adopt a cam</div>
+                    </a>
+
+                    <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+                        <img src="img/icons/insta.png" alt="" class="icon-img">
+                        <div class="icon_label">insta</div>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">
+                        <img src="img/icons/tiktok.png" alt="" class="icon-img">
+                        <div class="icon_label">tiktok</div>
+                    </a>
+
+                    <a href="#lemon8" target="_blank" rel="noopener" class="lemon8">
+                        <img src="img/icons/lemon8.png" alt="lemon8" class="icon-img">
+                        <div class="icon_label">lemon8</div>
+                    </a>
+
+                    <a href="contact.html" class="contact">
+                        <img src="img/icons/contact.png" alt="" class="icon-img">
+                        <div class="icon_label">contact</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="start_menu"></div>
         <div class="start_bar" id="taskbar">
             <div class="top_border"></div>
@@ -1242,6 +1415,41 @@
     }
 
     setupInfiniteScroll();
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenuButton = document.getElementById("mobileMenuButton");
+        var mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+        var mobileMenuClose = document.getElementById("mobileMenuClose");
+
+        function openMobileMenu(event) {
+            if (event) event.preventDefault();
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.add("is-open");
+            document.body.classList.add("mobile-menu-open");
+        }
+
+        function closeMobileMenu() {
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.remove("is-open");
+            document.body.classList.remove("mobile-menu-open");
+        }
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener("click", openMobileMenu);
+        }
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener("click", closeMobileMenu);
+        }
+
+        if (mobileMenuOverlay) {
+            mobileMenuOverlay.addEventListener("click", function (event) {
+                if (event.target === mobileMenuOverlay) {
+                    closeMobileMenu();
+                }
+            });
+        }
+    });
     </script>
 </body>
 </html>
