@@ -5,10 +5,7 @@
     <title>hippocampercams • adopt a cam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- optional favicon -->
     <link rel="icon" href="favicon.ico">
-
-    <!-- Win98 base CSS Tumblr used -->
     <link rel="stylesheet" href="https://static.tumblr.com/fpdiq1j/N3Zmkjmqn/theme_generic.css">
 
     <style>
@@ -168,7 +165,6 @@
             gap: 10px;
         }
 
-        /* Warning icon on the left */
         .adopt-icon {
             position: relative;
             width: 36px;
@@ -258,6 +254,7 @@
             border-left: 1px solid #ffffff;
             border-right: 1px solid #404040;
             border-bottom: 1px solid #404040;
+            cursor: pointer;
         }
 
         .tb-button:active {
@@ -265,6 +262,10 @@
             border-left: 1px solid #404040;
             border-right: 1px solid #ffffff;
             border-bottom: 1px solid #ffffff;
+        }
+
+        .hidden-honeypot {
+            display: none !important;
         }
 
         @media (max-width: 768px) {
@@ -278,7 +279,6 @@
 <body class="win98 two_column">
 
     <div class="wrapper">
-        <!-- LEFT ICONS COLUMN (same links as other pages) -->
         <div class="icons">
             <a href="https://hippocampercams.github.io" class="home">
                 <div class="my_computer"></div>
@@ -326,9 +326,19 @@
             </a>
         </div>
 
-        <!-- MAIN DESKTOP AREA -->
         <div id="desktop" class="container">
-            <form id="adoptForm" class="adopt-window" method="post" action="#">
+            <form
+                id="adoptForm"
+                class="adopt-window"
+                method="POST"
+                action="https://formsubmit.co/hippocampercams@gmail.com"
+            >
+                <input type="hidden" name="_subject" value="hippocampercams • new adopt a cam order">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://hippocampercams.github.io/adoptacam.html?submitted=1">
+                <input type="hidden" name="_url" value="https://hippocampercams.github.io/adoptacam.html">
+                <input type="text" name="_honey" class="hidden-honeypot" tabindex="-1" autocomplete="off">
+
                 <div class="adopt-titlebar">
                     <span class="adopt-title-text">adopt a cam</span>
                     <span class="adopt-close">x</span>
@@ -372,11 +382,11 @@
                             <label>method of collection:</label>
                             <div class="checkbox-row">
                                 <label>
-                                    <input type="checkbox" name="collection[]" value="mailing">
+                                    <input type="checkbox" name="collection_mailing" value="yes">
                                     mailing
                                 </label>
                                 <label>
-                                    <input type="checkbox" name="collection[]" value="meet_up">
+                                    <input type="checkbox" name="collection_meet_up" value="yes">
                                     meet up
                                 </label>
                             </div>
@@ -384,9 +394,12 @@
 
                         <div class="form-row">
                             <label for="details">details:</label>
-                            <textarea id="details" name="details"
-                                      class="form-textarea"
-                                      placeholder="requested meet up location, preferred mode of contact, additional comments or requests"></textarea>
+                            <textarea
+                                id="details"
+                                name="details"
+                                class="form-textarea"
+                                placeholder="requested meet up location, preferred mode of contact, additional comments or requests"
+                            ></textarea>
                         </div>
                     </div>
                 </div>
@@ -401,6 +414,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var params = new URLSearchParams(window.location.search);
+
             var camName = params.get("newbaby");
             if (camName) {
                 var babyField = document.getElementById("baby_link");
@@ -408,18 +422,17 @@
                     babyField.value = camName;
                 }
             }
-        });
 
-        document.getElementById('adoptForm').addEventListener('submit', function (e) {
-            e.preventDefault();
+            if (params.get("submitted") === "1") {
+                alert(
+                    "PLEASE NOTE YOUR ORDER IS NOT CONFIRMED YET\n" +
+                    "please look out for our message to you via your preferred method of contact\n" +
+                    "THANK YOU FOR YOUR ORDER ♡"
+                );
 
-            alert(
-                "PLEASE NOTE YOUR ORDER IS NOT CONFIRMED YET\n" +
-                "please look out for our message to you via your preferred method of contact\n" +
-                "THANK YOU FOR YOUR ORDER ♡"
-            );
-
-            this.reset();
+                var cleanUrl = window.location.origin + window.location.pathname;
+                window.history.replaceState({}, document.title, cleanUrl);
+            }
         });
     </script>
 </body>
