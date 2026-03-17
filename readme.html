@@ -104,7 +104,7 @@
 
         /* MAIN DESKTOP AREA */
         #desktop {
-            margin: 20px 40px 0 540px;
+            margin: 20px 40px 60px 530px;
             z-index: 3;
             position: relative;
             display: flex;
@@ -112,14 +112,14 @@
             gap: 20px;
             align-items: flex-start;
             box-sizing: border-box;
-            width: 1120px;
-            max-width: 1120px;
+            width: 1130px;
+            max-width: 1130px;
         }
 
         .window {
-            width: 1120px;
-            max-width: 1120px;
-            min-width: 1120px;
+            width: 1130px;
+            max-width: 1130px;
+            min-width: 1130px;
             font-family: "Courier New", Courier, monospace;
             background: #ffffff;
             border: 1px solid #000000;
@@ -231,7 +231,7 @@
         }
 
         .top-banner-window {
-            width: 360px;
+            width: 300px;
             max-width: 100%;
             border: 1px solid #000000;
             background-color: #d4d0c8;
@@ -502,42 +502,6 @@
         .hover-pop.is-open .hover-box {
             display: block;
         }
-
-        /* INFINITE SCROLL */
-        #feed-sentinel {
-            height: 1px;
-            width: 100%;
-        }
-
-        .feed-loading {
-            margin: 0 40px 20px 540px;
-            width: 1120px;
-            max-width: 1120px;
-            min-width: 1120px;
-            text-align: center;
-            font-family: "Courier New", Courier, monospace;
-            color: #ffffff;
-            font-size: 12px;
-            display: none;
-        }
-
-        @media (max-width: 1800px) {
-            #desktop {
-                width: 1040px;
-                max-width: 1040px;
-            }
-
-            .window,
-            .feed-loading {
-                width: 1040px;
-                max-width: 1040px;
-                min-width: 1040px;
-            }
-
-            .feed-loading {
-                margin-left: 540px;
-            }
-        }
     </style>
 </head>
 
@@ -690,9 +654,6 @@
             </div>
         </div>
 
-        <div class="feed-loading" id="feed-loading">loading more posts...</div>
-        <div id="feed-sentinel"></div>
-
         <div class="start_menu"></div>
         <div class="start_bar">
             <div class="top_border"></div>
@@ -743,99 +704,6 @@
             item.classList.remove('is-open');
         });
     });
-    </script>
-
-    <script>
-    var infinitePosts = [
-        {
-            info: "READ ME • updated 2025",
-            title: "⚠️ IMPORTANT STUFF TO READ BEFORE PURCHASING⚠️",
-            content:
-                '<p><b>1. vintage & pre-loved, not brand new.</b><br><b>please expect signs of age & wear: scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc.</b><br> we’ll always flag any bigger quirks in the listing.</p>' +
-                '<p><b>2. testing &amp; functionality.</b><br>each cam is tested for power-on, basic shooting, flash, zoom & playback. we do not guarantee any other functions.</p>' +
-                '<p><b>3. physical condition.</b><br>we clean & inspect each cam thoroughly and will list any major defects in the item description.</p>' +
-                '<p><b>4. refunds & returns.</b><br>we only consider them where a tested function fails or a major defect was not disclosed and you have a full unboxing video.</p>' +
-                '<p><b>5. what\'s in the box?</b><br>nothing is included unless the listing specifically says so.</p>'
-        },
-        {
-            info: "house rules • read before adopting",
-            title: "shop notes – Notepad",
-            content:
-                '<p><b>ordering.</b><br>DMs are first-come-first-served. holds are short and only if agreed.</p>' +
-                '<p><b>payment.</b><br>paynow / bank transfer in SGD unless otherwise stated.</p>' +
-                '<p><b>delivery / meetups.</b><br>local SG options usually include normal mail, tracked mail or meetup.</p>' +
-                '<p><b>packaging.</b><br>cams are packed snugly with bubble wrap / padding wherever possible.</p>' +
-                '<p><b>DOA window.</b><br>contact us within 48 hours with clear pics / videos.</p>'
-        }
-    ];
-
-    var postCursor = 0;
-    var isAppending = false;
-
-    function createTextPost(post) {
-        return '' +
-            '<div class="window post-text">' +
-                '<a href="#"><div class="top"><div class="info">' + post.info + '</div></div></a>' +
-                '<div class="middle">' +
-                    '<div class="title"><p>' + post.title + '</p></div>' +
-                    '<div class="content">' + post.content + '</div>' +
-                '</div>' +
-                '<div class="bottom"></div>' +
-            '</div>';
-    }
-
-    function appendMorePosts(count) {
-        if (isAppending) return;
-        isAppending = true;
-
-        var desktop = document.getElementById("desktop");
-        var loading = document.getElementById("feed-loading");
-        if (!desktop) {
-            isAppending = false;
-            return;
-        }
-
-        if (loading) loading.style.display = "block";
-
-        var html = "";
-        for (var i = 0; i < count; i++) {
-            var post = infinitePosts[postCursor % infinitePosts.length];
-            html += createTextPost(post);
-            postCursor++;
-        }
-
-        setTimeout(function() {
-            desktop.insertAdjacentHTML("beforeend", html);
-            if (loading) loading.style.display = "none";
-            isAppending = false;
-        }, 250);
-    }
-
-    function setupInfiniteScroll() {
-        var sentinel = document.getElementById("feed-sentinel");
-        var loading = document.getElementById("feed-loading");
-
-        if (!sentinel || !("IntersectionObserver" in window)) {
-            if (loading) loading.style.display = "none";
-            return;
-        }
-
-        var observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    appendMorePosts(2);
-                }
-            });
-        }, {
-            root: null,
-            rootMargin: "300px 0px",
-            threshold: 0
-        });
-
-        observer.observe(sentinel);
-    }
-
-    setupInfiniteScroll();
     </script>
 </body>
 </html>
