@@ -104,7 +104,7 @@
 
         /* MAIN DESKTOP AREA */
         #desktop {
-            margin: 20px 40px 60px 530px;
+            margin: 20px 0 60px 530px;
             z-index: 3;
             position: relative;
             display: flex;
@@ -112,14 +112,15 @@
             gap: 20px;
             align-items: flex-start;
             box-sizing: border-box;
-            width: 1130px;
-            max-width: 1130px;
+            width: calc(100vw - 620px);
+            max-width: calc(100vw - 620px);
+            min-width: 0;
         }
 
         .window {
-            width: 1130px;
-            max-width: 1130px;
-            min-width: 1130px;
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
             font-family: "Courier New", Courier, monospace;
             background: #ffffff;
             border: 1px solid #000000;
