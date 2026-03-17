@@ -348,6 +348,35 @@
             margin: 0 0 10px 0;
         }
 
+        .confirm-checks {
+            margin-top: 8px;
+        }
+
+        .confirm-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            line-height: 1.35;
+        }
+
+        .confirm-check input {
+            margin: 2px 0 0 0;
+            flex: 0 0 auto;
+        }
+
+        .confirm-error {
+            display: none;
+            margin-top: 8px;
+            color: #8b0000;
+            font-weight: bold;
+        }
+
+        .confirm-error.show {
+            display: block;
+        }
+
         .confirm-bottom {
             background: #d4d0c8;
             border-left: 1px solid #808080;
@@ -538,10 +567,32 @@
 
             <div class="confirm-content">
                 <p><b>before you submit your order:</b></p>
-                <p>please make sure all your details are correct, especially your email, contact number, mailing address, and the link to your new baby.</p>
-                <p>submitting this form does <b>not</b> mean your order is confirmed yet.</p>
-                <p>after you click <b>got it!</b>, your form will be submitted and we’ll contact you via your preferred method of contact to confirm the order.</p>
+                <p>please confirm the following:</p>
+
+                <div class="confirm-checks">
+                    <label class="confirm-check">
+                        <input type="checkbox" class="confirm-required">
+                        <span>i have checked that my email, contact number, mailing address, and other details are correct.</span>
+                    </label>
+
+                    <label class="confirm-check">
+                        <input type="checkbox" class="confirm-required">
+                        <span>i have checked that the “link to your new baby” field is correct.</span>
+                    </label>
+
+                    <label class="confirm-check">
+                        <input type="checkbox" class="confirm-required">
+                        <span>i understand that submitting this form does <b>not</b> mean my order is confirmed yet.</span>
+                    </label>
+
+                    <label class="confirm-check">
+                        <input type="checkbox" class="confirm-required">
+                        <span>i understand that after i click <b>got it!</b>, my form will be submitted and hippocampercams will contact me via my preferred method of contact.</span>
+                    </label>
+                </div>
+
                 <p>thank you for adopting from hippocampercams ♡</p>
+                <div id="confirmError" class="confirm-error">please tick all boxes before continuing.</div>
             </div>
 
             <div class="confirm-bottom">
@@ -577,6 +628,8 @@
             var openConfirm = document.getElementById("openConfirm");
             var confirmOverlay = document.getElementById("confirmOverlay");
             var confirmSubmit = document.getElementById("confirmSubmit");
+            var confirmChecks = document.querySelectorAll(".confirm-required");
+            var confirmError = document.getElementById("confirmError");
 
             if (openConfirm && confirmOverlay) {
                 openConfirm.addEventListener("click", function () {
@@ -584,13 +637,34 @@
                         form.reportValidity();
                         return;
                     }
+                    confirmError.classList.remove("show");
                     confirmOverlay.classList.add("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "false");
                 });
             }
 
+            confirmChecks.forEach(function (checkbox) {
+                checkbox.addEventListener("change", function () {
+                    var allChecked = Array.prototype.every.call(confirmChecks, function (item) {
+                        return item.checked;
+                    });
+                    if (allChecked) {
+                        confirmError.classList.remove("show");
+                    }
+                });
+            });
+
             if (confirmSubmit) {
                 confirmSubmit.addEventListener("click", function () {
+                    var allChecked = Array.prototype.every.call(confirmChecks, function (item) {
+                        return item.checked;
+                    });
+
+                    if (!allChecked) {
+                        confirmError.classList.add("show");
+                        return;
+                    }
+
                     confirmOverlay.classList.remove("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "true");
                     form.submit();
