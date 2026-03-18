@@ -174,7 +174,9 @@
         .window .condition-details summary,
         .window .condition-body,
         .window .condition-body p,
-        .window .adopt-button {
+        .window .adopt-button,
+        .window .tag-links,
+        .window .tag-links a {
             font-family: "Mouse Deco" !important;
         }
 
@@ -270,9 +272,26 @@
             margin: 0 0 10px;
         }
 
-        .tagline {
-            margin-top: 10px;
+        .tag-links {
+            margin: 12px 0 0 0;
             font-size: 12px;
+            line-height: 1.3;
+        }
+
+        .tag-links a {
+            color: #001BFF;
+            text-decoration: underline;
+        }
+
+        .tag-links a:hover {
+            text-decoration: underline;
+        }
+
+        .empty-state {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.4;
+            padding-bottom: 20px;
         }
 
         /* PHOTO GRID */
