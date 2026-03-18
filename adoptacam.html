@@ -365,11 +365,11 @@
             font-family: "Mouse Deco";
         }
 
-        .confirm-checks {
+        .confirm-points {
             margin-top: 8px;
         }
 
-        .confirm-check {
+        .confirm-point {
             display: flex;
             align-items: flex-start;
             gap: 8px;
@@ -379,15 +379,35 @@
             font-family: "Mouse Deco";
         }
 
-        .confirm-check input {
+        .confirm-bullet {
+            flex: 0 0 auto;
+        }
+
+        .confirm-point span,
+        .confirm-point a,
+        .confirm-point b,
+        .confirm-point u {
+            font-family: "Mouse Deco";
+        }
+
+        .confirm-agree {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-top: 12px;
+            font-size: 13px;
+            line-height: 1.35;
+            font-family: "Mouse Deco";
+        }
+
+        .confirm-agree input {
             margin: 2px 0 0 0;
             flex: 0 0 auto;
         }
 
-        .confirm-check span,
-        .confirm-check a,
-        .confirm-check b,
-        .confirm-check u {
+        .confirm-agree-text {
+            color: #001BFF;
+            font-weight: bold;
             font-family: "Mouse Deco";
         }
 
@@ -595,35 +615,40 @@
                 <p><b>before you submit your order:</b></p>
                 <p>please acknowledge the following:</p>
 
-                <div class="confirm-checks">
-                    <label class="confirm-check">
-                        <input type="checkbox" class="confirm-required">
+                <div class="confirm-points">
+                    <div class="confirm-point">
+                        <span class="confirm-bullet">❤︎</span>
                         <span>i have read the item's description & the <u><a href="https://hippocampercams.github.io/readme.html" target="_blank" rel="noopener" style="color:#001BFF;">"READ ME"</a></u> page carefully and acknowledge their contents.</span>
-                    </label>
+                    </div>
 
-                    <label class="confirm-check">
-                        <input type="checkbox" class="confirm-required">
+                    <div class="confirm-point">
+                        <span class="confirm-bullet">❤︎</span>
                         <span>cams are marked 'functional' once power-on, basic shooting, flash, zoom & playback are confirmed; <b>no other functions are guaranteed.</b></span>
-                    </label>
+                    </div>
 
-                    <label class="confirm-check">
-                        <input type="checkbox" class="confirm-required">
+                    <div class="confirm-point">
+                        <span class="confirm-bullet">❤︎</span>
                         <span>all cams are vintage, pre-loved & have signs of age/wear e.g. scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc. & deteriorated rubber caps are removed. i accept these and all issues & other defects described in the listing.</span>
-                    </label>
+                    </div>
 
-                    <label class="confirm-check">
-                        <input type="checkbox" class="confirm-required">
+                    <div class="confirm-point">
+                        <span class="confirm-bullet">❤︎</span>
                         <span>i understand that refunds & returns are not accepted subject to the <u><a href="https://hippocampercams.github.io/readme.html" target="_blank" rel="noopener" style="color:#001BFF;">"return/refund policy"</a></u>.</span>
-                    </label>
+                    </div>
 
-                    <label class="confirm-check">
-                        <input type="checkbox" class="confirm-required">
+                    <div class="confirm-point">
+                        <span class="confirm-bullet">❤︎</span>
                         <span>i understand that after i click <u><b>got it!</b></u>, my form will be submitted & hippocampercams will contact me via my preferred method of contact for this order and promotional material.</span>
-                    </label>
+                    </div>
                 </div>
 
+                <label class="confirm-agree">
+                    <input type="checkbox" id="confirmAgree">
+                    <span class="confirm-agree-text">i've read and agree with all of the above!</span>
+                </label>
+
                 <p>thank you so much for adopting from hippocampercams ♡</p>
-                <div id="confirmError" class="confirm-error">please tick all boxes before continuing.</div>
+                <div id="confirmError" class="confirm-error">please tick the box before continuing.</div>
             </div>
 
             <div class="confirm-bottom">
@@ -660,12 +685,13 @@
             var confirmOverlay = document.getElementById("confirmOverlay");
             var confirmSubmit = document.getElementById("confirmSubmit");
             var closeConfirm = document.getElementById("closeConfirm");
-            var confirmChecks = document.querySelectorAll(".confirm-required");
+            var confirmAgree = document.getElementById("confirmAgree");
             var confirmError = document.getElementById("confirmError");
 
             var collectionMailing = document.getElementById("collection_mailing");
             var collectionMeetUp = document.getElementById("collection_meet_up");
             var detailsField = document.getElementById("details");
+            var addressField = document.getElementById("address");
 
             function validateCollectionDetails() {
                 var collectionChosen = collectionMailing.checked || collectionMeetUp.checked;
@@ -673,6 +699,7 @@
                 collectionMailing.setCustomValidity("");
                 collectionMeetUp.setCustomValidity("");
                 detailsField.setCustomValidity("");
+                addressField.setCustomValidity("");
 
                 if (!collectionChosen) {
                     collectionMeetUp.setCustomValidity("please choose delivery or meet up!");
@@ -682,12 +709,19 @@
                     detailsField.setCustomValidity("please lmk where you wanna meet!");
                 }
 
-                return collectionChosen && !(collectionMeetUp.checked && detailsField.value.trim() === "");
+                if (collectionMailing.checked && addressField.value.trim() === "") {
+                    addressField.setCustomValidity("please fill in your mailing address!");
+                }
+
+                return collectionChosen &&
+                    !(collectionMeetUp.checked && detailsField.value.trim() === "") &&
+                    !(collectionMailing.checked && addressField.value.trim() === "");
             }
 
             collectionMailing.addEventListener("change", validateCollectionDetails);
             collectionMeetUp.addEventListener("change", validateCollectionDetails);
             detailsField.addEventListener("input", validateCollectionDetails);
+            addressField.addEventListener("input", validateCollectionDetails);
 
             if (openConfirm && confirmOverlay) {
                 openConfirm.addEventListener("click", function () {
@@ -712,24 +746,17 @@
                 });
             }
 
-            confirmChecks.forEach(function (checkbox) {
-                checkbox.addEventListener("change", function () {
-                    var allChecked = Array.prototype.every.call(confirmChecks, function (item) {
-                        return item.checked;
-                    });
-                    if (allChecked) {
+            if (confirmAgree) {
+                confirmAgree.addEventListener("change", function () {
+                    if (confirmAgree.checked) {
                         confirmError.classList.remove("show");
                     }
                 });
-            });
+            }
 
             if (confirmSubmit) {
                 confirmSubmit.addEventListener("click", function () {
-                    var allChecked = Array.prototype.every.call(confirmChecks, function (item) {
-                        return item.checked;
-                    });
-
-                    if (!allChecked) {
+                    if (!confirmAgree.checked) {
                         confirmError.classList.add("show");
                         return;
                     }
