@@ -9,44 +9,44 @@ window.HPC_POSTS = [
   images: [
     {
       src: "https://64.media.tumblr.com/0c2640a41010c52edeefc700225d00ae/fab800c49e64a484-06/s1280x1920/f2216474d750990195a3e1363d19f4fc1895becf.jpg",
-      alt: "CAMERA NAME photo 1"
+      alt: "FUJIFILM FINEPIX Z3 photo 1"
     },
     {
       src: "https://64.media.tumblr.com/4e4494b84447dff4baa933dcb7cfda56/fab800c49e64a484-21/s1280x1920/7e04683df7f181fe1a5ef82c6a01a2b8656e43e5.jpg",
-      alt: "CAMERA NAME photo 2"
+      alt: "FUJIFILM FINEPIX Z3 photo 2"
     },
     {
       src: "https://64.media.tumblr.com/a4ef30b0053a9dd5365c4158ec10c0f9/fab800c49e64a484-b9/s1280x1920/cbfa12df844827230927842a869790c72af6faff.jpg",
-      alt: "CAMERA NAME photo 3"
+      alt: "FUJIFILM FINEPIX Z3 photo 3"
     },
     {
       src: "https://64.media.tumblr.com/a6e4706bc95cf10a9a12d67100ee0e8d/fab800c49e64a484-30/s1280x1920/ce2338db6e099e87e06cc2588795ea5b34d55d29.jpg",
-      alt: "CAMERA NAME photo 4"
+      alt: "FUJIFILM FINEPIX Z3 photo 4"
     },
     {
       src: "https://64.media.tumblr.com/feb1c4403a9bccee753d7c4071dccca4/fab800c49e64a484-14/s1280x1920/a427e292557083705c35d1c864d5f86ccfa5e6f6.jpg",
-      alt: "CAMERA NAME photo 5"
+      alt: "FUJIFILM FINEPIX Z3 photo 5"
     },
     {
       src: "https://64.media.tumblr.com/80928ca58bfcba74644443d59ef52517/fab800c49e64a484-97/s1280x1920/4abf0e37b8b637da9f9932a3efccf81242a2f24b.jpg",
-      alt: "CAMERA NAME photo 6"
+      alt: "FUJIFILM FINEPIX Z3 photo 6"
     }
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
     <p>slight dents (front, bottom), minor chips (sides, cover, bottom, back), scuffs & scratches, slight fog in screen (doesn't affect photographs)</p>
     <div class="photo-grid">
-      <img src="https://64.media.tumblr.com/8664a7b6e12c673a0bb576daf7639058/5830254dd880e5e8-cf/s1280x1920/ece3d9402065060a06f0f04dc41f43b09b8ea0a7.jpg" class="full_image" alt="CAMERA NAME condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/9e9d0e05daac4e548d9c04bd7e157f03/5830254dd880e5e8-28/s1280x1920/3c09e332015819d8cda6c8611071dd963ef0b047.jpg" class="full_image" alt="CAMERA NAME condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/8664a7b6e12c673a0bb576daf7639058/5830254dd880e5e8-cf/s1280x1920/ece3d9402065060a06f0f04dc41f43b09b8ea0a7.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9e9d0e05daac4e548d9c04bd7e157f03/5830254dd880e5e8-28/s1280x1920/3c09e332015819d8cda6c8611071dd963ef0b047.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 2" onclick="openHpcLightbox(this)">
       <img src="https://assets.tumblr.com/images/x.gif" class="full_image" alt="CAMERA NAME condition 3" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/73162f446b3f6a9e206cab2713c105c7/5830254dd880e5e8-c2/s1280x1920/5690becf1f190bd537481420469beb2b9c677d64.jpg" class="full_image" alt="CAMERA NAME condition 4" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/ebf561ba5f3c958f6922b8ffb6b7216f/5830254dd880e5e8-c4/s1280x1920/b2f5bc80e7b7cedb87c4ee5f96a854b2508af96e.jpg" class="full_image" alt="CAMERA NAME condition 5" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/951b87f8eadae930df20eaae8b2c30f3/5830254dd880e5e8-62/s1280x1920/d681cac01a0ec0e6606a18764c6fe77ed73f376b.jpg" class="full_image" alt="CAMERA NAME condition 6" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/157782836a3debdf130e620b05ebab46/5830254dd880e5e8-e7/s1280x1920/d701c1bc5437e1332036493463612232f976995b.jpg" class="full_image" alt="CAMERA NAME condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/73162f446b3f6a9e206cab2713c105c7/5830254dd880e5e8-c2/s1280x1920/5690becf1f190bd537481420469beb2b9c677d64.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ebf561ba5f3c958f6922b8ffb6b7216f/5830254dd880e5e8-c4/s1280x1920/b2f5bc80e7b7cedb87c4ee5f96a854b2508af96e.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/951b87f8eadae930df20eaae8b2c30f3/5830254dd880e5e8-62/s1280x1920/d681cac01a0ec0e6606a18764c6fe77ed73f376b.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/157782836a3debdf130e620b05ebab46/5830254dd880e5e8-e7/s1280x1920/d701c1bc5437e1332036493463612232f976995b.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 7" onclick="openHpcLightbox(this)">
     </div>
   `,
-  adoptUrl: "adoptacam.html?newbaby=CAMERA%20NAME%20HERE"
-}
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20Z3"
+},
   
   {
     id: "fujifilm-finepix-a500",
