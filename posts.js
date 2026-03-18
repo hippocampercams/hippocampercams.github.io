@@ -3,7 +3,7 @@ window.HPC_POSTS = [
     id: "fujifilm-finepix-a500",
     type: "photo",
     meta: "Posted 2 hours ago • 204 notes",
-    titleHtml: '<p><b>FUJIFILM FINEPIX A500</b> $170.00 </p><p><i>striking, clean, elegant, moody</i></p>',
+    titleHtml: '<p><b>TEST FUJIFILM FINEPIX A500</b> $170.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・xd card・AA batteries (one less charger!)',
     tags: ["cleangirl", "simpleelegance"],
     images: [
