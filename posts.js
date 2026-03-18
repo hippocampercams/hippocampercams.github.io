@@ -1,5 +1,53 @@
 window.HPC_POSTS = [
   {
+  id: "fujifilm-finepix-z300",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p><p><i>elegant, warm, dynamic</i></p>',
+  captionHtml: '10 mp・5x optimal zoom・touchscreen・beautiful peachy pink',
+  tags: ["grainyretro", "cybery2k", "tokyoblues"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/2de21a7a3b16aec98eacedde9d0147f3/40b7e471ea1b679e-ab/s1280x1920/ddfa791e83fba6df6c2b36aaf3a51425d3647c42.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/87068304eb04b7a7b66b2262cd71c392/3c0933a23966375c-60/s1280x1920/0a77377761996b1cf0b330e33ee42dc9d80ab7bf.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/59d90eea4fb32f97c1f776c2beb37e08/40b7e471ea1b679e-e1/s1280x1920/99a22cec2fd97b799f3db568d27e1546b38cb496.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/5fcb62878b242cfd258e943e4c9f36a1/40b7e471ea1b679e-c8/s1280x1920/13830cbd65afd9004fef153536972c6f237d6e23.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/39326812aab4d2718ea1b2b469e9a67b/40b7e471ea1b679e-5f/s1280x1920/e62779565232f724fab800662d5f6ef02dd8112d.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/1f863e9c6e3ad4b909e0261efef4e84b/40b7e471ea1b679e-e6/s1280x1920/04efbce0ae71b4e58e747df877a740f0637975b1.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>Chip (front bottom), dent (back side screen, doesnt affect display), minor scratches</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/7b3d22420437c6caa5f99b8dcbaceda6/3c0933a23966375c-d4/s1280x1920/59ff6778a8e2039850a9fd1ac55685c67bbef5ab.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b39bea84c98e183a2ea6b4b6d0481d73/3c0933a23966375c-37/s1280x1920/bfd7cfea9dbf590e45dca2acdf87e6ead173ea5d.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/8a772eb6a93337f44be7747f46e73558/3c0933a23966375c-4f/s2048x3072/1f94268f1eda705430c229f837945273712c7daf.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/52dcbad7522e2e708ab8e7be2790bee7/3c0933a23966375c-4b/s1280x1920/7909a5c948bfe895e79756b02e9d665f262823a6.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2e43be5c0b723411b9271257a7075f81/3c0933a23966375c-5d/s1280x1920/921ef7216368b2be26d5ee775a2673ca9ec3325c.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://placeholder.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 6" onclick="openHpcLightbox(this)">
+    </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20Z300"
+},
+
+  {
   id: "fujifilm-finepix-z3",
   type: "photo",
   meta: "Posted just now • 0 notes",
