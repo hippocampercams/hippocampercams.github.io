@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>the golden hour edit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://static.tumblr.com/fpdiq1j/N3Zmkjmqn/theme_generic.css">
+
+    <style>
+        @font-face {
+            font-family: "Mouse Deco";
+            src: url("Mouse_Deco.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        body {
+            background: #008080;
+            margin: 0;
+            font: normal 13px/1.3 "Mouse Deco", Arial, sans-serif;
+            overflow-x: auto;
+        }
+
+        body.mobile-menu-open {
+            overflow: hidden;
+        }
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-family: "Mouse Deco", Arial, sans-serif;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button,
+        input,
+        textarea,
+        select,
+        summary,
+        p,
+        div,
+        span,
+        label {
+            font-family: "Mouse Deco", Arial, sans-serif;
+        }
+
+        .icons {
+            margin: 0 0 0 10px;
+            list-style-type: none;
+            padding: 0;
+            width: 100px;
+            float: left;
+            position: fixed;
+            z-index: 2;
+            font-family: "Mouse Deco" !important;
+        }
+
+        .icons a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .icon_label {
+            font-family: "Mouse Deco" !important;
+            font-size: 12px;
+            letter-spacing: 0.005em;
+            padding-top: 6px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .my_computer, .my_documents, .network_neighborhood, .folder,
+        .recycle_bin, .start_menu, .application_icons,
+        .start_bar .start_button .logo, .start_bar .tray .calendar,
+        .start_menu, .description .top, .description .ok_button, .description .bottom {
+            background-image: url('https://static.tumblr.com/fpdiq1j/O6Um4f3al/master_sprite.png');
+            margin: auto;
+        }
+
+        .my_computer {
+            height: 32px;
+            width: 32px;
+            background-position: -616px -157px;
+        }
+
+        .my_documents {
+            height: 30px;
+            width: 32px;
+            background-position: -616px -189px;
+        }
+
+        .network_neighborhood {
+            height: 32px;
+            width: 32px;
+            background-position: -616px -219px;
+        }
+
+        .recycle_bin {
+            height: 32px;
+            width: 30px;
+            background-position: -616px -251px;
+        }
+
+        .folder {
+            height: 27px;
+            width: 32px;
+            background-position: -616px -283px;
+        }
+
+        .icon-img {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin: 0 auto;
+            image-rendering: pixelated;
+        }
+
+        #desktop {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            margin-left: 205px;
+            margin-right: 0;
+            width: 1120px;
+            max-width: 1120px;
+            min-width: 1120px;
+            z-index: 3;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .window {
+            width: 1120px;
+            max-width: 1120px;
+            min-width: 1120px;
+            margin: 0;
+            font-family: "Mouse Deco", Arial, sans-serif;
+            background: #ffffff;
+            border: 1px solid #000000;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+            box-sizing: border-box;
+        }
+
+        .window .title,
+        .window .title p,
+        .window .content,
+        .window .content p,
+        .window .content a,
+        .window .content b,
+        .window .content i,
+        .window .content u,
+        .window .caption,
+        .window .caption p,
+        .window .info,
+        .window .post-actions,
+        .window .condition-details,
+        .window .condition-details summary,
+        .window .condition-body,
+        .window .condition-body p,
+        .window .adopt-button,
+        .window .tag-links,
+        .window .tag-links a {
+            font-family: "Mouse Deco" !important;
+        }
+
+        .window .top,
+        .window .middle,
+        .window .bottom {
+            background-image: none !important;
+        }
+
+        .window .top {
+            height: 30px;
+            background: linear-gradient(to right, #0a3a8b, #4f80d4) !important;
+            border-bottom: 1px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4px 0 8px;
+            box-sizing: border-box;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .window .top::after {
+            content: "x";
+            width: 16px;
+            height: 14px;
+            background-color: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            text-align: center;
+            line-height: 12px;
+            color: #000000;
+            font-size: 10px;
+            box-sizing: border-box;
+            display: inline-block;
+            flex: 0 0 auto;
+            font-family: "Mouse Deco";
+        }
+
+        .window .top .info {
+            position: static;
+            width: auto;
+            z-index: auto;
+            font-size: 11px;
+            line-height: 1;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 8px;
+        }
+
+        .window > a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        .window .middle {
+            background: #ffffff !important;
+            padding: 16px 18px 18px 18px;
+            box-sizing: border-box;
+        }
+
+        .window .content {
+            background: #ffffff !important;
+        }
+
+        .window .bottom {
+            height: 0;
+            border: 0;
+            background: transparent !important;
+        }
+
+        .title {
+            display: block;
+            font-size: 1.2em;
+            line-height: 1.15;
+            margin-bottom: 10px;
+        }
+
+        .caption {
+            margin-bottom: 10px;
+        }
+
+        .middle .caption {
+            margin-top: 8px;
+        }
+
+        .content p {
+            margin: 0 0 10px;
+        }
+
+        .tag-links {
+            margin: 12px 0 0 0;
+            font-size: 12px;
+            line-height: 1.3;
+            font-family: "Mouse Deco", Arial, sans-serif !important;
+        }
+
+        .tag-links a {
+            color: #001BFF;
+            text-decoration: underline;
+            font-family: "Mouse Deco", Arial, sans-serif !important;
+        }
+
+        .empty-state {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.4;
+            padding-bottom: 20px;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .photo-grid img.full_image {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            display: block;
+            margin: 0;
+            cursor: pointer;
+            background: #f3f3f3;
+        }
+
+        img.full_image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .post-actions {
+            margin-top: 14px;
+        }
+
+        .condition-details {
+            width: 100%;
+            margin: 0 0 12px 0;
+            background: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            box-sizing: border-box;
+        }
+
+        .condition-details summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 6px 10px;
+            font-size: 13px;
+            font-weight: bold;
+            position: relative;
+            user-select: none;
+        }
+
+        .condition-details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .condition-details summary::after {
+            content: "▼";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 11px;
+            font-weight: normal;
+            font-family: "Mouse Deco";
+        }
+
+        .condition-details[open] summary::after {
+            content: "▲";
+        }
+
+        .condition-body {
+            padding: 2px 10px 10px 10px;
+            font-size: 12px;
+            line-height: 1.35;
+            border-top: 1px solid #808080;
+        }
+
+        .condition-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .adopt-wrap {
+            text-align: center;
+        }
+
+        .adopt-button {
+            display: inline-block;
+            min-width: 280px;
+            padding: 6px 18px;
+            background-color: #d4d0c8;
+            color: #000000;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            box-sizing: border-box;
+        }
+
+        .adopt-button:active {
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .right-popups {
+            position: fixed;
+            top: 50%;
+            right: 6px;
+            width: 410px;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+            pointer-events: none;
+            transform: translateY(-50%);
+        }
+
+        .top-banner {
+            pointer-events: auto;
+            flex: 0 0 auto;
+        }
+
+        .top-banner-window {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            background-color: #d4d0c8;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+            color: #000000;
+        }
+
+        .tb-titlebar {
+            height: 30px;
+            background: linear-gradient(to right, #0a3a8b, #4f80d4);
+            border-bottom: 1px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4px;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-size: 11px;
+        }
+
+        .tb-title-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: "Mouse Deco";
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .tb-close {
+            width: 16px;
+            height: 14px;
+            background-color: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            text-align: center;
+            line-height: 12px;
+            color: #000000;
+            font-size: 10px;
+            cursor: default;
+            box-sizing: border-box;
+            font-family: "Mouse Deco";
+        }
+
+        .tb-body {
+            display: flex;
+            align-items: center;
+            padding: 16px 16px 10px;
+            box-sizing: border-box;
+        }
+
+        .tb-icon {
+            position: relative;
+            width: 36px;
+            height: 32px;
+            margin-right: 12px;
+            background: none;
+            flex: 0 0 auto;
+        }
+
+        .tb-icon::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 26px solid #ffff00;
+        }
+
+        .tb-icon::after {
+            content: "!";
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            line-height: 1;
+        }
+
+        .tb-text,
+        .tb-text p,
+        .tb-text a,
+        .tb-text b,
+        .tb-text i,
+        .tb-text u {
+            font-family: "Mouse Deco" !important;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 0.005em;
+            box-sizing: border-box;
+        }
+
+        .tb-text p {
+            margin-top: 0;
+        }
+
+        .tb-footer {
+            padding: 0 16px 8px;
+            margin-top: -10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .tb-button {
+            font-size: 15px;
+            font-weight: bold;
+            min-width: 75px;
+            padding: 2px 10px;
+            background-color: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            font-family: "Mouse Deco" !important;
+        }
+
+        .tb-button:active {
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .start_bar {
+            position: fixed;
+            background-color: rgb(192,192,192);
+            bottom: 0;
+            height: 28px;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .taskbar-center-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Mouse Deco";
+            font-size: 12px;
+            color: #000000;
+            line-height: 1;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .start_menu {
+            position: fixed;
+            z-index: 3;
+            bottom: 28px;
+            display: none;
+        }
+
+        .start_bar .top_border {
+            border-bottom: 1px solid rgb(255,255,255);
+            border-top: 1px solid rgb(223,223,223);
+        }
+
+        .start_bar .start_button {
+            float: left;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-bottom: 2px solid gray;
+            border-right: 2px solid gray;
+            height: 18px;
+            width: 54px;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+
+        .start_bar .start_button .text {
+            float: right;
+            display: inline;
+            margin-right: 4px;
+            line-height: 18px;
+            font-weight: bold;
+            font-family: "Mouse Deco";
+        }
+
+        .start_bar .start_button .logo {
+            float: left;
+            margin-top: 2px;
+            margin-left: 2px;
+            width: 16px;
+            height: 14px;
+            background-position: -633px -103px;
+        }
+
+        .start_bar .big_seperator {
+            float: left;
+            border-left: 1px solid rgb(128,128,128);
+            border-right: 1px solid rgb(255,255,255);
+            height: 22px;
+            margin-top: 2px;
+            margin-left: 2px;
+        }
+
+        .start_bar .small_seperator {
+            float: left;
+            border-left: 1px solid rgb(255,255,255);
+            border-top: 1px solid rgb(255,255,255);
+            border-right: 1px solid rgb(128,128,128);
+            border-bottom: 1px solid rgb(128,128,128);
+            background-color: rgb(192,192,192);
+            width: 1px;
+            height: 16px;
+            margin-top: 4px;
+            margin-left: 2px;
+        }
+
+        .start_bar .application_icons {
+            float: left;
+            margin-top: 5px;
+            margin-left: 7px;
+            margin-right: 7px;
+            height: 16px;
+            width: 84px;
+            background-position: -565px -69px;
+        }
+
+        .start_bar .tray {
+            float: right;
+            border-top: 1px solid rgb(128,128,128);
+            border-left: 1px solid rgb(128,128,128);
+            border-bottom: 1px solid rgb(255,255,255);
+            border-right: 1px solid rgb(255,255,255);
+            height: 18px;
+            width: 79px;
+            margin-right: 5px;
+            margin-top: 2px;
+        }
+
+        .start_bar .tray .time {
+            line-height: 18px;
+            float: right;
+            font-size: 10px;
+            margin-right: 10px;
+            font-family: "Mouse Deco";
+        }
+
+        .start_bar .tray .calendar {
+            float: left;
+            margin-top: 1px;
+            margin-left: 3px;
+            width: 16px;
+            height: 16px;
+            background-position: -632px -87px;
+        }
+
+        #hpc-lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            cursor: zoom-out;
+        }
+
+        #hpc-lightbox img {
+            max-width: 95vw;
+            max-height: 95vh;
+            width: auto;
+            height: auto;
+            display: block;
+        }
+
+        .mobile-menu-button {
+            display: none;
+        }
+
+        .mobile-menu-overlay {
+            display: none;
+        }
+
+        @media (max-width: 1780px) {
+            #desktop,
+            .window {
+                width: 1060px;
+                max-width: 1060px;
+                min-width: 1060px;
+            }
+
+            #desktop {
+                margin-left: 185px;
+            }
+        }
+
+        @media (max-width: 1660px) {
+            #desktop,
+            .window {
+                width: 1000px;
+                max-width: 1000px;
+                min-width: 1000px;
+            }
+
+            #desktop {
+                margin-left: 165px;
+            }
+        }
+
+        @media (max-width: 1540px) {
+            #desktop,
+            .window {
+                width: 940px;
+                max-width: 940px;
+                min-width: 940px;
+            }
+
+            #desktop {
+                margin-left: 145px;
+            }
+        }
+
+        @media (max-width: 1420px) {
+            #desktop,
+            .window {
+                width: 860px;
+                max-width: 860px;
+                min-width: 860px;
+            }
+
+            #desktop {
+                margin-left: 130px;
+            }
+        }
+
+        @media (max-width: 1220px) {
+            #desktop,
+            .window {
+                width: 780px;
+                max-width: 780px;
+                min-width: 780px;
+            }
+
+            #desktop {
+                margin-left: 120px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .icons {
+                display: none;
+            }
+
+            .right-popups {
+                display: none;
+            }
+
+            #desktop {
+                margin: 8px 8px 52px 8px;
+                width: calc(100vw - 16px);
+                max-width: calc(100vw - 16px);
+                min-width: 0;
+                gap: 8px;
+            }
+
+            .window {
+                width: calc(100vw - 16px);
+                max-width: calc(100vw - 16px);
+                min-width: 0;
+            }
+
+            .window {
+                box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+            }
+
+            .window .middle {
+                padding: 10px 10px 12px 10px;
+            }
+
+            .photo-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0;
+                margin-bottom: 8px;
+            }
+
+            .photo-grid img.full_image {
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+            }
+
+            .condition-details {
+                width: 100%;
+            }
+
+            .adopt-button {
+                min-width: 0;
+                width: 100%;
+            }
+
+            .start_bar {
+                display: none;
+            }
+
+            .mobile-menu-button {
+                position: fixed;
+                left: 8px;
+                bottom: 8px;
+                z-index: 10020;
+                display: block;
+                text-decoration: none;
+                color: #ffffff;
+                width: 48px;
+            }
+
+            .mobile-menu-button .folder {
+                margin: 0 auto;
+            }
+
+            .mobile-menu-button .icon_label {
+                padding-top: 4px;
+                font-size: 12px;
+            }
+
+            .mobile-menu-overlay {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.45);
+                z-index: 10030;
+                display: none;
+            }
+
+            .mobile-menu-overlay.is-open {
+                display: block;
+            }
+
+            .mobile-menu-panel {
+                position: absolute;
+                inset: 0 auto 0 0;
+                width: 170px;
+                max-width: 80vw;
+                background: #008080;
+                padding: 12px 10px 16px 10px;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 12px;
+            }
+
+            .mobile-menu-close {
+                width: 16px;
+                height: 14px;
+                background-color: #d4d0c8;
+                border-top: 1px solid #ffffff;
+                border-left: 1px solid #ffffff;
+                border-right: 1px solid #404040;
+                border-bottom: 1px solid #404040;
+                text-align: center;
+                line-height: 12px;
+                color: #000000;
+                font-size: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-family: "Mouse Deco";
+            }
+
+            .mobile-menu-icons {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: "Mouse Deco" !important;
+            }
+
+            .mobile-menu-icons a {
+                color: #ffffff;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .mobile-menu-icons .icon_label {
+                color: #ffffff;
+            }
+        }
+    </style>
+</head>
+
+<body class="win98 one_column">
+
+    <div class="right-popups">
+        <div class="top-banner">
+            <div class="top-banner-window">
+                <div class="tb-titlebar">
+                    <span class="tb-title-text">the golden hour edit</span>
+                    <span class="tb-close">x</span>
+                </div>
+                <div class="tb-body">
+                    <div class="tb-icon"></div>
+                    <div class="tb-text">
+                        <p>. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.these cameras produce photos with warm golden light & dreaminess with a magic glow straight out of the camera. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</p>
+                    </div>
+                </div>
+                <div class="tb-footer">
+                    <button class="tb-button">ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="icons">
+            <a href="https://hippocampercams.github.io" class="home">
+                <div class="my_computer"></div>
+                <div class="icon_label">hippocampercams</div>
+            </a>
+
+            <a href="readme.html" class="ask">
+                <div class="my_documents"></div>
+                <div class="icon_label">READ ME</div>
+            </a>
+
+            <a href="masterlist.html" class="submit">
+                <div class="network_neighborhood"></div>
+                <div class="icon_label">masterlist</div>
+            </a>
+
+            <a href="faqs.html" class="listings">
+                <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                <div class="icon_label">FAQs</div>
+            </a>
+
+            <a href="adoptacam.html" class="mustread">
+                <img src="img/icons/adoptacam.png" alt="" class="icon-img">
+                <div class="icon_label">adopt a cam</div>
+            </a>
+
+            <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+                <img src="img/icons/insta.png" alt="" class="icon-img">
+                <div class="icon_label">insta</div>
+            </a>
+
+            <a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">
+                <img src="img/icons/tiktok.png" alt="" class="icon-img">
+                <div class="icon_label">tiktok</div>
+            </a>
+
+            <a href="#lemon8" target="_blank" rel="noopener" class="lemon8">
+                <img src="img/icons/lemon8.png" alt="lemon8" class="icon-img">
+                <div class="icon_label">lemon8</div>
+            </a>
+
+            <a href="contact.html" class="contact">
+                <img src="img/icons/contact.png" alt="" class="icon-img">
+                <div class="icon_label">contact</div>
+            </a>
+        </div>
+
+        <div id="desktop" class="container"></div>
+
+        <div id="hpc-lightbox" onclick="closeHpcLightbox()">
+            <img src="" alt="enlarged photo" id="hpc-lightbox-img">
+        </div>
+
+        <a href="#" class="mobile-menu-button" id="mobileMenuButton">
+            <div class="folder"></div>
+            <div class="icon_label">menu</div>
+        </a>
+
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-panel">
+                <div class="mobile-menu-header">
+                    <button type="button" class="mobile-menu-close" id="mobileMenuClose">x</button>
+                </div>
+                <div class="mobile-menu-icons">
+                    <a href="https://hippocampercams.github.io" class="home">
+                        <div class="my_computer"></div>
+                        <div class="icon_label">hippocampercams</div>
+                    </a>
+
+                    <a href="readme.html" class="ask">
+                        <div class="my_documents"></div>
+                        <div class="icon_label">READ ME</div>
+                    </a>
+
+                    <a href="masterlist.html" class="submit">
+                        <div class="network_neighborhood"></div>
+                        <div class="icon_label">masterlist</div>
+                    </a>
+
+                    <a href="faqs.html" class="listings">
+                        <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                        <div class="icon_label">FAQs</div>
+                    </a>
+
+                    <a href="adoptacam.html" class="mustread">
+                        <img src="img/icons/adoptacam.png" alt="" class="icon-img">
+                        <div class="icon_label">adopt a cam</div>
+                    </a>
+
+                    <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+                        <img src="img/icons/insta.png" alt="" class="icon-img">
+                        <div class="icon_label">insta</div>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">
+                        <img src="img/icons/tiktok.png" alt="" class="icon-img">
+                        <div class="icon_label">tiktok</div>
+                    </a>
+
+                    <a href="#lemon8" target="_blank" rel="noopener" class="lemon8">
+                        <img src="img/icons/lemon8.png" alt="lemon8" class="icon-img">
+                        <div class="icon_label">lemon8</div>
+                    </a>
+
+                    <a href="contact.html" class="contact">
+                        <img src="img/icons/contact.png" alt="" class="icon-img">
+                        <div class="icon_label">contact</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="start_menu"></div>
+        <div class="start_bar" id="taskbar">
+            <div class="top_border"></div>
+            <div class="start_button">
+                <span class="logo"></span>
+                <span class="text">Start</span>
+            </div>
+            <span class="big_seperator"></span>
+            <span class="small_seperator"></span>
+            <span class="application_icons"></span>
+
+            <div class="taskbar-center-text">°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。</div>
+
+            <span class="big_seperator"></span>
+            <span class="small_seperator"></span>
+            <div class="tray">
+                <span class="calendar"></span>
+                <span class="time" id="showClock">00:00 AM</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
+    <script src="posts.js"></script>
+
+    <script>
+    function updateClock() {
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var ampm = h >= 12 ? "PM" : "AM";
+        h = h % 12;
+        if (h === 0) h = 12;
+        if (m < 10) m = "0" + m;
+        var el = document.getElementById("showClock");
+        if (el) {
+            el.textContent = h + ":" + m + " " + ampm;
+        }
+    }
+    updateClock();
+    setInterval(updateClock, 60000);
+
+    function openHpcLightbox(imgEl) {
+        var lightbox = document.getElementById("hpc-lightbox");
+        var photo = document.getElementById("hpc-lightbox-img");
+        if (!lightbox || !photo) return;
+        photo.src = imgEl.src;
+        lightbox.style.display = "flex";
+    }
+
+    function closeHpcLightbox() {
+        var lightbox = document.getElementById("hpc-lightbox");
+        var photo = document.getElementById("hpc-lightbox-img");
+        if (!lightbox || !photo) return;
+        lightbox.style.display = "none";
+        photo.src = "";
+    }
+
+    function getTagHref(tag) {
+        var map = {
+            cleangirl: "cleangirl.html",
+            simpleelegance: "simpleelegance.html",
+            goldenhour: "goldenhour.html"
+        };
+        return map[tag] || null;
+    }
+
+    function buildTagLinks(tags) {
+        if (!tags || !tags.length) return "";
+        var html = tags.map(function(tag) {
+            var href = getTagHref(tag);
+            var label = "#" + tag;
+            if (href) {
+                return '<a href="' + href + '">' + label + '</a>';
+            }
+            return label;
+        }).join(" • ");
+        return '<div class="tag-links"><p>' + html + '</p></div>';
+    }
+
+    function buildImages(images) {
+        if (!images || !images.length) return "";
+        return '<div class="photo-grid">' + images.map(function(image) {
+            return '<img src="' + image.src + '" class="full_image" alt="' + (image.alt || "") + '" onclick="openHpcLightbox(this)">';
+        }).join("") + '</div>';
+    }
+
+    function buildPostHtml(post) {
+        var captionHtml = post.captionHtml ? '<div class="caption">' + post.captionHtml + '</div>' : '';
+        var contentHtml = '';
+        var conditionSummaryHtml = post.conditionSummaryHtml ? '<div class="caption">' + post.conditionSummaryHtml + '</div>' : '';
+        var tagLinksHtml = buildTagLinks(post.tags);
+
+        if (post.type === "photo") {
+            contentHtml = '<div class="content">' +
+                buildImages(post.images) +
+                conditionSummaryHtml +
+                tagLinksHtml +
+                '</div>';
+        } else {
+            contentHtml = '<div class="content">' +
+                (post.bodyHtml || '') +
+                tagLinksHtml +
+                '</div>';
+        }
+
+        var conditionDetailsHtml = post.conditionDetailsHtml ? `
+            <details class="condition-details">
+                <summary>condition details</summary>
+                <div class="condition-body">
+                    ${post.conditionDetailsHtml}
+                </div>
+            </details>
+        ` : '';
+
+        var adoptHtml = post.adoptUrl ? `
+            <div class="adopt-wrap">
+                <a class="adopt-button" href="${post.adoptUrl}">ADOPT THIS CAM ❥</a>
+            </div>
+        ` : '';
+
+        return `
+            <div class="window ${post.type === "photo" ? "post-photo" : "post-text"}">
+                <a href="#">
+                    <div class="top">
+                        <div class="info">${post.meta || ""}</div>
+                    </div>
+                </a>
+                <div class="middle">
+                    <div class="title">${post.titleHtml || ""}</div>
+                    ${captionHtml}
+                    ${contentHtml}
+                    <div class="post-actions">
+                        ${conditionDetailsHtml}
+                        ${adoptHtml}
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+        `;
+    }
+
+    function renderFilteredPosts(tagName) {
+        var desktop = document.getElementById("desktop");
+        if (!desktop) return;
+
+        if (!window.HPC_POSTS || !Array.isArray(window.HPC_POSTS)) {
+            desktop.innerHTML = '<div class="empty-state">posts.js could not be loaded.</div>';
+            return;
+        }
+
+        var filtered = window.HPC_POSTS.filter(function(post) {
+            return Array.isArray(post.tags) && post.tags.indexOf(tagName) !== -1;
+        });
+
+        if (!filtered.length) {
+            desktop.innerHTML = '<div class="empty-state">no posts tagged #' + tagName + ' yet.</div>';
+            return;
+        }
+
+        desktop.innerHTML = filtered.map(buildPostHtml).join("");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenuButton = document.getElementById("mobileMenuButton");
+        var mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+        var mobileMenuClose = document.getElementById("mobileMenuClose");
+
+        function openMobileMenu(event) {
+            if (event) event.preventDefault();
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.add("is-open");
+            document.body.classList.add("mobile-menu-open");
+        }
+
+        function closeMobileMenu() {
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.remove("is-open");
+            document.body.classList.remove("mobile-menu-open");
+        }
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener("click", openMobileMenu);
+        }
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener("click", closeMobileMenu);
+        }
+
+        if (mobileMenuOverlay) {
+            mobileMenuOverlay.addEventListener("click", function (event) {
+                if (event.target === mobileMenuOverlay) {
+                    closeMobileMenu();
+                }
+            });
+        }
+
+        renderFilteredPosts("goldenhour");
+    });
+    </script>
+</body>
+</html>
