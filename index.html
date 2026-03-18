@@ -180,6 +180,15 @@
             font-family: "Mouse Deco" !important;
         }
 
+        /* FIXED TAG FONT */
+        .post-tag-links,
+        .post-tag-links p,
+        .post-tag-links a,
+        .post-tag-links u,
+        .post-tag-links span {
+            font-family: "Mouse Deco" !important;
+        }
+
         .window .top,
         .window .middle,
         .window .bottom {
@@ -1135,7 +1144,7 @@
 
     function renderTagLinks(tags) {
         if (!tags || !tags.length) return "";
-        var html = '<div class="caption"><p>';
+        var html = '<div class="caption post-tag-links"><p>';
         for (var i = 0; i < tags.length; i++) {
             var tag = tags[i];
             html += '<u><a href="' + escapeHtml(tag.toLowerCase()) + '.html">#' + escapeHtml(tag) + '</a></u>';
