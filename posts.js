@@ -34,7 +34,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
   conditionDetailsHtml: `
-    <p>Chip (front bottom), dent (back side screen, doesnt affect display), minor scratches</p>
+    <p>small chip (front bottom), dent on screen (doesn't affect display), minor scratches</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/7b3d22420437c6caa5f99b8dcbaceda6/3c0933a23966375c-d4/s1280x1920/59ff6778a8e2039850a9fd1ac55685c67bbef5ab.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/b39bea84c98e183a2ea6b4b6d0481d73/3c0933a23966375c-37/s1280x1920/bfd7cfea9dbf590e45dca2acdf87e6ead173ea5d.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 2" onclick="openHpcLightbox(this)">
