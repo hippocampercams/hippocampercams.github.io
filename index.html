@@ -677,24 +677,6 @@
             display: block;
         }
 
-        /* INFINITE SCROLL */
-        #feed-sentinel {
-            height: 1px;
-            width: 100%;
-        }
-
-        .feed-loading {
-            margin: 0 0 20px 205px;
-            width: 1120px;
-            max-width: 1120px;
-            min-width: 1120px;
-            text-align: center;
-            font-family: "Mouse Deco";
-            color: #ffffff;
-            font-size: 12px;
-            display: none;
-        }
-
         /* MOBILE MENU */
         .mobile-menu-button {
             display: none;
@@ -706,75 +688,65 @@
 
         @media (max-width: 1780px) {
             #desktop,
-            .window,
-            .feed-loading {
+            .window {
                 width: 1060px;
                 max-width: 1060px;
                 min-width: 1060px;
             }
 
-            #desktop,
-            .feed-loading {
+            #desktop {
                 margin-left: 185px;
             }
         }
 
         @media (max-width: 1660px) {
             #desktop,
-            .window,
-            .feed-loading {
+            .window {
                 width: 1000px;
                 max-width: 1000px;
                 min-width: 1000px;
             }
 
-            #desktop,
-            .feed-loading {
+            #desktop {
                 margin-left: 165px;
             }
         }
 
         @media (max-width: 1540px) {
             #desktop,
-            .window,
-            .feed-loading {
+            .window {
                 width: 940px;
                 max-width: 940px;
                 min-width: 940px;
             }
 
-            #desktop,
-            .feed-loading {
+            #desktop {
                 margin-left: 145px;
             }
         }
 
         @media (max-width: 1420px) {
             #desktop,
-            .window,
-            .feed-loading {
+            .window {
                 width: 860px;
                 max-width: 860px;
                 min-width: 860px;
             }
 
-            #desktop,
-            .feed-loading {
+            #desktop {
                 margin-left: 130px;
             }
         }
 
         @media (max-width: 1220px) {
             #desktop,
-            .window,
-            .feed-loading {
+            .window {
                 width: 780px;
                 max-width: 780px;
                 min-width: 780px;
             }
 
-            #desktop,
-            .feed-loading {
+            #desktop {
                 margin-left: 120px;
             }
         }
@@ -800,8 +772,7 @@
                 gap: 8px;
             }
 
-            .window,
-            .feed-loading {
+            .window {
                 width: calc(100vw - 16px);
                 max-width: calc(100vw - 16px);
                 min-width: 0;
@@ -813,10 +784,6 @@
 
             .window .middle {
                 padding: 10px 10px 12px 10px;
-            }
-
-            .feed-loading {
-                margin: 0 8px 52px 8px;
             }
 
             .photo-grid {
@@ -1182,9 +1149,6 @@
             </div>
         </div>
 
-        <div class="feed-loading" id="feed-loading">loading more posts...</div>
-        <div id="feed-sentinel"></div>
-
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
             <img src="" alt="enlarged photo" id="hpc-lightbox-img">
         </div>
@@ -1305,149 +1269,6 @@
         lightbox.style.display = "none";
         photo.src = "";
     }
-
-    var infinitePosts = [
-        {
-            type: "text",
-            title: "why we love older digicams",
-            meta: "Posted 1 hour ago • 12 notes",
-            content: "<p>older digital cameras have a look that newer devices often smooth out or erase — harsher flash, moodier colour, unexpected bloom, weird noise, and all the charm that comes with it.</p><p>we’re here for photos that feel lived in, not over-processed.</p>",
-            conditionDetails: "<p>sample condition notes go here.</p><p>use this area for wear notes, testing details, freebies included, or any quirks buyers should know.</p>"
-        },
-        {
-            type: "photo",
-            title: "canon powershot moodboard",
-            meta: "Posted 58 minutes ago • 34 notes",
-            images: [
-                { src: "https://via.placeholder.com/960x1280?text=Canon+1", alt: "canon powershot moodboard image 1" },
-                { src: "https://via.placeholder.com/960x1280?text=Canon+2", alt: "canon powershot moodboard image 2" },
-                { src: "https://via.placeholder.com/960x1280?text=Canon+3", alt: "canon powershot moodboard image 3" },
-                { src: "https://via.placeholder.com/960x1280?text=Canon+4", alt: "canon powershot moodboard image 4" },
-                { src: "https://via.placeholder.com/960x1280?text=Canon+5", alt: "canon powershot moodboard image 5" },
-                { src: "https://via.placeholder.com/960x1280?text=Canon+6", alt: "canon powershot moodboard image 6" }
-            ],
-            caption: "soft flash, silver body, very 2000s",
-            conditionDetails: "<p>sample condition notes go here.</p><p>for example: tested power-on, flash works, light cosmetic wear, and minor screen marks only.</p>"
-        },
-        {
-            type: "text",
-            title: "before you adopt a cam",
-            meta: "Posted 47 minutes ago • 8 notes",
-            content: "<p>please expect genuine vintage wear. cosmetic flaws are normal and part of the history of these cameras.</p><p>always review the full listing and photos closely before purchasing.</p>",
-            conditionDetails: "<p>sample condition notes go here.</p><p>drop any extra notes here that are too long to sit in the main caption.</p>"
-        }
-    ];
-
-    function camQueryValue(name) {
-        return encodeURIComponent(name);
-    }
-
-    function buildConditionAndAdopt(postTitle, conditionHtml) {
-        return '' +
-            '<div class="post-actions">' +
-                '<details class="condition-details">' +
-                    '<summary>condition details</summary>' +
-                    '<div class="condition-body">' + (conditionHtml || '<p>sample condition notes go here.</p>') + '</div>' +
-                '</details>' +
-                '<div class="adopt-wrap">' +
-                    '<a class="adopt-button" href="adoptacam.html?newbaby=' + camQueryValue(postTitle) + '">ADOPT THIS CAM ❥</a>' +
-                '</div>' +
-            '</div>';
-    }
-
-    var postCursor = 0;
-    var isAppending = false;
-
-    function buildPhotoGrid(images) {
-        var imageHtml = '<div class="photo-grid">';
-        for (var i = 0; i < images.length; i++) {
-            imageHtml += '<img src="' + images[i].src + '" class="full_image" alt="' + images[i].alt + '" onclick="openHpcLightbox(this)">';
-        }
-        imageHtml += '</div>';
-        return imageHtml;
-    }
-
-    function createPhotoPost(post) {
-        return '' +
-            '<div class="window post-photo">' +
-                '<a href="#"><div class="top"><div class="info">' + post.meta + '</div></div></a>' +
-                '<div class="middle">' +
-                    '<div class="title">' + post.title + '</div>' +
-                    '<div class="content">' +
-                        buildPhotoGrid(post.images) +
-                        '<div class="caption">' + (post.caption || "") + '</div>' +
-                    '</div>' +
-                    buildConditionAndAdopt(post.title, post.conditionDetails) +
-                '</div>' +
-                '<div class="bottom"></div>' +
-            '</div>';
-    }
-
-    function createTextPost(post) {
-        return '' +
-            '<div class="window post-text">' +
-                '<a href="#"><div class="top"><div class="info">' + post.meta + '</div></div></a>' +
-                '<div class="middle">' +
-                    '<div class="title">' + post.title + '</div>' +
-                    '<div class="content">' + post.content + '</div>' +
-                    buildConditionAndAdopt(post.title, post.conditionDetails) +
-                '</div>' +
-                '<div class="bottom"></div>' +
-            '</div>';
-    }
-
-    function appendMorePosts(count) {
-        if (isAppending) return;
-        isAppending = true;
-
-        var desktop = document.getElementById("desktop");
-        var loading = document.getElementById("feed-loading");
-        if (!desktop) {
-            isAppending = false;
-            return;
-        }
-
-        if (loading) loading.style.display = "block";
-
-        var html = "";
-        for (var i = 0; i < count; i++) {
-            var post = infinitePosts[postCursor % infinitePosts.length];
-            html += post.type === "photo" ? createPhotoPost(post) : createTextPost(post);
-            postCursor++;
-        }
-
-        setTimeout(function() {
-            desktop.insertAdjacentHTML("beforeend", html);
-            if (loading) loading.style.display = "none";
-            isAppending = false;
-        }, 250);
-    }
-
-    function setupInfiniteScroll() {
-        var sentinel = document.getElementById("feed-sentinel");
-        var loading = document.getElementById("feed-loading");
-
-        if (!sentinel || !("IntersectionObserver" in window)) {
-            if (loading) loading.style.display = "none";
-            return;
-        }
-
-        var observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    appendMorePosts(2);
-                }
-            });
-        }, {
-            root: null,
-            rootMargin: "300px 0px",
-            threshold: 0
-        });
-
-        observer.observe(sentinel);
-    }
-
-    setupInfiniteScroll();
 
     document.addEventListener("DOMContentLoaded", function () {
         var mobileMenuButton = document.getElementById("mobileMenuButton");
