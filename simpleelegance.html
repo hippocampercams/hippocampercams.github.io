@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hippocampercams • #simpleelegance</title>
+    <title>the simply elegant edit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="favicon.ico">
@@ -54,7 +54,6 @@
             font-family: "Mouse Deco", Arial, sans-serif;
         }
 
-        /* LEFT DESKTOP ICONS COLUMN */
         .icons {
             margin: 0 0 0 10px;
             list-style-type: none;
@@ -82,7 +81,6 @@
             text-align: center;
         }
 
-        /* DESKTOP SPRITES */
         .my_computer, .my_documents, .network_neighborhood, .folder,
         .recycle_bin, .start_menu, .application_icons,
         .start_bar .start_button .logo, .start_bar .tray .calendar,
@@ -129,7 +127,6 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA - SAME AS MAIN PAGE */
         #desktop {
             margin-top: 20px;
             margin-bottom: 60px;
@@ -145,7 +142,6 @@
             gap: 20px;
         }
 
-        /* POST WINDOWS */
         .window {
             width: 1120px;
             max-width: 1120px;
@@ -174,7 +170,9 @@
         .window .condition-details summary,
         .window .condition-body,
         .window .condition-body p,
-        .window .adopt-button {
+        .window .adopt-button,
+        .window .tag-links,
+        .window .tag-links a {
             font-family: "Mouse Deco" !important;
         }
 
@@ -270,12 +268,26 @@
             margin: 0 0 10px;
         }
 
-        .tagline {
-            margin-top: 10px;
+        .tag-links {
+            margin: 12px 0 0 0;
             font-size: 12px;
+            line-height: 1.3;
+            font-family: "Mouse Deco", Arial, sans-serif !important;
         }
 
-        /* PHOTO GRID */
+        .tag-links a {
+            color: #001BFF;
+            text-decoration: underline;
+            font-family: "Mouse Deco", Arial, sans-serif !important;
+        }
+
+        .empty-state {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.4;
+            padding-bottom: 20px;
+        }
+
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -301,7 +313,6 @@
             cursor: pointer;
         }
 
-        /* CONDITION DETAILS + ADOPT BUTTON */
         .post-actions {
             margin-top: 14px;
         }
@@ -384,11 +395,11 @@
             border-bottom: 1px solid #ffffff;
         }
 
-        /* RIGHT SIDEBAR POPUPS */
         .right-popups {
             position: fixed;
-            top: 10px;
+            top: 50%;
             right: 6px;
+            transform: translateY(-50%);
             width: 410px;
             z-index: 5;
             display: flex;
@@ -536,7 +547,6 @@
             border-bottom: 1px solid #ffffff;
         }
 
-        /* START BAR */
         .start_bar {
             position: fixed;
             background-color: rgb(192,192,192);
@@ -662,7 +672,6 @@
             background-position: -632px -87px;
         }
 
-        /* LIGHTBOX */
         #hpc-lightbox {
             display: none;
             position: fixed;
@@ -682,7 +691,6 @@
             display: block;
         }
 
-        /* MOBILE MENU */
         .mobile-menu-button {
             display: none;
         }
@@ -909,14 +917,13 @@
         <div class="top-banner">
             <div class="top-banner-window">
                 <div class="tb-titlebar">
-                    <span class="tb-title-text">#simpleelegance</span>
+                    <span class="tb-title-text">the simply elegant edit</span>
                     <span class="tb-close">x</span>
                 </div>
                 <div class="tb-body">
                     <div class="tb-icon"></div>
                     <div class="tb-text">
-                        <p>filtered posts for the simple elegance vibe.</p>
-                        <p>this page only shows listings/posts tagged with <b>#simpleelegance</b>.</p>
+                        <p> ˖𓂃.‧₊˚cameras that produce elegant, understated, striking photos straight out of the camera˚₊‧.𓂃˖</p>
                     </div>
                 </div>
                 <div class="tb-footer">
@@ -974,100 +981,7 @@
             </a>
         </div>
 
-        <div id="desktop" class="container">
-            <div class="window post-photo">
-                <a href="#">
-                    <div class="top">
-                        <div class="info">Posted 2 hours ago • 204 notes</div>
-                    </div>
-                </a>
-                <div class="middle">
-                    <div class="title">
-                        <p><b>FUJIFILM FINEPIX A500</b> $170.00</p>
-                        <p><i>striking, clean, elegant, moody</i></p>
-                    </div>
-
-                    <div class="caption">5 mp・3x optical zoom + digital zoom・xd card・AA batteries (one less charger!)</div>
-
-                    <div class="content">
-                        <div class="photo-grid">
-                            <img src="https://64.media.tumblr.com/f17a5438562dea5df5734047203241a2/2527f28ed92627d9-75/s2048x3072/9302a1564a76591a5b2f76651152f9772eb2b816.jpg"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 photo 1"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="https://64.media.tumblr.com/fed7e8350733b5445ebfec37d2a3f7b4/b697605a47f236c2-29/s2048x3072/a47dd832a56d5848ee0c471f597e6128183735f3.jpg"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="https://64.media.tumblr.com/ff3ecf24923684b1e6f780fa3fe841e4/8f15677795d9ae9a-11/s2048x3072/15d7badcd307a9ecf554c3bcbfb84d8bd7fc00b1.jpg"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 photo 3"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="https://64.media.tumblr.com/40f3948775a3f9f49ed6c03ba3616698/8f15677795d9ae9a-ad/s2048x3072/7dbdea2d0b465cdda97b0e8076e6135181540d2a.jpg"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 photo 4"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="https://64.media.tumblr.com/a061ef0d07620c74b6d22b85329e0435/8f15677795d9ae9a-60/s2048x3072/3e7e37696f898aba7065a38bba2bb1a49cae74b2.jpg"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 photo 5"
-                                 onclick="openHpcLightbox(this)">
-                            <img src="https://64.media.tumblr.com/5627429eeaa8fb7217de976992844470/2527f28ed92627d9-f2/s2048x3072/1e03617f200b83da6ba66c3669ce27b09aa7b0ef.jpg"
-                                 class="full_image"
-                                 alt="FUJIFILM FINEPIX A500 photo 6"
-                                 onclick="openHpcLightbox(this)">
-                        </div>
-
-                        <div class="caption">
-                            <p>item condition: ⋆⋆⋆⋆ (pretty good!)</p>
-                        </div>
-
-                        <div class="tagline">
-                            <p>#cleangirl #simpleelegance</p>
-                        </div>
-                    </div>
-
-                    <div class="post-actions">
-                        <details class="condition-details">
-                            <summary>condition details</summary>
-                            <div class="condition-body">
-                                <p>this easy-to-use point and shoot cam functions normally and is in great condition for its age. there are scratches at the shutter and the back on the right, small dents at the top and sides, and minor scratches and scuffs consistent with a used vintage item.</p>
-                                <div class="photo-grid">
-                                    <img src="INSERT PHOTO"
-                                         class="full_image"
-                                         alt="FUJIFILM FINEPIX A500 condition 1"
-                                         onclick="openHpcLightbox(this)">
-                                    <img src="INSERT PHOTO"
-                                         class="full_image"
-                                         alt="FUJIFILM FINEPIX A500 condition 2"
-                                         onclick="openHpcLightbox(this)">
-                                    <img src="INSERT PHOTO"
-                                         class="full_image"
-                                         alt="FUJIFILM FINEPIX A500 condition 3"
-                                         onclick="openHpcLightbox(this)">
-                                    <img src="INSERT PHOTO"
-                                         class="full_image"
-                                         alt="FUJIFILM FINEPIX A500 condition 4"
-                                         onclick="openHpcLightbox(this)">
-                                    <img src="INSERT PHOTO"
-                                         class="full_image"
-                                         alt="FUJIFILM FINEPIX A500 condition 5"
-                                         onclick="openHpcLightbox(this)">
-                                    <img src="INSERT PHOTO"
-                                         class="full_image"
-                                         alt="FUJIFILM FINEPIX A500 condition 6"
-                                         onclick="openHpcLightbox(this)">
-                                </div>
-                            </div>
-                        </details>
-
-                        <div class="adopt-wrap">
-                            <a class="adopt-button" href="adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20A500">ADOPT THIS CAM ❥</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom"></div>
-            </div>
-        </div>
+        <div id="desktop" class="container"></div>
 
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
             <img src="" alt="enlarged photo" id="hpc-lightbox-img">
@@ -1156,6 +1070,7 @@
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
+    <script src="posts.js"></script>
 
     <script>
     function updateClock() {
@@ -1188,6 +1103,110 @@
         if (!lightbox || !photo) return;
         lightbox.style.display = "none";
         photo.src = "";
+    }
+
+    function getTagHref(tag) {
+        var map = {
+            cleangirl: "cleangirl.html",
+            simpleelegance: "simpleelegance.html"
+        };
+        return map[tag] || null;
+    }
+
+    function buildTagLinks(tags) {
+        if (!tags || !tags.length) return "";
+        var html = tags.map(function(tag) {
+            var href = getTagHref(tag);
+            var label = "#" + tag;
+            if (href) {
+                return '<a href="' + href + '">' + label + '</a>';
+            }
+            return label;
+        }).join(" • ");
+        return '<div class="tag-links"><p>' + html + '</p></div>';
+    }
+
+    function buildImages(images) {
+        if (!images || !images.length) return "";
+        return '<div class="photo-grid">' + images.map(function(image) {
+            return '<img src="' + image.src + '" class="full_image" alt="' + (image.alt || "") + '" onclick="openHpcLightbox(this)">';
+        }).join("") + '</div>';
+    }
+
+    function buildPostHtml(post) {
+        var captionHtml = post.captionHtml ? '<div class="caption">' + post.captionHtml + '</div>' : '';
+        var contentHtml = '';
+        var conditionSummaryHtml = post.conditionSummaryHtml ? '<div class="caption">' + post.conditionSummaryHtml + '</div>' : '';
+        var tagLinksHtml = buildTagLinks(post.tags);
+
+        if (post.type === "photo") {
+            contentHtml = '<div class="content">' +
+                buildImages(post.images) +
+                conditionSummaryHtml +
+                tagLinksHtml +
+                '</div>';
+        } else {
+            contentHtml = '<div class="content">' +
+                (post.bodyHtml || '') +
+                tagLinksHtml +
+                '</div>';
+        }
+
+        var conditionDetailsHtml = post.conditionDetailsHtml ? `
+            <details class="condition-details">
+                <summary>condition details</summary>
+                <div class="condition-body">
+                    ${post.conditionDetailsHtml}
+                </div>
+            </details>
+        ` : '';
+
+        var adoptHtml = post.adoptUrl ? `
+            <div class="adopt-wrap">
+                <a class="adopt-button" href="${post.adoptUrl}">ADOPT THIS CAM ❥</a>
+            </div>
+        ` : '';
+
+        return `
+            <div class="window ${post.type === "photo" ? "post-photo" : "post-text"}">
+                <a href="#">
+                    <div class="top">
+                        <div class="info">${post.meta || ""}</div>
+                    </div>
+                </a>
+                <div class="middle">
+                    <div class="title">${post.titleHtml || ""}</div>
+                    ${captionHtml}
+                    ${contentHtml}
+                    <div class="post-actions">
+                        ${conditionDetailsHtml}
+                        ${adoptHtml}
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+        `;
+    }
+
+    function renderFilteredPosts(tagName) {
+        var desktop = document.getElementById("desktop");
+        if (!desktop) return;
+
+        if (!window.HPC_POSTS || !Array.isArray(window.HPC_POSTS)) {
+            desktop.innerHTML = '<div class="empty-state">posts.js could not be loaded.</div>';
+            return;
+        }
+
+        var filtered = window.HPC_POSTS.filter(function(post) {
+            return Array.isArray(post.tags) && post.tags.indexOf(tagName) !== -1;
+        });
+
+        if (!filtered.length) {
+            desktop.innerHTML = '<div class="empty-state">no posts tagged #' + tagName + ' yet.</div>';
+            return;
+        }
+
+        desktop.innerHTML = filtered.map(buildPostHtml).join("");
     }
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -1223,6 +1242,8 @@
                 }
             });
         }
+
+        renderFilteredPosts("simpleelegance");
     });
     </script>
 </body>
