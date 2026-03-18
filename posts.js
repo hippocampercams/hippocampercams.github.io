@@ -3,8 +3,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-clip-it-80",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX CLIP-IT 80</b> $140.00</p>
-    <p><i>grainy, dreamy, film-like</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX CLIP-IT 80</b> $140.00</p><p><i>grainy, dreamy, film-like</i></p>',
   captionHtml: '1.6x digital zoom・cute brick build・looks like a film cam, produces film-like photos',
   tags: ["grainyretro", "cybery2k", "goldenhour"],
   images: [
@@ -52,8 +51,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-z300",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p>
-    <p><i>cool, moody, striking</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p><p><i>cool, moody, striking</i></p>',
   captionHtml: '10 mp・5x optical zoom・touchscreen・beautiful peach pink',
   tags: ["grainyretro", "cybery2k", "tokyoblues"],
   images: [
