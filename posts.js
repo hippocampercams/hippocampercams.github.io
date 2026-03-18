@@ -3,8 +3,9 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-z300",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p><p><i>elegant, warm, dynamic</i></p>',
-  captionHtml: '10 mp・5x optimal zoom・touchscreen・beautiful peachy pink',
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p>
+    <p><i>cool, moody, striking</i></p>',
+  captionHtml: '10 mp・5x optimal zoom・touchscreen・beautiful peach pink',
   tags: ["grainyretro", "cybery2k", "tokyoblues"],
   images: [
     {
