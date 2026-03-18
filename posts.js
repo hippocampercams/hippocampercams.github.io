@@ -1,11 +1,60 @@
 window.HPC_POSTS = [
   {
+  id: "fujifilm-finepix-clip-it-80",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>FUJIFILM FINEPIX CLIP-IT 80</b> $140.00</p>
+    <p><i>grainy, dreamy, film-like</i></p>',
+  captionHtml: '1.6x digital zoom・cute brick build・looks like a film cam, produces film-like photos',
+  tags: ["grainyretro", "cybery2k", "goldenhour"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/51581d52014174955f1754f8e9900c8a/b052eb27e79e7802-30/s1280x1920/1d19caabe6fd88f88c862c4870b4c224eb2480c3.jpg",
+      alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/9a656898126721b578c1dc459ba1c96e/63bee42d0b1f8894-a7/s1280x1920/c775d637638cdc448b24a46bc1612dcf59935a7c.jpg",
+      alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/034116c6c83a8d5dc95c030f155db41e/b052eb27e79e7802-93/s1280x1920/57726583bf971813f81d9bf97fec5d941746628f.jpg",
+      alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/a59d866539906df5ba702ee8aaa506a1/b052eb27e79e7802-55/s1280x1920/e84de2b0381f115bb2243ef09c8ade886ddccef1.jpg",
+      alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/243d6d7b3c838808e15c379503524aef/b052eb27e79e7802-b3/s1280x1920/094c32722b4360296c29cd05d987768c4a085298.jpg",
+      alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/581211a01e9d6acd7494e1987a7f7142/b052eb27e79e7802-73/s1280x1920/2460e4c75111fdd48c0dabc3f34e9628b40e829b.jpg",
+      alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>noticeable scratches and scuffs, Japanese menu, flaws on inside of the screen (doesn't affect visibility/photos), dust in viewfinder, sometimes shows glitch in playback/"frame error" (resolved by restarting)</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/02720c5979dd1e633097ab0b6466cfb2/63bee42d0b1f8894-42/s1280x1920/ebb79784486328e5e1d228329595afa58c143344.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1d2901f4732500be903dfb6745c2e5dd/63bee42d0b1f8894-83/s1280x1920/d862b1371e9c4b0a367c526de7805719014c748b.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6026c650c268cd538f8f2715a4174473/63bee42d0b1f8894-d7/s1280x1920/449fe08cb5f9c6ada3b17448fb4953b645701791.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/12eb6ba5fd0d57eecca4e6320835452c/63bee42d0b1f8894-4c/s1280x1920/f50df861e635036e4c029af24c6e37a74de1217d.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/17cf9cae7a5c1e1356dd308cc315a729/63bee42d0b1f8894-90/s1280x1920/8e481b239f1a74795fd040dd44dad7fbbaf58dce.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5ce09a4fca4f7b3a72449274d73783a9/63bee42d0b1f8894-f0/s1280x1920/cac0f0c1d6ba2a784b702dd4fec2a8b168aec0c3.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 6" onclick="openHpcLightbox(this)">
+    </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20CLIP-IT%2080"
+},
+  
+  {
   id: "fujifilm-finepix-z300",
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p>
     <p><i>cool, moody, striking</i></p>',
-  captionHtml: '10 mp・5x optimal zoom・touchscreen・beautiful peach pink',
+  captionHtml: '10 mp・5x optical zoom・touchscreen・beautiful peach pink',
   tags: ["grainyretro", "cybery2k", "tokyoblues"],
   images: [
     {
@@ -53,7 +102,7 @@ window.HPC_POSTS = [
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX Z3</b> $200.00</p><p><i>elegant, warm, dynamic</i></p>',
-  captionHtml: '5.1 mp・3x optimal zoom・good in low light conditions・gorgeous baby pink',
+  captionHtml: '5.1 mp・3x optical zoom・good in low light conditions・gorgeous baby pink',
   tags: ["cleangirl", "simpleelegance"],
   images: [
     {
