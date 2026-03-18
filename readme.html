@@ -26,6 +26,10 @@
             font: normal 13px/1.3 "Mouse Deco", Arial, sans-serif;
         }
 
+        body.mobile-menu-open {
+            overflow: hidden;
+        }
+
         a {
             color: #000000;
             text-decoration: none;
@@ -110,19 +114,19 @@
         }
 
         /* MAIN DESKTOP AREA */
-#desktop {
-    margin: 20px 0 60px 480px;
-    z-index: 3;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    box-sizing: border-box;
-    width: calc(100vw - 550px);
-    max-width: calc(100vw - 550px);
-    min-width: 0;
-}
+        #desktop {
+            margin: 20px 0 60px 480px;
+            z-index: 3;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            box-sizing: border-box;
+            width: calc(100vw - 550px);
+            max-width: calc(100vw - 550px);
+            min-width: 0;
+        }
 
         .window {
             width: 100%;
@@ -510,6 +514,136 @@
         .hover-pop.is-open .hover-box {
             display: block;
         }
+
+        /* MOBILE MENU */
+        .mobile-menu-button {
+            display: none;
+        }
+
+        .mobile-menu-overlay {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .icons {
+                display: none;
+            }
+
+            .top-banner {
+                display: none;
+            }
+
+            #desktop {
+                margin: 8px 8px 52px 8px;
+                width: calc(100vw - 16px);
+                max-width: calc(100vw - 16px);
+                min-width: 0;
+                gap: 8px;
+            }
+
+            .window {
+                width: calc(100vw - 16px);
+                max-width: calc(100vw - 16px);
+                min-width: 0;
+            }
+
+            .window .middle {
+                padding: 10px 10px 12px 10px;
+            }
+
+            .start_bar {
+                display: none;
+            }
+
+            .mobile-menu-button {
+                position: fixed;
+                left: 8px;
+                bottom: 8px;
+                z-index: 10020;
+                display: block;
+                text-decoration: none;
+                color: #ffffff;
+                width: 48px;
+            }
+
+            .mobile-menu-button .folder {
+                margin: 0 auto;
+            }
+
+            .mobile-menu-button .icon_label {
+                padding-top: 4px;
+                font-size: 12px;
+            }
+
+            .mobile-menu-overlay {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.45);
+                z-index: 10030;
+                display: none;
+            }
+
+            .mobile-menu-overlay.is-open {
+                display: block;
+            }
+
+            .mobile-menu-panel {
+                position: absolute;
+                inset: 0 auto 0 0;
+                width: 170px;
+                max-width: 80vw;
+                background: #008080;
+                padding: 12px 10px 16px 10px;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 12px;
+            }
+
+            .mobile-menu-close {
+                width: 16px;
+                height: 14px;
+                background-color: #d4d0c8;
+                border-top: 1px solid #ffffff;
+                border-left: 1px solid #ffffff;
+                border-right: 1px solid #404040;
+                border-bottom: 1px solid #404040;
+                text-align: center;
+                line-height: 12px;
+                color: #000000;
+                font-size: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-family: "Mouse Deco";
+            }
+
+            .mobile-menu-icons {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: "Mouse Deco" !important;
+            }
+
+            .mobile-menu-icons a {
+                color: #ffffff;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .mobile-menu-icons .icon_label {
+                color: #ffffff;
+            }
+        }
     </style>
 </head>
 
@@ -564,27 +698,6 @@
         </div>
 
         <div id="desktop" class="container">
-            <div class="top-banner">
-                <div class="top-banner-window">
-                    <div class="tb-titlebar">
-                        <span class="tb-title-text">hippocampercams</span>
-                        <span class="tb-close">x</span>
-                    </div>
-                    <div class="tb-body">
-                        <div class="tb-icon"></div>
-                        <div class="tb-text">
-                            <p>°˖✧* WELCOME ·ﾟ✧*。</p>
-                            <p>at hippocampercams, we carefully source, curate, and test all our vintage digicams with lots of love</p>
-                            <p>we love scavenging for knowledge and the best cams out there on our adventures, that's how our name came about :-)</p>
-                            <p>want to know which cam is right for you, geek out on cam specs, or just have questions? drop us a DM on <u><a href="https://instagram.com/hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">instagram</a></u> or <u><a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" style="color:#001BFF;">tiktok</a></u>, we'd love to chat!</p>
-                        </div>
-                    </div>
-                    <div class="tb-footer">
-                        <button class="tb-button">ok</button>
-                    </div>
-                </div>
-            </div>
-
             <div class="window post-text">
                 <a href="#">
                     <div class="top">
@@ -599,7 +712,7 @@
                             also, deteriorated/sticky rubber caps will be removed. any bigger quirks will be flagged in the listing.</p>
 
                         <p><b>2. testing &amp; functionality.</b></p>
-                        <p>each cam is tested for power-on, basic shooting, flash, zoom & playback; once these functions work, we deem the cam FUNCTIONAL (any issues with these functions will be stated in the item description). <b>we do not guarantee any other functions</b>. these are old electronics & their longevity is not guaranteed; they may malfunction over time, battery capacity decreases over time & may need to be <span class="hover-pop" tabindex="0"><u><b>replaced</b></u><.span class="hover-box">please don't hesitate to reach out if you need help sourcing replacements!</span></span></p>
+                        <p>each cam is tested for power-on, basic shooting, flash, zoom & playback; once these functions work, we deem the cam FUNCTIONAL (any issues with these functions will be stated in the item description). <b>we do not guarantee any other functions</b>. these are old electronics & their longevity is not guaranteed; they may malfunction over time, battery capacity decreases over time & may need to be <span class="hover-pop" tabindex="0"><u><b>replaced</b></u><span class="hover-box">please don't hesitate to reach out if you need help sourcing replacements!</span></span></p>
                         
                         <p><b>3. physical condition</b><br>
                         we clean & inspect each cam thoroughly & will list any <span class="hover-pop" tabindex="0"><u><b>major defects</b></u><span class="hover-box">defects other than the standard signs of age and wear like scuffs, scratches, marks on screens, dust in corners or viewfinders, yellowing plastic/rubber etc.</span></span> in the item description.</p>
@@ -660,6 +773,65 @@
             </div>
         </div>
 
+        <a href="#" class="mobile-menu-button" id="mobileMenuButton">
+            <div class="folder"></div>
+            <div class="icon_label">menu</div>
+        </a>
+
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-panel">
+                <div class="mobile-menu-header">
+                    <button type="button" class="mobile-menu-close" id="mobileMenuClose">x</button>
+                </div>
+                <div class="mobile-menu-icons">
+                    <a href="https://hippocampercams.github.io" class="home">
+                        <div class="my_computer"></div>
+                        <div class="icon_label">hippocampercams</div>
+                    </a>
+
+                    <a href="readme.html" class="ask">
+                        <div class="my_documents"></div>
+                        <div class="icon_label">READ ME</div>
+                    </a>
+
+                    <a href="masterlist.html" class="submit">
+                        <div class="network_neighborhood"></div>
+                        <div class="icon_label">masterlist</div>
+                    </a>
+
+                    <a href="faqs.html" class="listings">
+                        <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                        <div class="icon_label">FAQs</div>
+                    </a>
+
+                    <a href="adoptacam.html" class="mustread">
+                        <img src="/img/icons/adoptacam.png" alt="adopt a cam" class="icon-img">
+                        <div class="icon_label">adopt a cam</div>
+                    </a>
+
+                    <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+                        <img src="/img/icons/insta.png" alt="insta" class="icon-img">
+                        <div class="icon_label">insta</div>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">
+                        <img src="/img/icons/tiktok.png" alt="tiktok" class="icon-img">
+                        <div class="icon_label">tiktok</div>
+                    </a>
+
+                    <a href="lemon8.html" class="lemon8">
+                        <img src="/img/icons/lemon8.png" alt="lemon8" class="icon-img">
+                        <div class="icon_label">lemon8</div>
+                    </a>
+
+                    <a href="contact.html" class="contact">
+                        <img src="/img/icons/contact.png" alt="contact" class="icon-img">
+                        <div class="icon_label">contact</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="start_menu"></div>
         <div class="start_bar">
             <div class="top_border"></div>
@@ -709,6 +881,43 @@
         document.querySelectorAll('.hover-pop.is-open').forEach(function (item) {
             item.classList.remove('is-open');
         });
+    });
+    </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenuButton = document.getElementById("mobileMenuButton");
+        var mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+        var mobileMenuClose = document.getElementById("mobileMenuClose");
+
+        function openMobileMenu(event) {
+            if (event) event.preventDefault();
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.add("is-open");
+            document.body.classList.add("mobile-menu-open");
+        }
+
+        function closeMobileMenu() {
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.remove("is-open");
+            document.body.classList.remove("mobile-menu-open");
+        }
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener("click", openMobileMenu);
+        }
+
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener("click", closeMobileMenu);
+        }
+
+        if (mobileMenuOverlay) {
+            mobileMenuOverlay.addEventListener("click", function (event) {
+                if (event.target === mobileMenuOverlay) {
+                    closeMobileMenu();
+                }
+            });
+        }
     });
     </script>
 </body>
