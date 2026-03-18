@@ -11,9 +11,31 @@
     <style>
         @font-face {
             font-family: "Mouse Deco";
-            src: url("Mouse_Deco.ttf") format("truetype");
+            src: local("Mouse Deco"),
+                 local("Mouse_Deco"),
+                 url("Mouse_Deco.ttf") format("truetype");
             font-weight: normal;
             font-style: normal;
+            font-display: block;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        body,
+        button,
+        input,
+        textarea,
+        select,
+        summary,
+        a,
+        p,
+        div,
+        span,
+        label {
+            font-family: "Mouse Deco", Arial, sans-serif;
         }
 
         body {
@@ -133,7 +155,7 @@
             max-width: 1120px;
             min-width: 1120px;
             margin: 0;
-            font-family: "Mouse Deco";
+            font-family: "Mouse Deco", Arial, sans-serif;
             background: #ffffff;
             border: 1px solid #000000;
             box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
