@@ -8,19 +8,19 @@ window.HPC_POSTS = [
   tags: ["cinematographic", "goldenhour"],
   images: [
     {
-      src: "https://64.media.tumblr.com/51581d52014174955f1754f8e9900c8a/b052eb27e79e7802-30/s1280x1920/1d19caabe6fd88f88c862c4870b4c224eb2480c3.jpg",
+      src: "https://64.media.tumblr.com/5c9ff0969a5f76e01eb56754dd3dedb5/675567152574a984-d9/s1280x1920/370f973606c7f228181dd4cd6e4a266b4e75be0f.jpg",
       alt: "NIKON COOLPIX L6 photo 1"
     },
     {
-      src: "https://64.media.tumblr.com/9a656898126721b578c1dc459ba1c96e/63bee42d0b1f8894-a7/s1280x1920/c775d637638cdc448b24a46bc1612dcf59935a7c.jpg",
+      src: "https://64.media.tumblr.com/94bc4ccfed34ac56de5f55e9d3650f31/fb406679e2b62a9f-43/s1280x1920/e6fc1d72f990013375d742c513dd8542a6a7f973.jpg",
       alt: "NIKON COOLPIX L6 photo 2"
     },
     {
-      src: "https://64.media.tumblr.com/034116c6c83a8d5dc95c030f155db41e/b052eb27e79e7802-93/s1280x1920/57726583bf971813f81d9bf97fec5d941746628f.jpg",
+      src: "https://64.media.tumblr.com/9a5b21ce88d75daf73a1782c82d8fe4a/675567152574a984-b1/s1280x1920/c5fd8560ab354c3c66610c6a52a62ecb95fc1d61.jpg",
       alt: "NIKON COOLPIX L6 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/a59d866539906df5ba702ee8aaa506a1/b052eb27e79e7802-55/s1280x1920/e84de2b0381f115bb2243ef09c8ade886ddccef1.jpg",
+      src: "https://64.media.tumblr.com/4e92d29307a597dd8abe0c583306e46c/d226d3d166c53699-98/s1280x1920/d4331deca9f9a3f9d3ac0a2eb438582097b68045.jpg",
       alt: "NIKON COOLPIX L6 photo 4"
     },
     {
