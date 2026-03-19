@@ -1,10 +1,63 @@
 window.HPC_POSTS = [
   {
+  id: "nikon-coolpix-s9",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON COOLPIX S9</b> $230.00</p><p><i>nostalgic, striking, warm</i></p>',
+  captionHtml: '6 mp・3x optical zoom・super sleek design',
+  tags: ["goldenhour", "cinematographic"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/c3eaaff1056473db49990d9342d9b6ba/a7c9512c80210070-a2/s1280x1920/e0f7c235127efd8299ba41a3823bc8760b2c76e2.jpg",
+      alt: "NIKON COOLPIX S9 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/e29618c2754b75a2e2d1b016e8d3927e/71c12331eb89832a-8e/s1280x1920/7864579e0d93918325ba018e5098b6c32d1e02aa.jpg",
+      alt: "NIKON COOLPIX S9 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/a1b527e418e4c3b1ac66f6a47c743a22/a7c9512c80210070-09/s1280x1920/41e8f63770c8320ab99e67f6439dd49f02f06db6.jpg",
+      alt: "NIKON COOLPIX S9 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/586a1f8ba4937aa5bca7a18ef35b9014/71c12331eb89832a-03/s1280x1920/6d65bd3b378593f68f061508acdb9d9fcdad720e.jpg",
+      alt: "NIKON COOLPIX S9 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/44a4972e34fd3fe73644dbe019b878c0/a7c9512c80210070-bc/s1280x1920/f11d3f01b2f2cae74515491196c2eef8522230a6.jpg",
+      alt: "NIKON COOLPIX S9 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/ac6cea97925500f28dd4e13fe2e5f22a/a7c9512c80210070-35/s1280x1920/192812dcb992cc8bdbb50df00d9b82b9c05c5b87.jpg",
+      alt: "NIKON COOLPIX S9 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>slight warping/dent at top left, small chip (back bottom), minor scratches</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/1103adcb40f41dd573a07c676f1a4189/71c12331eb89832a-26/s1280x1920/4f60e3940757f7ce5abe3d041ba10a2bd00a2255.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9d86db89db8ac4f60b321f6501eaf55a/71c12331eb89832a-70/s1280x1920/1e6804390945644f1178fb98336782f15d2788ac.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/db302ca57ed82613848b97b6902f5889/71c12331eb89832a-c1/s1280x1920/ee4c7e2186462e50a3d39c6303e69445402a31f8.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2ace058fa0b3a066f2b34315d024140b/71c12331eb89832a-05/s1280x1920/73cbc747c737e91c569a70d53ae7e84dde8f936f.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/18ea9bf722af1ed76bd0dd30f3c2b483/71c12331eb89832a-b7/s1280x1920/dac3bb40b9f80303ad9a88cca6b98afdcd1ce3fd.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1801cb33a437657829daceec7ed3a182/28c104019e3ece28-28/s1280x1920/9c079a1d9055c2c6ff62cfbdf3174d79e97de474.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/22a73abb6c5ab676aa5677b852d45429/28c104019e3ece28-24/s1280x1920/bd48bee18ed7ccd0ebd55e3a30102bf2755e8960.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a47dfb8893f24dc710824a33ae1d3404/28c104019e3ece28-c0/s1280x1920/c9a9be38303a82c23d71e384304e8b3440a96aa6.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1fcd89f1c3591767e0fba7e34423ffff/28c104019e3ece28-d2/s1280x1920/84b48d75b7940bfcf9c6f19e04e4fb39eb05f9f4.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/fe31be7fc57a8d55738005481030d6d4/28c104019e3ece28-c7/s1280x1920/a1e47481cf59eee666b830c2f3ced4d14d8c4618.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c7a43328273f313b89c2cabd48e509cd/28c104019e3ece28-3a/s1280x1920/2b0565c9bf013968e688b3d2560dc5ca487aa033.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 8" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S9"
+},
+  
+  {
   id: "sony-cybershot-T5",
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>SONY CYBERSHOT T5</b> $160.00</p><p><i>dreamy, light, romantic</i></p>',
-  captionHtml: '5.1 mp・3x optical zoom・quality zeiss lens・super slim queen',
+  captionHtml: '5.1 mp・3x optical zoom・quality zeiss lens・slim queen',
   tags: ["cinematographic", "goldenhour", "softpastel"],
   images: [
     {
