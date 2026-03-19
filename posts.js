@@ -16,7 +16,7 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX L6 photo 2"
     },
     {
-      src: "https://64.media.tumblr.com/9a5b21ce88d75daf73a1782c82d8fe4a/675567152574a984-b1/s1280x1920/c5fd8560ab354c3c66610c6a52a62ecb95fc1d61.jpg",
+      src: "https://64.media.tumblr.com/eb9cca9649ed389296b81689a6b1ce76/7dc1b919673ee830-11/s1280x1920/9f77e802c0b162ccef262dd133f22de384849491.jpg",
       alt: "NIKON COOLPIX L6 photo 3"
     },
     {
@@ -24,11 +24,11 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX L6 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/243d6d7b3c838808e15c379503524aef/b052eb27e79e7802-b3/s1280x1920/094c32722b4360296c29cd05d987768c4a085298.jpg",
+      src: "https://64.media.tumblr.com/488b0fb88c02ac3f8d30a7b15b28a90e/7dc1b919673ee830-5d/s1280x1920/823c07bd859da10955ed74b5d5e4f437d9e3d4ef.jpg",
       alt: "NIKON COOLPIX L6 photo 5"
     },
     {
-      src: "https://64.media.tumblr.com/581211a01e9d6acd7494e1987a7f7142/b052eb27e79e7802-73/s1280x1920/2460e4c75111fdd48c0dabc3f34e9628b40e829b.jpg",
+      src: "https://64.media.tumblr.com/f999a18ceddcb0563d5a95c938abc983/7dc1b919673ee830-1b/s1280x1920/93d0243478b430c34bb485c6949a5919201a8ccb.jpg",
       alt: "NIKON COOLPIX L6 photo 6"
     }
   ],
@@ -36,12 +36,13 @@ window.HPC_POSTS = [
   conditionDetailsHtml: `
     <p>noticeable scratches and scuffs, Japanese menu, flaws on inside of the screen (doesn't affect visibility/photos), dust in viewfinder, sometimes shows glitch in playback/"frame error" (resolved by restarting)</p>
     <div class="photo-grid">
-      <img src="https://64.media.tumblr.com/02720c5979dd1e633097ab0b6466cfb2/63bee42d0b1f8894-42/s1280x1920/ebb79784486328e5e1d228329595afa58c143344.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/1d2901f4732500be903dfb6745c2e5dd/63bee42d0b1f8894-83/s1280x1920/d862b1371e9c4b0a367c526de7805719014c748b.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 2" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/6026c650c268cd538f8f2715a4174473/63bee42d0b1f8894-d7/s1280x1920/449fe08cb5f9c6ada3b17448fb4953b645701791.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 3" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/12eb6ba5fd0d57eecca4e6320835452c/63bee42d0b1f8894-4c/s1280x1920/f50df861e635036e4c029af24c6e37a74de1217d.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 4" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/17cf9cae7a5c1e1356dd308cc315a729/63bee42d0b1f8894-90/s1280x1920/8e481b239f1a74795fd040dd44dad7fbbaf58dce.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 5" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/5ce09a4fca4f7b3a72449274d73783a9/63bee42d0b1f8894-f0/s1280x1920/cac0f0c1d6ba2a784b702dd4fec2a8b168aec0c3.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a18ec153590eec29637d121898705835/fb406679e2b62a9f-92/s1280x1920/5e43b4b8364ae669269237fa9498c480487e68db.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ac5838d593079473095ab64dcb93727c/fb406679e2b62a9f-2d/s1280x1920/7992400b966720316e618e152079b4d91d333b53.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/8820bcb64f179fa6e2afa8e81d64fe4b/fb406679e2b62a9f-6a/s1280x1920/4a48e0749b027102dd2e771899839243563bfab5.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/f1a762c39f6c4cb2349aa9670f990951/fb406679e2b62a9f-f9/s1280x1920/c704b189d3736a8a905fde745006ed7405fcb399.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/099538ce6322f52f1937cddfbb82cbae/fb406679e2b62a9f-24/s1280x1920/95bc8680d95581f0c042ee45837cc2c2d192324c.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0d5e2630fae8eaba344413796942be06/d226d3d166c53699-f3/s1280x1920/4a1976b14688954ee14860409eb130d0a9580e83.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/83af9dcff11e7e8fc9711347256a9a44/fb406679e2b62a9f-59/s1280x1920/7abcc8e01000cb7d9e2cb7ac482e00cf131164f5.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 7" onclick="openHpcLightbox(this)">
     </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20L6"
