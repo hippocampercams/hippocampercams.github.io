@@ -1,5 +1,44 @@
 window.HPC_POSTS = [
   {
+  id: "sony-cybershot-T5",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>SONY CYBERSHOT T5</b> $160.00</p><p><i>dreamy, light, romantic</i></p>',
+  captionHtml: '5.1 mp・3x optical zoom・quality zeiss lens・super slim queen',
+  tags: ["cinematographic", "goldenhour"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/b9a798fb0f4f32a54f1b76ea2e18107d/200561d68174871e-40/s1280x1920/fd3ad982808b9b918c81b526bedefbe4c297b77c.jpg",
+      alt: "SONY CYBERSHOT T5 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/843c226e8fdecbe05546bf0db5b01540/200561d68174871e-66/s1280x1920/6bf8dd388e281702cc6b719a0cd5f3b2c67011cf.jpg",
+      alt: "SONY CYBERSHOT T5 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/952d50c8703935759eb7b756d49c28f1/200561d68174871e-bd/s1280x1920/6a5a8fe7543eda69341a0e99c21672c775f7f276.jpg",
+      alt: "SONY CYBERSHOT T5 photo 3"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>visible scratches and peeling, Japanese menu, dent (back, top, bottom), screen debris and scratches</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/b9c806775752b2a65e49993a74b3d91a/0787a284ec33f568-ec/s1280x1920/e58923c5549d5a0a890e4de4dc6ad99a2a955195.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ce7faac58ad78e30e0d81bef601d65fd/0787a284ec33f568-99/s1280x1920/533da6fa66b5abf2a729a139a2ae6ac388cdaf26.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9028073885f4e178589bb755a7cc79fc/200561d68174871e-77/s1280x1920/5d7c702291df991d0b8d2720a0f7e7a47f7ce3a4.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/86e51ecf5bbb1bf79c33b60922dd5aa7/0787a284ec33f568-d6/s1280x1920/b80c1b6b4f4365ab85d3390766dd66d6c60c0da3.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a47efac0b15d9ebfe93c1a676be4784e/0787a284ec33f568-1f/s1280x1920/7939940a16bf4eff5f05c357a5b8196ca0cda8e3.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/8196d1a07e3f1065a4d04e926731d115/200561d68174871e-4d/s1280x1920/e8242713a1df86878dc3c78bffd00c03ff3bc276.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0c906b0c8f36d39413393ec822b8777f/200561d68174871e-03/s1280x1920/bbb493bcfbfabc100d8d3ea8e1d940e24f4a0a1b.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/310ac029bd0626ebe8ec1b1a23226505/0787a284ec33f568-5e/s1280x1920/27e8dc1766ed8b208dd8d3f13140b41d878a4279.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/37b96d063e7ddbe785bdd291a77152b2/0787a284ec33f568-7a/s1280x1920/145233099f7718a372e17dd3925c45eaf19ffa28.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 9" onclick="openHpcLightbox(this)">
+    </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20T5"
+},
+  
+  {
   id: "nikon-coolpix-L6",
   type: "photo",
   meta: "Posted just now • 0 notes",
