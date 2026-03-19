@@ -34,7 +34,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>noticeable scratches and scuffs, Japanese menu, flaws on inside of the screen (doesn't affect visibility/photos), dust in viewfinder, sometimes shows glitch in playback/"frame error" (resolved by restarting)</p>
+    <p>visible scuffs, dent (bottom left), rubber covers removed (battery visible)</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/a18ec153590eec29637d121898705835/fb406679e2b62a9f-92/s1280x1920/5e43b4b8364ae669269237fa9498c480487e68db.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/ac5838d593079473095ab64dcb93727c/fb406679e2b62a9f-2d/s1280x1920/7992400b966720316e618e152079b4d91d333b53.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 2" onclick="openHpcLightbox(this)">
