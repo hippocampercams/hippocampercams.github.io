@@ -26,7 +26,7 @@ window.HPC_POSTS = [
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/b9c806775752b2a65e49993a74b3d91a/0787a284ec33f568-ec/s1280x1920/e58923c5549d5a0a890e4de4dc6ad99a2a955195.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/ce7faac58ad78e30e0d81bef601d65fd/0787a284ec33f568-99/s1280x1920/533da6fa66b5abf2a729a139a2ae6ac388cdaf26.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 2" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/9028073885f4e178589bb755a7cc79fc/200561d68174871e-77/s1280x1920/5d7c702291df991d0b8d2720a0f7e7a47f7ce3a4.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/e6925833537bac1f038035eccd59c23e/0787a284ec33f568-ad/s1280x1920/d0c05239c693eac107421df9306bae95d166d7d9.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 3" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/86e51ecf5bbb1bf79c33b60922dd5aa7/0787a284ec33f568-d6/s1280x1920/b80c1b6b4f4365ab85d3390766dd66d6c60c0da3.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 4" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/a47efac0b15d9ebfe93c1a676be4784e/0787a284ec33f568-1f/s1280x1920/7939940a16bf4eff5f05c357a5b8196ca0cda8e3.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 5" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/8196d1a07e3f1065a4d04e926731d115/200561d68174871e-4d/s1280x1920/e8242713a1df86878dc3c78bffd00c03ff3bc276.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 6" onclick="openHpcLightbox(this)">
