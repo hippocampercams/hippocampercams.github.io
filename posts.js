@@ -69,7 +69,7 @@ window.HPC_POSTS = [
       alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/6f7743291416b681254a83dd308a3f2e/a54a341713143ee0-b0/s1280x1920/f19769437db7df449be6aae5466581ab31211f4f.jpg,
+      src: "https://64.media.tumblr.com/6f7743291416b681254a83dd308a3f2e/a54a341713143ee0-b0/s1280x1920/f19769437db7df449be6aae5466581ab31211f4f.jpg",
       alt: "FUJIFILM FINEPIX CLIP-IT 80 photo 4"
     },
     {
