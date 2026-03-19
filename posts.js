@@ -4,7 +4,7 @@ window.HPC_POSTS = [
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S9</b> $230.00</p><p><i>nostalgic, striking, warm</i></p>',
-  captionHtml: '6 mp・3x optical zoom・super sleek design',
+  captionHtml: '6 mp・3x optical zoom・super sleek design・classic nikon blacks',
   tags: ["goldenhour", "cinematographic"],
   images: [
     {
