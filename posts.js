@@ -20,11 +20,11 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX S9 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/586a1f8ba4937aa5bca7a18ef35b9014/71c12331eb89832a-03/s1280x1920/6d65bd3b378593f68f061508acdb9d9fcdad720e.jpg",
+      src: "https://64.media.tumblr.com/8345931ac951b947b98207f3fdfc1b14/a7c9512c80210070-fa/s1280x1920/52a03995e77f0c44f52a7a3a3155f63ef26f8b49.jpg",
       alt: "NIKON COOLPIX S9 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/44a4972e34fd3fe73644dbe019b878c0/a7c9512c80210070-bc/s1280x1920/f11d3f01b2f2cae74515491196c2eef8522230a6.jpg",
+      src: "https://64.media.tumblr.com/586a1f8ba4937aa5bca7a18ef35b9014/71c12331eb89832a-03/s1280x1920/6d65bd3b378593f68f061508acdb9d9fcdad720e.jpg",
       alt: "NIKON COOLPIX S9 photo 5"
     },
     {
