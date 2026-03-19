@@ -5,7 +5,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>SONY CYBERSHOT T5</b> $160.00</p><p><i>dreamy, light, romantic</i></p>',
   captionHtml: '5.1 mp・3x optical zoom・quality zeiss lens・super slim queen',
-  tags: ["cinematographic", "goldenhour"],
+  tags: ["cinematographic", "goldenhour", "softpastel"],
   images: [
     {
       src: "https://64.media.tumblr.com/b9a798fb0f4f32a54f1b76ea2e18107d/200561d68174871e-40/s1280x1920/fd3ad982808b9b918c81b526bedefbe4c297b77c.jpg",
