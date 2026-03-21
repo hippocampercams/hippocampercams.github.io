@@ -104,7 +104,7 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX L6 photo 1"
     },
     {
-      src: "https://64.media.tumblr.com/94bc4ccfed34ac56de5f55e9d3650f31/fb406679e2b62a9f-43/s1280x1920/e6fc1d72f990013375d742c513dd8542a6a7f973.jpg",
+      src: "https://64.media.tumblr.com/97e8608f1e5152a91fbf8d107178291c/28c104019e3ece28-50/s1280x1920/d7d3062f0cef05949467700b7b381deace4763ed.jpg",
       alt: "NIKON COOLPIX L6 photo 2"
     },
     {
