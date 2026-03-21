@@ -34,7 +34,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (super!)</p>",
   conditionDetailsHtml: `
-    <p>slight warping/dent at top left, small chip (back bottom), minor scratches</p>
+    <p>she's a sleek, curvy queen in amazing condition for her age! flaws are barely noticeable: there is slight warping/dent at top left, a small chip (back bottom), & minor scratches consistent with vintage, pre-loved items.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/1103adcb40f41dd573a07c676f1a4189/71c12331eb89832a-26/s1280x1920/4f60e3940757f7ce5abe3d041ba10a2bd00a2255.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/9d86db89db8ac4f60b321f6501eaf55a/71c12331eb89832a-70/s1280x1920/1e6804390945644f1178fb98336782f15d2788ac.jpg" class="full_image" alt="NIKON COOLPIX S9 condition 2" onclick="openHpcLightbox(this)">
@@ -75,7 +75,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>visible scratches and peeling, Japanese menu, dent (back, top, bottom), screen debris and scratches</p>
+    <p>a classic sony cybershot cam with the nostalgic slide-down cover. it's in pretty good condition though there are visible scratches & peeling, has a Japanese menu, slight dents (back, top, bottom), and some debris and scratches to the screen which do not affect shooting or much of the visibility.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/b9c806775752b2a65e49993a74b3d91a/0787a284ec33f568-ec/s1280x1920/e58923c5549d5a0a890e4de4dc6ad99a2a955195.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/ce7faac58ad78e30e0d81bef601d65fd/0787a284ec33f568-99/s1280x1920/533da6fa66b5abf2a729a139a2ae6ac388cdaf26.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 2" onclick="openHpcLightbox(this)">
@@ -126,7 +126,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>visible scuffs, dent (bottom left), rubber covers removed (battery visible)</p>
+    <p>this cute, pocket-sized cam is in great condition for its age, although it does have visible scuffs, a slight dent (bottom left), and its rubber covers have been removed (battery visible).</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/a18ec153590eec29637d121898705835/fb406679e2b62a9f-92/s1280x1920/5e43b4b8364ae669269237fa9498c480487e68db.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/ac5838d593079473095ab64dcb93727c/fb406679e2b62a9f-2d/s1280x1920/7992400b966720316e618e152079b4d91d333b53.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 2" onclick="openHpcLightbox(this)">
@@ -139,6 +139,54 @@ window.HPC_POSTS = [
   `,
   adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20L6"
 },
+
+  {
+    id: "fujifilm-finepix-a500-#1",
+    type: "photo",
+    meta: "Posted just now • 0 notes",
+    titleHtml: '<p><b>FUJIFILM FINEPIX A500 #1</b> $180.00 </p><p><i>striking, clean, elegant, moody</i></p>',
+    captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
+    tags: ["cleangirl", "simpleelegance"],
+    images: [
+      {
+        src: "https://64.media.tumblr.com/f17a5438562dea5df5734047203241a2/2527f28ed92627d9-75/s2048x3072/9302a1564a76591a5b2f76651152f9772eb2b816.jpg",
+        alt: "FUJIFILM FINEPIX A500 photo 1"
+      },
+      {
+        src: "https://64.media.tumblr.com/fed7e8350733b5445ebfec37d2a3f7b4/b697605a47f236c2-29/s2048x3072/a47dd832a56d5848ee0c471f597e6128183735f3.jpg",
+        alt: "FUJIFILM FINEPIX A500 photo 2"
+      },
+      {
+        src: "https://64.media.tumblr.com/ff3ecf24923684b1e6f780fa3fe841e4/8f15677795d9ae9a-11/s2048x3072/15d7badcd307a9ecf554c3bcbfb84d8bd7fc00b1.jpg",
+        alt: "FUJIFILM FINEPIX A500 photo 3"
+      },
+      {
+        src: "https://64.media.tumblr.com/40f3948775a3f9f49ed6c03ba3616698/8f15677795d9ae9a-ad/s2048x3072/7dbdea2d0b465cdda97b0e8076e6135181540d2a.jpg",
+        alt: "FUJIFILM FINEPIX A500 photo 4"
+      },
+      {
+        src: "https://64.media.tumblr.com/a061ef0d07620c74b6d22b85329e0435/8f15677795d9ae9a-60/s2048x3072/3e7e37696f898aba7065a38bba2bb1a49cae74b2.jpg",
+        alt: "FUJIFILM FINEPIX A500 photo 5"
+      },
+      {
+        src: "https://64.media.tumblr.com/5627429eeaa8fb7217de976992844470/2527f28ed92627d9-f2/s2048x3072/1e03617f200b83da6ba66c3669ce27b09aa7b0ef.jpg",
+        alt: "FUJIFILM FINEPIX A500 photo 6"
+      }
+    ],
+    conditionSummaryHtml: "<p>accessories: strap <br> item condition: 🏆 (absurdly perfect!)</p>",
+    conditionDetailsHtml: `
+      <p>this easy-to-use point and shoot cam functions normally and is in amazing condition for its age. slight scratches at the shutter, tiny chip at the side at the bottom, and minor scratches and scuffs consistent with a used vintage item.</p>
+      <div class="photo-grid">
+        <img src="https://64.media.tumblr.com/ac7f622d35b79e998494d4dc166e3416/f814ad2d0ea3de7b-c9/s1280x1920/867cd060fcaf9d01f864e7bd251f93e75d208d0e.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 1" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/ac8173c2b7b027cbbf95ee612c353d46/f814ad2d0ea3de7b-d5/s1280x1920/59ce7e5076ee401d15644344a47f6a97052d6bec.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 2" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/0032098cb2a61ab0e8dd210ebafb29cc/f814ad2d0ea3de7b-2d/s1280x1920/3f824f32d2d1acb742f681f9c2c2fc6fcdac08f9.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 3" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/a6afeccdf0912ae3ecc68eb2fa680349/f814ad2d0ea3de7b-ca/s1280x1920/f1db9e39ae241b0ea9698dac9da2c4fcc53bd6de.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 4" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/0a23c6e766748414c2b6ee0b4f5d9243/f814ad2d0ea3de7b-36/s1280x1920/dc4e2c0b14423b0cf42fe77ac648930de64cfb55.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 5" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/388650deb3ab46878d2c59b0fc213520/f814ad2d0ea3de7b-50/s1280x1920/1bff6be85f5667fe809e0413249b922e18e3d738.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 6" onclick="openHpcLightbox(this)">
+      </div>
+    `,
+    adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20A500%20#1"
+  },
   
   {
   id: "fujifilm-finepix-clip-it-80",
@@ -175,7 +223,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>noticeable scratches and scuffs, Japanese menu, flaws on inside of the screen (doesn't affect visibility/photos), dust in viewfinder, sometimes shows glitch in playback/"frame error" (resolved by restarting)</p>
+    <p>a retro statement cam that feels like a film camera and produces grainy, notsalgic photos. condition is great for its age, but it bears noticeable scratches and scuffs, has a Japanese menu, and there are flaws on inside of the screen (doesn't affect visibility/photos), dust in viewfinder. i've noticed that it showed a glitch in playback/"frame error" (resolved by restarting) once during testing periods.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/02720c5979dd1e633097ab0b6466cfb2/63bee42d0b1f8894-42/s1280x1920/ebb79784486328e5e1d228329595afa58c143344.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/1d2901f4732500be903dfb6745c2e5dd/63bee42d0b1f8894-83/s1280x1920/d862b1371e9c4b0a367c526de7805719014c748b.jpg" class="full_image" alt="FUJIFILM FINEPIX CLIP-IT 80 condition 2" onclick="openHpcLightbox(this)">
@@ -223,14 +271,13 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
   conditionDetailsHtml: `
-    <p>small chip (front bottom), dent on screen (doesn't affect display), minor scratches</p>
+    <p>a sweet, peachy pink fuji cam in super good condition! it does have a small chip (front bottom), a dent on screen (doesn't affect display), and minor scratches.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/7b3d22420437c6caa5f99b8dcbaceda6/3c0933a23966375c-d4/s1280x1920/59ff6778a8e2039850a9fd1ac55685c67bbef5ab.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/b39bea84c98e183a2ea6b4b6d0481d73/3c0933a23966375c-37/s1280x1920/bfd7cfea9dbf590e45dca2acdf87e6ead173ea5d.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 2" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/8a772eb6a93337f44be7747f46e73558/3c0933a23966375c-4f/s2048x3072/1f94268f1eda705430c229f837945273712c7daf.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 3" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/52dcbad7522e2e708ab8e7be2790bee7/3c0933a23966375c-4b/s1280x1920/7909a5c948bfe895e79756b02e9d665f262823a6.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 4" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/2e43be5c0b723411b9271257a7075f81/3c0933a23966375c-5d/s1280x1920/921ef7216368b2be26d5ee775a2673ca9ec3325c.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 5" onclick="openHpcLightbox(this)">
-      <img src="https://placeholder.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 6" onclick="openHpcLightbox(this)">
     </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20Z300"
@@ -271,7 +318,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>slight dents (front, bottom), minor chips (sides, cover, bottom, back), scuffs & scratches, slight fog in screen (doesn't affect photographs), logos are a little scratched</p>
+    <p>gorgeous metallic baby pink fuji cam hard to come across these days, any cosmetic flaws are not too noticeable! there are slight dents (front, bottom), minor chips (sides, cover, bottom, back), scuffs & scratches, slight fog in screen (doesn't affect photographs), and the logos are a little worn</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/8664a7b6e12c673a0bb576daf7639058/5830254dd880e5e8-cf/s1280x1920/ece3d9402065060a06f0f04dc41f43b09b8ea0a7.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/9e9d0e05daac4e548d9c04bd7e157f03/5830254dd880e5e8-28/s1280x1920/3c09e332015819d8cda6c8611071dd963ef0b047.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 2" onclick="openHpcLightbox(this)">
@@ -294,10 +341,10 @@ window.HPC_POSTS = [
 },
   
   {
-    id: "fujifilm-finepix-a500",
+    id: "fujifilm-finepix-a500-#2",
     type: "photo",
     meta: "Posted just now • 0 notes",
-    titleHtml: '<p><b>FUJIFILM FINEPIX A500</b> $170.00 </p><p><i>striking, clean, elegant, moody</i></p>',
+    titleHtml: '<p><b>FUJIFILM FINEPIX A500 #2</b> $165.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
     tags: ["cleangirl", "simpleelegance"],
     images: [
@@ -326,18 +373,21 @@ window.HPC_POSTS = [
         alt: "FUJIFILM FINEPIX A500 photo 6"
       }
     ],
-    conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
+    conditionSummaryHtml: "<p>⋆⋆⋆⋆ (pretty good!)</p>",
     conditionDetailsHtml: `
-      <p>this easy-to-use point and shoot cam functions normally and is in great condition for its age. there are scratches at the shutter and the back on the right, small dents at the top and sides, and minor scratches and scuffs consistent with a used vintage item.</p>
+      <p>this easy-to-use point and shoot cam functions normally and is in great condition for its age. slight scuff in front and on power button, scratches at the shutter, minor chips at the top and sides, and minor scratches and scuffs consistent with a used vintage item.</p>
       <div class="photo-grid">
-        <img src="INSERT PHOTO" class="full_image" alt="FUJIFILM FINEPIX A500 condition 1" onclick="openHpcLightbox(this)">
-        <img src="INSERT PHOTO" class="full_image" alt="FUJIFILM FINEPIX A500 condition 2" onclick="openHpcLightbox(this)">
-        <img src="INSERT PHOTO" class="full_image" alt="FUJIFILM FINEPIX A500 condition 3" onclick="openHpcLightbox(this)">
-        <img src="INSERT PHOTO" class="full_image" alt="FUJIFILM FINEPIX A500 condition 4" onclick="openHpcLightbox(this)">
-        <img src="INSERT PHOTO" class="full_image" alt="FUJIFILM FINEPIX A500 condition 5" onclick="openHpcLightbox(this)">
-        <img src="INSERT PHOTO" class="full_image" alt="FUJIFILM FINEPIX A500 condition 6" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/73651bc8f6164e4b2b831b54c6c21f34/cc164266251cadd4-24/s1280x1920/86d0bda22780cb121b7e624ae61379b5503bebd1.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 1" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/a071e1d725c79c94170495aac66f64fe/cc164266251cadd4-fc/s1280x1920/7ccd3ed6d7b09ab81cc607073bff58e7636ab2bf.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 2" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/35747e914b9954d6a38c0520ab3fde1d/cc164266251cadd4-c3/s1280x1920/ce56715731ebcfc62c59b032116dc4ebf4bdd37e.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 3" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/def018bdd04dfcbdcaf090a47d5de7e1/cc164266251cadd4-85/s1280x1920/16b7ef3ce3f52def4e5a0abedf8e2e53eaf330bd.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 4" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/9807fc984714faaae8b19cf2bf30d91a/cc164266251cadd4-a1/s1280x1920/e6e5202feb95f401fc2329ecf5c540149bd078c5.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 5" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/112164ad4c29a2d562ce7ff069638427/cc164266251cadd4-11/s1280x1920/69c74e8b47acc0492979891c74c05a48b7a55d6d.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 6" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/da4900bfd4fe9679ad3968f1c450aff5/cc164266251cadd4-1b/s1280x1920/5e08d84c39a04f1d6fe39dcaccbb45bfa9766264.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 7" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/719b19ea371cf7008d7edc6a5cd51fe0/cc164266251cadd4-bb/s1280x1920/28157c44d82a36ebd80a1baa0b4d3fe3c9452de8.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 8" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/52c470a0f0d8617f61f90674898e2272/cc164266251cadd4-95/s1280x1920/b2a9616b599f809a7248676e888e4d63f74765b8.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 9" onclick="openHpcLightbox(this)">
       </div>
     `,
-    adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20A500"
+    adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20A500%20#2"
   }
 ];
