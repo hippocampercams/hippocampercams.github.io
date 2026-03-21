@@ -51,6 +51,42 @@ window.HPC_POSTS = [
   `,
   adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S9"
 },
+
+  {
+  id: "nikon-coolpix-s3-red",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON COOLPIX S3 (RED)</b> $190.00</p><p><i>vivid, striking, dramatic</i></p>',
+  captionHtml: '6 mp・3x optical zoom・spunk red・classic nikon blacks',
+  tags: ["cybery2k", "cinematographic"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/97f8780acef20674d9c5451987b86373/01a46662939e16cc-60/s1280x1920/25f00b95a2eeae203b8e85cc0e96b4d767f8a7ae.jpg",
+      alt: "NIKON COOLPIX S3 RED photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/a4f9d4b5549ee1be2b95c30edfbf8017/28e5929c53655ae4-b0/s1280x1920/ce3786e8689b9a0043496a9ad25a6d03b3112179.jpg",
+      alt: "NIKON COOLPIX S3 RED photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/5713ca9f31e606286c63e7fdc1cc18a1/01a46662939e16cc-f8/s1280x1920/d6854b4ece69b9f28b04bb48b2ddd6c422429cb2.jpg",
+      alt: "NIKON COOLPIX S3 RED photo 3"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>she's a bold statement piece in amazing condition for her age! she has some peeling at back, small dents at sides, & minor scratches.</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/5b7eb1d6369227918f648d3d9ae2158f/01a46662939e16cc-86/s1280x1920/01e7bfe9ebae4261b67f9483c25abf01837d6f96.jpg" class="full_image" alt="NIKON COOLPIX S3 RED condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0fa9ef7e10023a479dba36420af6a48f/01a46662939e16cc-d1/s1280x1920/d5932b18e264f8b5df58403d982c9ab95935f0ff.jpg" class="full_image" alt="NIKON COOLPIX S3 RED condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c86c264510e697fd3ac98615ed4ee646/01a46662939e16cc-33/s1280x1920/6db7d89dfa88aa7134caf138530f4506b94999e4.jpg" class="full_image" alt="NIKON COOLPIX S3 RED condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/65b1a4b2a78b8b6739dcc4512ba2b9c4/01a46662939e16cc-84/s1280x1920/e904fe5237732f6a6d1cf66ab23fabd02fb66f9a.jpg" class="full_image" alt="NIKON COOLPIX S3 RED condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/848a267552c929aa7f8c48b1415c7abb/01a46662939e16cc-45/s1280x1920/54f324d73c5e5bc5cb4853393929787d2f824cc2.jpg" class="full_image" alt="NIKON COOLPIX S3 RED condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/77ae627d0027bdc121701e9873730b3c/01a46662939e16cc-dc/s1280x1920/c78c69b4a338d28f776b4685fd3b6975f0b33da3.jpg" class="full_image" alt="NIKON COOLPIX S3 RED condition 6" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S3%20RED"
+},
   
   {
   id: "sony-cybershot-T5",
@@ -338,6 +374,51 @@ window.HPC_POSTS = [
     </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20Z3"
+},
+
+  {
+  id: "nikon-coolpix-s3-silver",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON COOLPIX S3 - SILVER</b> $140.00</p><p><i>vivid, striking, dramatic</i></p>',
+  captionHtml: '6 mp・3x optical zoom・simple, timeless design・classic nikon blacks',
+  tags: ["cybery2k", "cinematographic"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/97f8780acef20674d9c5451987b86373/01a46662939e16cc-60/s1280x1920/25f00b95a2eeae203b8e85cc0e96b4d767f8a7ae.jpg",
+      alt: "NIKON COOLPIX S3 SILVER photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/903cd59defc915fd7407801da39ca87c/e3de575648f95f17-e8/s1280x1920/62572188e0ea923f2d7ac9afc7f2a13a1532ddf4.jpg",
+      alt: "NIKON COOLPIX S3 SILVER photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/f776482e3c3798f737363c460fa6bb16/01a46662939e16cc-52/s1280x1920/d9559027194b48e88067686b2b264a1c4798bcd4.jpg",
+      alt: "NIKON COOLPIX S3 SILVER photo 3"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆ (it's a little worn)</p>",
+  conditionDetailsHtml: `
+    <p>a with a simple, minimalist design she's a real classic! she's been around the block and has a couple of battle scars, which the price reflects; there are noticeable scratches, dents (back bottom right, sides), chips and dents, & scratches on the screen (display not affected).</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/656aa625ae92a49f2669d036c27c5523/e3de575648f95f17-da/s1280x1920/9f5e20dea5119254ebd085ac3b0f86a4bb80e626.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b89f9ac5ece6dd1c881e93669c14832c/e3de575648f95f17-c0/s1280x1920/ba8aecc8480a8f58276618d52b7f806dcd969ef5.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0c45d11611d24e7c9f38670a377f9168/e3de575648f95f17-69/s1280x1920/fd5cd07610e3966b035f5aae69af76fa61dd4b78.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4c7579957d352d93355c3e28ed5f1f8a/e3de575648f95f17-2d/s1280x1920/20d5b4d970b08308d378220b59767002c6dacc11.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0d29535fbc713db506a485816e9a4da4/e3de575648f95f17-d0/s1280x1920/19e741bf7e2af32f3552bdd54f3935b9ba305833.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2b5ec41626eb72d29fb38e360190a181/e3de575648f95f17-fe/s1280x1920/91cf75e2a836e4b63df101f640d9132d58d78cfd.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/081bf8851518bd5561fe5d84e386e3d1/e3de575648f95f17-87/s1280x1920/2c829dba412a0e2755661829bb59b4b6af7fe06b.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0329a0d3d506b26320e88fcd1fc6c93b/e2e84ce33c05d630-2d/s1280x1920/c134da296157c51a35ee711f91b51f13dac0e632.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ca0ceda0cb42e75e9f3ba6720faae6b0/e2e84ce33c05d630-f2/s1280x1920/caa78b344c186a0617b4ba7fe1a00b561df85747.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d27617b5a5aa8a247f53ba2799463d77/e2e84ce33c05d630-0f/s1280x1920/d0605b4e945054ce0ab50685850c239c7aff60a6.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/804b41fb8d991fd0a4f50ec6170f976c/e2e84ce33c05d630-ec/s1280x1920/d6cedea5b14a73ec9977523038a0be603ff13258.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 11" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/cc132de32813af838eebcb9008a79257/e2e84ce33c05d630-84/s1280x1920/500219ad14cfaf3c45bc1ba480830db00aba5139.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 12" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/8effac4570b49f00b5b0bbbc476a6235/e2e84ce33c05d630-5b/s1280x1920/abb7cefed93da2505f4bbdd7291b9c602b6dd6c4.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 13" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2fa9d9b0b89d659e04f0820842d9973e/e2e84ce33c05d630-52/s1280x1920/9ae16879a3483686ef29f53f68a686cc00e4b013.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 14" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0329a0d3d506b26320e88fcd1fc6c93b/e2e84ce33c05d630-2d/s1280x1920/c134da296157c51a35ee711f91b51f13dac0e632.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 15" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S3%20SILVER"
 },
   
   {
