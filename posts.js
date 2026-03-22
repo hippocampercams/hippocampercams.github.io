@@ -1,5 +1,54 @@
 window.HPC_POSTS = [
   {
+  id: "panasonic-lumix-dmc-ls75",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $180.00</p><p><i>KEYWORDS</i></p>',
+  captionHtml: '7.2 mp・3x optical zoom・AA battery-powered (one less charger!)',
+  tags: ["goldenhour", "cinematographic"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/c3eaaff1056473db49990d9342d9b6ba/a7c9512c80210070-a2/s1280x1920/e0f7c235127efd8299ba41a3823bc8760b2c76e2.jpg",
+      alt: "NIKON COOLPIX S9 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/e29618c2754b75a2e2d1b016e8d3927e/71c12331eb89832a-8e/s1280x1920/7864579e0d93918325ba018e5098b6c32d1e02aa.jpg",
+      alt: "NIKON COOLPIX S9 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/a1b527e418e4c3b1ac66f6a47c743a22/a7c9512c80210070-09/s1280x1920/41e8f63770c8320ab99e67f6439dd49f02f06db6.jpg",
+      alt: "NIKON COOLPIX S9 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/8345931ac951b947b98207f3fdfc1b14/a7c9512c80210070-fa/s1280x1920/52a03995e77f0c44f52a7a3a3155f63ef26f8b49.jpg",
+      alt: "NIKON COOLPIX S9 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/586a1f8ba4937aa5bca7a18ef35b9014/71c12331eb89832a-03/s1280x1920/6d65bd3b378593f68f061508acdb9d9fcdad720e.jpg",
+      alt: "NIKON COOLPIX S9 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/ac6cea97925500f28dd4e13fe2e5f22a/a7c9512c80210070-35/s1280x1920/192812dcb992cc8bdbb50df00d9b82b9c05c5b87.jpg",
+      alt: "NIKON COOLPIX S9 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>super classic digicam look, she's a 2007 baby! she has a little dent at the front and some scratches and dinks, and finishing is worn at one corner.</p>
+    <div class="photo-grid">
+      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S9"
+},
+  
+  {
   id: "nikon-coolpix-s9",
   type: "photo",
   meta: "Posted just now • 0 notes",
