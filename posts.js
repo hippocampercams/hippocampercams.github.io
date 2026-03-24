@@ -8,7 +8,7 @@ window.HPC_POSTS = [
   tags: ["grainyretro", "cyber72k"],
   images: [
     {
-      src: "https://64.media.tumblr.com/d441e577e7c29d389be63518740c68fd/a917a331bb4a0846-8b/s1280x1920/52702d8f9e3f369c48f9303b56b69e8bc717bc92.jpg",
+      src: "https://64.media.tumblr.com/488068b4f66d57883a0602d533f50429/b50d913c91544751-1f/s1280x1920/4f9a19913cf1c8a9c7312028c798a257cc05c2d7.jpg",
       alt: "FUJIFILM FINEPIX 4700Z photo 1"
     },
     {
@@ -20,7 +20,7 @@ window.HPC_POSTS = [
       alt: "FUJIFILM FINEPIX 4700Z photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/488068b4f66d57883a0602d533f50429/b50d913c91544751-1f/s1280x1920/4f9a19913cf1c8a9c7312028c798a257cc05c2d7.jpg",
+      src: "https://64.media.tumblr.com/d441e577e7c29d389be63518740c68fd/a917a331bb4a0846-8b/s1280x1920/52702d8f9e3f369c48f9303b56b69e8bc717bc92.jpg",
       alt: "FUJIFILM FINEPIX 4700Z photo 4"
     },
     {
