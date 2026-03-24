@@ -3,7 +3,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-4700z",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $200.00</p><p><i>KEYWORDS</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $200.00</p><p><i>rare, analogue vibes, retro</i></p>',
   captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
   tags: ["grainyretro", "cyber72k"],
   images: [
@@ -16,7 +16,7 @@ window.HPC_POSTS = [
       alt: "FUJIFILM FINEPIX 4700Z photo 2"
     },
     {
-      src: "https://64.media.tumblr.com/6f2daf5febb5a9be62cbae38bf963870/a917a331bb4a0846-01/s1280x1920/9f529006e3255b7fbf8f3d40cfc957b4c3d1f18a.jpg",
+      src: "https://64.media.tumblr.com/64dcbd09e015151308d8d95b82b43b24/b50d913c91544751-1f/s1280x1920/4e6ac7f48a19da7f76e78c0bb4d2a9855ebb5120.jpg",
       alt: "FUJIFILM FINEPIX 4700Z photo 3"
     },
     {
@@ -28,13 +28,13 @@ window.HPC_POSTS = [
       alt: "FUJIFILM FINEPIX 4700Z photo 5"
     },
     {
-      src: "https://64.media.tumblr.com/64dcbd09e015151308d8d95b82b43b24/b50d913c91544751-1f/s1280x1920/4e6ac7f48a19da7f76e78c0bb4d2a9855ebb5120.jpg",
+      src: "https://64.media.tumblr.com/cb177ca0d38835a158f3952f9d9e9a09/b50d913c91544751-b6/s1280x1920/3f3b6ec1a0633cf736028a22251fb36ef1f677c3.jpg",
       alt: "FUJIFILM FINEPIX 4700Z photo 6"
     }
   ],
   conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>an eccentric, truly special cam that's sure to be a talking point, she's a little battered, but works perfectly! has a Japanese menu, slight rusting on lens cap, debris in the screen (doesnt affect pictures or visibility) visible scratches, minor chips at corners, and battery cover is a little wonky (tricky to close, but it closes and opens fine once you get the hang of it!), seems to show 'low battery' even though the battery is new (notwithstanding the 'low battery' sign, it has not shut down during testing when using new batteries).</p>
+    <p>an eccentric, truly special cam that's sure to be a talking point, she's a little battered, but works perfectly! <br> has a Japanese menu, slight rusting on lens cap, debris in the screen (doesnt affect pictures or visibility) visible scratches, minor chips at corners, and battery cover is a little wonky (tricky to close, but it closes and opens fine once you get the hang of it!), seems to show 'low battery' even though the battery is new (notwithstanding the 'low battery' sign, it has not shut down during testing when using new batteries).</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/51e897e4d837cea1c1e8b10f79020247/92841ab5dac597db-74/s2048x3072/bd890df1bd0fed616771eff9c14e410e9918ae85.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/6bf10a051d05fdd88565325954d04a0a/92841ab5dac597db-ea/s2048x3072/b888e3cf6bfbf5b5bd1ca94c64f9d54b667e133a.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 2" onclick="openHpcLightbox(this)">
