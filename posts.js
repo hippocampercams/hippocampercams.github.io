@@ -1,5 +1,58 @@
 window.HPC_POSTS = [
   {
+  id: "fujifilm-finepix-4700z",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $200.00</p><p><i>KEYWORDS</i></p>',
+  captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
+  tags: ["grainyretro", "cyber72k"],
+  images: [
+    {
+      src: "https://64.media.tumblr.com/d441e577e7c29d389be63518740c68fd/a917a331bb4a0846-8b/s1280x1920/52702d8f9e3f369c48f9303b56b69e8bc717bc92.jpg",
+      alt: "FUJIFILM FINEPIX 4700Z photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/3995dc510e5110b21cf8708c6c5fbe18/b50d913c91544751-56/s2048x3072/cd63c16962a99f5ca8842868c690b8d0f458a155.jpg",
+      alt: "FUJIFILM FINEPIX 4700Z photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/6f2daf5febb5a9be62cbae38bf963870/a917a331bb4a0846-01/s1280x1920/9f529006e3255b7fbf8f3d40cfc957b4c3d1f18a.jpg",
+      alt: "FUJIFILM FINEPIX 4700Z photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/488068b4f66d57883a0602d533f50429/b50d913c91544751-1f/s1280x1920/4f9a19913cf1c8a9c7312028c798a257cc05c2d7.jpg",
+      alt: "FUJIFILM FINEPIX 4700Z photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/f2789e4880552753188a10900f26c989/640336d01f488339-3e/s1280x1920/c0466fb3431b7edeff0aacbaec51b71bced2a541.jpg",
+      alt: "FUJIFILM FINEPIX 4700Z photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/64dcbd09e015151308d8d95b82b43b24/b50d913c91544751-1f/s1280x1920/4e6ac7f48a19da7f76e78c0bb4d2a9855ebb5120.jpg",
+      alt: "FUJIFILM FINEPIX 4700Z photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>an eccentric, truly special cam that's sure to be a talking point, she's a little battered, but works perfectly! has a Japanese menu, slight rusting on lens cap, debris in the screen (doesnt affect pictures or visibility) visible scratches, minor chips at corners, and battery cover is a little wonky (tricky to close, but it closes and opens fine once you get the hang of it!), seems to show 'low battery' even though the battery is new (notwithstanding the 'low battery' sign, it has not shut down during testing when using new batteries).</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/51e897e4d837cea1c1e8b10f79020247/92841ab5dac597db-74/s2048x3072/bd890df1bd0fed616771eff9c14e410e9918ae85.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6bf10a051d05fdd88565325954d04a0a/92841ab5dac597db-ea/s2048x3072/b888e3cf6bfbf5b5bd1ca94c64f9d54b667e133a.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/db1881e093243fafa084e470bfe02b26/92841ab5dac597db-5a/s2048x3072/ba385bcb67c8a042758594503f9c340dcf2cd74e.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/efe2d304706961819537d128de870c6b/92841ab5dac597db-ba/s2048x3072/e29ca43dc2ae1b822286307165ab92c080789a36.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9b640221cb3c2c872fdd4b817c7e8ee8/92841ab5dac597db-43/s2048x3072/846c928ca0756b283d0dbecf3fbebdf607cd091a.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/aa2392fc04622da0e490679ee751088b/92841ab5dac597db-db/s2048x3072/b8ecc00712f30d4da9675d4682a070fd58a99993.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d5da6026def39714c7797d18a7773219/92841ab5dac597db-33/s2048x3072/243b762b35772752afc70414af8625e1e75854ec.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2bff6b2ef410bde7708b6e22e8376bec/92841ab5dac597db-e4/s2048x3072/9c4446802e2b6e458acc2e9fe4df0bcb837fa5fc.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2963f11b9627a1502260e8186dedb8ec/a917a331bb4a0846-a1/s2048x3072/cbc83a64ca2ca508e546515b9bff0c0e8a882f0f.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5c180eda25ee522a261a04b6dcae9049/b50d913c91544751-fe/s2048x3072/2b472a45f9291367ce97917b0d60b88be90291a2.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 10" onclick="openHpcLightbox(this)">
+      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%204700Z"
+},
+  
+  {
   id: "panasonic-lumix-dmc-ls75",
   type: "photo",
   meta: "Posted just now • 0 notes",
@@ -37,11 +90,11 @@ window.HPC_POSTS = [
     <p>super classic digicam look, she's a 2007 baby! she has a little dent at the front and some scratches and dinks, and finishing is worn at one corner.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/1982a29b9f592bc3d2b7b96c5353cedc/0ae8cac028634c70-5c/s2048x3072/d2485586d4294846230667e6e4d161270e95877c.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/ff51b978e6a2f2df7d3cb5e0b25f35a6/0ae8cac028634c70-f8/s2048x3072/34094b8c4c97c69e76939f6aa2e8b4976b2c057a.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/79657cd5167118119c1248eed44d6f5e/0ae8cac028634c70-dd/s2048x3072/06032134406cb5c4ae1b935f396835c4975821a8.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/3db10c0dc3842fef4056431a81e491fb/0ae8cac028634c70-5d/s2048x3072/2c157e4491965052c5677f3e051065e2c5397da0.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/b47284fe82d7a4eb673e1714a9e72a5a/0ae8cac028634c70-7d/s2048x3072/0ce3c51ebf1783eb26d733ed389be75f167a78a3.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/6cf2923820613f0eb1a3e7cf181b05b9/0ae8cac028634c70-e1/s2048x3072/e6460f95f7eda8d61dcfee5c0847934ca4d221e7.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ff51b978e6a2f2df7d3cb5e0b25f35a6/0ae8cac028634c70-f8/s2048x3072/34094b8c4c97c69e76939f6aa2e8b4976b2c057a.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/79657cd5167118119c1248eed44d6f5e/0ae8cac028634c70-dd/s2048x3072/06032134406cb5c4ae1b935f396835c4975821a8.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/3db10c0dc3842fef4056431a81e491fb/0ae8cac028634c70-5d/s2048x3072/2c157e4491965052c5677f3e051065e2c5397da0.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b47284fe82d7a4eb673e1714a9e72a5a/0ae8cac028634c70-7d/s2048x3072/0ce3c51ebf1783eb26d733ed389be75f167a78a3.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6cf2923820613f0eb1a3e7cf181b05b9/0ae8cac028634c70-e1/s2048x3072/e6460f95f7eda8d61dcfee5c0847934ca4d221e7.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 6" onclick="openHpcLightbox(this)">
       
       </div>
   `,
