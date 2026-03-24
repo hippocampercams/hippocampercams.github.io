@@ -56,9 +56,9 @@ window.HPC_POSTS = [
   id: "panasonic-lumix-dmc-ls75",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $180.00</p><p><i>KEYWORDS</i></p>',
-  captionHtml: '7.2 mp・3x optical zoom・AA battery-powered (one less charger!)',
-  tags: ["goldenhour", "cinematographic"],
+  titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $180.00</p><p><i>warm, nostalgic, dreamy</i></p>',
+  captionHtml: '7.2 mp・3x optical zoom・fuji colours on a budget・AA battery-powered (one less charger!)',
+  tags: ["goldenhour", "cinematographic", "sunsetglow", "simpleelegance"],
   images: [
     {
       src: "https://64.media.tumblr.com/b3bbf62059d88dd07a7d7657dbd6e9e5/c0170997f49c50d4-b2/s1280x1920/9542354b4830fa175e2b4bdc71d7c35b6c466382.jpg",
