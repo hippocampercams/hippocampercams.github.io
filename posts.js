@@ -61,7 +61,7 @@ window.HPC_POSTS = [
   tags: ["goldenhour", "cinematographic"],
   images: [
     {
-      src: "",
+      src: "https://64.media.tumblr.com/b3bbf62059d88dd07a7d7657dbd6e9e5/c0170997f49c50d4-b2/s1280x1920/9542354b4830fa175e2b4bdc71d7c35b6c466382.jpg",
       alt: "PANASONIC LUMIX DMC-LS75 photo 1"
     },
     {
@@ -69,19 +69,19 @@ window.HPC_POSTS = [
       alt: "PANASONIC LUMIX DMC-LS75 photo 2"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/e8bdceb0979fe2af259aca0f6074f322/c0170997f49c50d4-2a/s1280x1920/606fd054423f74ece893a03b7179e89737d56466.jpg",
       alt: "PANASONIC LUMIX DMC-LS75 photo 3"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/9814fc9d259a6ff6d9f911847ec249e4/c0170997f49c50d4-8f/s1280x1920/3fa8c0033ab66775973b1801404518bf2d243b0d.jpg",
       alt: "PANASONIC LUMIX DMC-LS75 photo 4"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/fe418a746e69168ab7cb760e40d53c77/c0170997f49c50d4-b1/s1280x1920/e48da9cb85c05bf2b8b0203b8afd51ab2914fb5c.jpg",
       alt: "PANASONIC LUMIX DMC-LS75 photo 5"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/777629593aeea9b2fc1fbe88e7e3408a/c0170997f49c50d4-11/s1280x1920/f2c1634e22d4eb64869c2968dec8972e450506f7.jpg",
       alt: "PANASONIC LUMIX DMC-LS75 photo 6"
     }
   ],
