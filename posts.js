@@ -9,43 +9,43 @@ window.HPC_POSTS = [
   images: [
     {
       src: "https://64.media.tumblr.com/c3eaaff1056473db49990d9342d9b6ba/a7c9512c80210070-a2/s1280x1920/e0f7c235127efd8299ba41a3823bc8760b2c76e2.jpg",
-      alt: "NIKON COOLPIX S9 photo 1"
+      alt: "PANASONIC LUMIX DMC-LS75 photo 1"
     },
     {
-      src: "https://64.media.tumblr.com/e29618c2754b75a2e2d1b016e8d3927e/71c12331eb89832a-8e/s1280x1920/7864579e0d93918325ba018e5098b6c32d1e02aa.jpg",
-      alt: "NIKON COOLPIX S9 photo 2"
+      src: "https://64.media.tumblr.com/1146aa5c76057e050d8bfb05ae490952/0ae8cac028634c70-61/s2048x3072/af1b1763f45ffdc2f8ad63fc663d88b0cc68451d.jpg",
+      alt: "PANASONIC LUMIX DMC-LS75 photo 2"
     },
     {
       src: "https://64.media.tumblr.com/a1b527e418e4c3b1ac66f6a47c743a22/a7c9512c80210070-09/s1280x1920/41e8f63770c8320ab99e67f6439dd49f02f06db6.jpg",
-      alt: "NIKON COOLPIX S9 photo 3"
+      alt: "PANASONIC LUMIX DMC-LS75 photo 3"
     },
     {
       src: "https://64.media.tumblr.com/8345931ac951b947b98207f3fdfc1b14/a7c9512c80210070-fa/s1280x1920/52a03995e77f0c44f52a7a3a3155f63ef26f8b49.jpg",
-      alt: "NIKON COOLPIX S9 photo 4"
+      alt: "PANASONIC LUMIX DMC-LS75 photo 4"
     },
     {
       src: "https://64.media.tumblr.com/586a1f8ba4937aa5bca7a18ef35b9014/71c12331eb89832a-03/s1280x1920/6d65bd3b378593f68f061508acdb9d9fcdad720e.jpg",
-      alt: "NIKON COOLPIX S9 photo 5"
+      alt: "PANASONIC LUMIX DMC-LS75 photo 5"
     },
     {
       src: "https://64.media.tumblr.com/ac6cea97925500f28dd4e13fe2e5f22a/a7c9512c80210070-35/s1280x1920/192812dcb992cc8bdbb50df00d9b82b9c05c5b87.jpg",
-      alt: "NIKON COOLPIX S9 photo 6"
+      alt: "PANASONIC LUMIX DMC-LS75 photo 6"
     }
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
     <p>super classic digicam look, she's a 2007 baby! she has a little dent at the front and some scratches and dinks, and finishing is worn at one corner.</p>
     <div class="photo-grid">
-      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1982a29b9f592bc3d2b7b96c5353cedc/0ae8cac028634c70-5c/s2048x3072/d2485586d4294846230667e6e4d161270e95877c.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ff51b978e6a2f2df7d3cb5e0b25f35a6/0ae8cac028634c70-f8/s2048x3072/34094b8c4c97c69e76939f6aa2e8b4976b2c057a.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/79657cd5167118119c1248eed44d6f5e/0ae8cac028634c70-dd/s2048x3072/06032134406cb5c4ae1b935f396835c4975821a8.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/3db10c0dc3842fef4056431a81e491fb/0ae8cac028634c70-5d/s2048x3072/2c157e4491965052c5677f3e051065e2c5397da0.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b47284fe82d7a4eb673e1714a9e72a5a/0ae8cac028634c70-7d/s2048x3072/0ce3c51ebf1783eb26d733ed389be75f167a78a3.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6cf2923820613f0eb1a3e7cf181b05b9/0ae8cac028634c70-e1/s2048x3072/e6460f95f7eda8d61dcfee5c0847934ca4d221e7.jpg" class="full_image" alt="PANASONIC LUMIX DMC-LS75 condition 1" onclick="openHpcLightbox(this)">
       
       </div>
   `,
-  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S9"
+  adoptUrl: "adoptacam.html?newbaby=PANASONIC%20LUMIX%20DMC-LS75"
 },
   
   {
