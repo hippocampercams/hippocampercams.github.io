@@ -65,7 +65,7 @@ window.HPC_POSTS = [
       alt: "PANASONIC LUMIX DMC-LS75 photo 1"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/1146aa5c76057e050d8bfb05ae490952/0ae8cac028634c70-61/s2048x3072/af1b1763f45ffdc2f8ad63fc663d88b0cc68451d.jpg",
       alt: "PANASONIC LUMIX DMC-LS75 photo 2"
     },
     {
