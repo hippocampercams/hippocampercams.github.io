@@ -6,6 +6,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $200.00</p><p><i>rare, analogue vibes, retro</i></p>',
   captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
   tags: ["grainyretro", "cyber72k"],
+  brand: "fujifilm",
   images: [
     {
       src: "https://64.media.tumblr.com/488068b4f66d57883a0602d533f50429/b50d913c91544751-1f/s1280x1920/4f9a19913cf1c8a9c7312028c798a257cc05c2d7.jpg",
@@ -59,6 +60,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $180.00</p><p><i>warm, nostalgic, dreamy</i></p>',
   captionHtml: '7.2 mp・3x optical zoom・fuji colours on a budget・AA battery-powered (one less charger!)',
   tags: ["goldenhour", "cinematographic", "sunsetglow", "simpleelegance"],
+  brand: "panasonic",
   images: [
     {
       src: "https://64.media.tumblr.com/b3bbf62059d88dd07a7d7657dbd6e9e5/c0170997f49c50d4-b2/s1280x1920/9542354b4830fa175e2b4bdc71d7c35b6c466382.jpg",
@@ -108,6 +110,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>NIKON COOLPIX S9</b> $230.00</p><p><i>nostalgic, striking, warm</i></p>',
   captionHtml: '6 mp・3x optical zoom・super sleek design・classic nikon blacks',
   tags: ["goldenhour", "cinematographic"],
+  brand: "nikon",
   images: [
     {
       src: "https://64.media.tumblr.com/c3eaaff1056473db49990d9342d9b6ba/a7c9512c80210070-a2/s1280x1920/e0f7c235127efd8299ba41a3823bc8760b2c76e2.jpg",
@@ -161,6 +164,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>NIKON COOLPIX S3 (RED)</b> $190.00</p><p><i>vivid, striking, dramatic</i></p>',
   captionHtml: '6 mp・3x optical zoom・spunk red・classic nikon blacks',
   tags: ["cybery2k", "cinematographic"],
+  brand: "nikon",
   images: [
     {
       src: "https://64.media.tumblr.com/97f8780acef20674d9c5451987b86373/01a46662939e16cc-60/s1280x1920/25f00b95a2eeae203b8e85cc0e96b4d767f8a7ae.jpg",
@@ -197,6 +201,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>SONY CYBERSHOT T5</b> $160.00</p><p><i>dreamy, light, romantic</i></p>',
   captionHtml: '5.1 mp・3x optical zoom・quality zeiss lens・slim queen',
   tags: ["cinematographic", "goldenhour", "softpastel"],
+  brand: "sony",
   images: [
     {
       src: "https://64.media.tumblr.com/b9a798fb0f4f32a54f1b76ea2e18107d/200561d68174871e-40/s1280x1920/fd3ad982808b9b918c81b526bedefbe4c297b77c.jpg",
@@ -236,6 +241,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>NIKON COOLPIX L6</b> $140.00</p><p><i>cinematic, striking, dreamy</i></p>',
   captionHtml: '6 mp・3x optical zoom・classic nikon blacks・uses AA batteries (one less charger!)',
   tags: ["cinematographic", "goldenhour"],
+  brand: "nikon",
   images: [
     {
       src: "https://64.media.tumblr.com/5c9ff0969a5f76e01eb56754dd3dedb5/675567152574a984-d9/s1280x1920/370f973606c7f228181dd4cd6e4a266b4e75be0f.jpg",
@@ -285,6 +291,7 @@ window.HPC_POSTS = [
     titleHtml: '<p><b>FUJIFILM FINEPIX A500 #1</b> $180.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
     tags: ["cleangirl", "simpleelegance"],
+    brand: "fujifilm",
     images: [
       {
         src: "https://64.media.tumblr.com/f17a5438562dea5df5734047203241a2/2527f28ed92627d9-75/s2048x3072/9302a1564a76591a5b2f76651152f9772eb2b816.jpg",
@@ -333,6 +340,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>FUJIFILM FINEPIX CLIP-IT 80</b> $140.00</p><p><i>grainy, dreamy, film-like</i></p>',
   captionHtml: '1.6x digital zoom・cute brick build・looks like a film cam, produces film-like photos',
   tags: ["grainyretro", "cybery2k", "goldenhour"],
+  brand: "fujifilm",
   images: [
     {
       src: "https://64.media.tumblr.com/51581d52014174955f1754f8e9900c8a/b052eb27e79e7802-30/s1280x1920/1d19caabe6fd88f88c862c4870b4c224eb2480c3.jpg",
@@ -381,6 +389,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p><p><i>cool, moody, striking</i></p>',
   captionHtml: '10 mp・5x optical zoom・touchscreen・beautiful peach pink',
   tags: ["grainyretro", "cybery2k", "tokyoblues"],
+  brand: "fujifilm",
   images: [
     {
       src: "https://64.media.tumblr.com/2de21a7a3b16aec98eacedde9d0147f3/40b7e471ea1b679e-ab/s1280x1920/ddfa791e83fba6df6c2b36aaf3a51425d3647c42.jpg",
@@ -428,6 +437,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>FUJIFILM FINEPIX Z3</b> $200.00</p><p><i>elegant, warm, dynamic</i></p>',
   captionHtml: '5.1 mp・3x optical zoom・good in low light conditions・gorgeous baby pink',
   tags: ["cleangirl", "simpleelegance"],
+  brand: "fujifilm",
   images: [
     {
       src: "https://64.media.tumblr.com/0c2640a41010c52edeefc700225d00ae/fab800c49e64a484-06/s1280x1920/f2216474d750990195a3e1363d19f4fc1895becf.jpg",
@@ -485,6 +495,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>NIKON COOLPIX S3 - SILVER</b> $140.00</p><p><i>vivid, striking, dramatic</i></p>',
   captionHtml: '6 mp・3x optical zoom・simple, timeless design・classic nikon blacks',
   tags: ["cybery2k", "cinematographic"],
+  brand: "nikon",
   images: [
     {
       src: "https://64.media.tumblr.com/97f8780acef20674d9c5451987b86373/01a46662939e16cc-60/s1280x1920/25f00b95a2eeae203b8e85cc0e96b4d767f8a7ae.jpg",
@@ -530,6 +541,7 @@ window.HPC_POSTS = [
     titleHtml: '<p><b>FUJIFILM FINEPIX A500 #2</b> $165.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
     tags: ["cleangirl", "simpleelegance"],
+    brand: "fujifilm",
     images: [
       {
         src: "https://64.media.tumblr.com/f17a5438562dea5df5734047203241a2/2527f28ed92627d9-75/s2048x3072/9302a1564a76591a5b2f76651152f9772eb2b816.jpg",
