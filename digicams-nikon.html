@@ -1191,26 +1191,26 @@
         `;
     }
 
-    function renderFilteredBrand("brandname") {
-        var desktop = document.getElementById("desktop");
-        if (!desktop) return;
+    function renderFilteredBrand(brandName) {
+    var desktop = document.getElementById("desktop");
+    if (!desktop) return;
 
-        if (!window.HPC_POSTS || !Array.isArray(window.HPC_POSTS)) {
-            desktop.innerHTML = '<div class="empty-state">posts.js could not be loaded.</div>';
-            return;
-        }
-
-        var filtered = window.HPC_POSTS.filter(function(post) {
-            return post.brand === brandName;
-        });
-
-        if (!filtered.length) {
-            desktop.innerHTML = '<div class="empty-state">no ' + brandName + ' digicams listed yet.</div>';
-            return;
-        }
-
-        desktop.innerHTML = filtered.map(buildPostHtml).join("");
+    if (!window.HPC_POSTS || !Array.isArray(window.HPC_POSTS)) {
+        desktop.innerHTML = '<div class="empty-state">posts.js could not be loaded.</div>';
+        return;
     }
+
+    var filtered = window.HPC_POSTS.filter(function(post) {
+        return post.brand === brandName;
+    });
+
+    if (!filtered.length) {
+        desktop.innerHTML = '<div class="empty-state">no ' + brandName + ' digicams listed yet.</div>';
+        return;
+    }
+
+    desktop.innerHTML = filtered.map(buildPostHtml).join("");
+}
 
     document.addEventListener("DOMContentLoaded", function () {
         var mobileMenuButton = document.getElementById("mobileMenuButton");
