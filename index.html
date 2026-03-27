@@ -25,7 +25,7 @@
             background: #008080;
             margin: 0;
             font: normal 13px/1.3 "Mouse Deco", Arial, sans-serif;
-            overflow-x: auto;
+            overflow: hidden;
         }
 
         body.mobile-menu-open {
@@ -54,14 +54,29 @@
             font-family: "Mouse Deco", Arial, sans-serif;
         }
 
+        .wrapper {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .desktop-stage {
+            position: absolute;
+            width: 1792px;
+            height: 864px;
+            transform-origin: top left;
+        }
+
         /* LEFT DESKTOP ICONS COLUMN */
         .icons {
-            margin: 0 0 0 10px;
+            margin: 0;
             list-style-type: none;
             padding: 0;
             width: 100px;
-            float: left;
-            position: fixed;
+            position: absolute;
+            top: 20px;
+            left: 10px;
             z-index: 2;
             font-family: "Mouse Deco" !important;
         }
@@ -131,15 +146,14 @@
 
         /* MAIN DESKTOP AREA - SINGLE COLUMN FEED */
         #desktop {
-            margin-top: 20px;
-            margin-bottom: 60px;
-            margin-left: 205px;
-            margin-right: 0;
+            position: absolute;
+            top: 20px;
+            left: 190px;
             width: 1120px;
             max-width: 1120px;
             min-width: 1120px;
+            margin: 0;
             z-index: 3;
-            position: relative;
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -180,7 +194,6 @@
             font-family: "Mouse Deco" !important;
         }
 
-        /* FIXED TAG FONT */
         .post-tag-links,
         .post-tag-links p,
         .post-tag-links a,
@@ -397,14 +410,14 @@
 
         /* RIGHT SIDEBAR POPUPS */
         .right-popups {
-            position: fixed;
+            position: absolute;
             top: 10px;
-            right: 6px;
-            width: 410px;
+            right: 8px;
+            width: 424px;
             z-index: 5;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 16px;
             align-items: stretch;
             pointer-events: none;
         }
@@ -549,8 +562,10 @@
 
         /* START BAR */
         .start_bar {
-            position: fixed;
+            position: absolute;
             background-color: rgb(192,192,192);
+            left: 0;
+            right: 0;
             bottom: 0;
             height: 28px;
             width: 100%;
@@ -571,7 +586,7 @@
         }
 
         .start_menu {
-            position: fixed;
+            position: absolute;
             z-index: 3;
             bottom: 28px;
             display: none;
@@ -702,74 +717,23 @@
             display: none;
         }
 
-        @media (max-width: 1780px) {
-            #desktop,
-            .window {
-                width: 1060px;
-                max-width: 1060px;
-                min-width: 1060px;
-            }
-
-            #desktop {
-                margin-left: 185px;
-            }
-        }
-
-        @media (max-width: 1660px) {
-            #desktop,
-            .window {
-                width: 1000px;
-                max-width: 1000px;
-                min-width: 1000px;
-            }
-
-            #desktop {
-                margin-left: 165px;
-            }
-        }
-
-        @media (max-width: 1540px) {
-            #desktop,
-            .window {
-                width: 940px;
-                max-width: 940px;
-                min-width: 940px;
-            }
-
-            #desktop {
-                margin-left: 145px;
-            }
-        }
-
-        @media (max-width: 1420px) {
-            #desktop,
-            .window {
-                width: 860px;
-                max-width: 860px;
-                min-width: 860px;
-            }
-
-            #desktop {
-                margin-left: 130px;
-            }
-        }
-
-        @media (max-width: 1220px) {
-            #desktop,
-            .window {
-                width: 780px;
-                max-width: 780px;
-                min-width: 780px;
-            }
-
-            #desktop {
-                margin-left: 120px;
-            }
-        }
-
         @media (max-width: 900px) {
             body {
                 overflow-x: hidden;
+                overflow-y: auto;
+            }
+
+            .wrapper {
+                position: static;
+                inset: auto;
+                overflow: visible;
+            }
+
+            .desktop-stage {
+                position: static;
+                width: auto;
+                height: auto;
+                transform: none !important;
             }
 
             .icons {
@@ -781,6 +745,7 @@
             }
 
             #desktop {
+                position: static;
                 margin: 8px 8px 52px 8px;
                 width: calc(100vw - 16px);
                 max-width: calc(100vw - 16px);
@@ -792,9 +757,6 @@
                 width: calc(100vw - 16px);
                 max-width: calc(100vw - 16px);
                 min-width: 0;
-            }
-
-            .window {
                 box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
             }
 
@@ -916,100 +878,123 @@
 
 <body class="win98 one_column">
 
-    <div class="right-popups">
-        <div class="top-banner">
-            <div class="top-banner-window">
-                <div class="tb-titlebar">
-                    <span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>
-                    <span class="tb-close">x</span>
-                </div>
-                <div class="tb-body">
-                    <div class="tb-icon"></div>
-                    <div class="tb-text">
-                        <p>our cameras are lovingly sourced & tested</p>
-                        <p>we do our best to get digicams to you in the best condition possible, but they're <i>✧ genuinely vintage &amp; pre-loved ✧</i> & have signs of use &amp; age (scuffs, dinks &amp; imperfections).</p>
-                        <p>🙏🏻<b><u>please read all our notices, the full description of each cam &amp; examine all pics carefully before purchase.</u></b>🙏🏻</p>
-                        <p>we sell digicams only; if any accessories are included, they're freebies & we cannot guarantee/be liable for condition/usability.</p>
-                        <p>♡ enjoy finding your forever cam ♡</p>
-                    </div>
-                </div>
-                <div class="tb-footer">
-                    <button class="tb-button">ok</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="top-banner">
-            <div class="top-banner-window">
-                <div class="tb-titlebar">
-                    <span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>
-                    <span class="tb-close">x</span>
-                </div>
-                <div class="tb-body">
-                    <div class="tb-icon"></div>
-                    <div class="tb-text">
-                        <p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>
-                        <p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>
-                        <p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>
-                        <p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>
-                        <p>⋆⋆ - it's seen things & is a little worn out &/or minor functional issues</p>
-                        <p>⋆ - it's a veteran with battle scars &/or functional issues</p>
-                        <p>♻️ - pretty display piece, may work if you fix it?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="wrapper">
-        <div class="icons">
-            <a href="https://hippocampercams.github.io" class="home">
-                <div class="my_computer"></div>
-                <div class="icon_label">hippocampercams</div>
-            </a>
+        <div class="desktop-stage" id="desktopStage">
+            <div class="right-popups">
+                <div class="top-banner">
+                    <div class="top-banner-window">
+                        <div class="tb-titlebar">
+                            <span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>
+                            <span class="tb-close">x</span>
+                        </div>
+                        <div class="tb-body">
+                            <div class="tb-icon"></div>
+                            <div class="tb-text">
+                                <p>our cameras are lovingly sourced & tested</p>
+                                <p>we do our best to get digicams to you in the best condition possible, but they're <i>✧ genuinely vintage &amp; pre-loved ✧</i> & have signs of use &amp; age (scuffs, dinks &amp; imperfections).</p>
+                                <p>🙏🏻<b><u>please read all our notices, the full description of each cam &amp; examine all pics carefully before purchase.</u></b>🙏🏻</p>
+                                <p>we sell digicams only; if any accessories are included, they're freebies & we cannot guarantee/be liable for condition/usability.</p>
+                                <p>♡ enjoy finding your forever cam ♡</p>
+                            </div>
+                        </div>
+                        <div class="tb-footer">
+                            <button class="tb-button">ok</button>
+                        </div>
+                    </div>
+                </div>
 
-            <a href="readme.html" class="ask">
-                <div class="my_documents"></div>
-                <div class="icon_label">READ ME</div>
-            </a>
+                <div class="top-banner">
+                    <div class="top-banner-window">
+                        <div class="tb-titlebar">
+                            <span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>
+                            <span class="tb-close">x</span>
+                        </div>
+                        <div class="tb-body">
+                            <div class="tb-icon"></div>
+                            <div class="tb-text">
+                                <p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>
+                                <p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>
+                                <p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>
+                                <p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>
+                                <p>⋆⋆ - it's seen things & is a little worn out &/or minor functional issues</p>
+                                <p>⋆ - it's a veteran with battle scars &/or functional issues</p>
+                                <p>♻️ - pretty display piece, may work if you fix it?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <a href="masterlist.html" class="submit">
-                <div class="network_neighborhood"></div>
-                <div class="icon_label">masterlist</div>
-            </a>
+            <div class="icons">
+                <a href="https://hippocampercams.github.io" class="home">
+                    <div class="my_computer"></div>
+                    <div class="icon_label">hippocampercams</div>
+                </a>
 
-            <a href="faqs.html" class="listings">
-                <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
-                <div class="icon_label">FAQs</div>
-            </a>
+                <a href="readme.html" class="ask">
+                    <div class="my_documents"></div>
+                    <div class="icon_label">READ ME</div>
+                </a>
 
-            <a href="adoptacam.html" class="mustread">
-                <img src="img/icons/adoptacam.png" alt="" class="icon-img">
-                <div class="icon_label">adopt a cam</div>
-            </a>
+                <a href="masterlist.html" class="submit">
+                    <div class="network_neighborhood"></div>
+                    <div class="icon_label">masterlist</div>
+                </a>
 
-            <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
-                <img src="img/icons/insta.png" alt="" class="icon-img">
-                <div class="icon_label">insta</div>
-            </a>
+                <a href="faqs.html" class="listings">
+                    <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                    <div class="icon_label">FAQs</div>
+                </a>
 
-            <a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">
-                <img src="img/icons/tiktok.png" alt="" class="icon-img">
-                <div class="icon_label">tiktok</div>
-            </a>
+                <a href="adoptacam.html" class="mustread">
+                    <img src="img/icons/adoptacam.png" alt="" class="icon-img">
+                    <div class="icon_label">adopt a cam</div>
+                </a>
 
-            <a href="#lemon8" target="_blank" rel="noopener" class="lemon8">
-                <img src="img/icons/lemon8.png" alt="lemon8" class="icon-img">
-                <div class="icon_label">lemon8</div>
-            </a>
+                <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+                    <img src="img/icons/insta.png" alt="" class="icon-img">
+                    <div class="icon_label">insta</div>
+                </a>
 
-            <a href="contact.html" class="contact">
-                <img src="img/icons/contact.png" alt="" class="icon-img">
-                <div class="icon_label">contact</div>
-            </a>
+                <a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">
+                    <img src="img/icons/tiktok.png" alt="" class="icon-img">
+                    <div class="icon_label">tiktok</div>
+                </a>
+
+                <a href="#lemon8" target="_blank" rel="noopener" class="lemon8">
+                    <img src="img/icons/lemon8.png" alt="lemon8" class="icon-img">
+                    <div class="icon_label">lemon8</div>
+                </a>
+
+                <a href="contact.html" class="contact">
+                    <img src="img/icons/contact.png" alt="" class="icon-img">
+                    <div class="icon_label">contact</div>
+                </a>
+            </div>
+
+            <div id="desktop" class="container"></div>
+
+            <div class="start_menu"></div>
+            <div class="start_bar" id="taskbar">
+                <div class="top_border"></div>
+                <div class="start_button">
+                    <span class="logo"></span>
+                    <span class="text">Start</span>
+                </div>
+                <span class="big_seperator"></span>
+                <span class="small_seperator"></span>
+                <span class="application_icons"></span>
+
+                <div class="taskbar-center-text">°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。</div>
+
+                <span class="big_seperator"></span>
+                <span class="small_seperator"></span>
+                <div class="tray">
+                    <span class="calendar"></span>
+                    <span class="time" id="showClock">00:00 AM</span>
+                </div>
+            </div>
         </div>
-
-        <div id="desktop" class="container"></div>
 
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
             <img src="" alt="enlarged photo" id="hpc-lightbox-img">
@@ -1073,27 +1058,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="start_menu"></div>
-        <div class="start_bar" id="taskbar">
-            <div class="top_border"></div>
-            <div class="start_button">
-                <span class="logo"></span>
-                <span class="text">Start</span>
-            </div>
-            <span class="big_seperator"></span>
-            <span class="small_seperator"></span>
-            <span class="application_icons"></span>
-
-            <div class="taskbar-center-text">°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。</div>
-
-            <span class="big_seperator"></span>
-            <span class="small_seperator"></span>
-            <div class="tray">
-                <span class="calendar"></span>
-                <span class="time" id="showClock">00:00 AM</span>
-            </div>
-        </div>
     </div>
 
     <script src="posts.js"></script>
@@ -1101,6 +1065,9 @@
     <script src="https://static.tumblr.com/fpdiq1j/6oKn0wj7b/win98.js"></script>
 
     <script>
+    var HPC_STAGE_WIDTH = 1792;
+    var HPC_STAGE_HEIGHT = 864;
+
     function updateClock() {
         var now = new Date();
         var h = now.getHours();
@@ -1236,8 +1203,31 @@
         desktop.innerHTML = html;
     }
 
+    function updateDesktopStage() {
+        var stage = document.getElementById("desktopStage");
+        if (!stage) return;
+
+        if (window.innerWidth <= 900) {
+            stage.style.transform = "";
+            stage.style.left = "";
+            stage.style.top = "";
+            return;
+        }
+
+        var scale = Math.min(window.innerWidth / HPC_STAGE_WIDTH, window.innerHeight / HPC_STAGE_HEIGHT);
+        var scaledWidth = HPC_STAGE_WIDTH * scale;
+        var scaledHeight = HPC_STAGE_HEIGHT * scale;
+        var left = Math.max(0, (window.innerWidth - scaledWidth) / 2);
+        var top = Math.max(0, (window.innerHeight - scaledHeight) / 2);
+
+        stage.style.transform = "scale(" + scale + ")";
+        stage.style.left = left + "px";
+        stage.style.top = top + "px";
+    }
+
     document.addEventListener("DOMContentLoaded", function () {
         renderAllPosts();
+        updateDesktopStage();
 
         var mobileMenuButton = document.getElementById("mobileMenuButton");
         var mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
@@ -1272,6 +1262,9 @@
             });
         }
     });
+
+    window.addEventListener("resize", updateDesktopStage);
+    window.addEventListener("orientationchange", updateDesktopStage);
     </script>
 </body>
 </html>
