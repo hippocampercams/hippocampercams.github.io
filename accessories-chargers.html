@@ -15,11 +15,6 @@
             font-style: normal;
         }
 
-        html {
-            -webkit-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-        }
-
         html,
         body {
             width: 100%;
@@ -31,7 +26,6 @@
 
         body {
             position: relative;
-            font-family: "Mouse Deco", Arial, sans-serif;
         }
 
         a {
@@ -54,19 +48,27 @@
             user-select: none;
             pointer-events: none;
             will-change: transform;
-            font-family: "Arial Black", Impact, "Trebuchet MS", Arial, sans-serif;
-            font-size: 46px;
-            line-height: 1;
-            letter-spacing: 0.01em;
-            color: #dfffe6;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+            color: #f2eeee;
+            text-transform: none;
             text-shadow:
-                0 0 1px rgba(255,255,255,0.8),
-                1px 1px 0 #c8f5d5,
-                2px 2px 0 #9fd8b4,
-                3px 3px 0 #6ea885,
-                4px 4px 0 #3f6750,
-                5px 5px 0 #1d3025,
-                0 0 10px rgba(184, 255, 214, 0.25);
+                -1px -1px 0 #ffffff,
+                1px -1px 0 #d7d2d2,
+                -1px 1px 0 #8a7f7f,
+                1px 1px 0 #5f5454,
+                2px 2px 0 #4a4040,
+                3px 3px 0 #3a3131,
+                4px 4px 0 #2e2626,
+                5px 5px 0 #241d1d,
+                6px 6px 0 #1a1414,
+                7px 7px 0 #120d0d,
+                10px 0 14px rgba(120, 40, 40, 0.35),
+                -10px 0 14px rgba(120, 40, 40, 0.2);
+            transform-origin: center center;
         }
 
         .back-link-desktop {
@@ -77,45 +79,71 @@
             z-index: 20;
         }
 
-        .silver-button {
+        .pixel-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             min-width: 320px;
-            min-height: 64px;
-            padding: 0 28px;
-            border-radius: 999px;
-            background: linear-gradient(to bottom, #fafafa 0%, #d8d8d8 28%, #bababa 52%, #ececec 100%);
-            border: 2px solid #8a8a8a;
+            min-height: 76px;
+            padding: 0 26px;
+            box-sizing: border-box;
+            background: #47e34d;
+            border: 6px solid #000000;
+            border-radius: 0;
             box-shadow:
-                inset 0 2px 0 rgba(255,255,255,0.95),
-                inset 0 -3px 0 rgba(120,120,120,0.5),
-                0 3px 0 rgba(90,90,90,0.85),
-                0 0 0 1px rgba(255,255,255,0.15);
+                inset 0 6px 0 #8cff90,
+                inset -6px 0 0 #1d8d26,
+                inset 0 -8px 0 #14801d,
+                inset 6px 0 0 #8cff90,
+                6px 6px 0 #000000;
             color: #000000;
-            font-family: "Arial Black", "Trebuchet MS", Arial, sans-serif;
-            font-size: 22px;
-            line-height: 1.1;
+            font-family: "Mouse Deco", "Arial Black", Arial, sans-serif;
+            font-size: 26px;
+            line-height: 1;
             font-weight: bold;
             text-align: center;
             text-decoration: none;
+            image-rendering: pixelated;
+            text-transform: uppercase;
         }
 
-        .silver-button:hover {
-            filter: brightness(1.04);
-        }
-
-        .silver-button:active {
-            transform: translateY(2px);
+        .pixel-button:active {
+            transform: translate(3px, 3px);
             box-shadow:
-                inset 0 2px 0 rgba(255,255,255,0.9),
-                inset 0 -2px 0 rgba(120,120,120,0.45),
-                0 1px 0 rgba(90,90,90,0.85),
-                0 0 0 1px rgba(255,255,255,0.15);
+                inset 0 6px 0 #8cff90,
+                inset -6px 0 0 #1d8d26,
+                inset 0 -8px 0 #14801d,
+                inset 6px 0 0 #8cff90,
+                3px 3px 0 #000000;
+        }
+
+        .button-label {
+            display: inline-block;
+            transform: translateY(1px);
+            white-space: nowrap;
         }
 
         .mobile-stage {
             display: none;
+        }
+
+        .mobile-text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            color: #f2eeee;
+            text-shadow:
+                -1px -1px 0 #ffffff,
+                1px -1px 0 #d7d2d2,
+                -1px 1px 0 #8a7f7f,
+                1px 1px 0 #5f5454,
+                2px 2px 0 #4a4040,
+                3px 3px 0 #3a3131,
+                4px 4px 0 #2e2626,
+                5px 5px 0 #241d1d,
+                6px 6px 0 #1a1414,
+                7px 7px 0 #120d0d,
+                10px 0 14px rgba(120, 40, 40, 0.35),
+                -10px 0 14px rgba(120, 40, 40, 0.2);
         }
 
         @media (max-width: 900px) {
@@ -138,35 +166,26 @@
 
             .mobile-text {
                 max-width: 100%;
-                margin-bottom: 28px;
-                font-family: "Arial Black", Impact, "Trebuchet MS", Arial, sans-serif;
+                margin-bottom: 32px;
                 font-size: 34px;
-                line-height: 1.1;
-                letter-spacing: 0.01em;
-                color: #dfffe6;
-                text-shadow:
-                    0 0 1px rgba(255,255,255,0.8),
-                    1px 1px 0 #c8f5d5,
-                    2px 2px 0 #9fd8b4,
-                    3px 3px 0 #6ea885,
-                    4px 4px 0 #3f6750,
-                    5px 5px 0 #1d3025,
-                    0 0 10px rgba(184, 255, 214, 0.25);
+                line-height: 1.05;
+                letter-spacing: -0.04em;
             }
 
-            .back-link-mobile {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .silver-button {
+            .pixel-button {
                 min-width: 0;
-                width: 100%;
-                max-width: 320px;
-                min-height: 58px;
-                padding: 0 22px;
+                width: auto;
+                max-width: 100%;
+                min-height: 62px;
+                padding: 0 18px;
                 font-size: 18px;
+                border-width: 5px;
+                box-shadow:
+                    inset 0 5px 0 #8cff90,
+                    inset -5px 0 0 #1d8d26,
+                    inset 0 -7px 0 #14801d,
+                    inset 5px 0 0 #8cff90,
+                    5px 5px 0 #000000;
             }
         }
     </style>
@@ -175,14 +194,14 @@
     <div class="desktop-stage" id="desktopStage">
         <div class="dvd-text" id="dvdText">our bad... nothing here yet!</div>
         <a href="https://hippocampercams.github.io" class="back-link-desktop">
-            <span class="silver-button">back to hippocampercams</span>
+            <span class="pixel-button"><span class="button-label">back to hippocampercams</span></span>
         </a>
     </div>
 
     <div class="mobile-stage">
         <div class="mobile-text">our bad... nothing here yet!</div>
-        <a href="https://hippocampercams.github.io" class="back-link-mobile">
-            <span class="silver-button">back to hippocampercams</span>
+        <a href="https://hippocampercams.github.io">
+            <span class="pixel-button"><span class="button-label">back to hippocampercams</span></span>
         </a>
     </div>
 
@@ -194,11 +213,11 @@
             var text = document.getElementById("dvdText");
             if (!text) return;
 
-            var x = 120;
-            var y = 100;
-            var dx = 1.55;
-            var dy = 1.22;
-            var angle = -28;
+            var x = 140;
+            var y = 120;
+            var dx = 2.6;
+            var dy = 2.1;
+            var angle = 0;
 
             function getBounds() {
                 return text.getBoundingClientRect();
@@ -212,22 +231,18 @@
                 applyPosition();
 
                 var rect = getBounds();
-                var overflowLeft = rect.left;
-                var overflowTop = rect.top;
-                var overflowRight = rect.right - window.innerWidth;
-                var overflowBottom = rect.bottom - window.innerHeight;
 
-                if (overflowLeft < 0) {
-                    x += -overflowLeft;
+                if (rect.left < 0) {
+                    x += -rect.left;
                 }
-                if (overflowTop < 0) {
-                    y += -overflowTop;
+                if (rect.top < 0) {
+                    y += -rect.top;
                 }
-                if (overflowRight > 0) {
-                    x -= overflowRight;
+                if (rect.right > window.innerWidth) {
+                    x -= (rect.right - window.innerWidth);
                 }
-                if (overflowBottom > 0) {
-                    y -= overflowBottom;
+                if (rect.bottom > window.innerHeight) {
+                    y -= (rect.bottom - window.innerHeight);
                 }
 
                 applyPosition();
@@ -236,31 +251,21 @@
             function animate() {
                 x += dx;
                 y += dy;
+
                 applyPosition();
 
                 var rect = getBounds();
-                var hitX = false;
-                var hitY = false;
 
                 if (rect.left <= 0 && dx < 0) {
                     dx = Math.abs(dx);
-                    hitX = true;
                 } else if (rect.right >= window.innerWidth && dx > 0) {
                     dx = -Math.abs(dx);
-                    hitX = true;
                 }
 
                 if (rect.top <= 0 && dy < 0) {
                     dy = Math.abs(dy);
-                    hitY = true;
                 } else if (rect.bottom >= window.innerHeight && dy > 0) {
                     dy = -Math.abs(dy);
-                    hitY = true;
-                }
-
-                if (hitX || hitY) {
-                    angle = -angle;
-                    clampIntoView();
                 }
 
                 requestAnimationFrame(animate);
