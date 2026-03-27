@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hippocampercams • nothing here yet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+        @font-face {
+            font-family: "Mouse Deco";
+            src: url("Mouse_Deco.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: #000000;
+            font-family: "Mouse Deco", Arial, sans-serif;
+        }
+
+        body {
+            position: relative;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+            font-family: "Mouse Deco", Arial, sans-serif;
+        }
+
+        /* DESKTOP */
+        .desktop-stage {
+            position: absolute;
+            inset: 0;
+            display: block;
+            background: #000000;
+        }
+
+        .dvd-text {
+            position: absolute;
+            left: 120px;
+            top: 100px;
+            display: inline-block;
+            font-size: 42px;
+            font-weight: normal;
+            color: #d8ffe7;
+            text-shadow:
+                0 0 2px rgba(216,255,231,0.95),
+                0 0 6px rgba(216,255,231,0.6),
+                2px 2px 0 rgba(62,120,96,0.55),
+                4px 4px 0 rgba(20,50,38,0.7);
+            transform: rotate(-28deg);
+            white-space: nowrap;
+            user-select: none;
+            pointer-events: none;
+            will-change: transform, left, top;
+        }
+
+        .back-link-desktop {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* MOBILE */
+        .mobile-stage {
+            display: none;
+        }
+
+        @media (max-width: 900px) {
+            html,
+            body {
+                overflow: hidden;
+            }
+
+            .desktop-stage {
+                display: none;
+            }
+
+            .mobile-stage {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 24px 20px;
+                box-sizing: border-box;
+                background: #000000;
+                text-align: center;
+            }
+
+            .mobile-text {
+                font-size: 34px;
+                line-height: 1.15;
+                color: #d8ffe7;
+                text-shadow:
+                    0 0 2px rgba(216,255,231,0.95),
+                    0 0 6px rgba(216,255,231,0.6),
+                    2px 2px 0 rgba(62,120,96,0.55),
+                    4px 4px 0 rgba(20,50,38,0.7);
+                transform: rotate(-10deg);
+                margin-bottom: 28px;
+            }
+
+            .back-link-mobile {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-stage" id="desktopStage">
+        <div class="dvd-text" id="dvdText">our bad... nothing here yet!</div>
+        <a href="https://hippocampercams.github.io" class="back-link-desktop">back to hippocampercams</a>
+    </div>
+
+    <div class="mobile-stage">
+        <div class="mobile-text">our bad... nothing here yet!</div>
+        <a href="https://hippocampercams.github.io" class="back-link-mobile">back to hippocampercams</a>
+    </div>
+
+    <script>
+        (function () {
+            var mediaQuery = window.matchMedia("(max-width: 900px)");
+            if (mediaQuery.matches) return;
+
+            var stage = document.getElementById("desktopStage");
+            var text = document.getElementById("dvdText");
+            if (!stage || !text) return;
+
+            var x = 120;
+            var y = 100;
+            var dx = 1.35;
+            var dy = 1.08;
+            var angle = -28;
+
+            function animate() {
+                var stageWidth = window.innerWidth;
+                var stageHeight = window.innerHeight;
+                var textWidth = text.offsetWidth;
+                var textHeight = text.offsetHeight;
+
+                x += dx;
+                y += dy;
+
+                if (x <= 0) {
+                    x = 0;
+                    dx = Math.abs(dx);
+                    angle = -angle;
+                } else if (x + textWidth >= stageWidth) {
+                    x = stageWidth - textWidth;
+                    dx = -Math.abs(dx);
+                    angle = -angle;
+                }
+
+                if (y <= 0) {
+                    y = 0;
+                    dy = Math.abs(dy);
+                    angle = -angle;
+                } else if (y + textHeight >= stageHeight) {
+                    y = stageHeight - textHeight;
+                    dy = -Math.abs(dy);
+                    angle = -angle;
+                }
+
+                text.style.left = x + "px";
+                text.style.top = y + "px";
+                text.style.transform = "rotate(" + angle + "deg)";
+
+                requestAnimationFrame(animate);
+            }
+
+            requestAnimationFrame(animate);
+        })();
+    </script>
+</body>
+</html>
