@@ -20,6 +20,7 @@
             -webkit-text-size-adjust: 100%;
             text-size-adjust: 100%;
             overflow-x: hidden;
+            overflow-y: auto;
         }
 
         body {
@@ -27,7 +28,7 @@
             margin: 0;
             font: normal 13px/1.3 "Mouse Deco", Arial, sans-serif;
             overflow-x: hidden;
-            overflow-y: auto;
+            overflow-y: visible;
         }
 
         body.mobile-menu-open {
@@ -60,8 +61,7 @@
             position: relative;
             width: 100%;
             min-height: 100vh;
-            overflow-x: hidden;
-            overflow-y: visible;
+            overflow: visible;
             z-index: 1;
             padding-bottom: 40px;
             box-sizing: border-box;
@@ -71,8 +71,7 @@
             position: relative;
             width: 100%;
             min-height: calc(100vh - 28px);
-            overflow-x: hidden;
-            overflow-y: visible;
+            overflow: visible;
         }
 
         .desktop-stage {
@@ -418,7 +417,7 @@
         }
 
         .right-popups {
-            position: absolute;
+            position: fixed;
             top: 48px;
             right: 48px;
             width: 424px;
@@ -428,6 +427,7 @@
             gap: 16px;
             align-items: stretch;
             pointer-events: none;
+            transform-origin: top right;
         }
 
         .top-banner {
@@ -751,6 +751,9 @@
 
             .right-popups {
                 display: none;
+                transform: none !important;
+                top: auto !important;
+                right: auto !important;
             }
 
             #desktop {
@@ -1080,6 +1083,7 @@
     var HPC_CONTENT_LEFT = 10;
     var HPC_CONTENT_RIGHT = 1784;
     var HPC_VISUAL_SHIFT_LEFT = 80;
+    var HPC_TOP_OFFSET = 48;
 
     function updateClock() {
         var now = new Date();
@@ -1231,6 +1235,11 @@
             stage.style.top = "";
             stage.style.height = "";
             shell.style.height = "";
+            if (rightPopups) {
+                rightPopups.style.transform = "";
+                rightPopups.style.top = "";
+                rightPopups.style.right = "";
+            }
             return;
         }
 
@@ -1244,10 +1253,16 @@
         stage.style.left = left + "px";
         stage.style.top = "0px";
 
+        if (rightPopups) {
+            var popupRight = Math.max(8, window.innerWidth - (left + (HPC_CONTENT_RIGHT * scale)));
+            rightPopups.style.transform = "scale(" + scale + ")";
+            rightPopups.style.top = (HPC_TOP_OFFSET * scale) + "px";
+            rightPopups.style.right = popupRight + "px";
+        }
+
         var desktopBottom = desktop.offsetTop + desktop.offsetHeight;
-        var rightBottom = rightPopups ? rightPopups.offsetTop + rightPopups.offsetHeight : 0;
         var iconsBottom = icons ? icons.offsetTop + icons.offsetHeight : 0;
-        var naturalHeight = Math.max(desktopBottom, rightBottom, iconsBottom) + 30;
+        var naturalHeight = Math.max(desktopBottom, iconsBottom) + 30;
 
         stage.style.height = naturalHeight + "px";
         shell.style.height = (naturalHeight * scale) + "px";
