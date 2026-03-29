@@ -464,7 +464,7 @@ window.HPC_POSTS = [
       alt: "FUJIFILM FINEPIX Z3 photo 6"
     }
   ],
-  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (pretty good!)</p>",
+  conditionSummaryHtml: "<p>accessories: charging dock, Japanese power adapter <br> item condition: ⋆⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
     <p>gorgeous metallic baby pink fuji cam hard to come across these days, any cosmetic flaws are not too noticeable! there are slight dents (front, bottom), minor chips (sides, cover, bottom, back), scuffs & scratches, slight fog in screen (doesn't affect photographs), and the logos are a little worn</p>
     <div class="photo-grid">
