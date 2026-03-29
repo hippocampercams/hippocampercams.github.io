@@ -1077,6 +1077,9 @@
 
     <script>
     var HPC_STAGE_WIDTH = 1792;
+    var HPC_CONTENT_LEFT = 10;
+    var HPC_CONTENT_RIGHT = 1784;
+    var HPC_VISUAL_SHIFT_LEFT = 40;
 
     function updateClock() {
         var now = new Date();
@@ -1232,8 +1235,10 @@
         }
 
         var scale = Math.min(window.innerWidth / HPC_STAGE_WIDTH, 1);
-        var scaledWidth = HPC_STAGE_WIDTH * scale;
-        var left = Math.max(0, (window.innerWidth - scaledWidth) / 2);
+        var contentWidth = HPC_CONTENT_RIGHT - HPC_CONTENT_LEFT;
+        var targetLeft = ((window.innerWidth - (contentWidth * scale)) / 2) - (HPC_CONTENT_LEFT * scale) - (HPC_VISUAL_SHIFT_LEFT * scale);
+        var minLeft = -(HPC_CONTENT_LEFT * scale);
+        var left = Math.max(minLeft, targetLeft);
 
         stage.style.transform = "scale(" + scale + ")";
         stage.style.left = left + "px";
