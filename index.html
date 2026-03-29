@@ -68,7 +68,6 @@
             transform-origin: top left;
         }
 
-        /* LEFT DESKTOP ICONS COLUMN */
         .icons {
             margin: 0;
             list-style-type: none;
@@ -97,7 +96,6 @@
             text-align: center;
         }
 
-        /* DESKTOP SPRITES */
         .my_computer, .my_documents, .network_neighborhood, .folder,
         .recycle_bin, .start_menu, .application_icons,
         .start_bar .start_button .logo, .start_bar .tray .calendar,
@@ -144,7 +142,6 @@
             image-rendering: pixelated;
         }
 
-        /* MAIN DESKTOP AREA - SINGLE COLUMN FEED */
         #desktop {
             position: absolute;
             top: 20px;
@@ -159,7 +156,6 @@
             gap: 20px;
         }
 
-        /* POST WINDOWS */
         .window {
             width: 1120px;
             max-width: 1120px;
@@ -299,7 +295,6 @@
             font-size: 12px;
         }
 
-        /* PHOTO GRID */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -325,7 +320,6 @@
             cursor: pointer;
         }
 
-        /* CONDITION DETAILS + ADOPT BUTTON */
         .post-actions {
             margin-top: 14px;
         }
@@ -408,7 +402,6 @@
             border-bottom: 1px solid #ffffff;
         }
 
-        /* RIGHT SIDEBAR POPUPS */
         .right-popups {
             position: absolute;
             top: 10px;
@@ -560,15 +553,14 @@
             border-bottom: 1px solid #ffffff;
         }
 
-        /* START BAR */
         .start_bar {
-            position: absolute;
+            position: fixed;
             background-color: rgb(192,192,192);
             left: 0;
             right: 0;
             bottom: 0;
             height: 28px;
-            width: 100%;
+            width: 100vw;
             z-index: 1000;
         }
 
@@ -688,7 +680,6 @@
             background-position: -632px -87px;
         }
 
-        /* LIGHTBOX */
         #hpc-lightbox {
             display: none;
             position: fixed;
@@ -708,7 +699,6 @@
             display: block;
         }
 
-        /* MOBILE MENU */
         .mobile-menu-button {
             display: none;
         }
@@ -973,27 +963,6 @@
             </div>
 
             <div id="desktop" class="container"></div>
-
-            <div class="start_menu"></div>
-            <div class="start_bar" id="taskbar">
-                <div class="top_border"></div>
-                <div class="start_button">
-                    <span class="logo"></span>
-                    <span class="text">Start</span>
-                </div>
-                <span class="big_seperator"></span>
-                <span class="small_seperator"></span>
-                <span class="application_icons"></span>
-
-                <div class="taskbar-center-text">°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。</div>
-
-                <span class="big_seperator"></span>
-                <span class="small_seperator"></span>
-                <div class="tray">
-                    <span class="calendar"></span>
-                    <span class="time" id="showClock">00:00 AM</span>
-                </div>
-            </div>
         </div>
 
         <div id="hpc-lightbox" onclick="closeHpcLightbox()">
@@ -1057,6 +1026,27 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="start_menu"></div>
+    <div class="start_bar" id="taskbar">
+        <div class="top_border"></div>
+        <div class="start_button">
+            <span class="logo"></span>
+            <span class="text">Start</span>
+        </div>
+        <span class="big_seperator"></span>
+        <span class="small_seperator"></span>
+        <span class="application_icons"></span>
+
+        <div class="taskbar-center-text">°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。</div>
+
+        <span class="big_seperator"></span>
+        <span class="small_seperator"></span>
+        <div class="tray">
+            <span class="calendar"></span>
+            <span class="time" id="showClock">00:00 AM</span>
         </div>
     </div>
 
