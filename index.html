@@ -429,15 +429,15 @@
         .right-popups {
             position: fixed;
             top: 48px;
-            right: 48px;
-            width: 462px;
+            left: 1326px;
+            width: 520px;
             z-index: 5;
             display: flex;
             flex-direction: column;
             gap: 16px;
             align-items: stretch;
             pointer-events: none;
-            transform-origin: top right;
+            transform-origin: top left;
         }
 
         .top-banner {
@@ -763,7 +763,7 @@
                 display: none;
                 transform: none !important;
                 top: auto !important;
-                right: auto !important;
+                left: auto !important;
             }
 
             #desktop {
@@ -1095,7 +1095,7 @@
     var HPC_POST_LEFT = 166;
     var HPC_POST_WIDTH = 1120;
     var HPC_GAP = 40;
-    var HPC_POPUP_WIDTH = 462;
+    var HPC_POPUP_WIDTH = 520;
     var HPC_POPUP_LEFT = HPC_POST_LEFT + HPC_POST_WIDTH + HPC_GAP;
     var HPC_GROUP_LEFT = HPC_ICON_LEFT;
     var HPC_GROUP_RIGHT = HPC_POPUP_LEFT + HPC_POPUP_WIDTH;
@@ -1254,7 +1254,7 @@
             if (rightPopups) {
                 rightPopups.style.transform = "";
                 rightPopups.style.top = "";
-                rightPopups.style.right = "";
+                rightPopups.style.left = "";
             }
             return;
         }
@@ -1268,10 +1268,9 @@
         stage.style.top = "0px";
 
         if (rightPopups) {
-            var popupRight = window.innerWidth - (left + ((HPC_POPUP_LEFT + HPC_POPUP_WIDTH) * scale));
             rightPopups.style.transform = "scale(" + scale + ")";
             rightPopups.style.top = (HPC_TOP_OFFSET * scale) + "px";
-            rightPopups.style.right = popupRight + "px";
+            rightPopups.style.left = (left + (HPC_POPUP_LEFT * scale)) + "px";
         }
 
         var desktopBottom = desktop.offsetTop + desktop.offsetHeight;
