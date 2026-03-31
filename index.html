@@ -86,7 +86,7 @@
             margin: 0;
             list-style-type: none;
             padding: 0;
-            width: 100px;
+            width: 116px;
             position: absolute;
             top: 48px;
             left: 10px;
@@ -98,14 +98,24 @@
             color: #ffffff;
             text-decoration: none;
             display: block;
-            margin-bottom: 15px;
+            margin-bottom: 19px;
+        }
+
+        .icons .my_computer,
+        .icons .my_documents,
+        .icons .network_neighborhood,
+        .icons .recycle_bin,
+        .icons .folder,
+        .icons .icon-img {
+            transform: scale(1.08);
+            transform-origin: center top;
         }
 
         .icon_label {
             font-family: "Mouse Deco" !important;
-            font-size: 12px;
+            font-size: 13px;
             letter-spacing: 0.005em;
-            padding-top: 6px;
+            padding-top: 9px;
             color: #ffffff;
             text-align: center;
         }
@@ -159,7 +169,7 @@
         #desktop {
             position: absolute;
             top: 48px;
-            left: 150px;
+            left: 166px;
             width: 1120px;
             max-width: 1120px;
             min-width: 1120px;
@@ -420,7 +430,7 @@
             position: fixed;
             top: 48px;
             right: 48px;
-            width: 424px;
+            width: 462px;
             z-index: 5;
             display: flex;
             flex-direction: column;
@@ -462,7 +472,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             font-family: "Mouse Deco";
-            font-size: 16px;
+            font-size: 17px;
             font-weight: bold;
         }
 
@@ -531,8 +541,8 @@
         .tb-text i,
         .tb-text u {
             font-family: "Mouse Deco" !important;
-            font-size: 12px;
-            line-height: 1.2;
+            font-size: 13px;
+            line-height: 1.25;
             letter-spacing: 0.005em;
             box-sizing: border-box;
         }
@@ -1080,9 +1090,15 @@
 
     <script>
     var HPC_STAGE_WIDTH = 1792;
-    var HPC_CONTENT_LEFT = 10;
-    var HPC_CONTENT_RIGHT = 1784;
-    var HPC_VISUAL_SHIFT_LEFT = 80;
+    var HPC_ICON_LEFT = 10;
+    var HPC_ICON_WIDTH = 116;
+    var HPC_POST_LEFT = 166;
+    var HPC_POST_WIDTH = 1120;
+    var HPC_GAP = 40;
+    var HPC_POPUP_WIDTH = 462;
+    var HPC_POPUP_LEFT = HPC_POST_LEFT + HPC_POST_WIDTH + HPC_GAP;
+    var HPC_GROUP_LEFT = HPC_ICON_LEFT;
+    var HPC_GROUP_RIGHT = HPC_POPUP_LEFT + HPC_POPUP_WIDTH;
     var HPC_TOP_OFFSET = 48;
 
     function updateClock() {
@@ -1243,18 +1259,16 @@
             return;
         }
 
-        var scale = Math.min(window.innerWidth / HPC_STAGE_WIDTH, 1);
-        var contentWidth = HPC_CONTENT_RIGHT - HPC_CONTENT_LEFT;
-        var targetLeft = ((window.innerWidth - (contentWidth * scale)) / 2) - (HPC_CONTENT_LEFT * scale) - (HPC_VISUAL_SHIFT_LEFT * scale);
-        var minLeft = -(HPC_CONTENT_LEFT * scale);
-        var left = Math.max(minLeft, targetLeft);
+        var groupWidth = HPC_GROUP_RIGHT - HPC_GROUP_LEFT;
+        var scale = Math.min(window.innerWidth / groupWidth, 1);
+        var left = ((window.innerWidth - (groupWidth * scale)) / 2) - (HPC_GROUP_LEFT * scale);
 
         stage.style.transform = "scale(" + scale + ")";
         stage.style.left = left + "px";
         stage.style.top = "0px";
 
         if (rightPopups) {
-            var popupRight = Math.max(8, window.innerWidth - (left + (HPC_CONTENT_RIGHT * scale)));
+            var popupRight = window.innerWidth - (left + ((HPC_POPUP_LEFT + HPC_POPUP_WIDTH) * scale));
             rightPopups.style.transform = "scale(" + scale + ")";
             rightPopups.style.top = (HPC_TOP_OFFSET * scale) + "px";
             rightPopups.style.right = popupRight + "px";
