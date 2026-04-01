@@ -903,52 +903,52 @@
 
     <div class="wrapper">
         <div class="desktop-stage-shell" id="desktopStageShell">
-            <div class="desktop-stage" id="desktopStage">
-                <div class="right-popups" id="rightPopups">
-                    <div class="top-banner">
-                        <div class="top-banner-window">
-                            <div class="tb-titlebar">
-                                <span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>
-                                <span class="tb-close">x</span>
-                            </div>
-                            <div class="tb-body">
-                                <div class="tb-icon"></div>
-                                <div class="tb-text">
-                                    <p>our cameras are lovingly sourced & tested</p>
-                                    <p>we do our best to get digicams to you in the best condition possible, but they're <i>✧ genuinely vintage &amp; pre-loved ✧</i> & have signs of use &amp; age (scuffs, dinks &amp; imperfections).</p>
-                                    <p>🙏🏻<b><u>please read all our notices, the full description of each cam &amp; examine all pics carefully before purchase.</u></b>🙏🏻</p>
-                                    <p>we sell digicams only; if any accessories are included, they're freebies & we cannot guarantee/be liable for condition/usability.</p>
-                                    <p>♡ enjoy finding your forever cam ♡</p>
-                                </div>
-                            </div>
-                            <div class="tb-footer">
-                                <button class="tb-button">ok</button>
+            <div class="right-popups" id="rightPopups">
+                <div class="top-banner">
+                    <div class="top-banner-window">
+                        <div class="tb-titlebar">
+                            <span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>
+                            <span class="tb-close">x</span>
+                        </div>
+                        <div class="tb-body">
+                            <div class="tb-icon"></div>
+                            <div class="tb-text">
+                                <p>our cameras are lovingly sourced & tested</p>
+                                <p>we do our best to get digicams to you in the best condition possible, but they're <i>✧ genuinely vintage &amp; pre-loved ✧</i> & have signs of use &amp; age (scuffs, dinks &amp; imperfections).</p>
+                                <p>🙏🏻<b><u>please read all our notices, the full description of each cam &amp; examine all pics carefully before purchase.</u></b>🙏🏻</p>
+                                <p>we sell digicams only; if any accessories are included, they're freebies & we cannot guarantee/be liable for condition/usability.</p>
+                                <p>♡ enjoy finding your forever cam ♡</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="top-banner">
-                        <div class="top-banner-window">
-                            <div class="tb-titlebar">
-                                <span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>
-                                <span class="tb-close">x</span>
-                            </div>
-                            <div class="tb-body">
-                                <div class="tb-icon"></div>
-                                <div class="tb-text">
-                                    <p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>
-                                    <p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>
-                                    <p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>
-                                    <p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>
-                                    <p>⋆⋆ - it's seen things & is a little worn out &/or minor functional issues</p>
-                                    <p>⋆ - it's a veteran with battle scars &/or functional issues</p>
-                                    <p>♻️ - pretty display piece, may work if you fix it?</p>
-                                </div>
-                            </div>
+                        <div class="tb-footer">
+                            <button class="tb-button">ok</button>
                         </div>
                     </div>
                 </div>
 
+                <div class="top-banner">
+                    <div class="top-banner-window">
+                        <div class="tb-titlebar">
+                            <span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>
+                            <span class="tb-close">x</span>
+                        </div>
+                        <div class="tb-body">
+                            <div class="tb-icon"></div>
+                            <div class="tb-text">
+                                <p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>
+                                <p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>
+                                <p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>
+                                <p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>
+                                <p>⋆⋆ - it's seen things & is a little worn out &/or minor functional issues</p>
+                                <p>⋆ - it's a veteran with battle scars &/or functional issues</p>
+                                <p>♻️ - pretty display piece, may work if you fix it?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="desktop-stage" id="desktopStage">
                 <div class="icons" id="desktopIcons">
                     <a href="https://hippocampercams.github.io" class="home">
                         <div class="my_computer"></div>
@@ -1232,7 +1232,6 @@
         var desktop = document.getElementById("desktop");
         var stage = document.getElementById("desktopStage");
         var shell = document.getElementById("desktopStageShell");
-        var rightPopups = document.getElementById("rightPopups");
         var icons = document.getElementById("desktopIcons");
 
         if (!desktop || !stage || !shell) return;
@@ -1243,11 +1242,6 @@
             stage.style.top = "";
             stage.style.height = "";
             shell.style.height = "";
-            if (rightPopups) {
-                rightPopups.style.top = "";
-                rightPopups.style.right = "";
-                rightPopups.style.left = "";
-            }
             return;
         }
 
@@ -1257,12 +1251,6 @@
         stage.style.transform = "scale(" + scale + ")";
         stage.style.left = stageLeft + "px";
         stage.style.top = "0px";
-
-        if (rightPopups) {
-            rightPopups.style.top = HPC_TOP_OFFSET + "px";
-            rightPopups.style.right = "16px";
-            rightPopups.style.left = "";
-        }
 
         var desktopBottom = desktop.offsetTop + desktop.offsetHeight;
         var iconsBottom = icons ? icons.offsetTop + icons.offsetHeight : 0;
