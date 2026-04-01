@@ -431,7 +431,7 @@
         .right-popups {
             position: fixed;
             top: 48px;
-            left: 1314px;
+            right: 16px;
             width: 466px;
             z-index: 5;
             display: flex;
@@ -439,7 +439,6 @@
             gap: 16px;
             align-items: stretch;
             pointer-events: none;
-            transform-origin: top left;
         }
 
         .top-banner {
@@ -763,8 +762,8 @@
 
             .right-popups {
                 display: none;
-                transform: none !important;
                 top: auto !important;
+                right: auto !important;
                 left: auto !important;
             }
 
@@ -1092,15 +1091,6 @@
 
     <script>
     var HPC_STAGE_WIDTH = 1792;
-    var HPC_ICON_LEFT = 10;
-    var HPC_ICON_WIDTH = 116;
-    var HPC_POST_LEFT = 160;
-    var HPC_POST_WIDTH = 1120;
-    var HPC_GAP = 34;
-    var HPC_POPUP_WIDTH = 466;
-    var HPC_POPUP_LEFT = HPC_POST_LEFT + HPC_POST_WIDTH + HPC_GAP;
-    var HPC_GROUP_LEFT = HPC_ICON_LEFT;
-    var HPC_GROUP_RIGHT = HPC_POPUP_LEFT + HPC_POPUP_WIDTH;
     var HPC_TOP_OFFSET = 48;
 
     function updateClock() {
@@ -1254,8 +1244,8 @@
             stage.style.height = "";
             shell.style.height = "";
             if (rightPopups) {
-                rightPopups.style.transform = "";
                 rightPopups.style.top = "";
+                rightPopups.style.right = "";
                 rightPopups.style.left = "";
             }
             return;
@@ -1269,9 +1259,9 @@
         stage.style.top = "0px";
 
         if (rightPopups) {
-            rightPopups.style.transform = "scale(" + scale + ")";
-            rightPopups.style.top = (HPC_TOP_OFFSET * scale) + "px";
-            rightPopups.style.left = (stageLeft + (HPC_POPUP_LEFT * scale)) + "px";
+            rightPopups.style.top = HPC_TOP_OFFSET + "px";
+            rightPopups.style.right = "16px";
+            rightPopups.style.left = "";
         }
 
         var desktopBottom = desktop.offsetTop + desktop.offsetHeight;
