@@ -400,39 +400,6 @@
             font-family: "Mouse Deco";
         }
 
-        .confirm-agree {
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-            margin-top: 12px;
-            font-size: 13px;
-            line-height: 1.35;
-            font-family: "Mouse Deco";
-        }
-
-        .confirm-agree input {
-            margin: 2px 0 0 0;
-            flex: 0 0 auto;
-        }
-
-        .confirm-agree-text {
-            color: #001BFF;
-            font-weight: bold;
-            font-family: "Mouse Deco";
-        }
-
-        .confirm-error {
-            display: none;
-            margin-top: 8px;
-            color: #8b0000;
-            font-weight: bold;
-            font-family: "Mouse Deco";
-        }
-
-        .confirm-error.show {
-            display: block;
-        }
-
         .confirm-bottom {
             background: #d4d0c8;
             border-left: 1px solid #808080;
@@ -1023,21 +990,15 @@
 
                     <div class="confirm-point">
                         <span class="confirm-bullet">❤︎</span>
-                        <span>i understand that after i click <u><b>got it!</b></u>, my form will be submitted & hippocampercams will contact me via my preferred method of contact for this order and promotional material.</span>
+                        <span>i understand that after i click <u><b>yes, i agree!</b></u>, my form will be submitted & hippocampercams will contact me via my preferred method of contact for this order and promotional material.</span>
                     </div>
                 </div>
 
-                <label class="confirm-agree">
-                    <input type="checkbox" id="confirmAgree">
-                    <span class="confirm-agree-text">i've read and agree with all of the above!</span>
-                </label>
-
                 <p>thank you so much for adopting from hippocampercams ♡</p>
-                <div id="confirmError" class="confirm-error">please tick the box before continuing.</div>
             </div>
 
             <div class="confirm-bottom">
-                <button type="button" id="confirmSubmit" class="confirm-button">got it!</button>
+                <button type="button" id="confirmSubmit" class="confirm-button">yes, i agree!</button>
             </div>
         </div>
     </div>
@@ -1085,8 +1046,6 @@
             var confirmOverlay = document.getElementById("confirmOverlay");
             var confirmSubmit = document.getElementById("confirmSubmit");
             var closeConfirm = document.getElementById("closeConfirm");
-            var confirmAgree = document.getElementById("confirmAgree");
-            var confirmError = document.getElementById("confirmError");
 
             var collectionMailing = document.getElementById("collection_mailing");
             var collectionMeetUp = document.getElementById("collection_meet_up");
@@ -1153,7 +1112,6 @@
                         return;
                     }
 
-                    confirmError.classList.remove("show");
                     confirmOverlay.classList.add("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "false");
                 });
@@ -1163,25 +1121,11 @@
                 closeConfirm.addEventListener("click", function () {
                     confirmOverlay.classList.remove("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "true");
-                    confirmError.classList.remove("show");
-                });
-            }
-
-            if (confirmAgree) {
-                confirmAgree.addEventListener("change", function () {
-                    if (confirmAgree.checked) {
-                        confirmError.classList.remove("show");
-                    }
                 });
             }
 
             if (confirmSubmit) {
                 confirmSubmit.addEventListener("click", function () {
-                    if (!confirmAgree.checked) {
-                        confirmError.classList.add("show");
-                        return;
-                    }
-
                     confirmOverlay.classList.remove("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "true");
                     form.submit();
