@@ -3,7 +3,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-4700z",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $200.00</p><p><i>rare, analogue vibes, retro</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $120.00</p><p><i>rare, analogue vibes, retro</i></p>',
   captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
   tags: ["grainyretro", "cybery2k"],
   brand: "fujifilm",
@@ -35,7 +35,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>an eccentric, truly special cam that's sure to be a talking point, she's a little battered, but works perfectly! <br> has a Japanese menu, slight rusting on lens cap, debris in the screen (doesnt affect pictures or visibility), visible scratches, minor chips at corners, battery cover is a little wonky (tricky to close, but it closes and opens fine once you get the hang of it!), & seems to show 'low battery' even though the battery is new (notwithstanding the 'low battery' sign, it has not shut down during testing when using new batteries).</p>
+    <p>an eccentric, truly special cam that's sure to be a talking point, she's a little battered, but works perfectly! <br> has a Japanese menu, slight rusting on lens cap, debris in the screen (doesnt affect pictures or visibility), visible scratches, minor chips at corners, battery cover is a little wonky (tricky to close, but it closes and opens fine once you get the hang of it!), & shows 'low battery' even though the battery is new (notwithstanding the 'low battery' sign, it has not shut down during testing when using new batteries).</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/51e897e4d837cea1c1e8b10f79020247/92841ab5dac597db-74/s2048x3072/bd890df1bd0fed616771eff9c14e410e9918ae85.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/6bf10a051d05fdd88565325954d04a0a/92841ab5dac597db-ea/s2048x3072/b888e3cf6bfbf5b5bd1ca94c64f9d54b667e133a.jpg" class="full_image" alt="FUJIFILM FINEPIX 4700Z condition 2" onclick="openHpcLightbox(this)">
@@ -57,7 +57,7 @@ window.HPC_POSTS = [
   id: "panasonic-lumix-dmc-ls75",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $180.00</p><p><i>warm, nostalgic, dreamy</i></p>',
+  titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $140.00</p><p><i>warm, nostalgic, dreamy</i></p>',
   captionHtml: '7.2 mp・3x optical zoom・fuji colours on a budget・AA battery-powered (one less charger!)',
   tags: ["goldenhour", "cinematographic", "sunsetglow", "simpleelegance"],
   brand: "panasonic",
@@ -107,7 +107,7 @@ window.HPC_POSTS = [
   id: "nikon-coolpix-s9",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>NIKON COOLPIX S9</b> $230.00</p><p><i>nostalgic, striking, warm</i></p>',
+  titleHtml: '<p><b>NIKON COOLPIX S9</b> $180.00</p><p><i>nostalgic, striking, warm</i></p>',
   captionHtml: '6 mp・3x optical zoom・super sleek design・classic nikon blacks',
   tags: ["goldenhour", "cinematographic"],
   brand: "nikon",
@@ -161,7 +161,7 @@ window.HPC_POSTS = [
   id: "nikon-coolpix-s3-red",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>NIKON COOLPIX S3 (RED)</b> $190.00</p><p><i>vivid, striking, dramatic</i></p>',
+  titleHtml: '<p><b>NIKON COOLPIX S3 (RED)</b> $180.00</p><p><i>vivid, striking, dramatic</i></p>',
   captionHtml: '6 mp・3x optical zoom・spunk red・classic nikon blacks',
   tags: ["cybery2k", "cinematographic"],
   brand: "nikon",
@@ -198,7 +198,7 @@ window.HPC_POSTS = [
   id: "sony-cybershot-T5",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>SONY CYBERSHOT T5</b> $160.00</p><p><i>dreamy, light, romantic</i></p>',
+  titleHtml: '<p><b>SONY CYBERSHOT T5</b> $170.00</p><p><i>dreamy, light, romantic</i></p>',
   captionHtml: '5.1 mp・3x optical zoom・quality zeiss lens・slim queen',
   tags: ["cinematographic", "goldenhour", "softpastel"],
   brand: "sony",
@@ -288,7 +288,7 @@ window.HPC_POSTS = [
     id: "fujifilm-finepix-a500-#1",
     type: "photo",
     meta: "Posted just now • 0 notes",
-    titleHtml: '<p><b>FUJIFILM FINEPIX A500 #1</b> $180.00 </p><p><i>striking, clean, elegant, moody</i></p>',
+    titleHtml: '<p><b>FUJIFILM FINEPIX A500 #1</b> $160.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
     tags: ["cleangirl", "simpleelegance"],
     brand: "fujifilm",
@@ -337,7 +337,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-clip-it-80",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX CLIP-IT 80</b> $140.00</p><p><i>grainy, dreamy, film-like</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX CLIP-IT 80</b> $150.00</p><p><i>grainy, dreamy, film-like</i></p>',
   captionHtml: '1.6x digital zoom・cute brick build・looks like a film cam, produces film-like photos',
   tags: ["grainyretro", "cybery2k", "goldenhour"],
   brand: "fujifilm",
@@ -386,7 +386,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-z300",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $250.00</p><p><i>cool, moody, striking</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $200.00</p><p><i>cool, moody, striking</i></p>',
   captionHtml: '10 mp・5x optical zoom・touchscreen・beautiful peach pink',
   tags: ["grainyretro", "cybery2k", "tokyoblues"],
   brand: "fujifilm",
@@ -434,7 +434,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-z3",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX Z3</b> $200.00</p><p><i>elegant, warm, dynamic</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z3</b> $280.00</p><p><i>elegant, warm, dynamic</i></p>',
   captionHtml: '5.1 mp・3x optical zoom・good in low light conditions・gorgeous baby pink',
   tags: ["cleangirl", "simpleelegance"],
   brand: "fujifilm",
@@ -512,7 +512,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆ (it's a little worn)</p>",
   conditionDetailsHtml: `
-    <p>a with a simple, minimalist design she's a real classic! she's been around the block and has a couple of battle scars, which the price reflects; there are noticeable scratches, dents (back bottom right, sides), chips and dents, & scratches on the screen (display not affected).</p>
+    <p>a with a simple, minimalist design she's a real classic! she's been around the block and has a couple of battle scars, which the price reflects; lens cap sometimes closes partially (simply restarting fixes this!), noticeable scratches, dents (back bottom right, sides), chips and dents, & scratches on the screen (display not affected).</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/656aa625ae92a49f2669d036c27c5523/e3de575648f95f17-da/s1280x1920/9f5e20dea5119254ebd085ac3b0f86a4bb80e626.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/b89f9ac5ece6dd1c881e93669c14832c/e3de575648f95f17-c0/s1280x1920/ba8aecc8480a8f58276618d52b7f806dcd969ef5.jpg" class="full_image" alt="NIKON COOLPIX S3 SILVER condition 2" onclick="openHpcLightbox(this)">
@@ -538,7 +538,7 @@ window.HPC_POSTS = [
     id: "fujifilm-finepix-a500-#2",
     type: "photo",
     meta: "Posted just now • 0 notes",
-    titleHtml: '<p><b>FUJIFILM FINEPIX A500 #2</b> $165.00 </p><p><i>striking, clean, elegant, moody</i></p>',
+    titleHtml: '<p><b>FUJIFILM FINEPIX A500 #2</b> $150.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
     tags: ["cleangirl", "simpleelegance"],
     brand: "fujifilm",
