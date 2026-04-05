@@ -665,6 +665,18 @@ window.HPC_POSTS = [
     {
       src: "https://64.media.tumblr.com/f776482e3c3798f737363c460fa6bb16/01a46662939e16cc-52/s1280x1920/d9559027194b48e88067686b2b264a1c4798bcd4.jpg",
       alt: "NIKON COOLPIX S3 SILVER photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/c86bf46ee930a4a781ed39ddb176d6f3/3876307a74b21e23-13/s2048x3072/e278b59944f211adfd51a4c0111f12146756c935.jpg",
+      alt: "NIKON COOLPIX S3 SILVER photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/69c973a6b37ce190ca2945b318ca67be/3876307a74b21e23-8c/s2048x3072/2f5aafe57f3a80ffc4d9c6e7cb74bf052798e20b.jpg",
+      alt: "NIKON COOLPIX S3 SILVER photo 5"
+    }
+    {
+      src: "https://64.media.tumblr.com/605fa6a48ddd69419f6381a9cb281d11/3876307a74b21e23-2e/s2048x3072/eca6c005c52c19e53d2b4734640092dd36261d47.jpg",
+      alt: "NIKON COOLPIX S3 SILVER photo 6"
     }
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆ (it's a little worn)</p>",
