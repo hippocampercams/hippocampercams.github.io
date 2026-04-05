@@ -713,7 +713,7 @@ window.HPC_POSTS = [
         alt: "FUJIFILM FINEPIX A500 photo 6"
       }
     ],
-    conditionSummaryHtml: "<p>⋆⋆⋆⋆ (pretty good!)</p>",
+    conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (super!)</p>",
     conditionDetailsHtml: `
       <p>this easy-to-use point and shoot cam functions normally and is in great condition for its age. slight scuff in front and on power button, scratches at the shutter, minor chips at the top and sides, and minor scratches and scuffs consistent with a used vintage item.</p>
       <div class="photo-grid">
