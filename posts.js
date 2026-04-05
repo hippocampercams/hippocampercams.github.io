@@ -282,6 +282,54 @@ window.HPC_POSTS = [
 },
 
 {
+    id: "nikon-coolpix-s510",
+    type: "photo",
+    meta: "Posted just now • 0 notes",
+    titleHtml: '<p><b>NIKON COOLPIX S510 #1</b> $150.00 </p><p><i>moody, enigmatic, stiking</i></p>',
+    captionHtml: '8.1 mp・3x optical zoom + digital zoom・super compact',
+    tags: ["cybery2k", "cinematographic", "tokyoblues", "grainyretro"],
+    brand: "nikon",
+    images: [
+      {
+        src: "https://64.media.tumblr.com/76c0ce909bda468a7f7293da9d731c1d/d62f94e6fd14b734-72/s2048x3072/4098fecac630940df7a69e97d86ea53986cf05b5.jpg",
+        alt: "NIKON COOLPIX S510 photo 1"
+      },
+      {
+        src: "https://64.media.tumblr.com/dc1dd7d6b7be1bd423922a8f57cefd93/853041d6f93e40e0-01/s2048x3072/588976df7a495599bc563c6943afd5e2795555d2.jpg",
+        alt: "NIKON COOLPIX S510 photo 2"
+      },
+      {
+        src: "https://64.media.tumblr.com/61c43f9d4a351a34407808e8f0f55c98/d62f94e6fd14b734-2a/s2048x3072/dd633d49b207b08974e4e471ce3cb497e51a3d21.jpg",
+        alt: "NIKON COOLPIX S510 photo 3"
+      },
+      {
+        src: "https://64.media.tumblr.com/b35da69b079761585263031b04ccd8d1/d62f94e6fd14b734-38/s2048x3072/2407d152ac394a9c540d4ec059b8590ac6d35934.jpg",
+        alt: "NIKON COOLPIX S510 photo 4"
+      },
+      {
+        src: "https://64.media.tumblr.com/4e829ed3d98d6fa5bd376f30b78cbba0/d62f94e6fd14b734-8e/s2048x3072/fb16099df08fbc0029443cce93d1c8d78e8fe31f.jpg",
+        alt: "NIKON COOLPIX S510 photo 5"
+      },
+      {
+        src: "https://64.media.tumblr.com/15a3d11df71b7403f8782c9aa370bb16/d62f94e6fd14b734-eb/s2048x3072/c53bea6617223f540791288ccedd0e13ae712beb.jpg",
+        alt: "NIKON COOLPIX S510 photo 6"
+      }
+    ],
+    conditionSummaryHtml: "<p>⋆⋆⋆ (pretty good!)</p>",
+    conditionDetailsHtml: `
+      <p>this pocket-sized digicam is the perfect travel companion! there are minor scratches and scuffs consistent with preloved condition and some peeling of transparent coating, but overall, it's in great condition!</p>
+      <div class="photo-grid">
+        <img src="https://64.media.tumblr.com/3c812e10f8eea0a7d23434e8f5b50ed0/853041d6f93e40e0-83/s2048x3072/39d3caec318bf3101568f9638e065486528f10cf.jpg" class="full_image" alt="NIKON COOLPIX S510 condition 1" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/4a33fe747906fb7a8df52d3c5ddee05a/853041d6f93e40e0-e8/s2048x3072/1af5f8a791054f922fbf130963b636b081fa3478.jpg" class="full_image" alt="NIKON COOLPIX S510 condition 2" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/417ecc3a9fc372ae9e5a4fbfcea51b0b/853041d6f93e40e0-f8/s2048x3072/71e141ce7cdd06edf8ff8318180b7d30009f8a55.jpg" class="full_image" alt="NIKON COOLPIX S510 condition 3" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/8c6d64a8df8b86dbca800648d79b98ab/853041d6f93e40e0-78/s2048x3072/7b1d5e4f327a7ce6e40b66dde4a22ec4f8813f52.jpg" class="full_image" alt="NIKON COOLPIX S510 condition 4" onclick="openHpcLightbox(this)">
+        <img src="https://64.media.tumblr.com/4de69835b4a315d708d14430403657d4/853041d6f93e40e0-92/s2048x3072/3fc8ca82569830fa5c30b752ce714865d311b564.jpg" class="full_image" alt="NIKON COOLPIX S510 condition 5" onclick="openHpcLightbox(this)">
+      </div>
+    `,
+    adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S510%20#1"
+  },
+  
+{
   id: "nikon-coolpix-l2",
   type: "photo",
   meta: "Posted just now • 0 notes",
