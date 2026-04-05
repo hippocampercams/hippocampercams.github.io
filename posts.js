@@ -1,5 +1,59 @@
 window.HPC_POSTS = [
   {
+  id: "nikon-coolpix-s60",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON COOLPIX S60</b> $200.00</p><p><i>cool hues, striking blacks, clean</i></p>',
+  captionHtml: '10 mp・5x zoom・touchscreen・in an elegant chocolate colour',
+  tags: ["cleangirl", "sunsetglow", "cinematographic"],
+  brand: "nikon",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/21764320b9b6c5fde78823b32d04eef7/41d4bc4642e2bb8c-86/s2048x3072/ae8b4b1d65776e0fbbd300050c636b8c7fa0bdf7.jpg",
+      alt: "NIKON COOLPIX S60 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/db9523a384a769d0c88b0c754698c81b/41d4bc4642e2bb8c-50/s2048x3072/0f75baffeaaaa9a4fdf113f6364690ab063eef8c.jpg",
+      alt: "NIKON COOLPIX S60 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/24e9f907bf6e55b4c3110e9444d8c369/41d4bc4642e2bb8c-f5/s2048x3072/8aae70593a2108af5851558fb056d0c049035ea7.jpg",
+      alt: "NIKON COOLPIX S60 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/f70f776b4eba4b22b69adb2355476c6a/41d4bc4642e2bb8c-bd/s2048x3072/de3e000db545879abad8448d7995d49fbfe4aec5.jpg",
+      alt: "NIKON COOLPIX S60 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/edba788d48989ea7948fae20def8a73e/41d4bc4642e2bb8c-e0/s2048x3072/2a90b93c2d22a2a218d8c642a13f6d2b2e5487c0.jpg",
+      alt: "NIKON COOLPIX S60 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/9638f173513de538ca255314b1faa163/41d4bc4642e2bb8c-a0/s2048x3072/46cc8ddea910da2045f9b73d7ac375556813ec24.jpg",
+      alt: "NIKON COOLPIX S60 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: original box, charging port, <br> item condition: ⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>an eccentric, truly special cam that's sure to be a talking point, she's a little battered, but works perfectly! <br> has a Japanese menu, slight rusting on lens cap, debris in the screen (doesnt affect pictures or visibility), visible scratches, minor chips at corners, battery cover is a little wonky (tricky to close, but it closes and opens fine once you get the hang of it!), & shows 'low battery' even though the battery is new (notwithstanding the 'low battery' sign, it has not shut down during testing when using new batteries).</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/51e897e4d837cea1c1e8b10f79020247/92841ab5dac597db-74/s2048x3072/bd890df1bd0fed616771eff9c14e410e9918ae85.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6bf10a051d05fdd88565325954d04a0a/92841ab5dac597db-ea/s2048x3072/b888e3cf6bfbf5b5bd1ca94c64f9d54b667e133a.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/db1881e093243fafa084e470bfe02b26/92841ab5dac597db-5a/s2048x3072/ba385bcb67c8a042758594503f9c340dcf2cd74e.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/efe2d304706961819537d128de870c6b/92841ab5dac597db-ba/s2048x3072/e29ca43dc2ae1b822286307165ab92c080789a36.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9b640221cb3c2c872fdd4b817c7e8ee8/92841ab5dac597db-43/s2048x3072/846c928ca0756b283d0dbecf3fbebdf607cd091a.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/aa2392fc04622da0e490679ee751088b/92841ab5dac597db-db/s2048x3072/b8ecc00712f30d4da9675d4682a070fd58a99993.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d5da6026def39714c7797d18a7773219/92841ab5dac597db-33/s2048x3072/243b762b35772752afc70414af8625e1e75854ec.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2bff6b2ef410bde7708b6e22e8376bec/92841ab5dac597db-e4/s2048x3072/9c4446802e2b6e458acc2e9fe4df0bcb837fa5fc.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2963f11b9627a1502260e8186dedb8ec/a917a331bb4a0846-a1/s2048x3072/cbc83a64ca2ca508e546515b9bff0c0e8a882f0f.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5c180eda25ee522a261a04b6dcae9049/b50d913c91544751-fe/s2048x3072/2b472a45f9291367ce97917b0d60b88be90291a2.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 10" onclick="openHpcLightbox(this)">
+      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%204700Z"
+},
+  
+  {
   id: "fujifilm-finepix-4700z",
   type: "photo",
   meta: "Posted just now • 0 notes",
