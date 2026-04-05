@@ -280,6 +280,56 @@ window.HPC_POSTS = [
   `,
   adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20T5"
 },
+
+{
+  id: "nikon-coolpix-l2",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON COOLPIX L2</b> $140.00</p><p><i>dreamy, nostalgic vibes</i></p>',
+  captionHtml: '3x optical zoom・AA battery-powered (one less charger!)',
+  tags: ["cybery2k", "cinematographic"],
+  brand: "nikon",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/61e4610d5b75d35f0f9e6b722b6b9c10/09f0792315be0365-4f/s2048x3072/b25e41157ac8d03be2a678e6cb7b98599fe793fc.jpg",
+      alt: "NIKON COOLPIX L2 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/5e14fff6121fbeb80dd54d3adb593d94/09f0792315be0365-75/s2048x3072/19071fc430427aa186505e41fd8e9b94dff6ed41.jpg",
+      alt: "NIKON COOLPIX L2 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/d5f72bdf54da061fbcea70a20ad09f61/09f0792315be0365-e2/s2048x3072/043c75ee7998e521b625288e65fd161bd842369d.jpg",
+      alt: "NIKON COOLPIX L2 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/930a9fa839d75321be49b840c366a486/09f0792315be0365-26/s2048x3072/4cd15e3ef8e01c532abf408d1d81b5471b13cb00.jpg",
+      alt: "NIKON COOLPIX L2 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/452ea3905b72611c2767ae1119a063aa/09f0792315be0365-59/s2048x3072/8b79bec100f4730a525ab796eaedfef00440e45a.jpg",
+      alt: "NIKON COOLPIX L2 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/53ef23ec618621f10d0e830fc945e6cf/09f0792315be0365-07/s2048x3072/28b669746a0d7911167e365f88d7b081550f4a88.jpg",
+      alt: "NIKON COOLPIX L2 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>deteriorated rubber cap has been removed, slight dinks at bottom (likely from mount), minor scratches and signs of wear</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/caada3554bb5fd18696d2d284d066350/0754384e185cd748-15/s2048x3072/8743ff5e9e58e0cb57d15773e3aec2dc72cfd366.jpg" class="full_image" alt="NIKON COOLPIX L2 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/718ac3dc5ed947da957cf04a8dd777e0/0754384e185cd748-b2/s2048x3072/729fa8bfd310f5e38b29d6a0ba32d473e4f88c60.jpg" class="full_image" alt="NIKON COOLPIX L2 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b585bb655f2eb26892ba08cd93e54944/0754384e185cd748-f5/s2048x3072/ef1a7f24df8f13c4b2f1c25d37e78b8704e2c08f.jpg" class="full_image" alt="NIKON COOLPIX L2 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/61da1df29e18391802c138bc5e77bf1e/0754384e185cd748-5d/s2048x3072/f25f0e0a4906efe4904e58cb6fc16c368a965291.jpg" class="full_image" alt="NIKON COOLPIX L2 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/136a9ad619058c2e0e5b4a17c612b352/0754384e185cd748-ae/s2048x3072/2f43acc008dd58d57f4690c9a64989eecdf58ba2.jpg" class="full_image" alt="NIKON COOLPIX L2 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4bfd29f55afc18c33cc87770d955ae36/0754384e185cd748-96/s2048x3072/77e1fd59577b1a91a61f5d59e6166475ef56d7e1.jpg" class="full_image" alt="NIKON COOLPIX L2 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/45dbb0ea47e508c47aec8a04ebdbb576/0754384e185cd748-f4/s2048x3072/1a9076e1fc5d83baa888691e741c9ab4ac118094.jpg" class="full_image" alt="NIKON COOLPIX L2 condition 7" onclick="openHpcLightbox(this)">      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20L2"
+},
   
   {
   id: "nikon-coolpix-L6",
