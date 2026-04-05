@@ -294,7 +294,7 @@ window.HPC_POSTS = [
 },
 
 {
-    id: "nikon-coolpix-s510",
+    id: "nikon-coolpix-s510-#1",
     type: "photo",
     meta: "Posted just now • 0 notes",
     titleHtml: '<p><b>NIKON COOLPIX S510 #1</b> $150.00 </p><p><i>moody, enigmatic, stiking</i></p>',
@@ -756,7 +756,7 @@ window.HPC_POSTS = [
   },
 
   {
-    id: "nikon-coolpix-s510",
+    id: "nikon-coolpix-s510-#2",
     type: "photo",
     meta: "Posted just now • 0 notes",
     titleHtml: '<p><b>NIKON COOLPIX S510 #2</b> $130.00 </p><p><i>moody, enigmatic, stiking</i></p>',
