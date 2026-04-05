@@ -33,24 +33,17 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX S60 photo 6"
     }
   ],
-  conditionSummaryHtml: "<p>accessories: original box, charging port, <br> item condition: ⋆⋆⋆⋆ (super!)</p>",
+  conditionSummaryHtml: "<p>accessories: original box, charging port, Japanese manual, software suite, original cables, strap, stylus<br> item condition: 🏆 (almost perfect!)</p>",
   conditionDetailsHtml: `
-    <p>an eccentric, truly special cam that's sure to be a talking point, she's a little battered, but works perfectly! <br> has a Japanese menu, slight rusting on lens cap, debris in the screen (doesnt affect pictures or visibility), visible scratches, minor chips at corners, battery cover is a little wonky (tricky to close, but it closes and opens fine once you get the hang of it!), & shows 'low battery' even though the battery is new (notwithstanding the 'low battery' sign, it has not shut down during testing when using new batteries).</p>
+    <p>sleek and in a luxurious chocolate brown - the perfect cool girl accessory<br>condition is immaculate, as good as it gets for preloved digicams - just normal signs of age and minor wear, and extremely minor scuffs and dinks at the edge of the screen!</p>
     <div class="photo-grid">
-      <img src="https://64.media.tumblr.com/51e897e4d837cea1c1e8b10f79020247/92841ab5dac597db-74/s2048x3072/bd890df1bd0fed616771eff9c14e410e9918ae85.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/6bf10a051d05fdd88565325954d04a0a/92841ab5dac597db-ea/s2048x3072/b888e3cf6bfbf5b5bd1ca94c64f9d54b667e133a.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 2" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/db1881e093243fafa084e470bfe02b26/92841ab5dac597db-5a/s2048x3072/ba385bcb67c8a042758594503f9c340dcf2cd74e.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 3" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/efe2d304706961819537d128de870c6b/92841ab5dac597db-ba/s2048x3072/e29ca43dc2ae1b822286307165ab92c080789a36.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 4" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/9b640221cb3c2c872fdd4b817c7e8ee8/92841ab5dac597db-43/s2048x3072/846c928ca0756b283d0dbecf3fbebdf607cd091a.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 5" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/aa2392fc04622da0e490679ee751088b/92841ab5dac597db-db/s2048x3072/b8ecc00712f30d4da9675d4682a070fd58a99993.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 6" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/d5da6026def39714c7797d18a7773219/92841ab5dac597db-33/s2048x3072/243b762b35772752afc70414af8625e1e75854ec.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 7" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/2bff6b2ef410bde7708b6e22e8376bec/92841ab5dac597db-e4/s2048x3072/9c4446802e2b6e458acc2e9fe4df0bcb837fa5fc.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 8" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/2963f11b9627a1502260e8186dedb8ec/a917a331bb4a0846-a1/s2048x3072/cbc83a64ca2ca508e546515b9bff0c0e8a882f0f.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 9" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/5c180eda25ee522a261a04b6dcae9049/b50d913c91544751-fe/s2048x3072/2b472a45f9291367ce97917b0d60b88be90291a2.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 10" onclick="openHpcLightbox(this)">
-      
+      <img src="https://64.media.tumblr.com/b62a7780cae9dcf41fced0feacf24914/1566c6e2dc65de06-8b/s2048x3072/377401fdcc260ddebb6b91e5c6656663d62197b3.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ffc237c4138b079ddc5413c76c0ea99d/1566c6e2dc65de06-b9/s2048x3072/9d24c7c27195cd269f0071cf8839dadcc6244756.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b00a2882d1a8dda649a6f4b7ac21af2e/1566c6e2dc65de06-df/s2048x3072/1281ef87e94c450b882dbb32dac0d86bd73b34f0.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6c545a41d07a16d60437bc7f71332cc6/1566c6e2dc65de06-c4/s2048x3072/73438c84ecf8e4c3046c334f86b75708eded7309.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 4" onclick="openHpcLightbox(this)">
       </div>
   `,
-  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%204700Z"
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S60"
 },
   
   {
