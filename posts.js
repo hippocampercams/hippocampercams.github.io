@@ -315,7 +315,7 @@ window.HPC_POSTS = [
         alt: "NIKON COOLPIX S510 photo 6"
       }
     ],
-    conditionSummaryHtml: "<p>⋆⋆⋆ (pretty good!)</p>",
+    conditionSummaryHtml: "<p>accessories: charger, Japanese menu<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
     conditionDetailsHtml: `
       <p>this pocket-sized digicam is the perfect travel companion! there are minor scratches and scuffs consistent with preloved condition and some peeling of transparent coating, but overall, it's in great condition!</p>
       <div class="photo-grid">
@@ -765,7 +765,7 @@ window.HPC_POSTS = [
         alt: "NIKON COOLPIX S510 photo 6"
       }
     ],
-    conditionSummaryHtml: "<p>⋆⋆⋆ (pretty good!)</p>",
+    conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
     conditionDetailsHtml: `
       <p>this pocket-sized digicam is the perfect travel companion! there are visible scratches and scuffs consistent with preloved condition (more visible at certain angles), minor chips at the corner and top, and some peeling of transparent coating. there's also marks at the bottom (likely from mount).</p>
       <div class="photo-grid">
