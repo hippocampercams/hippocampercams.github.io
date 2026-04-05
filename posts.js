@@ -224,6 +224,18 @@ window.HPC_POSTS = [
     {
       src: "https://64.media.tumblr.com/5713ca9f31e606286c63e7fdc1cc18a1/01a46662939e16cc-f8/s1280x1920/d6854b4ece69b9f28b04bb48b2ddd6c422429cb2.jpg",
       alt: "NIKON COOLPIX S3 RED photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/c86bf46ee930a4a781ed39ddb176d6f3/3876307a74b21e23-13/s2048x3072/e278b59944f211adfd51a4c0111f12146756c935.jpg",
+      alt: "NIKON COOLPIX S3 RED photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/72d7f8135c4dfd088ec070039c516e90/3876307a74b21e23-28/s2048x3072/1ac78cea6722ceb00002cce734e5628bfd1e7cf1.jpg",
+      alt: "NIKON COOLPIX S3 RED photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/117362641812a700cccf307f18c2bd50/3876307a74b21e23-9d/s2048x3072/423d46e236d5df05c31f52bc4d1312ccf2c1c675.jpg",
+      alt: "NIKON COOLPIX S3 RED photo 6"
     }
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆ (super!)</p>",
