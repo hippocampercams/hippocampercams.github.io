@@ -673,7 +673,7 @@ window.HPC_POSTS = [
     {
       src: "https://64.media.tumblr.com/69c973a6b37ce190ca2945b318ca67be/3876307a74b21e23-8c/s2048x3072/2f5aafe57f3a80ffc4d9c6e7cb74bf052798e20b.jpg",
       alt: "NIKON COOLPIX S3 SILVER photo 5"
-    }
+    },
     {
       src: "https://64.media.tumblr.com/605fa6a48ddd69419f6381a9cb281d11/3876307a74b21e23-2e/s2048x3072/eca6c005c52c19e53d2b4734640092dd36261d47.jpg",
       alt: "NIKON COOLPIX S3 SILVER photo 6"
