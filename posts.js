@@ -293,6 +293,59 @@ window.HPC_POSTS = [
   adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20T5"
 },
 
+  {
+  id: "canon-powershot-a570-is",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>CANON POWERSHOT A570 IS</b> $150.00</p><p><i>rare, analogue vibes, retro</i></p>',
+  captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
+  tags: ["grainyretro", "cybery2k", "tokyoblues", "softpastels"],
+  brand: "canon",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/32af7dd04fca4f7a135492593b248ce4/7ee323d1048c23d2-4c/s1280x1920/3cec9b301778f7bb4a898c10f57ab4eb4e58bf92.jpg",
+      alt: "CANON POWERSHOT A570 IS photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/c5b5f7d9513f6c457b88da8293a22cce/7ee323d1048c23d2-68/s2048x3072/a337d07b885d2ae0d48b53330d013794f84b15cc.jpg",
+      alt: "CANON POWERSHOT A570 IS photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/b61ca63b0a3f5da1d3ac2282e56f3b61/7ee323d1048c23d2-07/s1280x1920/175d80fd504c552a605baddf5fb40677525eac89.jpg",
+      alt: "CANON POWERSHOT A570 IS photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/5e99d414e48e8b995439fd13f94314cf/7ee323d1048c23d2-0e/s2048x3072/c70beea579e365abc272aadf57a00d969c698f9b.jpg",
+      alt: "CANON POWERSHOT A570 IS photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/8c5cb35f2ab4fffb37c92f39086e346f/7ee323d1048c23d2-80/s1280x1920/3fc9163887350b93cc45a0a74d14a4f01b0ad165.jpg",
+      alt: "CANON POWERSHOT A570 IS photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/197a93c5890d0fea8a110734da407b8c/7ee323d1048c23d2-cf/s1280x1920/70b771ead337e727cc7a65def6d132e01505f770.jpg",
+      alt: "CANON POWERSHOT A570 IS photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>CONDITION NOTES</p>
+    <div class="photo-grid">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 1" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 2" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 3" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 4" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 5" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 6" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 7" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 8" onclick="openHpcLightbox(this)">
+      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 9" onclick="openHpcLightbox(this)">
+      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=CANON%20POWERSHOT%20A570%20IS"
+},
+
 {
     id: "nikon-coolpix-s510-#1",
     type: "photo",
