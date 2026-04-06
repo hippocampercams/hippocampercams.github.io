@@ -298,7 +298,7 @@ window.HPC_POSTS = [
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>CANON POWERSHOT A570 IS</b> $150.00</p><p><i>rare, analogue vibes, retro</i></p>',
-  captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
+  captionHtml: '7.1 mp・4x optical zoom・AA battery-powered (one less charger!)',
   tags: ["grainyretro", "cybery2k", "tokyoblues", "softpastels"],
   brand: "canon",
   images: [
