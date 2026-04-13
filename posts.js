@@ -275,11 +275,11 @@ window.HPC_POSTS = [
       alt: "SONY CYBERSHOT T5 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/3cedba939d27cc086d4c92cbd821e84b/9504d400f4aafd53-6d/s2048x3072/07e98515c767e6550893cf88820d820b4e88f387.jpg",
+      src: "https://64.media.tumblr.com/4bc89040b1003ab7c665c9f10f82ee44/9504d400f4aafd53-78/s1280x1920/d33504902dfe5d6742bf525e5190f94ff0b87a5c.jpg",
       alt: "SONY CYBERSHOT T5 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/e15e38e38f94185ae6841083133d2754/e29259e6a7b33739-8a/s2048x3072/75055e6946987cd98995d62902c6cad40b3d8b93.jpg",
+      src: "https://64.media.tumblr.com/3cedba939d27cc086d4c92cbd821e84b/9504d400f4aafd53-6d/s2048x3072/07e98515c767e6550893cf88820d820b4e88f387.jpg",
       alt: "SONY CYBERSHOT T5 photo 5"
     },
     {
