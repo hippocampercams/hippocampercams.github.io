@@ -45,6 +45,58 @@ window.HPC_POSTS = [
   `,
   adoptUrl: "adoptacam.html?newbaby=OLYMPUS%20FE-360"
 },
+
+      {
+  id: "nikon-coolpix-s8",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON COOLPIX S8</b> $160.00</p><p><i>melancholic, afterparty vibes, y2k</i></p>',
+  captionHtml: '7.1 mp・3x optical zoom・convenient scrolly dial・super slim (only 2cm at her thickest!)・relatively rare model',
+  tags: ["cybery2k", "tokyoblues", "cinematographic"],
+  brand: "nikon",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/7876f8e32dde91f6b489cc20170aa678/cebe2ddc39c2e26a-fd/s1280x1920/32300ca2afc6ac332f9325e9ca4145cd5c9c2b29.jpg",
+      alt: "NIKON COOLPIX S8 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/15ae17e4138b77051a8f49fda4365bad/d39d81e5dc21631f-8b/s1280x1920/6c20d0833577c8c094b7673a4a4ec3f7385dce52.jpg",
+      alt: "NIKON COOLPIX S8 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/f7b7471cd2215859f02820a16fcc7468/cebe2ddc39c2e26a-50/s1280x1920/558fde9b41d3c3b713327d94774cb52c62cbfb56.jpg",
+      alt: "NIKON COOLPIX S8 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/b2d2c30ed5fc6f42d74d754eae4c7f47/cebe2ddc39c2e26a-d2/s1280x1920/ed5e56db9e59236b5972421440a649cd741831da.jpg",
+      alt: "NIKON COOLPIX S8 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/1d7b965e8474fa549a7c8208373ab2a8/cebe2ddc39c2e26a-e9/s1280x1920/cebe6ceebc72860154307d53155e0d1f90bc99a9.jpg",
+      alt: "NIKON COOLPIX S8 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/19f252d851b3854a8ce009b448d34e62/cebe2ddc39c2e26a-7d/s1280x1920/bd8a04d6de8b62cf564aafb3c8d5b7b54a5d3f9f.jpg",
+      alt: "NIKON COOLPIX S8 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>this cam boasts a clean, sleek, modern silhouette while producing photos worthy of any 90s photodump!<br>condition is quite good; there is a dent at the top right corner, minor scratches on the screen, minor scrapes at the bottom of the back, and other normal signs of wear and age.</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/15ae17e4138b77051a8f49fda4365bad/d39d81e5dc21631f-8b/s1280x1920/6c20d0833577c8c094b7673a4a4ec3f7385dce52.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/12cb05b85caa8cacac82e1da941dcd8b/d39d81e5dc21631f-25/s1280x1920/801f4ebd578f99b68c29fd42080d8f34b14e82dd.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/85b5f257cb56801642879c9f4ff8bdf2/d39d81e5dc21631f-74/s1280x1920/c0d9d2649346fd0d974322690b90ef0b834d2c9d.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c17ed3281d992e41ddce6984d8c44375/d39d81e5dc21631f-31/s1280x1920/0f52ae47a15debaf18d58fd4b1c3551499e3e9aa.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/45a1224956bf9c1b33cc5e1b1d594727/d39d81e5dc21631f-e4/s1280x1920/d3481840467eaa1426ffb9fcbe65c7172b06a58f.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/383e3113ce5e1b6951c623a0bef4bf13/d39d81e5dc21631f-d5/s1280x1920/f5e6060172ab1f6dfec6db464cadf98a8556cd51.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/12fddc70f0a3cd50304a5ff82e703f50/d39d81e5dc21631f-dc/s1280x1920/29825f98f510fcbda6bfab1743f8d98a559acf29.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/50ef67ac7515ec2f836b122a7d032a94/d39d81e5dc21631f-91/s1280x1920/732b79179d1ad8840a2d0ee65c37e27a4bfffc26.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/32b0fe6ce31b7c13b265d0cb2c0f55cb/d39d81e5dc21631f-b5/s1280x1920/73cdc4a2848110b971953da9d03a05ac9d55b4bc.jpg" class="full_image" alt="NIKON COOLPIX S8 condition 8" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S8"
+},
   
   {
   id: "nikon-coolpix-s60",
