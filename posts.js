@@ -273,7 +273,19 @@ window.HPC_POSTS = [
     {
       src: "https://64.media.tumblr.com/952d50c8703935759eb7b756d49c28f1/200561d68174871e-bd/s1280x1920/6a5a8fe7543eda69341a0e99c21672c775f7f276.jpg",
       alt: "SONY CYBERSHOT T5 photo 3"
-    }
+    },
+    {
+      src: "https://64.media.tumblr.com/3cedba939d27cc086d4c92cbd821e84b/9504d400f4aafd53-6d/s2048x3072/07e98515c767e6550893cf88820d820b4e88f387.jpg",
+      alt: "SONY CYBERSHOT T5 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/e15e38e38f94185ae6841083133d2754/e29259e6a7b33739-8a/s2048x3072/75055e6946987cd98995d62902c6cad40b3d8b93.jpg",
+      alt: "SONY CYBERSHOT T5 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/680509c458ef226211706751cc423b3f/e29259e6a7b33739-30/s2048x3072/d9cdfbfb0e5cc2de6cc70898420b56fde24ddfa0.jpg",
+      alt: "SONY CYBERSHOT T5 photo 6"
+    },
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
@@ -288,6 +300,8 @@ window.HPC_POSTS = [
       <img src="https://64.media.tumblr.com/0c906b0c8f36d39413393ec822b8777f/200561d68174871e-03/s1280x1920/bbb493bcfbfabc100d8d3ea8e1d940e24f4a0a1b.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 7" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/310ac029bd0626ebe8ec1b1a23226505/0787a284ec33f568-5e/s1280x1920/27e8dc1766ed8b208dd8d3f13140b41d878a4279.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 8" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/37b96d063e7ddbe785bdd291a77152b2/0787a284ec33f568-7a/s1280x1920/145233099f7718a372e17dd3925c45eaf19ffa28.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/afd6842c931bbce64171f7422f05b7f6/0787a284ec33f568-21/s2048x3072/599ce674b7eb74f01ab107774865986a424e37d9.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/06f40982a49f27853685b8a9ae2ad9f0/0787a284ec33f568-e5/s2048x3072/03ad0ad46bb39fdfbc69b1417bd4e3f4e3d05fca.jpg" class="full_image" alt="SONY CYBERSHOT T5 condition 11" onclick="openHpcLightbox(this)">
     </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20T5"
