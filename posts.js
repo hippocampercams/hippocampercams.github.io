@@ -1,4 +1,51 @@
 window.HPC_POSTS = [
+{
+  id: "olympus-fe-360",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>OLYMPUS FE-360</b> $160.00</p><p><i>analogue vibes, moody, nostalgic</i></p>',
+  captionHtml: '8 mp・3x optical zoom・super lightweight',
+  tags: ["simpleelegance", "cybery2k", "cinematographic", "tokyoblues"],
+  brand: "olympus",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/21764320b9b6c5fde78823b32d04eef7/41d4bc4642e2bb8c-86/s2048x3072/ae8b4b1d65776e0fbbd300050c636b8c7fa0bdf7.jpg",
+      alt: "OLYMPUS FE-360 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/db9523a384a769d0c88b0c754698c81b/41d4bc4642e2bb8c-50/s2048x3072/0f75baffeaaaa9a4fdf113f6364690ab063eef8c.jpg",
+      alt: "NIKON COOLPIX S60 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/24e9f907bf6e55b4c3110e9444d8c369/41d4bc4642e2bb8c-f5/s2048x3072/8aae70593a2108af5851558fb056d0c049035ea7.jpg",
+      alt: "NIKON COOLPIX S60 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/f70f776b4eba4b22b69adb2355476c6a/41d4bc4642e2bb8c-bd/s2048x3072/de3e000db545879abad8448d7995d49fbfe4aec5.jpg",
+      alt: "NIKON COOLPIX S60 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/edba788d48989ea7948fae20def8a73e/41d4bc4642e2bb8c-e0/s2048x3072/2a90b93c2d22a2a218d8c642a13f6d2b2e5487c0.jpg",
+      alt: "NIKON COOLPIX S60 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/9638f173513de538ca255314b1faa163/41d4bc4642e2bb8c-a0/s2048x3072/46cc8ddea910da2045f9b73d7ac375556813ec24.jpg",
+      alt: "NIKON COOLPIX S60 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: original box, charging port, Japanese manual, software suite, original cables, strap, stylus<br> item condition: 🏆 (almost perfect!)</p>",
+  conditionDetailsHtml: `
+    <p>sleek and in a luxurious chocolate brown - the perfect cool girl accessory<br>condition is immaculate, as good as it gets for preloved digicams - just normal signs of age and minor wear, and extremely minor scuffs and dinks at the edge of the screen!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/b62a7780cae9dcf41fced0feacf24914/1566c6e2dc65de06-8b/s2048x3072/377401fdcc260ddebb6b91e5c6656663d62197b3.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ffc237c4138b079ddc5413c76c0ea99d/1566c6e2dc65de06-b9/s2048x3072/9d24c7c27195cd269f0071cf8839dadcc6244756.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b00a2882d1a8dda649a6f4b7ac21af2e/1566c6e2dc65de06-df/s2048x3072/1281ef87e94c450b882dbb32dac0d86bd73b34f0.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6c545a41d07a16d60437bc7f71332cc6/1566c6e2dc65de06-c4/s2048x3072/73438c84ecf8e4c3046c334f86b75708eded7309.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 4" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S60"
+},
+  
   {
   id: "nikon-coolpix-s60",
   type: "photo",
