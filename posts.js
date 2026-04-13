@@ -279,7 +279,7 @@ window.HPC_POSTS = [
       alt: "SONY CYBERSHOT T5 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/3cedba939d27cc086d4c92cbd821e84b/9504d400f4aafd53-6d/s2048x3072/07e98515c767e6550893cf88820d820b4e88f387.jpg",
+      src: "https://64.media.tumblr.com/8be47992c68e14ca93c0348bd11802ca/e29259e6a7b33739-8a/s1280x1920/d6a883496f55c48ed093d394c57a4f134b9969ff.jpg",
       alt: "SONY CYBERSHOT T5 photo 5"
     },
     {
