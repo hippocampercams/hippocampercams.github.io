@@ -60,7 +60,7 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX S8 photo 1"
     },
     {
-      src: "https://64.media.tumblr.com/15ae17e4138b77051a8f49fda4365bad/d39d81e5dc21631f-8b/s1280x1920/6c20d0833577c8c094b7673a4a4ec3f7385dce52.jpg",
+      src: "https://64.media.tumblr.com/a3a02f5ee6d4c721bc867eda1640e3cf/fb96f4171be99835-8b/s1280x1920/7cfaa9b7ce2cfb7c5aed9247965e93de1f3fa370.jpg",
       alt: "NIKON COOLPIX S8 photo 2"
     },
     {
@@ -68,15 +68,15 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX S8 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/b2d2c30ed5fc6f42d74d754eae4c7f47/cebe2ddc39c2e26a-d2/s1280x1920/ed5e56db9e59236b5972421440a649cd741831da.jpg",
+      src: "https://64.media.tumblr.com/2595e585ebc4ca8054ba5da326c8cb1f/fb96f4171be99835-d4/s1280x1920/a0ae6febbffb99dfe804d967836ba643107ff616.jpg",
       alt: "NIKON COOLPIX S8 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/1d7b965e8474fa549a7c8208373ab2a8/cebe2ddc39c2e26a-e9/s1280x1920/cebe6ceebc72860154307d53155e0d1f90bc99a9.jpg",
+      src: "https://64.media.tumblr.com/8394a59b2485469d561d7649b32022fd/fb96f4171be99835-c4/s1280x1920/341928996e020fcf5e79481061f8acbb91d31bb7.jpg",
       alt: "NIKON COOLPIX S8 photo 5"
     },
     {
-      src: "https://64.media.tumblr.com/19f252d851b3854a8ce009b448d34e62/cebe2ddc39c2e26a-7d/s1280x1920/bd8a04d6de8b62cf564aafb3c8d5b7b54a5d3f9f.jpg",
+      src: "https://64.media.tumblr.com/22ef95f14ccf4c7e394d7f9162a40ae1/fb96f4171be99835-99/s1280x1920/0ce7217a3fdec15575e3a2a2c60c1df9d9ac5e36.jpg",
       alt: "NIKON COOLPIX S8 photo 6"
     }
   ],
