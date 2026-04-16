@@ -103,7 +103,7 @@ window.HPC_POSTS = [
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>PANASONIC LUMIX DMC-FX2</b> $135.00</p><p><i>warm, retro, nostalgic</i></p>',
-  captionHtml: '3x optical zoom・classic digicam look',
+  captionHtml: 'coveted Leica lens・3x optical zoom・classic digicam look',
   tags: ["sunsetglow", "goldenhour", "cinematographic", "cybery2k"],
   brand: "panasonic",
   images: [
@@ -134,7 +134,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>every photograph looks like a cozy 80s throwback party with this vintage digicam!<br>she takes a short while to warm up when turned on, and the cover at the left side has a paint peel and is slightly loose. other than that, there are minor cosmetic flaws characteristic of preloved vintage items, like scratches, dents and chips, and the label has peeled a little. battery heats up a little after a while, but doesnt seem to affect operation.</p>
+    <p>every photograph looks like a cozy 80s throwback party with this vintage digicam! (PSST! she also boasts a LEICA lens at a fraction of the price!!) <br>she takes a short while to warm up when turned on, and the cover at the left side has a paint peel and is slightly loose. other than that, there are minor cosmetic flaws characteristic of preloved vintage items, like scratches, dents and chips, and the label has peeled a little. battery heats up a little after a while, but doesnt seem to affect operation.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/93e49b3931ada100beb474c21bf110d7/b40bb7b8b302a958-44/s2048x3072/dc1ab0acacd44d99122e3d3972396bd510e5d0af.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/def46f64d5d95581ef5de52c2dca597e/b40bb7b8b302a958-4a/s2048x3072/1ac16071ddac0714aa6183236f6124bb84bc8b65.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 2" onclick="openHpcLightbox(this)">
