@@ -1246,6 +1246,7 @@
         var stage = document.getElementById("desktopStage");
         var shell = document.getElementById("desktopStageShell");
         var icons = document.getElementById("desktopIcons");
+        var rightPopups = document.getElementById("rightPopups");
 
         if (!desktop || !stage || !shell) return;
 
@@ -1255,6 +1256,10 @@
             stage.style.top = "";
             stage.style.height = "";
             shell.style.height = "";
+            if (rightPopups) {
+                rightPopups.style.left = "";
+                rightPopups.style.right = "";
+            }
             return;
         }
 
@@ -1271,6 +1276,21 @@
 
         stage.style.height = naturalHeight + "px";
         shell.style.height = (naturalHeight * scale) + "px";
+
+        if (rightPopups) {
+            var desktopRight = stageLeft + ((desktop.offsetLeft + desktop.offsetWidth) * scale);
+            var popupGap = 36;
+            var popupWidth = rightPopups.offsetWidth || 390;
+            var popupLeft = desktopRight + popupGap;
+            var maxPopupLeft = window.innerWidth - popupWidth - 16;
+
+            if (popupLeft > maxPopupLeft) {
+                popupLeft = maxPopupLeft;
+            }
+
+            rightPopups.style.left = popupLeft + "px";
+            rightPopups.style.right = "auto";
+        }
     }
 
     document.addEventListener("DOMContentLoaded", function () {
