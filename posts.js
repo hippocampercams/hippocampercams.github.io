@@ -102,9 +102,9 @@ window.HPC_POSTS = [
   id: "panasonic-lumix-dmc-fx2",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>PANASONIC LUMIX DMC-FX2</b> $135.00</p><p><i>melancholic, afterparty vibes, y2k</i></p>',
+  titleHtml: '<p><b>PANASONIC LUMIX DMC-FX2</b> $135.00</p><p><i>warm, retro, nostalgic</i></p>',
   captionHtml: '3x optical zoom・classic digicam look',
-  tags: ["cybery2k", "tokyoblues", "cinematographic"],
+  tags: ["sunsetglow", "goldenhour", "cinematographic", "cybery2k"],
   brand: "panasonic",
   images: [
     {
@@ -134,20 +134,20 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>this cam boasts a clean, sleek, modern silhouette while producing photos worthy of any 90s photodump!<br>condition is quite good; there is a dent at the top right corner, minor scratches on the screen, minor scrapes at the bottom of the back, and other normal signs of wear and age.</p>
+    <p>every photograph looks like a cozy 80s throwback party with this vintage digicam!<br>she takes a short while to warm up when turned on, and the cover at the left side has a paint peel and is slightly loose. other than that, there are minor cosmetic flaws characteristic of preloved vintage items, like scratches, dents and chips, and the label has peeled a little. battery heats up a little after a while, but doesnt seem to affect operation.</p>
     <div class="photo-grid">
-      <img src="https://64.media.tumblr.com/15ae17e4138b77051a8f49fda4365bad/d39d81e5dc21631f-8b/s1280x1920/6c20d0833577c8c094b7673a4a4ec3f7385dce52.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/12cb05b85caa8cacac82e1da941dcd8b/d39d81e5dc21631f-25/s1280x1920/801f4ebd578f99b68c29fd42080d8f34b14e82dd.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 2" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/85b5f257cb56801642879c9f4ff8bdf2/d39d81e5dc21631f-74/s1280x1920/c0d9d2649346fd0d974322690b90ef0b834d2c9d.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 3" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/c17ed3281d992e41ddce6984d8c44375/d39d81e5dc21631f-31/s1280x1920/0f52ae47a15debaf18d58fd4b1c3551499e3e9aa.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 4" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/45a1224956bf9c1b33cc5e1b1d594727/d39d81e5dc21631f-e4/s1280x1920/d3481840467eaa1426ffb9fcbe65c7172b06a58f.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 5" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/383e3113ce5e1b6951c623a0bef4bf13/d39d81e5dc21631f-d5/s1280x1920/f5e6060172ab1f6dfec6db464cadf98a8556cd51.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 6" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/12fddc70f0a3cd50304a5ff82e703f50/d39d81e5dc21631f-dc/s1280x1920/29825f98f510fcbda6bfab1743f8d98a559acf29.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 7" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/50ef67ac7515ec2f836b122a7d032a94/d39d81e5dc21631f-91/s1280x1920/732b79179d1ad8840a2d0ee65c37e27a4bfffc26.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 8" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/32b0fe6ce31b7c13b265d0cb2c0f55cb/d39d81e5dc21631f-b5/s1280x1920/73cdc4a2848110b971953da9d03a05ac9d55b4bc.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 9" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/12fddc70f0a3cd50304a5ff82e703f50/d39d81e5dc21631f-dc/s1280x1920/29825f98f510fcbda6bfab1743f8d98a559acf29.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 10" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/50ef67ac7515ec2f836b122a7d032a94/d39d81e5dc21631f-91/s1280x1920/732b79179d1ad8840a2d0ee65c37e27a4bfffc26.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 11" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/32b0fe6ce31b7c13b265d0cb2c0f55cb/d39d81e5dc21631f-b5/s1280x1920/73cdc4a2848110b971953da9d03a05ac9d55b4bc.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 12" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/93e49b3931ada100beb474c21bf110d7/b40bb7b8b302a958-44/s2048x3072/dc1ab0acacd44d99122e3d3972396bd510e5d0af.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/def46f64d5d95581ef5de52c2dca597e/b40bb7b8b302a958-4a/s2048x3072/1ac16071ddac0714aa6183236f6124bb84bc8b65.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/93aab771ffa0cf55d0ce25cf1cdb59f7/b40bb7b8b302a958-a1/s2048x3072/b6b76652c98312fc5405869412e353d167e33ad8.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/026db425d5e117dc66bc93bafd87dfcb/b40bb7b8b302a958-4f/s2048x3072/15f777973258bd0aa3184ab7fe9a11513f561643.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4b895515fe5c463e341897b235e7a257/b40bb7b8b302a958-32/s2048x3072/13f4a433b3ff3554ef3e5a0be0494d73099c4543.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6c446065aaf6d5d4112d9a0f1716c805/b40bb7b8b302a958-56/s2048x3072/428a941e678efa7e5728a8d5a8a250ce7b788b1d.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/222635427f162414d5ed82065fc31bb5/b40bb7b8b302a958-7b/s2048x3072/d8c356cfd8c01466bf5009cf81944f1ecd8573a1.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/38d254658836b31e98d353f63662e493/b40bb7b8b302a958-98/s2048x3072/aad44f01bc6d9de5d6c2ecac407a3f11140daf5a.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/cdc53fc656a71c3df0703ed284f284c0/b40bb7b8b302a958-91/s2048x3072/2ed60762495e4d6705fcb74fb88586502edade43.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/aad74a7e76a11364126242da889bb742/b40bb7b8b302a958-29/s2048x3072/c2207316f4a2ca0ef4fe1dc99bed2c54c498c974.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/e4ad4909fcd6636a9dff8623a7318979/0e6b75b103a7f888-15/s2048x3072/3201b01ab37a65163f7db961a6e713c38b791665.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 11" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/3d8e9ae1b36b9bffe668efaf5f01878d/0e6b75b103a7f888-bd/s2048x3072/2a809115c6b8fa5f181b3418e326cc51377d2bb1.jpg" class="full_image" alt="PANASONIC LUMIX DMC-FX2 condition 12" onclick="openHpcLightbox(this)">
       </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=PANASONIC%20LUMIX%20DMC-FX2"
