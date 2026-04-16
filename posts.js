@@ -103,7 +103,7 @@ window.HPC_POSTS = [
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>PANASONIC LUMIX DMC-FX2</b> $135.00</p><p><i>warm, retro, nostalgic</i></p>',
-  captionHtml: 'coveted Leica lens・3x optical zoom・classic digicam look',
+  captionHtml: 'Leica lens・3x optical zoom・classic digicam look',
   tags: ["sunsetglow", "goldenhour", "cinematographic", "cybery2k"],
   brand: "panasonic",
   images: [
