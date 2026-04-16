@@ -103,9 +103,9 @@ window.HPC_POSTS = [
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>PANASONIC LUMIX DMC-FX2</b> $135.00</p><p><i>melancholic, afterparty vibes, y2k</i></p>',
-  captionHtml: '3x optical zoom・classic digicam look,
+  captionHtml: '3x optical zoom・classic digicam look',
   tags: ["cybery2k", "tokyoblues", "cinematographic"],
-  brand: "nikon",
+  brand: "panasonic",
   images: [
     {
       src: "https://64.media.tumblr.com/c6dd386944afb60d15792fc3bde92d48/752c60e21a5e6743-3f/s2048x3072/d4892f771fcf54cc780b43e17ae3e9cf76df2d1a.jpg",
