@@ -124,7 +124,7 @@ window.HPC_POSTS = [
       alt: "PANASONIC LUMIX DMC-FX2 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/66eac65c9727951e86a5be16799df978/752c60e21a5e6743-16/s2048x3072/50639686239af037b3e7158dc8bba5bd935e999a.jpg",
+      src: "https://64.media.tumblr.com/48a6cfa23d3099c4671dde2fae78df4b/752c60e21a5e6743-75/s2048x3072/32e19dec22bf8313a408458b27f6dccc6b7832d3.jpg",
       alt: "PANASONIC LUMIX DMC-FX2 photo 5"
     },
     {
