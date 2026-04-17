@@ -797,10 +797,11 @@
                 method="POST"
                 action="https://formsubmit.co/hippocampercams@gmail.com"
             >
-                <input type="hidden" name="_subject" value="hippocampercams • new adopt a cam order">
+                <input type="hidden" name="_subject" id="emailSubject" value="hippocampercams • new adopt a cam order">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_next" value="https://hippocampercams.github.io/adoptacam.html?submitted=1">
                 <input type="hidden" name="_url" value="https://hippocampercams.github.io/adoptacam.html">
+                <input type="hidden" name="order_number" id="orderNumberField" value="">
                 <input type="text" name="_honey" class="hidden-honeypot" tabindex="-1" autocomplete="off">
 
                 <div class="adopt-titlebar">
@@ -1046,6 +1047,8 @@
             var confirmOverlay = document.getElementById("confirmOverlay");
             var confirmSubmit = document.getElementById("confirmSubmit");
             var closeConfirm = document.getElementById("closeConfirm");
+            var emailSubject = document.getElementById("emailSubject");
+            var orderNumberField = document.getElementById("orderNumberField");
 
             var collectionMailing = document.getElementById("collection_mailing");
             var collectionMeetUp = document.getElementById("collection_meet_up");
@@ -1055,6 +1058,25 @@
             var mobileMenuButton = document.getElementById("mobileMenuButton");
             var mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
             var mobileMenuClose = document.getElementById("mobileMenuClose");
+
+            function generateOrderNumber() {
+                var now = new Date();
+                var year = now.getFullYear().toString();
+                var month = String(now.getMonth() + 1).padStart(2, "0");
+                var day = String(now.getDate()).padStart(2, "0");
+                var hours = String(now.getHours()).padStart(2, "0");
+                var minutes = String(now.getMinutes()).padStart(2, "0");
+                var seconds = String(now.getSeconds()).padStart(2, "0");
+                var randomPart = Math.floor(1000 + Math.random() * 9000);
+                return "HCC-" + year + month + day + "-" + hours + minutes + seconds + "-" + randomPart;
+            }
+
+            function assignOrderNumber() {
+                if (!orderNumberField.value) {
+                    orderNumberField.value = generateOrderNumber();
+                }
+                emailSubject.value = "hippocampercams • new adopt a cam order • " + orderNumberField.value;
+            }
 
             function validateCollectionDetails() {
                 var collectionChosen = collectionMailing.checked || collectionMeetUp.checked;
@@ -1112,6 +1134,7 @@
                         return;
                     }
 
+                    assignOrderNumber();
                     confirmOverlay.classList.add("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "false");
                 });
@@ -1126,6 +1149,7 @@
 
             if (confirmSubmit) {
                 confirmSubmit.addEventListener("click", function () {
+                    assignOrderNumber();
                     confirmOverlay.classList.remove("is-open");
                     confirmOverlay.setAttribute("aria-hidden", "true");
                     form.submit();
