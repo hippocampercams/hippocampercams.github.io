@@ -183,24 +183,29 @@
             overflow: hidden;
         }
 
-.sold-ribbon {
-    position: absolute;
-    top: 12px;
-    right: -50px;
-    width: 190px;
-    text-align: center;
-    background: #c00000;
-    color: #ffffff;
-    font-family: "Mouse Deco", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 32px;
-    transform: rotate(45deg);
-    z-index: 20;
-    box-shadow: 1px 1px 0 rgba(0,0,0,0.35);
-    pointer-events: none;
-    text-transform: uppercase;
-}
+        .sold-ribbon {
+            position: absolute;
+            top: 24px;
+            right: -100px;
+            width: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #c00000;
+            color: #ffffff;
+            font-family: "Mouse Deco", Arial, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 64px;
+            transform: rotate(45deg);
+            transform-origin: center center;
+            z-index: 20;
+            box-shadow: 1px 1px 0 rgba(0,0,0,0.35);
+            pointer-events: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
 
         .window .title,
         .window .title p,
@@ -817,11 +822,16 @@
             }
 
             .sold-ribbon {
-                top: 12px;
-                right: -48px;
-                width: 150px;
-                font-size: 13px;
-                line-height: 24px;
+                top: 20px;
+                right: -76px;
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 24px;
+                line-height: 52px;
+                white-space: nowrap;
             }
 
             .start_bar {
