@@ -155,6 +155,7 @@ window.HPC_POSTS = [
   
   {
   id: "nikon-coolpix-s60",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S60</b> $200.00</p><p><i>cool hues, striking blacks, clean</i></p>',
@@ -762,6 +763,7 @@ window.HPC_POSTS = [
   
   {
   id: "fujifilm-finepix-z300",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $200.00</p><p><i>cool, moody, striking</i></p>',
@@ -978,6 +980,7 @@ window.HPC_POSTS = [
 
   {
     id: "nikon-coolpix-s510-#2",
+    sold: true,
     type: "photo",
     meta: "Posted just now • 0 notes",
     titleHtml: '<p><b>NIKON COOLPIX S510 #2</b> $130.00 </p><p><i>moody, enigmatic, stiking</i></p>',
