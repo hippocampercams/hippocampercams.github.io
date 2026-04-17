@@ -1060,15 +1060,8 @@
             var mobileMenuClose = document.getElementById("mobileMenuClose");
 
             function generateOrderNumber() {
-                var now = new Date();
-                var year = now.getFullYear().toString();
-                var month = String(now.getMonth() + 1).padStart(2, "0");
-                var day = String(now.getDate()).padStart(2, "0");
-                var hours = String(now.getHours()).padStart(2, "0");
-                var minutes = String(now.getMinutes()).padStart(2, "0");
-                var seconds = String(now.getSeconds()).padStart(2, "0");
                 var randomPart = Math.floor(1000 + Math.random() * 9000);
-                return "HCC-" + year + month + day + "-" + hours + minutes + seconds + "-" + randomPart;
+                return "HCC-" + randomPart;
             }
 
             function assignOrderNumber() {
