@@ -120,11 +120,11 @@ window.HPC_POSTS = [
       alt: "PANASONIC LUMIX DMC-FX2 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/2ef43c1bec2035d23ada9f74934cf562/752c60e21a5e6743-ef/s2048x3072/2f8ee9dc44967c617a0eec5d18656ed2c799fc85.jpg",
+      src: "https://64.media.tumblr.com/48a6cfa23d3099c4671dde2fae78df4b/752c60e21a5e6743-75/s2048x3072/32e19dec22bf8313a408458b27f6dccc6b7832d3.jpg",
       alt: "PANASONIC LUMIX DMC-FX2 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/48a6cfa23d3099c4671dde2fae78df4b/752c60e21a5e6743-75/s2048x3072/32e19dec22bf8313a408458b27f6dccc6b7832d3.jpg",
+      src: "https://64.media.tumblr.com/2ef43c1bec2035d23ada9f74934cf562/752c60e21a5e6743-ef/s2048x3072/2f8ee9dc44967c617a0eec5d18656ed2c799fc85.jpg",
       alt: "PANASONIC LUMIX DMC-FX2 photo 5"
     },
     {
