@@ -179,6 +179,27 @@
             border: 1px solid #000000;
             box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
             box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sold-ribbon {
+            position: absolute;
+            top: 14px;
+            right: -42px;
+            width: 160px;
+            text-align: center;
+            background: #c00000;
+            color: #ffffff;
+            font-family: "Mouse Deco", Arial, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 28px;
+            transform: rotate(45deg);
+            z-index: 20;
+            box-shadow: 1px 1px 0 rgba(0,0,0,0.35);
+            pointer-events: none;
+            text-transform: uppercase;
         }
 
         .window .title,
@@ -795,6 +816,14 @@
                 width: 100%;
             }
 
+            .sold-ribbon {
+                top: 12px;
+                right: -48px;
+                width: 150px;
+                font-size: 13px;
+                line-height: 24px;
+            }
+
             .start_bar {
                 display: none;
             }
@@ -1179,10 +1208,16 @@
         var conditionDetailsHtml = post.conditionDetailsHtml || "";
         var adoptUrl = post.adoptUrl || "adoptacam.html";
         var tagsHtml = renderTagLinks(post.tags || []);
+        var isSold = !!post.sold;
+        var ribbonHtml = isSold ? '<div class="sold-ribbon">SOLD</div>' : '';
+        var actionButtonHtml = isSold
+            ? '<a class="adopt-button" href="contact.html">DM for similar cams</a>'
+            : '<a class="adopt-button" href="' + escapeHtml(adoptUrl) + '">ADOPT THIS CAM ❥</a>';
 
         if (post.type === "photo") {
             return '' +
                 '<div class="window post-photo">' +
+                    ribbonHtml +
                     '<a href="#"><div class="top"><div class="info">' + meta + '</div></div></a>' +
                     '<div class="middle">' +
                         '<div class="title">' + titleHtml + '</div>' +
@@ -1198,7 +1233,7 @@
                             '</details>' +
                             tagsHtml +
                             '<div class="adopt-wrap">' +
-                                '<a class="adopt-button" href="' + escapeHtml(adoptUrl) + '">ADOPT THIS CAM ❥</a>' +
+                                actionButtonHtml +
                             '</div>' +
                         '</div>' +
                     '</div>' +
@@ -1208,6 +1243,7 @@
 
         return '' +
             '<div class="window post-text">' +
+                ribbonHtml +
                 '<a href="#"><div class="top"><div class="info">' + meta + '</div></div></a>' +
                 '<div class="middle">' +
                     '<div class="title">' + titleHtml + '</div>' +
@@ -1219,7 +1255,7 @@
                         '</details>' +
                         tagsHtml +
                         '<div class="adopt-wrap">' +
-                            '<a class="adopt-button" href="' + escapeHtml(adoptUrl) + '">ADOPT THIS CAM ❥</a>' +
+                            actionButtonHtml +
                         '</div>' +
                     '</div>' +
                 '</div>' +
