@@ -350,6 +350,60 @@
             width: 100%;
         }
 
+        /* ADOPT-A-CAM STYLE CONTACT FORM */
+        .contact-form-window {
+            background-color: #d4d0c8;
+        }
+
+        .contact-form-window .middle {
+            background: #d4d0c8 !important;
+            padding: 12px 16px 12px 16px;
+        }
+
+        .contact-form-layout {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .contact-form-icon {
+            position: relative;
+            width: 36px;
+            height: 32px;
+            margin-top: 4px;
+            flex: 0 0 36px;
+        }
+
+        .contact-form-icon::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 26px solid #ffff00;
+        }
+
+        .contact-form-icon::after {
+            content: "!";
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            line-height: 1;
+        }
+
+        .contact-form-fields {
+            flex: 1;
+            min-width: 0;
+        }
+
         .contact-form-image-wrap {
             text-align: center;
             margin-bottom: 18px;
@@ -363,12 +417,12 @@
         }
 
         .form-row {
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
 
         .form-row label {
             display: block;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
             font-size: 15px;
         }
 
@@ -379,7 +433,7 @@
             box-sizing: border-box;
             font-family: "Mouse Deco", Arial, sans-serif;
             font-size: 15px;
-            padding: 4px 6px;
+            padding: 2px 4px;
             border-top: 1px solid #ffffff;
             border-left: 1px solid #ffffff;
             border-right: 1px solid #404040;
@@ -410,7 +464,7 @@
         .submit-button {
             display: inline-block;
             min-width: 220px;
-            padding: 6px 18px;
+            padding: 2px 10px;
             background-color: #d4d0c8;
             color: #000000;
             font-size: 15px;
@@ -617,6 +671,10 @@
                 padding: 10px 10px 12px 10px;
             }
 
+            .contact-form-window .middle {
+                padding: 10px 10px 12px 10px;
+            }
+
             .sticky-contact-post {
                 position: static;
             }
@@ -778,30 +836,30 @@
             <div class="desktop-stage" id="desktopStage">
                 <div id="desktop" class="container">
                     <div class="window sticky-contact-post">
-                        <a href="#"><div class="top"><div class="info">CONTACT US ♡</div></div></a>
+                        <a href="#"><div class="top"><div class="info">Posted just now • 0 notes</div></div></a>
                         <div class="middle">
                             <div class="content">
                                 <p class="contact-intro-text">have any questions, want to request for a specific digicam, or just wanna yap? we're always available on these platforms:</p>
 
                                 <div class="contact-platforms">
                                     <a class="platform-link" href="https://instagram.com/hippocampercams" target="_blank" rel="noopener">
-                                        <img src="https://64.media.tumblr.com/6b2fa50590c5acea8a230436f622b4bc/a0353ac5e4e25a08-03/s2048x3072/276ff4a0a523a0bf5260bdffc0c2b0d4966a43a4.pnj" alt="insta dm">
+                                        <img src="https://64.media.tumblr.com/67be6ab97f6851d1ddbefee2d96e3263/f907ea7a7fc7fb3c-0c/s1280x1920/4b2c0b850c447836c43f3572358e4f7300e90b97.pnj" alt="insta dm">
                                         <div class="platform-caption">insta dm</div>
                                     </a>
 
-                                    <a class="platform-link telegram-platform" href="https://t.me/hooieee" target="_blank" rel="noopener">
-                                        <img src="https://64.media.tumblr.com/64d7964cc4b2b9606662dbf3f3d742ce/a0353ac5e4e25a08-b3/s2048x3072/54c802f551d9f8f3fe47e8be9292712fd9bc3a82.pnj" alt="telegram">
-                                        <div class="platform-caption">telegram</div>
+                                    <a class="platform-link" href="mailto:hippocampercams@gmail.com">
+                                        <img src="https://64.media.tumblr.com/2b56e3ec7662270938eab431f000d25c/f907ea7a7fc7fb3c-25/s540x810/d2cf8602d08a73fcd18d1db7368ecf77662ef373.pnj" alt="email">
+                                        <div class="platform-caption">email</div>
                                     </a>
 
                                     <a class="platform-link" href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener">
-                                        <img src="https://64.media.tumblr.com/b8343350de464ec2b705865d52b4e5f8/a0353ac5e4e25a08-4f/s2048x3072/4fe5e9802a7523277dc2a560e298ddd63beea471.jpg" alt="tiktok">
+                                        <img src="https://64.media.tumblr.com/065dd60deb51a617f362ced9710bc067/f907ea7a7fc7fb3c-6c/s640x960/5429ea8df0d8b08e0b58799b9a26a6713ce0eb3b.pnj" alt="tiktok">
                                         <div class="platform-caption">tiktok</div>
                                     </a>
 
-                                    <a class="platform-link" href="mailto:hippocampercams@gmail.com">
-                                        <img src="https://64.media.tumblr.com/0d8d65638fd723ebaa83d2053a80a823/a0353ac5e4e25a08-a1/s540x810/192ba5bc680e342d4ece09df94c3cc374dcd9112.pnj" alt="email">
-                                        <div class="platform-caption">email</div>
+                                    <a class="platform-link telegram-platform" href="https://t.me/hooieee" target="_blank" rel="noopener">
+                                        <img src="https://64.media.tumblr.com/aee33717ec8734bc6d7214bc8dd4de11/f907ea7a7fc7fb3c-ed/s540x810/3a2df80cb53c278b271cc11c31f8b501847be183.pnj" alt="telegram">
+                                        <div class="platform-caption">telegram</div>
                                     </a>
                                 </div>
                             </div>
@@ -811,7 +869,7 @@
 
                     <form
                         id="contactForm"
-                        class="window"
+                        class="window contact-form-window"
                         method="POST"
                         action="https://formsubmit.co/hippocampercams@gmail.com"
                     >
@@ -820,94 +878,100 @@
                         <input type="hidden" name="_next" value="https://hippocampercams.github.io/contact.html?submitted=1">
                         <input type="text" name="_honey" class="hidden-honeypot" tabindex="-1" autocomplete="off">
 
-                        <a href="#"><div class="top"><div class="info">GET IN TOUCH WITH US</div></div></a>
+                        <a href="#"><div class="top"><div class="info">Posted just now • 0 notes</div></div></a>
                         <div class="middle">
-                            <div class="content">
-                                <div class="contact-form-image-wrap">
-                                    <img
-                                        class="contact-form-image"
-                                        src="https://64.media.tumblr.com/b7e0a00cdc420d8dd53b1227ce07678a/f907ea7a7fc7fb3c-19/s2048x3072/fa31dc26bfee82000297eef4a089d97486583956.pnj"
-                                        alt="contact graphic"
-                                    >
-                                </div>
+                            <div class="contact-form-layout">
+                                <div class="contact-form-icon"></div>
 
-                                <div class="form-row">
-                                    <label for="name">name</label>
-                                    <input id="name" name="name" class="form-input" required>
-                                </div>
+                                <div class="contact-form-fields">
+                                    <div class="title">GET IN TOUCH WITH US</div>
 
-                                <div class="form-row">
-                                    <label for="email">email</label>
-                                    <input id="email" name="email" type="email" class="form-input" required>
-                                </div>
+                                    <div class="contact-form-image-wrap">
+                                        <img
+                                            class="contact-form-image"
+                                            src="https://64.media.tumblr.com/b7e0a00cdc420d8dd53b1227ce07678a/f907ea7a7fc7fb3c-19/s2048x3072/fa31dc26bfee82000297eef4a089d97486583956.pnj"
+                                            alt="contact graphic"
+                                        >
+                                    </div>
 
-                                <div class="form-row">
-                                    <label for="contact_number">contact number</label>
-                                    <input id="contact_number" name="contact_number" class="form-input" required>
-                                </div>
+                                    <div class="form-row">
+                                        <label for="name">name</label>
+                                        <input id="name" name="name" class="form-input" required>
+                                    </div>
 
-                                <div class="form-row">
-                                    <label for="socials">socials</label>
-                                    <input id="socials" name="socials" class="form-input">
-                                </div>
+                                    <div class="form-row">
+                                        <label for="email">email</label>
+                                        <input id="email" name="email" type="email" class="form-input" required>
+                                    </div>
 
-                                <div class="form-row">
-                                    <label for="subject_select">subject</label>
-                                    <select id="subject_select" name="subject" class="form-select" required>
-                                        <option value="">please select</option>
-                                        <option value="questions on a listed digicam">questions on a listed digicam</option>
-                                        <option value="questions on digicams in general">questions on digicams in general</option>
-                                        <option value="questions on existing order">questions on existing order</option>
-                                        <option value="request for a specific digicam/cam not listed">request for a specific digicam/cam not listed</option>
-                                        <option value="others">others</option>
-                                        <option value="business enquiries">business enquiries</option>
-                                    </select>
-                                </div>
+                                    <div class="form-row">
+                                        <label for="contact_number">contact number</label>
+                                        <input id="contact_number" name="contact_number" class="form-input" required>
+                                    </div>
 
-                                <div class="form-row hidden-row" id="cameraListingRow">
-                                    <label for="camera_listing">camera listing in question</label>
-                                    <select id="camera_listing" name="camera_listing" class="form-select">
-                                        <option value="">please select</option>
-                                        <option value="Nikon CoolPix S3 (Silver)">Nikon CoolPix S3 (Silver)</option>
-                                        <option value="Nikon CoolPix S3 (Red, glitter)">Nikon CoolPix S3 (Red, glitter)</option>
-                                        <option value="Nikon CoolPix S60 (Brown)">Nikon CoolPix S60 (Brown)</option>
-                                        <option value="Nikon CoolPix L6">Nikon CoolPix L6</option>
-                                        <option value="Nikon CoolPix L2">Nikon CoolPix L2</option>
-                                        <option value="Nikon CoolPix S510">Nikon CoolPix S510</option>
-                                        <option value="Nikon CoolPix 3100">Nikon CoolPix 3100</option>
-                                        <option value="Nikon CoolPix S8">Nikon CoolPix S8</option>
-                                        <option value="Nikon CoolPix S9">Nikon CoolPix S9</option>
-                                        <option value="Canon PowerShot A570 IS">Canon PowerShot A570 IS</option>
-                                        <option value="Fujifilm FinePix F460">Fujifilm FinePix F460</option>
-                                        <option value="Fujifilm FinePix A345">Fujifilm FinePix A345</option>
-                                        <option value="Fujifilm FinePix A500">Fujifilm FinePix A500</option>
-                                        <option value="Fujifilm Z300 (peach pink glitter)">Fujifilm Z300 (peach pink glitter)</option>
-                                        <option value="Fujifilm FinePix Z3 (metallic baby pink)">Fujifilm FinePix Z3 (metallic baby pink)</option>
-                                        <option value="Fujifilm Clip-IT 80">Fujifilm Clip-IT 80</option>
-                                        <option value="Fujifilm FinePix 4700z">Fujifilm FinePix 4700z</option>
-                                        <option value="Sony Cyber-shot DSC-T100">Sony Cyber-shot DSC-T100</option>
-                                        <option value="Sony Cyber-shot DSC-T50">Sony Cyber-shot DSC-T50</option>
-                                        <option value="Sony Cyber-shot DSC-P71">Sony Cyber-shot DSC-P71</option>
-                                        <option value="Sony Cyber-shot DSC-P100">Sony Cyber-shot DSC-P100</option>
-                                        <option value="Sony Cyber-shot DSC-T5">Sony Cyber-shot DSC-T5</option>
-                                        <option value="Olympus FE-360">Olympus FE-360</option>
-                                        <option value="Olympus 1050SW">Olympus 1050SW</option>
-                                        <option value="Panasonic Lumix DMC-FX2">Panasonic Lumix DMC-FX2</option>
-                                    </select>
-                                </div>
+                                    <div class="form-row">
+                                        <label for="socials">socials</label>
+                                        <input id="socials" name="socials" class="form-input">
+                                    </div>
 
-                                <div class="form-row hidden-row" id="orderNumberRow">
-                                    <label for="order_number">order number</label>
-                                    <input id="order_number" name="order_number" class="form-input">
-                                </div>
+                                    <div class="form-row">
+                                        <label for="subject_select">subject</label>
+                                        <select id="subject_select" name="subject" class="form-select" required>
+                                            <option value="">please select</option>
+                                            <option value="questions on a listed digicam">questions on a listed digicam</option>
+                                            <option value="questions on digicams in general">questions on digicams in general</option>
+                                            <option value="questions on existing order">questions on existing order</option>
+                                            <option value="request for a specific digicam/cam not listed">request for a specific digicam/cam not listed</option>
+                                            <option value="others">others</option>
+                                            <option value="business enquiries">business enquiries</option>
+                                        </select>
+                                    </div>
 
-                                <div class="form-row">
-                                    <label for="message">message</label>
-                                    <textarea id="message" name="message" class="form-textarea" required></textarea>
-                                </div>
+                                    <div class="form-row hidden-row" id="cameraListingRow">
+                                        <label for="camera_listing">camera listing in question</label>
+                                        <select id="camera_listing" name="camera_listing" class="form-select">
+                                            <option value="">please select</option>
+                                            <option value="Nikon CoolPix S3 (Silver)">Nikon CoolPix S3 (Silver)</option>
+                                            <option value="Nikon CoolPix S3 (Red, glitter)">Nikon CoolPix S3 (Red, glitter)</option>
+                                            <option value="Nikon CoolPix S60 (Brown)">Nikon CoolPix S60 (Brown)</option>
+                                            <option value="Nikon CoolPix L6">Nikon CoolPix L6</option>
+                                            <option value="Nikon CoolPix L2">Nikon CoolPix L2</option>
+                                            <option value="Nikon CoolPix S510">Nikon CoolPix S510</option>
+                                            <option value="Nikon CoolPix 3100">Nikon CoolPix 3100</option>
+                                            <option value="Nikon CoolPix S8">Nikon CoolPix S8</option>
+                                            <option value="Nikon CoolPix S9">Nikon CoolPix S9</option>
+                                            <option value="Canon PowerShot A570 IS">Canon PowerShot A570 IS</option>
+                                            <option value="Fujifilm FinePix F460">Fujifilm FinePix F460</option>
+                                            <option value="Fujifilm FinePix A345">Fujifilm FinePix A345</option>
+                                            <option value="Fujifilm FinePix A500">Fujifilm FinePix A500</option>
+                                            <option value="Fujifilm Z300 (peach pink glitter)">Fujifilm Z300 (peach pink glitter)</option>
+                                            <option value="Fujifilm FinePix Z3 (metallic baby pink)">Fujifilm FinePix Z3 (metallic baby pink)</option>
+                                            <option value="Fujifilm Clip-IT 80">Fujifilm Clip-IT 80</option>
+                                            <option value="Fujifilm FinePix 4700z">Fujifilm FinePix 4700z</option>
+                                            <option value="Sony Cyber-shot DSC-T100">Sony Cyber-shot DSC-T100</option>
+                                            <option value="Sony Cyber-shot DSC-T50">Sony Cyber-shot DSC-T50</option>
+                                            <option value="Sony Cyber-shot DSC-P71">Sony Cyber-shot DSC-P71</option>
+                                            <option value="Sony Cyber-shot DSC-P100">Sony Cyber-shot DSC-P100</option>
+                                            <option value="Sony Cyber-shot DSC-T5">Sony Cyber-shot DSC-T5</option>
+                                            <option value="Olympus FE-360">Olympus FE-360</option>
+                                            <option value="Olympus 1050SW">Olympus 1050SW</option>
+                                            <option value="Panasonic Lumix DMC-FX2">Panasonic Lumix DMC-FX2</option>
+                                        </select>
+                                    </div>
 
-                                <div class="submit-wrap">
-                                    <button type="submit" class="submit-button">submit</button>
+                                    <div class="form-row hidden-row" id="orderNumberRow">
+                                        <label for="order_number">order number</label>
+                                        <input id="order_number" name="order_number" class="form-input">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <label for="message">message</label>
+                                        <textarea id="message" name="message" class="form-textarea" required></textarea>
+                                    </div>
+
+                                    <div class="submit-wrap">
+                                        <button type="submit" class="submit-button">submit</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
