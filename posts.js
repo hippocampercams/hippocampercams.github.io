@@ -581,19 +581,19 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX L2 photo 2"
     },
     {
-      src: "https://64.media.tumblr.com/d5f72bdf54da061fbcea70a20ad09f61/09f0792315be0365-e2/s2048x3072/043c75ee7998e521b625288e65fd161bd842369d.jpg",
+      src: "https://64.media.tumblr.com/bffd5e398562a1f8bfbe4fc3e5245cd4/6d34e4012220f59f-c9/s2048x3072/4ca8c64f80a72bde78714605b10c9de26a267759.jpg",
       alt: "NIKON COOLPIX L2 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/930a9fa839d75321be49b840c366a486/09f0792315be0365-26/s2048x3072/4cd15e3ef8e01c532abf408d1d81b5471b13cb00.jpg",
+      src: "https://64.media.tumblr.com/0791887f308ab53d3749ca75ec27157f/6d34e4012220f59f-ab/s2048x3072/124fa5b269b1589dbabfef9b3a9a60279aadb0f5.jpg",
       alt: "NIKON COOLPIX L2 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/452ea3905b72611c2767ae1119a063aa/09f0792315be0365-59/s2048x3072/8b79bec100f4730a525ab796eaedfef00440e45a.jpg",
+      src: "https://64.media.tumblr.com/4d97fe7bcf50d631091d022cf76e1402/6d34e4012220f59f-c7/s2048x3072/78392b5f8854c4d23e8e1bd041a2bcd0a58eb06a.jpg",
       alt: "NIKON COOLPIX L2 photo 5"
     },
     {
-      src: "https://64.media.tumblr.com/53ef23ec618621f10d0e830fc945e6cf/09f0792315be0365-07/s2048x3072/28b669746a0d7911167e365f88d7b081550f4a88.jpg",
+      src: "https://64.media.tumblr.com/19f191defdc79d2fe1c24fd3e8cf9e46/6d34e4012220f59f-56/s2048x3072/13e8618a0b782a9c6e845b8046c8fe7dcd9bd42e.jpg",
       alt: "NIKON COOLPIX L2 photo 6"
     }
   ],
