@@ -200,6 +200,100 @@ window.HPC_POSTS = [
   `,
   adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S60"
 },
+
+  {
+  id: "SONY-CYBERSHOT-DSC-T100",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-T100</b> $160.00</p><p><i>cinematographic, warm, nostalgic</i></p>',
+  captionHtml: '12 mp・5x optical zoom・beautiful, cinematographic photos straight out of cam・AA battery-powered (one less charger!)',
+  tags: ["cinematographic", "cybery2k", "tokyoblues"],
+  brand: "sony",
+  images: [
+    {
+      src: "",
+      alt: "SONY CYBERSHOT DSC-T100 photo 1"
+    },
+    {
+      src: "",
+      alt: "SONY CYBERSHOT DSC-T100 photo 2"
+    },
+    {
+      src: "",
+      alt: "SONY CYBERSHOT DSC-T100 photo 3"
+    },
+    {
+      src: "",
+      alt: "SONY CYBERSHOT DSC-T100 photo 4"
+    },
+    {
+      src: "",
+      alt: "SONY CYBERSHOT DSC-T100 photo 5"
+    },
+    {
+      src: "",
+      alt: "SONY CYBERSHOT DSC-T100 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p> item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>classic sleek, chic, Sony CyberShot silhouette. she's generally in good condition but shows signs of use, including visible dinks and dents, minor scratches and scuffs.</p>
+    <div class="photo-grid">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 2" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 3" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 4" onclick="openHpcLightbox(this)">      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-T100"
+},
+  
+  {
+  id: "OLYMPUS-FE-46",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>OLYMPUS FE-46</b> $160.00</p><p><i>cinematographic, warm, nostalgic</i></p>',
+  captionHtml: '12 mp・5x optical zoom・beautiful, cinematographic photos straight out of cam・AA battery-powered (one less charger!)',
+  tags: ["cinematographic", "sunsetglow", "cybery2k", "tokyoblues"],
+  brand: "olympus",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/0afc87347ee7c7b27b70dcbda0a78232/da96ed3d73ebd980-4e/s2048x3072/28b6a26ebb6966fb4e1480c1010ade56e94cbc9e.jpg",
+      alt: "OLYMPUS FE-46 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/43af240705a67d6e7741216782253f52/da96ed3d73ebd980-95/s2048x3072/b3a65a21806fe07700759eb8ccc520444d6e0d4d.jpg",
+      alt: "OLYMPUS FE-46 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/8445be2cc343c7ecbefccd92fad2422e/da96ed3d73ebd980-82/s2048x3072/8a773ff571d485fab22367d5a593fe7f8813fa61.jpg",
+      alt: "OLYMPUS FE-46 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/26e93c8e385998f695c094b5f1aad50b/da96ed3d73ebd980-76/s2048x3072/62b77ea6e1540bac4d333567974c7114502241e6.jpg",
+      alt: "OLYMPUS FE-46 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/0d355bb92f53493c5227455dc7bdd388/da96ed3d73ebd980-61/s2048x3072/471bcac553685aab2a64ffa3e2a2e2cfb0d844a6.jpg",
+      alt: "OLYMPUS FE-46 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/4075981f852c29e4059161431d5e85b8/da96ed3d73ebd980-94/s2048x3072/42dfef196a175679a9666232afad81b66bce23b0.jpg",
+      alt: "OLYMPUS FE-46 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p> item condition: ⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>this lightweight, fuss-free cam gives gorgeous, warm, cinematographic, nostalgic photos straight out of the cam. she's generally in really good condition; there are some scratches that are visible from certain angles, but really - such a good piece!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/6c02d8e74fe034fe5c1ec5426871dd19/da96ed3d73ebd980-d3/s2048x3072/f02a2332cb830202115c96be7f63f683f7f1df05.jpg" class="full_image" alt="OLYMPUS FE-46 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/20020bcb1e138f3315aec5ff3a4fc16f/da96ed3d73ebd980-59/s2048x3072/09e04092567cb7f6431309666c2064c25dc92a97.jpg" class="full_image" alt="OLYMPUS FE-46 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/f739650cc4ab0c87002be36c80a39827/da96ed3d73ebd980-d3/s2048x3072/0b2548691f93b0d48b57f4ca9f0bfce4cf9bdde9.jpg" class="full_image" alt="OLYMPUS FE-46 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/15a28c0c4bc36f41f28ff5bdea517276/da96ed3d73ebd980-e8/s2048x3072/65cad6f9d322b996dbcac506b0fff5595db46516.jpg" class="full_image" alt="OLYMPUS FE-46 condition 4" onclick="openHpcLightbox(this)">      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=OLYMPUS%20FE-46"
+},
   
   {
   id: "fujifilm-finepix-4700z",
@@ -253,53 +347,6 @@ window.HPC_POSTS = [
       </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%204700Z"
-},
-
-  {
-  id: "OLYMPUS-FE-46",
-  type: "photo",
-  meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>OLYMPUS FE-46</b> $160.00</p><p><i>cinematographic, warm, nostalgic</i></p>',
-  captionHtml: '12 mp・5x optical zoom・beautiful, cinematographic photos straight out of cam・AA battery-powered (one less charger!)',
-  tags: ["cinematographic", "sunsetglow", "cybery2k", "tokyoblues"],
-  brand: "olympus",
-  images: [
-    {
-      src: "https://64.media.tumblr.com/0afc87347ee7c7b27b70dcbda0a78232/da96ed3d73ebd980-4e/s2048x3072/28b6a26ebb6966fb4e1480c1010ade56e94cbc9e.jpg",
-      alt: "OLYMPUS FE-46 photo 1"
-    },
-    {
-      src: "https://64.media.tumblr.com/43af240705a67d6e7741216782253f52/da96ed3d73ebd980-95/s2048x3072/b3a65a21806fe07700759eb8ccc520444d6e0d4d.jpg",
-      alt: "OLYMPUS FE-46 photo 2"
-    },
-    {
-      src: "https://64.media.tumblr.com/8445be2cc343c7ecbefccd92fad2422e/da96ed3d73ebd980-82/s2048x3072/8a773ff571d485fab22367d5a593fe7f8813fa61.jpg",
-      alt: "OLYMPUS FE-46 photo 3"
-    },
-    {
-      src: "",
-      alt: "OLYMPUS FE-46 photo 4"
-    },
-    {
-      src: "https://64.media.tumblr.com/0d355bb92f53493c5227455dc7bdd388/da96ed3d73ebd980-61/s2048x3072/471bcac553685aab2a64ffa3e2a2e2cfb0d844a6.jpg",
-      alt: "OLYMPUS FE-46 photo 5"
-    },
-    {
-      src: "https://64.media.tumblr.com/4075981f852c29e4059161431d5e85b8/da96ed3d73ebd980-94/s2048x3072/42dfef196a175679a9666232afad81b66bce23b0.jpg",
-      alt: "OLYMPUS FE-46 photo 6"
-    }
-  ],
-  conditionSummaryHtml: "<p> item condition: ⋆⋆⋆⋆ (super!)</p>",
-  conditionDetailsHtml: `
-    <p>this lightweight, fuss-free cam gives gorgeous, warm, cinematographic, nostalgic photos straight out of the cam. she's generally in really good condition; there are some scratches that are visible from certain angles, but really - such a good piece!</p>
-    <div class="photo-grid">
-      <img src="https://64.media.tumblr.com/6c02d8e74fe034fe5c1ec5426871dd19/da96ed3d73ebd980-d3/s2048x3072/f02a2332cb830202115c96be7f63f683f7f1df05.jpg" class="full_image" alt="OLYMPUS FE-46 condition 1" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/20020bcb1e138f3315aec5ff3a4fc16f/da96ed3d73ebd980-59/s2048x3072/09e04092567cb7f6431309666c2064c25dc92a97.jpg" class="full_image" alt="OLYMPUS FE-46 condition 2" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/f739650cc4ab0c87002be36c80a39827/da96ed3d73ebd980-d3/s2048x3072/0b2548691f93b0d48b57f4ca9f0bfce4cf9bdde9.jpg" class="full_image" alt="OLYMPUS FE-46 condition 3" onclick="openHpcLightbox(this)">
-      <img src="https://64.media.tumblr.com/15a28c0c4bc36f41f28ff5bdea517276/da96ed3d73ebd980-e8/s2048x3072/65cad6f9d322b996dbcac506b0fff5595db46516.jpg" class="full_image" alt="OLYMPUS FE-46 condition 4" onclick="openHpcLightbox(this)">      
-      </div>
-  `,
-  adoptUrl: "adoptacam.html?newbaby=OLYMPUS%20FE-46"
 },
   
   {
