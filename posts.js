@@ -205,9 +205,9 @@ window.HPC_POSTS = [
   id: "SONY-CYBERSHOT-DSC-T100",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>SONY CYBERSHOT DSC-T100</b> $160.00</p><p><i>cinematographic, warm, nostalgic</i></p>',
-  captionHtml: '12 mp・5x optical zoom・beautiful, cinematographic photos straight out of cam・AA battery-powered (one less charger!)',
-  tags: ["cinematographic", "cybery2k", "tokyoblues"],
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-T100</b> $150.00</p><p><i>bold, sharp, striking</i></p>',
+  captionHtml: '8.1 mp・5x optical zoom + 10x digital zoom (!!!)・super steadyshot tech・zeiss lens)',
+  tags: ["cinematographic", "cybery2k", "tokyoblues", "simpleelegance"],
   brand: "sony",
   images: [
     {
