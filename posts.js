@@ -706,20 +706,19 @@ window.HPC_POSTS = [
       alt: "CANON POWERSHOT A570 IS photo 6"
     }
   ],
-  conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆⋆ (super!)</p>",
   conditionDetailsHtml: `
-    <p>CONDITION NOTES</p>
+    <p>this digicam is super cute and chonky while fitting in the palm of your hand!<br>she's in really good condition for a preloved digicam of her age (she's a 2007 kid!), about as good as it gets! she has minor scratches and scuffs, and the deteriorated rubber cap at the side has been removed, but other than that, she's in really good condition!</p>
     <div class="photo-grid">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 1" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 2" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 3" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 4" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 5" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 6" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 7" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 8" onclick="openHpcLightbox(this)">
-      <img src="condition" class="full_image" alt="CANON POWERSHOT A570 IS condition 9" onclick="openHpcLightbox(this)">
-      
+      <img src="https://64.media.tumblr.com/5490a2c6e6f9a7d9f828852e10142336/dcd88f3a24a401e7-ee/s2048x3072/e188ac751b44f9f6313c29281cae18209203aaae.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4cd7ac445d8431c704a3f76b9e1a80fd/dcd88f3a24a401e7-f1/s2048x3072/12717de16642db1ec3ef8fbd8574b21f0fd66372.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/cab82411e0c36f2b831a6aea7e92b18e/dcd88f3a24a401e7-8c/s2048x3072/4d33e84914407f1bca6515a44babb2f0dc66ac1a.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5339e893fd485e841f3b5168149dedbd/dcd88f3a24a401e7-be/s2048x3072/692df55b5ef86f6ede556668316928fed6544b08.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/e4f3f707e52c2b11bba16606398c5d66/dcd88f3a24a401e7-e0/s2048x3072/cfdb96a4d7818047472a27c6570fc06d277b819f.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/db6f861fb9f69769e3cbb47b94ecedc5/dcd88f3a24a401e7-e7/s2048x3072/108d867837dcedcd97338bbfb5728c3a298607cb.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9c98228b95f45137bc8f52ba82f98089/dcd88f3a24a401e7-4d/s2048x3072/b094820a4b16e4182649cfbc8bbb07cc3d952791.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1e0922eeb129d9979e6f862593512987/dcd88f3a24a401e7-cd/s2048x3072/c2fc389bbb90314f3531a2c21d978411c13d1267.jpg" class="full_image" alt="CANON POWERSHOT A570 IS condition 8" onclick="openHpcLightbox(this)">
+  
       </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=CANON%20POWERSHOT%20A570%20IS"
