@@ -33,22 +33,22 @@ window.HPC_POSTS = [
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 6"
     }
   ],
-  conditionSummaryHtml: "<p>accessories: original charger, strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionSummaryHtml: "<p>accessories: original charger, strap<br> item condition: 🏆 (almost perfect!)</p>",
   conditionDetailsHtml: `
-    <p>featuring one of olympus's classic lightweight builds; perfect for travelling around with!<br>condition is pretty much as good as it gets for preloved digicams - just normal signs of age and minor wear, with what looks like a slight watermark at the outer rim near the lens. old rubber cap has been removed!</p>
+    <p>slim, sleek, and chic, this digicam is in the classic cybershot build!<br>condition is pretty much as good as it gets for preloved digicams - just normal signs of use, age and minor wear and minor scratches.</p>
     <div class="photo-grid">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 2" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 3" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 4" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 5" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 6" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 7" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 8" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0ac4d23d60629a9d97c5bc441b3ab881/6a806373135c0204-19/s2048x3072/7eed970111e21d0bd7a3ec172ee0399559d1ba8a.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c64a52ade52b34d5c3cfd40df643a6a7/6a806373135c0204-68/s2048x3072/79a88fd4babc7ae993ac93b40aee62ac6e5c0ecf.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/12e0e762c7b7fd7fe119e0c57357b5a0/6a806373135c0204-f7/s2048x3072/861b65a6f6fd27873a3b38256b09a247fc92aae9.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/165e4a38dfe6e0dc952e79bfbfc9c968/6a806373135c0204-cc/s2048x3072/25a173d665e88a7ebe05504f318b52ddbb56fab5.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5d5eccd55fbd7205b1ed6366a469339e/6a806373135c0204-58/s2048x3072/4b2919890c6a88520eb3af552edcab86dcd3c262.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/bdf4417d38f1297a128a2d654a9d4e24/6a806373135c0204-99/s2048x3072/05e3650f2295ebb8661a739854624d61b705227b.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/104e16dc245db8fb857d3095fbe2b483/6a806373135c0204-b6/s2048x3072/fe1eb47a54d7f8bf9ce6c631bd446622fce2274d.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/145e9cf5a5d8940899f1a906bc30e197/075b887b01772fcb-da/s2048x3072/f0c071b0eee375f627e1988a1d0ee576fce7acf5.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a259e3f3eebe448b23bb90046e923cea/075b887b01772fcb-78/s2048x3072/91d5daef04c98ace19727616ed395e320d750378.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 9" onclick="openHpcLightbox(this)">
       </div>
   `,
-  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-T50"
+  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-T50%20(silver)"
 },
 
   {
