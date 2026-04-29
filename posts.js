@@ -211,15 +211,15 @@ window.HPC_POSTS = [
   brand: "sony",
   images: [
     {
-      src: "",
+      src: "https://64.media.tumblr.com/a3b6161e8f5b4f3225e8615fadbc1f9f/c0bc3423ff8b7304-25/s2048x3072/7edd875fa7bbec8d2c6311f6bd7c8d082ebe823a.jpg",
       alt: "SONY CYBERSHOT DSC-T100 photo 1"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/b2f11bf9377456fdb66909c652b20946/c0bc3423ff8b7304-cf/s2048x3072/028465cc93162a4392ca1b8d4394a1596d290639.jpg",
       alt: "SONY CYBERSHOT DSC-T100 photo 2"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/62327bcdf79be24e785b44c87428d607/c0bc3423ff8b7304-d2/s2048x3072/07f9ec466803f6b4933e7d43c2dc9dd0645b5844.jpg",
       alt: "SONY CYBERSHOT DSC-T100 photo 3"
     },
     {
@@ -237,12 +237,12 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p> item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>classic sleek, chic, Sony CyberShot silhouette. she's generally in good condition but shows signs of use, including visible dinks and dents, minor scratches and scuffs.</p>
+    <p>classic sleek, chic, Sony CyberShot silhouette. she shows signs of use typical of preloved vintage cams, including visible dinks and dents, minor scratches and scuffs, but she's a warrior and works perfectly! please note that the menu is in Japanese.</p>
     <div class="photo-grid">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 2" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 3" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 4" onclick="openHpcLightbox(this)">      
+      <img src="https://64.media.tumblr.com/dbe49f459206afadbb88457e752fefd7/8034e3cc0db311cd-3e/s2048x3072/ebca0691588e58efa7dcc19d59171f82b5e2a334.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/e4f043ddef2790883f833356603c4c06/8034e3cc0db311cd-86/s2048x3072/9b06a0404ab50f31e1c6f5e05fe12f30c43ac4f0.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/3aeb77371eebe818b6994de66f365da9/8034e3cc0db311cd-35/s2048x3072/36c89bf8dfeddd958e152395062bac792482ab44.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1c8e0726c592632ae0edadd3240b8072/8034e3cc0db311cd-9a/s2048x3072/2094a09de63cd06bfd8f9a7b9bc5fe92a5d554e3.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T100 condition 4" onclick="openHpcLightbox(this)">      
       </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-T100"
