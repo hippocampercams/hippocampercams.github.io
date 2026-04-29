@@ -1,5 +1,57 @@
 window.HPC_POSTS = [
 {
+  id: "sony-cybershot-dsc-t50-silver",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-T50 (Silver)</b> $160.00</p><p><i>warm, nostalgic, dreamy</i></p>',
+  captionHtml: '7.2 mp・3x optical zoom・zeiss lens・super steadyshot tech・classic cybershot build',
+  tags: ["sunsetglow", "goldenhour", "simpleelegance", "cybery2k", "cinematographic", "cleangirl"],
+  brand: "sony",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/73d2f2b38e105fb1bc9ef98a9a80c3e6/264e151cfedd2912-2f/s2048x3072/0bd28fd4ffee228517b38d1fdee73f06f3326a41.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/b205aa0dafcccca1ae8a971e06726c10/6a806373135c0204-3d/s640x960/7f2ba57aaa078d577fac3f7d2e22acc9116432eb.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/42e248802cfc3b6beb9c5cd8d3afb1ca/264e151cfedd2912-6b/s2048x3072/3a04c50c18c341d7160fa6a47b9126dfdad31ab8.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/784634817388574965161af5237d87e4/264e151cfedd2912-1a/s2048x3072/9cbf7577a9b92eb37b660751900b99d33e58bd3f.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/96307fab5f09bbd9663197053d147a9b/264e151cfedd2912-09/s2048x3072/c412d32dd62841d11b629d00abba9057eddd3c48.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/9c49a3b7ae035f48a38faea43319ccaa/264e151cfedd2912-23/s2048x3072/033d57544d0cbcd2c0707c2e30984cfbb73f62fd.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: original charger, strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>featuring one of olympus's classic lightweight builds; perfect for travelling around with!<br>condition is pretty much as good as it gets for preloved digicams - just normal signs of age and minor wear, with what looks like a slight watermark at the outer rim near the lens. old rubber cap has been removed!</p>
+    <div class="photo-grid">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 2" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 3" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 4" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 5" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 6" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 7" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 8" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 9" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-T50"
+},
+
+  {
   id: "olympus-fe-360",
   type: "photo",
   meta: "Posted just now • 0 notes",
