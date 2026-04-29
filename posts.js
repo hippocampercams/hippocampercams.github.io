@@ -807,7 +807,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>this cute, pocket-sized cam is in great condition for its age, although it does have visible scuffs, a slight dent (bottom left), and its rubber covers have been removed (battery visible).</p>
+    <p>this cute, pocket-sized cam is in great condition for its age. it does have visible scuffs, slight peeling of labels on buttons, a slight dent (bottom left), and its rubber covers have been removed (battery visible).</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/a18ec153590eec29637d121898705835/fb406679e2b62a9f-92/s1280x1920/5e43b4b8364ae669269237fa9498c480487e68db.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/ac5838d593079473095ab64dcb93727c/fb406679e2b62a9f-2d/s1280x1920/7992400b966720316e618e152079b4d91d333b53.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 2" onclick="openHpcLightbox(this)">
@@ -816,6 +816,7 @@ window.HPC_POSTS = [
       <img src="https://64.media.tumblr.com/099538ce6322f52f1937cddfbb82cbae/fb406679e2b62a9f-24/s1280x1920/95bc8680d95581f0c042ee45837cc2c2d192324c.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 5" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/0d5e2630fae8eaba344413796942be06/d226d3d166c53699-f3/s1280x1920/4a1976b14688954ee14860409eb130d0a9580e83.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 6" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/83af9dcff11e7e8fc9711347256a9a44/fb406679e2b62a9f-59/s1280x1920/7abcc8e01000cb7d9e2cb7ac482e00cf131164f5.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1ac40e52e2c970574eba10f07cc2e1ea/7dc1b919673ee830-0c/s2048x3072/d27b80bb0c7877c1bcc27235a6b5cfd85b4e8f26.jpg" class="full_image" alt="NIKON COOLPIX L6 condition 8" onclick="openHpcLightbox(this)">
     </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20L6"
