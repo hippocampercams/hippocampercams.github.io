@@ -356,6 +356,62 @@ window.HPC_POSTS = [
   `,
   adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%204700Z"
 },
+
+    {
+  id: "olympus-µ-1050-SW",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>OLYMPUS µ 1050 SW</b> $150.00</p><p><i>moody, grungy, sharp, warm, nostalgic</i></p>',
+  captionHtml: '10.1 mp・3x optical zoom・durable: waterproof  up to 3m, shockproof up to 1.5m, freezeproof・super macro mode available',
+  tags: ["grainyretro", "cybery2k", "goldenhour", "cinematographic", "simpleelegance"],
+  brand: "olympus",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/0dc1939ec0d65f2352c7e014e123d107/33efe30cde0ca474-74/s1280x1920/0b90ce49ee1d3e64a55b6ce949100904f13f04e8.jpg",
+      alt: "OLYMPUS µ 1050 SW photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/2a501b98dbd0616e5e06b2be705b2190/33efe30cde0ca474-38/s2048x3072/dcff010e00a34a61120386862de8dc2eddc584d0.jpg",
+      alt: "OLYMPUS µ 1050 SW photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/eca821b7e53557c860f6bba5293dfa43/33efe30cde0ca474-a5/s1280x1920/27bd9b69690f797a06a02728f1d4d1c9be05daef.jpg",
+      alt: "OLYMPUS µ 1050 SW photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/8433596a79da5ef86db076f86622d39c/33efe30cde0ca474-6a/s1280x1920/b422a8043a235b865065d6c36dbc94ede624cf32.jpg",
+      alt: "OLYMPUS µ 1050 SW photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/b2ee7cdc894a3441b0a8757b1c4aaf00/33efe30cde0ca474-49/s1280x1920/692e4f8fed438eef9c815a8c032c85ae4601a0a6.jpg",
+      alt: "OLYMPUS µ 1050 SW photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/b97c06e1b980f0a935a0f0817122d302/33efe30cde0ca474-52/s1280x1920/b45af5a5f482c6f72273ef1e06042dcea714c0f2.jpg",
+      alt: "OLYMPUS µ 1050 SW photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>in true olympus fashion, she's a rugged, outdoorsy girlie who can withstand the elements; so much packed into one slim silhouette! <br> she has visible but minor dinks, scuffs and scratches, characteristic of these preloved vintage pieces, but she functions perfectly like a champ!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/f1b71aaa7b6aa2e10c27526f46e630d7/93a5905e6343cbb4-95/s2048x3072/fc1a58698bbded28ceddde76178241cb5b720ecf.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2235336d565119d06030d222eeb9c318/93a5905e6343cbb4-b1/s2048x3072/3a0907ad985dac91010aeab6d8474a56d11daea7.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/54c46506d8ed483f7bc0a3ab0b7b6028/93a5905e6343cbb4-cf/s2048x3072/f29f259ce8958905f5a5ebad17ce3c98b7cdc7e7.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/22fbc8badd689433b37a1a676a51d28e/93a5905e6343cbb4-21/s2048x3072/515f129d88f2350c111bbc613010ff905c24e138.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/714f611bca3588aae9bd097741c662ae/93a5905e6343cbb4-f9/s2048x3072/47502ba83bd5bd909dc88d413ff180cd577b7c76.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a13304e77fd00baa07358fbe668ad1b8/93a5905e6343cbb4-1c/s2048x3072/3fd27f6bd211563f9af8bb6492ffe4c29c852723.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9de6f57efb91e20a0fed06995f706f8c/93a5905e6343cbb4-be/s2048x3072/8a43d8044bf2c9dcfa0f2dabf896093495af4dda.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4d21e6454f96f0740c8819f908e94c0e/93a5905e6343cbb4-38/s2048x3072/526b418437c20dba24f31c55606394b4f8261007.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/14571bee53f672e5e7c614c34118e19e/93a5905e6343cbb4-1b/s2048x3072/71ee2c96a81ff8ace4cfbb1c8ecacb0f60e12fa9.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4f1423bba5a7715bad051d0d721e5d22/ac375859758b3996-d6/s2048x3072/afaaffaf5bec8fd971d140705a26cc581af90a57.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5cb83b5157b94cee516268648ae39523/ac375859758b3996-ed/s2048x3072/85eb722af84aa568c9e707e70345a3063638352f.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 11" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c57b174661853c1304e17a32afcc6ef5/ac375859758b3996-64/s2048x3072/ca639bf2806499b040d22c02a4fbd88bc97d1617.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 12" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/856f52e7d8113762f867b3efc1b6723f/ac375859758b3996-69/s2048x3072/88d4e6927b164720d8a3af1a9c3f7fb3bacb6b0f.jpg" class="full_image" alt="OLYMPUS µ 1050 SW condition 13" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=OLYMPUS%20µ%201050%20SW"
+},
   
   {
   id: "panasonic-lumix-dmc-ls75",
