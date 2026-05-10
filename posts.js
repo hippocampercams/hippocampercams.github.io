@@ -1,5 +1,58 @@
 window.HPC_POSTS = [
 {
+  id: "sony-cybershot-dsc-t50-red",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-T50 (Red)</b> $160.00</p><p><i>warm, nostalgic, dreamy</i></p>',
+  captionHtml: '7.2 mp・3x optical zoom・zeiss lens・super steadyshot tech・classic cybershot build',
+  tags: ["sunsetglow", "goldenhour", "simpleelegance", "cybery2k", "cinematographic", "cleangirl"],
+  brand: "sony",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/73d2f2b38e105fb1bc9ef98a9a80c3e6/264e151cfedd2912-2f/s2048x3072/0bd28fd4ffee228517b38d1fdee73f06f3326a41.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Red) photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/500dbffe5858e53bcebfd220ec6b75c7/a5a962576477cf9a-ed/s2048x3072/ed4d0eafa38608ebe84e3da77a40bfa65ec5c27c.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Red) photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/42e248802cfc3b6beb9c5cd8d3afb1ca/264e151cfedd2912-6b/s2048x3072/3a04c50c18c341d7160fa6a47b9126dfdad31ab8.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Red) photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/784634817388574965161af5237d87e4/264e151cfedd2912-1a/s2048x3072/9cbf7577a9b92eb37b660751900b99d33e58bd3f.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Red) photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/96307fab5f09bbd9663197053d147a9b/264e151cfedd2912-09/s2048x3072/c412d32dd62841d11b629d00abba9057eddd3c48.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Red) photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/9c49a3b7ae035f48a38faea43319ccaa/264e151cfedd2912-23/s2048x3072/033d57544d0cbcd2c0707c2e30984cfbb73f62fd.jpg",
+      alt: "SONY CYBERSHOT DSC-T50 (Red) photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: 🏆 (almost perfect!)</p>",
+  conditionDetailsHtml: `
+    <p>get this slim, sleek, classic cybershot digicam in bold fire engine red!<br>condition is pretty much as good as it gets for preloved digicams - while it has just a few tiny specks of paint chips, for the most part, it only has normal signs of use, age and minor wear and minor scratches.</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/7e49f57aba4ef1a66c2c5678511fdf74/929a3fe9c6000ae2-0d/s2048x3072/cd87574f2cfdabaf117c83ce14fd58bba8ac6f64.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/43146643452c63f68bf0c945cd3696c0/929a3fe9c6000ae2-21/s2048x3072/0cdc6ff7687962f7f37abb33005543bb9457256e.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b49101c3243ee7467161eaf9bba9acae/929a3fe9c6000ae2-d9/s2048x3072/4af0eb9d56ccf639838020cbeb829dad76f40ee1.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/53e4a7768a81ae5ae7e5aec8b4451a1f/929a3fe9c6000ae2-bd/s2048x3072/f84693e6b0165516927753b5a5dba67268d597c5.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5bf8447b5d231219d6f18d58a75cd163/929a3fe9c6000ae2-da/s2048x3072/e1a60ea6841a242337de50f33f0c30f250650c9f.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0d6c930552b2390523fed0fad512bc92/929a3fe9c6000ae2-b6/s2048x3072/e55ebaacf88e4783cea374888b4ff11df942c358.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5079318438e17e437f0b353dfc32f1f7/929a3fe9c6000ae2-a6/s2048x3072/68d8b24545d273b832d31b3f2ce5e4e154ffa43a.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1360da55959874d64e469555af25bf14/929a3fe9c6000ae2-9d/s2048x3072/dfbc8cdad4479cb767c0c3a94f84e641532e6a90.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/829f4e870ca3dbd871eb33482890fcf1/929a3fe9c6000ae2-97/s2048x3072/da893d4d444c45cd54a27e0c2470b4e37506a65f.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/7a7bb331bff5c164ec2f940f84e48c42/a5a962576477cf9a-a6/s2048x3072/95cd8ce36ca374f00e8dfaf5720700656ab78e00.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 10" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-T50%20(red)"
+},
+
+  {
   id: "sony-cybershot-dsc-t50-silver",
   type: "photo",
   meta: "Posted just now • 0 notes",
