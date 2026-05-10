@@ -645,15 +645,15 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX S9 photo 1"
     },
     {
-      src: "https://64.media.tumblr.com/e29618c2754b75a2e2d1b016e8d3927e/71c12331eb89832a-8e/s1280x1920/7864579e0d93918325ba018e5098b6c32d1e02aa.jpg",
+      src: "https://64.media.tumblr.com/188cdcda55fe7894ef96e6da10e3ee7b/11901aa1bf73e6fa-55/s2048x3072/ce1742c093661f6df38efbc0df835019c8f885d3.jpg",
       alt: "NIKON COOLPIX S9 photo 2"
     },
     {
-      src: "https://64.media.tumblr.com/a1b527e418e4c3b1ac66f6a47c743a22/a7c9512c80210070-09/s1280x1920/41e8f63770c8320ab99e67f6439dd49f02f06db6.jpg",
+      src: "https://64.media.tumblr.com/acc26dc815b8a9bcb906c76bb877d309/11901aa1bf73e6fa-e9/s2048x3072/3624cc91b541f995e7903b5cfb62ff005b51b6fc.jpg",
       alt: "NIKON COOLPIX S9 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/8345931ac951b947b98207f3fdfc1b14/a7c9512c80210070-fa/s1280x1920/52a03995e77f0c44f52a7a3a3155f63ef26f8b49.jpg",
+      src: "https://64.media.tumblr.com/f0537b87f4d06f37713ab838228c605e/11901aa1bf73e6fa-11/s2048x3072/2bba0fede3ddbcd16f889feadf1799ca973eefb8.jpg",
       alt: "NIKON COOLPIX S9 photo 4"
     },
     {
@@ -661,7 +661,7 @@ window.HPC_POSTS = [
       alt: "NIKON COOLPIX S9 photo 5"
     },
     {
-      src: "https://64.media.tumblr.com/ac6cea97925500f28dd4e13fe2e5f22a/a7c9512c80210070-35/s1280x1920/192812dcb992cc8bdbb50df00d9b82b9c05c5b87.jpg",
+      src: "https://64.media.tumblr.com/985971bd7cfd5aa6b0930ce67a67866a/11901aa1bf73e6fa-43/s2048x3072/3e5fccff895b11126b18105644d33b9445093b25.jpg",
       alt: "NIKON COOLPIX S9 photo 6"
     }
   ],
