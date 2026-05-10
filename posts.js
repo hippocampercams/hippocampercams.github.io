@@ -62,7 +62,7 @@ window.HPC_POSTS = [
   brand: "sony",
   images: [
     {
-      src: "https://64.media.tumblr.com/73d2f2b38e105fb1bc9ef98a9a80c3e6/264e151cfedd2912-2f/s2048x3072/0bd28fd4ffee228517b38d1fdee73f06f3326a41.jpg",
+      src: "https://64.media.tumblr.com/0326e3e35f7b28a08e4f970f27d1ff22/989c6d4c9e57b5ec-eb/s2048x3072/e24e034fc08ff4433629ece063df46a267621440.jpg",
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 1"
     },
     {
@@ -70,19 +70,19 @@ window.HPC_POSTS = [
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 2"
     },
     {
-      src: "https://64.media.tumblr.com/42e248802cfc3b6beb9c5cd8d3afb1ca/264e151cfedd2912-6b/s2048x3072/3a04c50c18c341d7160fa6a47b9126dfdad31ab8.jpg",
+      src: "https://64.media.tumblr.com/3cac0f9b917d74a780fb3af9021e7dde/989c6d4c9e57b5ec-fc/s2048x3072/457440618758c5dc0c9fab7d07909a4c8165e055.jpg",
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/784634817388574965161af5237d87e4/264e151cfedd2912-1a/s2048x3072/9cbf7577a9b92eb37b660751900b99d33e58bd3f.jpg",
+      src: "https://64.media.tumblr.com/acd0e7446a78bec33a488a9da0634e0c/989c6d4c9e57b5ec-4b/s2048x3072/3c6954f4173a0500a8b78d5c0e0ce67cbf73947a.jpg",
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/96307fab5f09bbd9663197053d147a9b/264e151cfedd2912-09/s2048x3072/c412d32dd62841d11b629d00abba9057eddd3c48.jpg",
+      src: "https://64.media.tumblr.com/d173ce315dafb747c5ebd26bcd05bdd1/989c6d4c9e57b5ec-dc/s2048x3072/2e70bff44d6523864f4a365e874944cce935ea50.jpg",
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 5"
     },
     {
-      src: "https://64.media.tumblr.com/9c49a3b7ae035f48a38faea43319ccaa/264e151cfedd2912-23/s2048x3072/033d57544d0cbcd2c0707c2e30984cfbb73f62fd.jpg",
+      src: "https://64.media.tumblr.com/261903c04139624bfdbf137d523ebabd/989c6d4c9e57b5ec-4e/s2048x3072/43d12ddd7bb5532bba6c295a679838bea38de160.jpg",
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 6"
     }
   ],
