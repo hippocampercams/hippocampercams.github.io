@@ -52,6 +52,59 @@ window.HPC_POSTS = [
   adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-T50%20(red)"
 },
 
+{
+  id: "nikon-cybershot-s4000",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON CYBERSHOT S4000</b> $250.00</p><p><i>warm, nostalgic, dreamy</i></p>',
+  captionHtml: '7.2 mp・3x optical zoom・zeiss lens・super steadyshot tech・classic cybershot build',
+  tags: ["sunsetglow", "goldenhour", "simpleelegance", "cybery2k", "cinematographic", "cleangirl"],
+  brand: "nikon",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/7bdc16b582936868dd8d1ef1e32a85bc/6c3c5ad2c7a87f4d-46/s2048x3072/9482ea0c0d40b692c6bc7ae55dd38165b4771c76.jpg",
+      alt: "NIKON CYBERSHOT S4000 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/a22887bd750371398664e3d4935b910f/6c3c5ad2c7a87f4d-cd/s2048x3072/dff893e2dd815c456b60731d25aa427b5e3928b3.jpg",
+      alt: "NIKON CYBERSHOT S4000 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/45ef82f717f10ab363414bdc674324a0/6c3c5ad2c7a87f4d-94/s2048x3072/f0339be95d4a3950a77c611c6330d8b978b87e51.jpg",
+      alt: "NIKON CYBERSHOT S4000 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/c3999169d85bbc0430bc80abddfe80de/6c3c5ad2c7a87f4d-1d/s2048x3072/9c6d64b1baba0cafe1484994a40d202baf0972b7.jpg",
+      alt: "NIKON CYBERSHOT S4000 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/c2a92397f6beec439a8009527a49183a/6c3c5ad2c7a87f4d-b9/s2048x3072/1d3c490d8562388eaea78c73cd24139937033fe7.jpg",
+      alt: "NIKON CYBERSHOT S4000 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/acb41d22a3272fb51b370c04cc653b49/6c3c5ad2c7a87f4d-c8/s2048x3072/dd344fe5dfdd5faa14f67ffdd7d147248f8d9d4b.jpg",
+      alt: "NIKON CYBERSHOT S4000 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p><br>[condition notes]</p>
+    <div class="photo-grid">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 1" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 2" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 3" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 4" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 5" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 6" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 7" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 8" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 9" onclick="openHpcLightbox(this)">
+      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 10" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S4000"
+},
+  
   {
   id: "sony-cybershot-dsc-t50-silver",
   type: "photo",
