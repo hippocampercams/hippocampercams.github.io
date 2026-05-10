@@ -88,7 +88,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p>this sleek digicam gives you the best of both worlds - warm, nostalgic, dreamy vibes with its CCD sensor, and sharp, precise, quality nikon imaging!<br> she has some wear and tear characteristic of preloved digicams, but functions well! there is a slight dent at the front, denting/chips at the corners, some minor paint and decal peeling, visible scratches, scuffs and chips.</p>
+    <p>this sleek digicam gives you the best of both worlds - warm, nostalgic, dreamy vibes with its CCD sensor, and sharp, precise, quality nikon imaging!<br> she has some wear and tear characteristic of preloved digicams, but functions well! there is a slight dent at the front, denting/chips at the corners, a small piece of debris on the screen, some minor paint and decal peeling, visible scratches, scuffs and chips.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/ecf0422d590e08d39e0fc84ef31db952/bd867723d088c896-0a/s2048x3072/32a1868326ef8e6d32d2eed8de3014dfc1451b1e.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/5c17974ce5255e320c8f780cb4223903/bd867723d088c896-65/s2048x3072/01cb0fa9e55a8b3623e5b5c1c757884097bfaca6.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 2" onclick="openHpcLightbox(this)">
