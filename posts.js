@@ -145,7 +145,7 @@ window.HPC_POSTS = [
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 5"
     },
     {
-      src: "https://64.media.tumblr.com/261903c04139624bfdbf137d523ebabd/989c6d4c9e57b5ec-4e/s2048x3072/43d12ddd7bb5532bba6c295a679838bea38de160.jpg",
+      src: "https://64.media.tumblr.com/fa91d0b519b1ff4bb41039b18981b93f/989c6d4c9e57b5ec-58/s2048x3072/35df6a8ac34db0623a65299d8128815a229e0e16.jpg",
       alt: "SONY CYBERSHOT DSC-T50 (Silver) photo 6"
     }
   ],
