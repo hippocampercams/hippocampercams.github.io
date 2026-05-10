@@ -53,53 +53,63 @@ window.HPC_POSTS = [
 },
 
 {
-  id: "nikon-cybershot-s4000",
+  id: "nikon-coolpix-s4000",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>NIKON CYBERSHOT S4000</b> $250.00</p><p><i>warm, nostalgic, dreamy</i></p>',
-  captionHtml: '7.2 mp・3x optical zoom・zeiss lens・super steadyshot tech・classic cybershot build',
-  tags: ["sunsetglow", "goldenhour", "simpleelegance", "cybery2k", "cinematographic", "cleangirl"],
+  titleHtml: '<p><b>NIKON COOLPIX S4000</b> $210.00</p><p><i>warm, striking, nostalgic, afterparty vibes</i></p>',
+  captionHtml: '12.0 mp・4x optical zoom・touchscreen・highly sought-after model!',
+  tags: ["sunsetglow", "goldenhour", "cybery2k", "cinematographic"],
   brand: "nikon",
   images: [
     {
       src: "https://64.media.tumblr.com/7bdc16b582936868dd8d1ef1e32a85bc/6c3c5ad2c7a87f4d-46/s2048x3072/9482ea0c0d40b692c6bc7ae55dd38165b4771c76.jpg",
-      alt: "NIKON CYBERSHOT S4000 photo 1"
+      alt: "NIKON COOLPIX S4000 photo 1"
     },
     {
       src: "https://64.media.tumblr.com/a22887bd750371398664e3d4935b910f/6c3c5ad2c7a87f4d-cd/s2048x3072/dff893e2dd815c456b60731d25aa427b5e3928b3.jpg",
-      alt: "NIKON CYBERSHOT S4000 photo 2"
+      alt: "NIKON COOLPIX S4000 photo 2"
     },
     {
       src: "https://64.media.tumblr.com/45ef82f717f10ab363414bdc674324a0/6c3c5ad2c7a87f4d-94/s2048x3072/f0339be95d4a3950a77c611c6330d8b978b87e51.jpg",
-      alt: "NIKON CYBERSHOT S4000 photo 3"
+      alt: "NIKON COOLPIX S4000 photo 3"
     },
     {
       src: "https://64.media.tumblr.com/c3999169d85bbc0430bc80abddfe80de/6c3c5ad2c7a87f4d-1d/s2048x3072/9c6d64b1baba0cafe1484994a40d202baf0972b7.jpg",
-      alt: "NIKON CYBERSHOT S4000 photo 4"
+      alt: "NIKON COOLPIX S4000 photo 4"
     },
     {
       src: "https://64.media.tumblr.com/c2a92397f6beec439a8009527a49183a/6c3c5ad2c7a87f4d-b9/s2048x3072/1d3c490d8562388eaea78c73cd24139937033fe7.jpg",
-      alt: "NIKON CYBERSHOT S4000 photo 5"
+      alt: "NIKON COOLPIX S4000 photo 5"
     },
     {
       src: "https://64.media.tumblr.com/acb41d22a3272fb51b370c04cc653b49/6c3c5ad2c7a87f4d-c8/s2048x3072/dd344fe5dfdd5faa14f67ffdd7d147248f8d9d4b.jpg",
-      alt: "NIKON CYBERSHOT S4000 photo 6"
+      alt: "NIKON COOLPIX S4000 photo 6"
     }
   ],
   conditionSummaryHtml: "<p>⋆⋆⋆ (pretty good!)</p>",
   conditionDetailsHtml: `
-    <p><br>[condition notes]</p>
+    <p>this sleek digicam gives you the best of both worlds - warm, nostalgic, dreamy vibes with its CCD sensor, and sharp, precise, quality nikon imaging!<br> she has some wear and tear characteristic of preloved digicams, but functions well! there is a slight dent at the front, denting/chips at the corners, some minor paint and decal peeling, visible scratches, scuffs and chips.</p>
     <div class="photo-grid">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 1" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 2" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 3" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 4" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 5" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 6" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 7" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 8" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 9" onclick="openHpcLightbox(this)">
-      <img src="" class="full_image" alt="NIKON CYBERSHOT S4000 condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ecf0422d590e08d39e0fc84ef31db952/bd867723d088c896-0a/s2048x3072/32a1868326ef8e6d32d2eed8de3014dfc1451b1e.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5c17974ce5255e320c8f780cb4223903/bd867723d088c896-65/s2048x3072/01cb0fa9e55a8b3623e5b5c1c757884097bfaca6.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0d66e3166eabe62fd8a25f4137348349/bd867723d088c896-25/s2048x3072/bee9f6925862731e9cc16120bb27c3925afd5b4e.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d725944dcdcf87161d9feea3c112dbd3/bd867723d088c896-1f/s2048x3072/eef0c373585e0236e70f4a65a49e9b0fb3a5159e.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1d79f4713ff951880ef7aab69b260e23/bd867723d088c896-14/s2048x3072/3d08774e03904a542ce8b30acf5d1c02d1060183.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/6c720fdd6bb766887e402c00d14cfd44/bd867723d088c896-52/s2048x3072/66db1c6c15d195e7760b2e3175c2be603467d8c1.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/df52e507e5e870cee66850c577e4a258/bd867723d088c896-77/s2048x3072/fc9ef54a17d1d0f269f145f7aadb6b8fbdba1cdc.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9f9150606588bbf0048af6cd7b77058f/bd867723d088c896-be/s2048x3072/4ad44729d271d16613d8775ed41f18e39e22e929.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1bfeec1ad2188bcf9c1b6e01578506cf/bd867723d088c896-72/s2048x3072/e61665c1d261cd01b29d775ccadf25b83bf7d770.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/1f6c0c381b0cc2fa368b4bdf3fa7459d/bd867723d088c896-1d/s2048x3072/d86c651e46791b4e3affd06f0aa20de8e95e6f76.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a1b865bf26f35b607876a724910df903/4c054de07207b9e9-7e/s2048x3072/81d78a8b429e4fa3f6b1a33f0106fb2b2ebbd3f6.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 11" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/27e38e78971b1e5548be9aa5b2f77777/4c054de07207b9e9-41/s2048x3072/f2a37f9cc1c7a3da1e988a79803479eae40c75af.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 12" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/edf7f7fdbce4875e8ce3d3d3e9c51bda/4c054de07207b9e9-06/s2048x3072/c58a95f46d14d813e2a0fc5b9a78c91092773ed7.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 13" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/aa8f4995784b87a8a5d86e3d3c9d4266/4c054de07207b9e9-c1/s2048x3072/4335e75503d1c666a2f5b3b24525c23b137a45f2.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 14" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/535e7dffcfe29c8509b13d2762ddb14a/4c054de07207b9e9-82/s2048x3072/c9a41bc9ab0c4f0227945a123992197ae07b7001.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 15" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a983db3ebb4cd5a442cdc3b0e478948e/4c054de07207b9e9-d4/s2048x3072/ad56b84f1cfacc649d8d18e4e97b313e93f10c6a.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 16" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/9d33e0bcc70c68f84663594249649987/4c054de07207b9e9-fd/s2048x3072/964699941755649b02001e43d788d89d93af3c9a.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 17" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c1d97f2485d69f1e4db42344d7d302e0/4c054de07207b9e9-47/s2048x3072/39ceba36a3662f4843d119d4799b88d778ff295d.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 18" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/967ad53b5e51348af89d030c0b89fa28/4c054de07207b9e9-c3/s2048x3072/1573aef7415ae4b4326b2b76a35837dff220e0bb.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 19" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b1de4f5f6dc2c7b146aed146307d48a9/4c054de07207b9e9-03/s2048x3072/c1d5bd957c6adf7326df63ed739921188abc4b62.jpg" class="full_image" alt="NIKON COOLPIX S4000 condition 20" onclick="openHpcLightbox(this)">
       </div>
   `,
   adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S4000"
