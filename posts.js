@@ -529,9 +529,9 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-a345",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX A345</b> $120.00</p><p><i>rare, analogue vibes, retro</i></p>',
-  captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
-  tags: ["grainyretro", "cybery2k"],
+  titleHtml: '<p><b>FUJIFILM FINEPIX A345</b> $120.00</p><p><i>dreamy, warm vibes</i></p>',
+  captionHtml: '4.1 mp・3x optical zoom・cute, brick build・AA battery-powered (one less charger!)',
+  tags: ["goldenhour", "simpleelegance", "sunsetglow", "grainyretro", "cybery2k"],
   brand: "fujifilm",
   images: [
     {
