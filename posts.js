@@ -56,7 +56,7 @@ window.HPC_POSTS = [
   id: "nikon-coolpix-s4000",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>NIKON COOLPIX S4000</b> $210.00</p><p><i>warm, striking, nostalgic, afterparty vibes</i></p>',
+  titleHtml: '<p><b>NIKON COOLPIX S4000</b> $190.00</p><p><i>warm, striking, nostalgic, afterparty vibes</i></p>',
   captionHtml: '12.0 mp・4x optical zoom・touchscreen・highly sought-after model!',
   tags: ["sunsetglow", "goldenhour", "cybery2k", "cinematographic"],
   brand: "nikon",
