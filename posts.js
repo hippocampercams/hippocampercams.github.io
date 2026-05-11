@@ -525,6 +525,65 @@ window.HPC_POSTS = [
   adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%204700Z"
 },
 
+   {
+  id: "fujifilm-finepix-a345",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>FUJIFILM FINEPIX A345</b> $120.00</p><p><i>rare, analogue vibes, retro</i></p>',
+  captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
+  tags: ["grainyretro", "cybery2k"],
+  brand: "fujifilm",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/444198c8411fea7ca8bbd17e515f9ecd/baa8a31711d10f47-ba/s2048x3072/f47c471addc64ce904231567f94b7063117d5cf2.jpg",
+      alt: "FUJIFILM FINEPIX A345 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/23868ecc50c270fccfa8f9a039c760ef/628a70bb149a9131-23/s2048x3072/87d89f91b9bd910ba956dcdbf42bcc730d85f050.jpg",
+      alt: "FUJIFILM FINEPIX A345 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/542747a31a51ca01df47ab23849f9b64/baa8a31711d10f47-b1/s2048x3072/0b9316153f45715fb3d503850c8309b96ce1f0a8.jpg",
+      alt: "FUJIFILM FINEPIX A345 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/ffbcba27a344ec37850783f940281199/baa8a31711d10f47-f6/s1280x1920/4f3c700483812aa6a41e0bc4a3bddb27b8c33bc0.jpg",
+      alt: "FUJIFILM FINEPIX A345 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/d5a15ef38c3af5fe26433efce2abaf19/baa8a31711d10f47-f0/s2048x3072/a3a085a6c5b38167719d6cb78a84b41bb9316779.jpg",
+      alt: "FUJIFILM FINEPIX A345 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/a26874e9c151daacb2164cf42a1119a0/baa8a31711d10f47-12/s2048x3072/cc09f4da2bfcc07d2a98b84718731c980472ea32.jpg",
+      alt: "FUJIFILM FINEPIX A345 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: strap<br> item condition: ⋆⋆⋆ (pretty good!)<br> PRO TIP: don't just use random alkaline batteries; they may not work well under camera load! we tested with fully charged NiMH rechargeable AA batteries (the Panasonic Eneloop); but you can use any fully charged NiMH rechargeable AA batteries around 1900-2450mAh, or even Energizer Ultimate Lithium AA batteries (disposal).</p>",
+  conditionDetailsHtml: `
+    <p>a cute, classic 'brick' or 'soap-bar' digicam, she's a 2005 baby that punches above her weight class by producing sharp photos with beautiful Fujifilm colour grading! <br> she's an experienced traveller and has signs of use and wear. there are visible scratches, scuffs, dinks, chips and slight peeling of lettering, but operation has been confirmed and she works great!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/dec355b799f3bc9bc1c73bf44cbd5769/628a70bb149a9131-d7/s2048x3072/3868fc9dcb75663bf9f0e02107af8afe53f19527.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/261682d9a6d40d0696c5dd1b26d5de60/628a70bb149a9131-25/s2048x3072/be76ab5fd37f98819dd3635457778e7e5131c671.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b8ec3dd5fdab30b9ad0c452dbf22794e/628a70bb149a9131-c5/s2048x3072/fbe70209450c65b6b0951e5cd0a2f903aece7c82.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/131782164d2e74593a8c8e79087617f5/628a70bb149a9131-0b/s2048x3072/1eba250ea419c344fa13d9a7f3bada6b84913652.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/fc211f930b6c80a44898df177a1b2c41/628a70bb149a9131-95/s2048x3072/1de473aaa7bc8e38284971058371ce9ee0a74c92.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ed0b6d3677576320c28349f7aa3a5bcf/628a70bb149a9131-c0/s2048x3072/f13352ea0dfd49ac5e8ae9bcc6b54f07e9e785e8.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/48da3303e189b9432c32bbf2332757dd/628a70bb149a9131-1d/s2048x3072/797459bf4d8aeefc264bb8b69e086042deb1e245.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/43c328bf951408d61c0a77a3b7fde75f/628a70bb149a9131-95/s2048x3072/8a4476ecb832776b42cbd61244c1817455f4574c.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d3e86b04fa33f9577a44d153180ce68e/a10151342668b316-f7/s2048x3072/4ad5bca1a3a4bed681a5b2bec9f0f9eb9efd97ae.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/daea7dc32a9bb3fd05bae210ea8e2e7a/a10151342668b316-24/s2048x3072/090ac141a619aad466f80677e707a28bb3f072f0.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b85f3bdde78782fa3fededd8432a11da/a10151342668b316-0f/s2048x3072/1c379f0b12735a940696cab9646b4afb1d233b69.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 11" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/07a5d89e08b9a0d0351e05162f3adebc/a10151342668b316-d9/s2048x3072/84f8dd9d16250c5eec26fec196f0e67d6782dcd2.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 12" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/41682babb16cd8933b94b7798812194f/a10151342668b316-1f/s2048x3072/d6cbfec64be6733edb34aa51fc38610ab5727ebb.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 13" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/0e88c3ed78be92f500522ac2136c78af/a10151342668b316-a2/s2048x3072/da2391a0d707eeeec9e67ecd15f2365c3af80aee.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 14" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/af02de1580b14db0d8491e1ae937fc0d/a10151342668b316-d3/s2048x3072/79c82c0ae8f1050c0414f39e1188655d5d6f4026.jpg" class="full_image" alt="FUJIFILM FINEPIX A345 condition 15" onclick="openHpcLightbox(this)">
+      
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20A345"
+},
+
     {
   id: "olympus-µ-1050-SW",
   type: "photo",
