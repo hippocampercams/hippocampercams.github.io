@@ -57,12 +57,8 @@
         var photo = document.getElementById("hpc-lightbox-img");
         if (!photo || !window.HPC_LIGHTBOX_IMAGES.length) return;
 
-        if (index < 0) {
-            index = window.HPC_LIGHTBOX_IMAGES.length - 1;
-        }
-        if (index >= window.HPC_LIGHTBOX_IMAGES.length) {
-            index = 0;
-        }
+        if (index < 0) index = window.HPC_LIGHTBOX_IMAGES.length - 1;
+        if (index >= window.HPC_LIGHTBOX_IMAGES.length) index = 0;
 
         window.HPC_LIGHTBOX_INDEX = index;
         photo.src = window.HPC_LIGHTBOX_IMAGES[index].src;
@@ -273,13 +269,8 @@
             subheading = "";
         }
 
-        if (headingEl) {
-            headingEl.textContent = heading;
-        }
-
-        if (subheadingEl) {
-            subheadingEl.textContent = subheading;
-        }
+        if (headingEl) headingEl.textContent = heading;
+        if (subheadingEl) subheadingEl.textContent = subheading;
 
         renderPostsInto(containerId, filtered, true);
     }
