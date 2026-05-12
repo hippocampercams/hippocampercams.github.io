@@ -275,12 +275,57 @@
         renderPostsInto(containerId, filtered, true);
     }
 
+    function normalizeAestheticInfoBox() {
+        var rightPopups = document.getElementById("rightPopups");
+        if (!rightPopups || rightPopups.getAttribute("data-aesthetic-normalized") === "true") return;
+
+        var banners = rightPopups.querySelectorAll(".top-banner");
+        if (banners.length !== 1) return;
+
+        var bannerWindow = banners[0].querySelector(".top-banner-window");
+        if (!bannerWindow) return;
+
+        if (bannerWindow.querySelector(".tb-footer") || bannerWindow.querySelector(".tb-icon")) return;
+
+        var titleEl = bannerWindow.querySelector(".tb-title-text");
+        var bodyEl = bannerWindow.querySelector(".tb-body");
+        if (!titleEl || !bodyEl) return;
+
+        var aestheticName = titleEl.textContent.replace(/\s+/g, " ").trim();
+        if (!aestheticName) return;
+
+        var descriptionParts = [];
+        var paragraphs = bodyEl.querySelectorAll("p");
+
+        if (paragraphs.length) {
+            for (var i = 0; i < paragraphs.length; i++) {
+                var part = paragraphs[i].textContent.replace(/\s+/g, " ").trim();
+                if (part) descriptionParts.push(part);
+            }
+        } else {
+            var bodyText = bodyEl.textContent.replace(/\s+/g, " ").trim();
+            if (bodyText) descriptionParts.push(bodyText);
+        }
+
+        titleEl.textContent = "please read";
+        bodyEl.innerHTML =
+            '<div class="aesthetic-info-text">' +
+                '<p class="aesthetic-info-name">' + escapeHtml(aestheticName) + '</p>' +
+                (descriptionParts.length ? '<p class="aesthetic-info-description">' + escapeHtml(descriptionParts.join(" ")) + '</p>' : "") +
+            '</div>';
+
+        rightPopups.classList.add("aesthetic-info-popups");
+        rightPopups.setAttribute("data-aesthetic-normalized", "true");
+    }
+
     window.updateDesktopStage = function () {
         var desktop = document.getElementById("desktop");
         var stage = document.getElementById("desktopStage");
         var shell = document.getElementById("desktopStageShell");
         var icons = document.getElementById("desktopIcons");
         var rightPopups = document.getElementById("rightPopups");
+
+        normalizeAestheticInfoBox();
 
         if (!desktop || !stage || !shell) return;
 
