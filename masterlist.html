@@ -40,6 +40,7 @@
             text-decoration: underline;
         }
 
+        /* LEFT DESKTOP ICONS COLUMN */
         .icons {
             margin: 0 0 0 10px;
             list-style-type: none;
@@ -114,6 +115,7 @@
             image-rendering: pixelated;
         }
 
+        /* MAIN DESKTOP AREA */
         #desktop {
             margin: 20px auto 60px auto;
             z-index: 3;
@@ -145,13 +147,60 @@
             box-sizing: border-box;
         }
 
-        .window .top,
-        .window .middle,
-        .window .bottom {
-            background-image: none !important;
+        .window .title,
+        .window .content,
+        .window .content p,
+        .window .caption,
+        .window .info {
+            font-family: "Mouse Deco" !important;
         }
 
         .window .top {
+            height: 44px;
+            background-position: -168px 0px;
+        }
+
+        .window .top .info {
+            top: 26px;
+            left: 10px;
+            position: relative;
+            width: 300px;
+            z-index: 4;
+            font-size: 12px;
+            line-height: 13px;
+        }
+
+        .window > a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .window .top a:hover {
+            text-decoration: underline;
+        }
+
+        .window .middle,
+        div.notes,
+        div.attribution,
+        div.tags {
+            background: url('https://static.tumblr.com/fpdiq1j/utSm3gwcy/large_middle.png');
+            background-repeat: repeat-y;
+            padding: 4px 26px 4px 10px;
+        }
+
+        .window .bottom {
+            background-position: -168px -46px;
+            height: 22px;
+        }
+
+        /* FIX FOR THE WIDE WINDOW GLITCH */
+        .wide-window .top,
+        .wide-window .middle,
+        .wide-window .bottom {
+            background-image: none !important;
+        }
+
+        .wide-window .top {
             height: 30px;
             background: linear-gradient(to right, #0a3a8b, #4f80d4) !important;
             border-bottom: 1px solid #000000;
@@ -164,7 +213,7 @@
             position: relative;
         }
 
-        .window .top::after {
+        .wide-window .top::after {
             content: "x";
             width: 16px;
             height: 14px;
@@ -183,7 +232,7 @@
             font-family: "Mouse Deco";
         }
 
-        .window .top .info {
+        .wide-window .top .info {
             position: static;
             width: auto;
             z-index: auto;
@@ -196,19 +245,13 @@
             padding-right: 8px;
         }
 
-        .window > a {
-            color: #000000;
-            text-decoration: none;
-            display: block;
-        }
-
-        .window .middle {
+        .wide-window .middle {
             background: #ffffff !important;
             padding: 12px 16px 14px 16px;
             box-sizing: border-box;
         }
 
-        .window .bottom {
+        .wide-window .bottom {
             height: 0;
             border: 0;
             background: transparent !important;
@@ -221,19 +264,35 @@
             text-align: center;
         }
 
+        .middle .caption {
+            margin-top: 5px;
+        }
+
+        .tagged {
+            font-size: 0.8em;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+
         .title-img {
-            max-width: 78%;
+            max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto 2px auto;
             image-rendering: pixelated;
         }
 
+        .wide-window .title-img {
+            max-width: 78%;
+        }
+
+        /* AESTHETIC GRID */
         .aesthetic-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 16px;
             margin-top: 8px;
+            align-items: start;
         }
 
         .aesthetic-item {
@@ -261,8 +320,300 @@
             font-family: "Mouse Deco";
         }
 
+        /* ACCESSORY INLINE ICONS */
+        .inline-icon {
+            width: 18px;
+            height: 18px;
+            image-rendering: pixelated;
+            vertical-align: text-bottom;
+            margin-right: 4px;
+        }
+
+        /* TOP-RIGHT WARNING BOX */
+        .top-banner {
+            position: fixed;
+            top: 150px;
+            right: 6px;
+            z-index: 5;
+            pointer-events: auto;
+        }
+
+        .top-banner-window {
+            width: 300px;
+            max-width: 90%;
+            border: 1px solid #000000;
+            background-color: #d4d0c8;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+            font-family: "Mouse Deco";
+            color: #000000;
+        }
+
+        .tb-titlebar {
+            height: 30px;
+            background: linear-gradient(to right, #0a3a8b, #4f80d4);
+            border-bottom: 1px solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4px;
+            box-sizing: border-box;
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+        .tb-title-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: "Mouse Deco";
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .tb-close {
+            width: 16px;
+            height: 14px;
+            background-color: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+            text-align: center;
+            line-height: 12px;
+            color: #000000;
+            font-size: 11px;
+            cursor: default;
+            font-family: "Mouse Deco";
+        }
+
+        .tb-body {
+            display: flex;
+            align-items: center;
+            padding: 16px 16px 10px;
+            box-sizing: border-box;
+        }
+
+        .tb-icon {
+            position: relative;
+            width: 36px;
+            height: 32px;
+            margin-right: 12px;
+            background: none;
+        }
+
+        .tb-icon::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 26px solid #ffff00;
+        }
+
+        .tb-icon::after {
+            content: "!";
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+            line-height: 1;
+        }
+
+        .tb-text {
+            font-family: "Mouse Deco";
+            font-size: 13px;
+            line-height: 1;
+            letter-spacing: 0.005em;
+        }
+
+        .tb-footer {
+            padding: 0 16px 12px;
+            text-align: center;
+        }
+
+        .tb-button {
+            font-family: "Mouse Deco";
+            font-size: 16px;
+            font-weight: bold;
+            min-width: 75px;
+            padding: 2px 10px;
+            background-color: #d4d0c8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #404040;
+            border-bottom: 1px solid #404040;
+        }
+
+        .tb-button:active {
+            border-top: 1px solid #404040;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        /* START BAR */
+        .start_bar {
+            position: fixed;
+            background-color: rgb(192,192,192);
+            bottom: 0;
+            height: 28px;
+            width: 100%;
+            z-index: 4;
+        }
+
+        .taskbar-center-text {
+            position: absolute;
+            left: 150px;
+            right: 95px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: "Mouse Deco";
+            font-size: 13px;
+            color: #000000;
+            line-height: 1;
+            white-space: nowrap;
+            text-align: center;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .start_menu {
+            position: fixed;
+            z-index: 3;
+            bottom: 28px;
+            display: none;
+        }
+
+        .start_bar .top_border {
+            border-bottom: 1px solid rgb(255,255,255);
+            border-top: 1px solid rgb(223,223,223);
+        }
+
+        .start_bar .start_button {
+            float: left;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-bottom: 2px solid gray;
+            border-right: 2px solid gray;
+            height: 18px;
+            width: 54px;
+            margin-left: 2px;
+            margin-top: 2px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .start_bar .start_button .text {
+            float: right;
+            display: inline;
+            margin-right: 4px;
+            line-height: 18px;
+            font-weight: bold;
+            font-family: "Mouse Deco";
+        }
+
+        .start_bar .start_button .logo {
+            float: left;
+            margin-top: 2px;
+            margin-left: 2px;
+            width: 16px;
+            height: 14px;
+            background-position: -633px -103px;
+        }
+
+        .start_bar .big_seperator {
+            float: left;
+            border-left: 1px solid rgb(128,128,128);
+            border-right: 1px solid rgb(255,255,255);
+            height: 22px;
+            margin-top: 2px;
+            margin-left: 2px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .start_bar .small_seperator {
+            float: left;
+            border-left: 1px solid rgb(255,255,255);
+            border-top: 1px solid rgb(255,255,255);
+            border-right: 1px solid rgb(128,128,128);
+            border-bottom: 1px solid rgb(128,128,128);
+            background-color: rgb(192,192,192);
+            width: 1px;
+            height: 16px;
+            margin-top: 4px;
+            margin-left: 2px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .start_bar .application_icons {
+            float: left;
+            margin-top: 5px;
+            margin-left: 7px;
+            margin-right: 7px;
+            height: 16px;
+            width: 84px;
+            background-position: -565px -69px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .start_bar .tray {
+            float: right;
+            border-top: 1px solid rgb(128,128,128);
+            border-left: 1px solid rgb(128,128,128);
+            border-bottom: 1px solid rgb(255,255,255);
+            border-right: 1px solid rgb(255,255,255);
+            height: 18px;
+            width: 79px;
+            margin-right: 5px;
+            margin-top: 2px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .start_bar .tray .time {
+            line-height: 18px;
+            float: right;
+            font-size: 11px;
+            margin-right: 10px;
+            font-family: "Mouse Deco";
+        }
+
+        .start_bar .tray .calendar {
+            float: left;
+            margin-top: 1px;
+            margin-left: 3px;
+            width: 16px;
+            height: 16px;
+            background-position: -632px -87px;
+        }
+
+        /* MOBILE MENU */
+        .mobile-menu-button {
+            display: none;
+        }
+
+        .mobile-menu-overlay {
+            display: none;
+        }
+
         @media (max-width: 900px) {
-            .icons {
+            body {
+                overflow-x: hidden;
+            }
+
+            .icons,
+            .top-banner,
+            .start_bar {
                 display: none;
             }
 
@@ -279,7 +630,8 @@
             }
 
             .window,
-            .wide-window {
+            .wide-window,
+            .accessories-window {
                 width: calc(100vw - 16px);
                 max-width: calc(100vw - 16px);
                 min-width: 0;
@@ -287,8 +639,74 @@
                 box-sizing: border-box;
             }
 
-            .window .middle {
+            .window {
+                box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+            }
+
+            .window .middle,
+            .wide-window .middle {
                 padding: 10px 10px 12px 10px;
+                background: #ffffff !important;
+            }
+
+            .window .top,
+            .wide-window .top {
+                height: 30px;
+                background: linear-gradient(to right, #0a3a8b, #4f80d4) !important;
+                border-bottom: 1px solid #000000;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 4px 0 8px;
+                box-sizing: border-box;
+                color: #ffffff;
+                position: relative;
+            }
+
+            .window .top::after,
+            .wide-window .top::after {
+                content: "x";
+                width: 16px;
+                height: 14px;
+                background-color: #d4d0c8;
+                border-top: 1px solid #ffffff;
+                border-left: 1px solid #ffffff;
+                border-right: 1px solid #404040;
+                border-bottom: 1px solid #404040;
+                text-align: center;
+                line-height: 12px;
+                color: #000000;
+                font-size: 10px;
+                box-sizing: border-box;
+                display: inline-block;
+                flex: 0 0 auto;
+                font-family: "Mouse Deco";
+            }
+
+            .window .top .info,
+            .wide-window .top .info {
+                position: static;
+                width: auto;
+                z-index: auto;
+                font-size: 11px;
+                line-height: 1;
+                color: #ffffff;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 8px;
+            }
+
+            .window .bottom,
+            .wide-window .bottom {
+                height: 0;
+                border: 0;
+                background: transparent !important;
+            }
+
+            .wide-window .title-img,
+            .title-img {
+                max-width: 100%;
             }
 
             .aesthetic-grid {
@@ -299,6 +717,7 @@
 
             .aesthetic-thumb {
                 aspect-ratio: 1 / 1;
+                object-fit: cover;
             }
 
             .aesthetic-label {
@@ -307,11 +726,115 @@
                 font-size: 12px;
                 line-height: 1.15;
             }
+
+            .mobile-menu-button {
+                position: fixed;
+                left: 8px;
+                bottom: 8px;
+                z-index: 10020;
+                display: block;
+                text-decoration: none;
+                color: #ffffff;
+                width: 48px;
+            }
+
+            .mobile-menu-button .folder {
+                margin: 0 auto;
+            }
+
+            .mobile-menu-button .icon_label {
+                padding-top: 4px;
+                font-size: 12px;
+            }
+
+            .mobile-menu-overlay {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.45);
+                z-index: 10030;
+                display: none;
+            }
+
+            .mobile-menu-overlay.is-open {
+                display: block;
+            }
+
+            .mobile-menu-panel {
+                position: absolute;
+                inset: 0 auto 0 0;
+                width: 170px;
+                max-width: 80vw;
+                background: #008080;
+                padding: 12px 10px 16px 10px;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+
+            .mobile-menu-header {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 12px;
+            }
+
+            .mobile-menu-close {
+                width: 16px;
+                height: 14px;
+                background-color: #d4d0c8;
+                border-top: 1px solid #ffffff;
+                border-left: 1px solid #ffffff;
+                border-right: 1px solid #404040;
+                border-bottom: 1px solid #404040;
+                text-align: center;
+                line-height: 12px;
+                color: #000000;
+                font-size: 10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-family: "Mouse Deco";
+            }
+
+            .mobile-menu-icons {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: "Mouse Deco" !important;
+            }
+
+            .mobile-menu-icons a {
+                color: #ffffff;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .mobile-menu-icons .icon_label {
+                color: #ffffff;
+            }
         }
     </style>
 </head>
 
-<body>
+<body class="win98 two_column">
+
+    <div class="top-banner">
+        <div class="top-banner-window">
+            <div class="tb-titlebar">
+                <span class="tb-title-text">hippocampercams</span>
+                <span class="tb-close">x</span>
+            </div>
+            <div class="tb-body">
+                <div class="tb-icon"></div>
+                <div class="tb-text">
+                    °˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。
+                </div>
+            </div>
+            <div class="tb-footer">
+                <button class="tb-button">ok</button>
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
         <div class="icons">
             <a href="https://hippocampercams.github.io" class="home">
@@ -364,7 +887,9 @@
             <div class="window post-text wide-window">
                 <a href="#">
                     <div class="top">
-                        <div class="info">masterlist • shop digicams by aesthetic</div>
+                        <div class="info">
+                            masterlist • shop digicams by aesthetic
+                        </div>
                     </div>
                 </a>
                 <div class="middle">
@@ -409,12 +934,12 @@
                                 <img src="https://64.media.tumblr.com/40f3948775a3f9f49ed6c03ba3616698/8f15677795d9ae9a-ad/s1280x1920/095f2491f73335eb6385407d287ace20366721c0.jpg" alt="clean" class="aesthetic-thumb">
                                 <div class="aesthetic-label">clean</div>
                             </a>
-
+                            
                             <a href="collection.html?type=tag&value=cinematographic" class="aesthetic-item">
                                 <img src="https://64.media.tumblr.com/5c9ff0969a5f76e01eb56754dd3dedb5/675567152574a984-d9/s1280x1920/370f973606c7f228181dd4cd6e4a266b4e75be0f.jpg" alt="cinematographic" class="aesthetic-thumb">
                                 <div class="aesthetic-label">cinematographic</div>
                             </a>
-
+                            
                             <a href="collection.html?type=tag&value=minimalistic" class="aesthetic-item">
                                 <img src="https://64.media.tumblr.com/a4ef30b0053a9dd5365c4158ec10c0f9/fab800c49e64a484-b9/s1280x1920/cbfa12df844827230927842a869790c72af6faff.jpg" alt="minimalistic" class="aesthetic-thumb">
                                 <div class="aesthetic-label">minimalistic</div>
@@ -425,28 +950,229 @@
                 <div class="bottom"></div>
             </div>
 
-            <div class="window post-text wide-window">
+            <div class="window post-text">
                 <a href="#">
                     <div class="top">
-                        <div class="info">masterlist • shop digicams by brand</div>
+                        <div class="info">
+                            masterlist • digicams
+                        </div>
                     </div>
                 </a>
                 <div class="middle">
-                    <div class="title"><p><b>SHOP DIGICAMS BY BRAND</b></p></div>
+                    <div class="title">
+                        <img src="img/icons/digicams-wordart.png"
+                             alt="DIGICAMS"
+                             class="title-img">
+                    </div>
                     <div class="content">
-                        <div class="aesthetic-grid">
-                            <a href="collection.html?type=brand&value=canon" class="aesthetic-item"><div class="aesthetic-label">canon</div></a>
-                            <a href="collection.html?type=brand&value=fujifilm" class="aesthetic-item"><div class="aesthetic-label">fujifilm</div></a>
-                            <a href="collection.html?type=brand&value=nikon" class="aesthetic-item"><div class="aesthetic-label">nikon</div></a>
-                            <a href="collection.html?type=brand&value=olympus" class="aesthetic-item"><div class="aesthetic-label">olympus</div></a>
-                            <a href="collection.html?type=brand&value=panasonic" class="aesthetic-item"><div class="aesthetic-label">panasonic</div></a>
-                            <a href="collection.html?type=brand&value=sony" class="aesthetic-item"><div class="aesthetic-label">sony</div></a>
+                        <p><a href="collection.html?type=brand&value=fujifilm">❤︎ FUJIFILM</a><br></p>
+                        <p><a href="collection.html?type=brand&value=nikon">❤︎ NIKON</a><br></p>
+                        <p><a href="collection.html?type=brand&value=canon">❤︎ CANON</a><br></p>
+                        <p><a href="collection.html?type=brand&value=sony">❤︎ SONY</a><br></p>
+                        <p><a href="collection.html?type=brand&value=olympus">❤︎ OLYMPUS</a><br></p>
+                        <p><a href="collection.html?type=brand&value=panasonic">❤︎ PANASONIC</a><br></p>
+                        <p><a href="digicams-ricoh.html">❤︎ RICOH</a></p>
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+
+            <div class="window post-text">
+                <a href="#">
+                    <div class="top">
+                        <div class="info">
+                            masterlist • film cameras
                         </div>
+                    </div>
+                </a>
+                <div class="middle">
+                    <div class="title">
+                        <img src="img/icons/film-cameras-wordart.png"
+                             alt="FILM CAMERAS"
+                             class="title-img">
+                    </div>
+                    <div class="content">
+                        <p><a href="film-lomography.html">❤︎ LOMOGRAPHY CAMERAS</a><br></p>
+                        <p><a href="film-vintage.html">❤︎ VINTAGE FILM CAMS</a></p>
+                    </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
+
+            <div class="window post-text accessories-window">
+                <a href="#">
+                    <div class="top">
+                        <div class="info">
+                            masterlist • accessories
+                        </div>
+                    </div>
+                </a>
+                <div class="middle">
+                    <div class="title">
+                        <img src="img/icons/accessories-wordart.png"
+                             alt="ACCESSORIES"
+                             class="title-img">
+                    </div>
+                    <div class="content">
+                        <p><a href="accessories-chargers.html">
+                                <img src="img/icons/battery-half.png" alt="chargers" class="inline-icon">
+                                CHARGERS
+                            </a><br></p>
+
+                        <p><a href="accessories-batteries.html">
+                                <img src="img/icons/battery-full.png" alt="batteries" class="inline-icon">
+                                BATTERIES
+                            </a><br></p>
+
+                        <p><a href="accessories-adapters.html">
+                                <img src="img/icons/data-transfer.png" alt="adapters" class="inline-icon">
+                                ADAPTERS
+                            </a><br></p>
+
+                        <p><a href="accessories-memory-cards.html">
+                                <img src="img/icons/diskette.png" alt="memory cards" class="inline-icon">
+                                MEMORY CARDS
+                            </a><br></p>
+
+                        <p><a href="accessories-others.html">
+                                <img src="img/icons/cart.png" alt="everything else" class="inline-icon">
+                                EVERYTHING ELSE
+                            </a></p>
                     </div>
                 </div>
                 <div class="bottom"></div>
             </div>
         </div>
+
+        <a href="#" class="mobile-menu-button" id="mobileMenuButton">
+            <div class="folder"></div>
+            <div class="icon_label">menu</div>
+        </a>
+
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-panel">
+                <div class="mobile-menu-header">
+                    <button type="button" class="mobile-menu-close" id="mobileMenuClose">x</button>
+                </div>
+                <div class="mobile-menu-icons">
+                    <a href="https://hippocampercams.github.io" class="home">
+                        <div class="my_computer"></div>
+                        <div class="icon_label">hippocampercams</div>
+                    </a>
+
+                    <a href="readme.html" class="ask">
+                        <div class="my_documents"></div>
+                        <div class="icon_label">READ ME</div>
+                    </a>
+
+                    <a href="masterlist.html" class="submit">
+                        <div class="network_neighborhood"></div>
+                        <div class="icon_label">masterlist</div>
+                    </a>
+
+                    <a href="faqs.html" class="listings">
+                        <img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">
+                        <div class="icon_label">FAQs</div>
+                    </a>
+
+                    <a href="adoptacam.html" class="mustread">
+                        <img src="/img/icons/adoptacam.png" alt="adopt a cam" class="icon-img">
+                        <div class="icon_label">adopt a cam</div>
+                    </a>
+
+                    <a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">
+                        <img src="/img/icons/insta.png" alt="insta" class="icon-img">
+                        <div class="icon_label">insta</div>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">
+                        <img src="/img/icons/tiktok.png" alt="tiktok" class="icon-img">
+                        <div class="icon_label">tiktok</div>
+                    </a>
+
+                    <a href="lemon8.html" class="lemon8">
+                        <img src="/img/icons/lemon8.png" alt="lemon8" class="icon-img">
+                        <div class="icon_label">lemon8</div>
+                    </a>
+
+                    <a href="contact.html" class="contact">
+                        <img src="/img/icons/contact.png" alt="contact" class="icon-img">
+                        <div class="icon_label">contact</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="start_menu"></div>
+        <div class="start_bar">
+            <div class="top_border"></div>
+            <div class="start_button">
+                <span class="logo"></span>
+                <span class="text">Start</span>
+            </div>
+            <span class="big_seperator"></span>
+            <span class="small_seperator"></span>
+            <span class="application_icons"></span>
+
+            <div class="taskbar-center-text">°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。</div>
+
+            <span class="big_seperator"></span>
+            <span class="small_seperator"></span>
+            <div class="tray">
+                <span class="calendar"></span>
+                <span class="time" id="showClock">00:00 AM</span>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var h = now.getHours();
+            var m = now.getMinutes();
+            var ampm = h >= 12 ? "PM" : "AM";
+            h = h % 12;
+            if (h === 0) h = 12;
+            if (m < 10) m = "0" + m;
+            document.getElementById("showClock").textContent = h + ":" + m + " " + ampm;
+        }
+        updateClock();
+        setInterval(updateClock, 60000);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var mobileMenuButton = document.getElementById("mobileMenuButton");
+            var mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+            var mobileMenuClose = document.getElementById("mobileMenuClose");
+
+            function openMobileMenu(event) {
+                if (event) event.preventDefault();
+                if (!mobileMenuOverlay) return;
+                mobileMenuOverlay.classList.add("is-open");
+                document.body.classList.add("mobile-menu-open");
+            }
+
+            function closeMobileMenu() {
+                if (!mobileMenuOverlay) return;
+                mobileMenuOverlay.classList.remove("is-open");
+                document.body.classList.remove("mobile-menu-open");
+            }
+
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener("click", openMobileMenu);
+            }
+
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener("click", closeMobileMenu);
+            }
+
+            if (mobileMenuOverlay) {
+                mobileMenuOverlay.addEventListener("click", function (event) {
+                    if (event.target === mobileMenuOverlay) {
+                        closeMobileMenu();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
