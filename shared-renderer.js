@@ -16,6 +16,19 @@
         minimalistic: "minimalistic"
     };
 
+    var TAG_DESCRIPTIONS = {
+        sunsetglow: "sunset-ready digicams for glowing warmth, dusk tones, and dreamy evening nostalgia.",
+        goldenhour: "warm, glowy digicams for dreamy light, honey tones, and soft nostalgic warmth.",
+        softpastel: "dreamy pastel digicams for soft colour washes, airy tones, and sweet vintage light.",
+        softpastels: "dreamy pastel digicams for soft colour washes, airy tones, and sweet vintage light.",
+        cooltones: "cool-toned digicams for crisp blues, striking blacks, clean contrast, and moody city vibes.",
+        grainyanalogue: "nostalgic digicams for grainy, film-like texture, crunchy detail, and retro analogue vibes.",
+        "2000s": "true y2k-era digicams for flash-heavy, nostalgic, early-2000s party-cam energy.",
+        clean: "clean, minimal, elegant digicams for fresh, polished, easy everyday photos.",
+        cinematographic: "cinematic digicams for mood, contrast, atmosphere, and frame-worthy storybook shots.",
+        minimalistic: "simple, refined digicams for pared-back styling, clean lines, and understated everyday photos."
+    };
+
     function escapeHtml(text) {
         return String(text == null ? "" : text)
             .replace(/&/g, "&amp;")
@@ -36,6 +49,35 @@
 
     function getCollectionPageUrl(type, value) {
         return "collection.html?type=" + encodeURIComponent(type) + "&value=" + encodeURIComponent(value);
+    }
+
+    function ensureTaskbar() {
+        if (document.querySelector(".start_bar")) return;
+
+        var taskbar = document.createElement("div");
+        taskbar.className = "start_bar";
+        taskbar.innerHTML =
+            '<div class="start_button">' +
+                '<div class="logo"></div>' +
+                '<span class="text">start</span>' +
+            '</div>' +
+            '<div class="taskbar-center-text">hippocampercams</div>' +
+            '<div class="tray"><span class="time">00:00</span></div>';
+
+        document.body.appendChild(taskbar);
+
+        function updateTime() {
+            var timeEl = taskbar.querySelector(".time");
+            if (!timeEl) return;
+
+            var now = new Date();
+            var hours = String(now.getHours()).padStart(2, "0");
+            var minutes = String(now.getMinutes()).padStart(2, "0");
+            timeEl.textContent = hours + ":" + minutes;
+        }
+
+        updateTime();
+        window.setInterval(updateTime, 30000);
     }
 
     window.openHpcLightbox = function (imgEl) {
@@ -201,6 +243,7 @@
         }
 
         container.innerHTML = html;
+        ensureTaskbar();
     }
 
     function renderSinglePostInto(containerId) {
@@ -227,11 +270,61 @@
                     '</div>' +
                     '<div class="bottom"></div>' +
                 '</div>';
+            ensureTaskbar();
             return;
         }
 
         document.title = "hippocampercams • " + (match.id || "post");
         container.innerHTML = renderPost(match, false);
+        ensureTaskbar();
+    }
+
+    function closestWindow(el) {
+        while (el && el !== document.body) {
+            if (el.classList && el.classList.contains("window")) return el;
+            el = el.parentNode;
+        }
+        return null;
+    }
+
+    function hideCollectionHeadingWindow(headingEl, subheadingEl) {
+        var headingWindow = headingEl ? closestWindow(headingEl) : null;
+        var subheadingWindow = subheadingEl ? closestWindow(subheadingEl) : null;
+        var targetWindow = headingWindow || subheadingWindow;
+
+        if (targetWindow) {
+            targetWindow.classList.add("collection-heading-window");
+            targetWindow.style.display = "none";
+        }
+    }
+
+    function renderAestheticInfoBox(title, description) {
+        var shell = document.getElementById("desktopStageShell") || document.querySelector(".wrapper") || document.body;
+        var existing = document.getElementById("rightPopups");
+
+        if (!existing) {
+            existing = document.createElement("div");
+            existing.id = "rightPopups";
+            existing.className = "right-popups";
+            shell.insertBefore(existing, shell.firstChild);
+        }
+
+        existing.classList.add("aesthetic-info-popups");
+        existing.innerHTML =
+            '<div class="top-banner">' +
+                '<div class="top-banner-window">' +
+                    '<div class="tb-titlebar">' +
+                        '<span class="tb-title-text">PLEASE READ</span>' +
+                        '<span class="tb-close">x</span>' +
+                    '</div>' +
+                    '<div class="tb-body">' +
+                        '<div class="aesthetic-info-text">' +
+                            '<p class="aesthetic-info-name">' + escapeHtml(title) + '</p>' +
+                            '<p class="aesthetic-info-description">' + escapeHtml(description || "") + '</p>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>' +
+            '</div>';
     }
 
     function renderCollectionInto(containerId, headingId, subheadingId) {
@@ -254,28 +347,37 @@
                     filtered.push(posts[i]);
                 }
             }
+
             heading = TAG_LABELS[value] || value || "tag";
             subheading = "shop digicams by aesthetic";
+
+            hideCollectionHeadingWindow(headingEl, subheadingEl);
+            renderAestheticInfoBox(heading, TAG_DESCRIPTIONS[value] || subheading);
         } else if (type === "brand") {
             for (var j = 0; j < posts.length; j++) {
                 if ((posts[j].brand || "").toLowerCase() === String(value || "").toLowerCase()) {
                     filtered.push(posts[j]);
                 }
             }
+
             heading = (value || "brand").toUpperCase();
             subheading = "shop digicams by brand";
+
+            if (headingEl) headingEl.textContent = heading;
+            if (subheadingEl) subheadingEl.textContent = subheading;
         } else {
             heading = "collection";
             subheading = "";
+
+            if (headingEl) headingEl.textContent = heading;
+            if (subheadingEl) subheadingEl.textContent = subheading;
         }
 
-        if (headingEl) headingEl.textContent = heading;
-        if (subheadingEl) subheadingEl.textContent = subheading;
-
         renderPostsInto(containerId, filtered, true);
+        ensureTaskbar();
     }
 
-    function normalizeAestheticInfoBox() {
+    function normalizeExistingAestheticInfoBox() {
         var rightPopups = document.getElementById("rightPopups");
         if (!rightPopups || rightPopups.getAttribute("data-aesthetic-normalized") === "true") return;
 
@@ -292,7 +394,7 @@
         if (!titleEl || !bodyEl) return;
 
         var aestheticName = titleEl.textContent.replace(/\s+/g, " ").trim();
-        if (!aestheticName) return;
+        if (!aestheticName || aestheticName.toLowerCase() === "please read") return;
 
         var descriptionParts = [];
         var paragraphs = bodyEl.querySelectorAll("p");
@@ -307,14 +409,7 @@
             if (bodyText) descriptionParts.push(bodyText);
         }
 
-        titleEl.textContent = "please read";
-        bodyEl.innerHTML =
-            '<div class="aesthetic-info-text">' +
-                '<p class="aesthetic-info-name">' + escapeHtml(aestheticName) + '</p>' +
-                (descriptionParts.length ? '<p class="aesthetic-info-description">' + escapeHtml(descriptionParts.join(" ")) + '</p>' : "") +
-            '</div>';
-
-        rightPopups.classList.add("aesthetic-info-popups");
+        renderAestheticInfoBox(aestheticName, descriptionParts.join(" "));
         rightPopups.setAttribute("data-aesthetic-normalized", "true");
     }
 
@@ -325,7 +420,8 @@
         var icons = document.getElementById("desktopIcons");
         var rightPopups = document.getElementById("rightPopups");
 
-        normalizeAestheticInfoBox();
+        ensureTaskbar();
+        normalizeExistingAestheticInfoBox();
 
         if (!desktop || !stage || !shell) return;
 
@@ -340,6 +436,7 @@
                 rightPopups.style.left = "";
                 rightPopups.style.right = "";
             }
+
             return;
         }
 
@@ -356,6 +453,8 @@
 
         stage.style.height = naturalHeight + "px";
         shell.style.height = (naturalHeight * scale) + "px";
+
+        rightPopups = document.getElementById("rightPopups");
 
         if (rightPopups) {
             var desktopRight = stageLeft + ((desktop.offsetLeft + desktop.offsetWidth) * scale);
@@ -378,4 +477,9 @@
         renderSinglePostInto: renderSinglePostInto,
         renderCollectionInto: renderCollectionInto
     };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        ensureTaskbar();
+        normalizeExistingAestheticInfoBox();
+    });
 })();
