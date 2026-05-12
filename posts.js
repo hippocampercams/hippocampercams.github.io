@@ -5,7 +5,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>SONY CYBERSHOT DSC-T50 (Red)</b> $160.00</p><p><i>warm, nostalgic, dreamy</i></p>',
   captionHtml: '7.2 mp・3x optical zoom・zeiss lens・super steadyshot tech・classic cybershot build',
-  tags: ["sunsetglow", "goldenhour", "simpleelegance", "cybery2k", "cinematographic", "cleangirl"],
+  tags: ["sunsetglow", "goldenhour", "minimalistic", "2000s", "cinematographic", "clean"],
   brand: "sony",
   images: [
     {
@@ -58,7 +58,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S4000</b> $190.00</p><p><i>warm, striking, nostalgic, afterparty vibes</i></p>',
   captionHtml: '12.0 mp・4x optical zoom・touchscreen・highly sought-after model!',
-  tags: ["sunsetglow", "goldenhour", "cybery2k", "cinematographic"],
+  tags: ["sunsetglow", "goldenhour", "2000s", "cinematographic"],
   brand: "nikon",
   images: [
     {
@@ -121,7 +121,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>SONY CYBERSHOT DSC-T50 (Silver)</b> $160.00</p><p><i>warm, nostalgic, dreamy</i></p>',
   captionHtml: '7.2 mp・3x optical zoom・zeiss lens・super steadyshot tech・classic cybershot build',
-  tags: ["sunsetglow", "goldenhour", "simpleelegance", "cybery2k", "cinematographic", "cleangirl"],
+  tags: ["sunsetglow", "goldenhour", "minimalistic", "2000s", "cinematographic", "clean"],
   brand: "sony",
   images: [
     {
@@ -173,7 +173,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>OLYMPUS FE-360</b> $160.00</p><p><i>analogue vibes, moody, nostalgic</i></p>',
   captionHtml: '8 mp・3x optical zoom・super lightweight',
-  tags: ["simpleelegance", "cybery2k", "cinematographic", "tokyoblues"],
+  tags: ["minimalistic", "2000s", "cinematographic", "cooltones"],
   brand: "olympus",
   images: [
     {
@@ -220,7 +220,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S8</b> $160.00</p><p><i>melancholic, afterparty vibes, y2k</i></p>',
   captionHtml: '7.1 mp・3x optical zoom・convenient scrolly dial・super slim (only 2cm at her thickest!)・relatively rare model',
-  tags: ["cybery2k", "tokyoblues", "cinematographic"],
+  tags: ["2000s", "cooltones", "cinematographic"],
   brand: "nikon",
   images: [
     {
@@ -272,7 +272,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>PANASONIC LUMIX DMC-FX2</b> $135.00</p><p><i>warm, retro, nostalgic</i></p>',
   captionHtml: 'Leica lens・3x optical zoom・classic digicam look',
-  tags: ["sunsetglow", "goldenhour", "cinematographic", "cybery2k"],
+  tags: ["sunsetglow", "goldenhour", "cinematographic", "2000s"],
   brand: "panasonic",
   images: [
     {
@@ -328,7 +328,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S60</b> $200.00</p><p><i>cool hues, striking blacks, clean</i></p>',
   captionHtml: '10 mp・5x zoom・touchscreen・in an elegant chocolate colour',
-  tags: ["cleangirl", "sunsetglow", "cinematographic"],
+  tags: ["clean", "sunsetglow", "cinematographic"],
   brand: "nikon",
   images: [
     {
@@ -375,7 +375,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>SONY CYBERSHOT DSC-T100</b> $150.00</p><p><i>bold, sharp, striking</i></p>',
   captionHtml: '8.1 mp・5x optical zoom + 10x digital zoom (!!!)・super steadyshot tech・zeiss lens)',
-  tags: ["cinematographic", "cybery2k", "tokyoblues", "simpleelegance"],
+  tags: ["cinematographic", "2000s", "cooltones", "minimalistic"],
   brand: "sony",
   images: [
     {
@@ -430,7 +430,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>OLYMPUS FE-46</b> $160.00</p><p><i>cinematographic, warm, nostalgic</i></p>',
   captionHtml: '12 mp・5x optical zoom・beautiful, cinematographic photos straight out of cam・AA battery-powered (one less charger!)',
-  tags: ["cinematographic", "sunsetglow", "cybery2k", "tokyoblues"],
+  tags: ["cinematographic", "sunsetglow", "2000s", "cooltones"],
   brand: "olympus",
   images: [
     {
@@ -477,7 +477,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $120.00</p><p><i>rare, analogue vibes, retro</i></p>',
   captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
-  tags: ["grainyretro", "cybery2k"],
+  tags: ["grainyanalogue", "2000s"],
   brand: "fujifilm",
   images: [
     {
@@ -531,7 +531,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX A345</b> $120.00</p><p><i>dreamy, warm vibes</i></p>',
   captionHtml: '4.1 mp・3x optical zoom・cute, brick build・AA battery-powered (one less charger!)',
-  tags: ["goldenhour", "simpleelegance", "sunsetglow", "grainyretro", "cybery2k"],
+  tags: ["goldenhour", "minimalistic", "sunsetglow", "grainyanalogue", "2000s"],
   brand: "fujifilm",
   images: [
     {
@@ -590,7 +590,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>OLYMPUS µ 1050 SW</b> $150.00</p><p><i>moody, grungy, sharp, warm, nostalgic</i></p>',
   captionHtml: '10.1 mp・3x optical zoom・durable: waterproof  up to 3m, shockproof up to 1.5m, freezeproof・super macro mode available',
-  tags: ["grainyretro", "cybery2k", "goldenhour", "cinematographic", "simpleelegance"],
+  tags: ["grainyanalogue", "2000s", "goldenhour", "cinematographic", "minimalistic"],
   brand: "olympus",
   images: [
     {
@@ -646,7 +646,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $140.00</p><p><i>warm, nostalgic, dreamy</i></p>',
   captionHtml: '7.2 mp・3x optical zoom・fuji colours on a budget・AA battery-powered (one less charger!)',
-  tags: ["goldenhour", "cinematographic", "sunsetglow", "simpleelegance"],
+  tags: ["goldenhour", "cinematographic", "sunsetglow", "minimalistic"],
   brand: "panasonic",
   images: [
     {
@@ -750,7 +750,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S3 (RED)</b> $180.00</p><p><i>vivid, striking, dramatic</i></p>',
   captionHtml: '6 mp・3x optical zoom・spunk red・classic nikon blacks',
-  tags: ["cybery2k", "cinematographic"],
+  tags: ["2000s", "cinematographic"],
   brand: "nikon",
   images: [
     {
@@ -853,7 +853,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>CANON POWERSHOT A570 IS</b> $150.00</p><p><i>rare, analogue vibes, retro</i></p>',
   captionHtml: '7.1 mp・4x optical zoom・AA battery-powered (one less charger!)',
-  tags: ["grainyretro", "cybery2k", "tokyoblues", "sunsetglow", "softpastels"],
+  tags: ["grainyanalogue", "2000s", "cooltones", "sunsetglow", "softpastels"],
   brand: "canon",
   images: [
     {
@@ -905,7 +905,7 @@ window.HPC_POSTS = [
     meta: "Posted just now • 0 notes",
     titleHtml: '<p><b>NIKON COOLPIX S510 #1</b> $150.00 </p><p><i>moody, enigmatic, stiking</i></p>',
     captionHtml: '8.1 mp・3x optical zoom + digital zoom・super compact',
-    tags: ["cybery2k", "cinematographic", "tokyoblues", "grainyretro"],
+    tags: ["2000s", "cinematographic", "cooltones", "grainyanalogue"],
     brand: "nikon",
     images: [
       {
@@ -953,7 +953,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX L2</b> $140.00</p><p><i>dreamy, nostalgic vibes</i></p>',
   captionHtml: '3x optical zoom・AA battery-powered (one less charger!)',
-  tags: ["cybery2k", "cinematographic"],
+  tags: ["2000s", "cinematographic"],
   brand: "nikon",
   images: [
     {
@@ -1054,7 +1054,7 @@ window.HPC_POSTS = [
     meta: "Posted just now • 0 notes",
     titleHtml: '<p><b>FUJIFILM FINEPIX A500 #1</b> $160.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
-    tags: ["cleangirl", "simpleelegance"],
+    tags: ["clean", "minimalistic"],
     brand: "fujifilm",
     images: [
       {
@@ -1083,7 +1083,7 @@ window.HPC_POSTS = [
       }
     ],
     conditionSummaryHtml: "<p>accessories: strap <br> item condition: 🏆 (absurdly perfect!)</p>",
-    conditionDetailsHtml: `
+  conditionDetailsHtml: `
       <p>this easy-to-use point and shoot cam functions normally and is in amazing condition for its age. slight scratches at the shutter, tiny chip at the side at the bottom, and minor scratches and scuffs consistent with a used vintage item.</p>
       <div class="photo-grid">
         <img src="https://64.media.tumblr.com/ac7f622d35b79e998494d4dc166e3416/f814ad2d0ea3de7b-c9/s1280x1920/867cd060fcaf9d01f864e7bd251f93e75d208d0e.jpg" class="full_image" alt="FUJIFILM FINEPIX A500 condition 1" onclick="openHpcLightbox(this)">
@@ -1103,7 +1103,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX CLIP-IT 80</b> $150.00</p><p><i>grainy, dreamy, film-like</i></p>',
   captionHtml: '1.6x digital zoom・cute brick build・looks like a film cam, produces film-like photos',
-  tags: ["grainyretro", "cybery2k", "goldenhour"],
+  tags: ["grainyanalogue", "2000s", "goldenhour"],
   brand: "fujifilm",
   images: [
     {
@@ -1153,7 +1153,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $200.00</p><p><i>cool, moody, striking</i></p>',
   captionHtml: '10 mp・5x optical zoom・touchscreen・beautiful peach pink',
-  tags: ["grainyretro", "cybery2k", "tokyoblues"],
+  tags: ["grainyanalogue", "2000s", "cooltones"],
   brand: "fujifilm",
   images: [
     {
@@ -1201,7 +1201,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX Z3</b> $180.00</p><p><i>elegant, warm, dynamic</i></p>',
   captionHtml: '5.1 mp・3x optical zoom・good in low light conditions・gorgeous baby pink',
-  tags: ["cleangirl", "simpleelegance"],
+  tags: ["clean", "minimalistic"],
   brand: "fujifilm",
   images: [
     {
@@ -1259,7 +1259,7 @@ window.HPC_POSTS = [
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S3 - SILVER</b> $140.00</p><p><i>vivid, striking, dramatic</i></p>',
   captionHtml: '6 mp・3x optical zoom・simple, timeless design・classic nikon blacks',
-  tags: ["cybery2k", "cinematographic"],
+  tags: ["2000s", "cinematographic"],
   brand: "nikon",
   images: [
     {
@@ -1317,7 +1317,7 @@ window.HPC_POSTS = [
     meta: "Posted just now • 0 notes",
     titleHtml: '<p><b>FUJIFILM FINEPIX A500 #2</b> $150.00 </p><p><i>striking, clean, elegant, moody</i></p>',
     captionHtml: '5 mp・3x optical zoom + digital zoom・AA batteries (one less charger!)',
-    tags: ["cleangirl", "simpleelegance"],
+    tags: ["clean", "minimalistic"],
     brand: "fujifilm",
     images: [
       {
@@ -1370,7 +1370,7 @@ window.HPC_POSTS = [
     meta: "Posted just now • 0 notes",
     titleHtml: '<p><b>NIKON COOLPIX S510 #2</b> $130.00 </p><p><i>moody, enigmatic, stiking</i></p>',
     captionHtml: '8.1 mp・3x optical zoom + digital zoom・super compact',
-    tags: ["cybery2k", "cinematographic", "tokyoblues", "grainyretro"],
+    tags: ["2000s", "cinematographic", "cooltones", "grainyanalogue"],
     brand: "nikon",
     images: [
       {
