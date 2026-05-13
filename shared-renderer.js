@@ -671,17 +671,34 @@
         rightPopups = document.getElementById("rightPopups");
 
         if (rightPopups) {
-            var popupWidth = rightPopups.offsetWidth || 410;
+            var isAestheticPopup = rightPopups.classList.contains("aesthetic-info-popups");
             var popupGap = 36;
+            var rightMargin = 72;
+            var minPopupWidth = 320;
+            var preferredPopupWidth = isAestheticPopup ? 380 : 410;
             var desktopRight = stageLeft + ((desktop.offsetLeft + desktop.offsetWidth) * scale);
+            var availableWidth = window.innerWidth - desktopRight - popupGap - rightMargin;
+            var popupWidth = preferredPopupWidth;
+
+            if (availableWidth < preferredPopupWidth) {
+                popupWidth = Math.max(minPopupWidth, availableWidth);
+            }
+
             var popupLeft = desktopRight + popupGap;
-            var maxPopupLeft = window.innerWidth - popupWidth - 72;
+            var maxPopupLeft = window.innerWidth - popupWidth - rightMargin;
 
             if (popupLeft > maxPopupLeft) {
-                popupLeft = desktopRight + popupGap;
+                popupLeft = maxPopupLeft;
+            }
+
+            if (popupLeft < desktopRight + 16) {
+                popupLeft = desktopRight + 16;
+                popupWidth = Math.max(minPopupWidth, window.innerWidth - popupLeft - rightMargin);
             }
 
             rightPopups.style.setProperty("position", "fixed", "important");
+            rightPopups.style.setProperty("width", popupWidth + "px", "important");
+            rightPopups.style.setProperty("max-width", popupWidth + "px", "important");
             rightPopups.style.setProperty("left", popupLeft + "px", "important");
             rightPopups.style.setProperty("right", "auto", "important");
             rightPopups.style.setProperty("top", "50%", "important");
