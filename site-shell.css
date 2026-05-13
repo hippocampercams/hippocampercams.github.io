@@ -811,8 +811,11 @@ img.full_image {
     display: none !important;
   }
 
+  .right-popups,
   .right-popups .please-read-banner,
-  .right-popups .aesthetic-info-banner {
+  .right-popups .aesthetic-info-banner,
+  .right-popups .rating-system-banner,
+  .right-popups .mobile-rating-banner {
     display: none !important;
   }
 
