@@ -539,8 +539,7 @@
                         '</div>' +
                     '</div>' +
                 '</div>' +
-            '</div>' +
-            RATING_SYSTEM_BANNER_HTML;
+            '</div>';
     }
 
     function renderCollectionInto(containerId, headingId, subheadingId) {
@@ -597,40 +596,22 @@
         if (isPostPage()) return;
 
         var rightPopups = document.getElementById("rightPopups");
-        if (!rightPopups || rightPopups.getAttribute("data-aesthetic-normalized") === "true") {
-            ensureRatingBannerForExistingRightPopups();
-            return;
-        }
+        if (!rightPopups || rightPopups.getAttribute("data-aesthetic-normalized") === "true") return;
 
         var banners = rightPopups.querySelectorAll(".top-banner");
-        if (banners.length !== 1) {
-            ensureRatingBannerForExistingRightPopups();
-            return;
-        }
+        if (banners.length !== 1) return;
 
         var bannerWindow = banners[0].querySelector(".top-banner-window");
-        if (!bannerWindow) {
-            ensureRatingBannerForExistingRightPopups();
-            return;
-        }
+        if (!bannerWindow) return;
 
-        if (bannerWindow.querySelector(".tb-footer") || bannerWindow.querySelector(".tb-icon")) {
-            ensureRatingBannerForExistingRightPopups();
-            return;
-        }
+        if (bannerWindow.querySelector(".tb-footer") || bannerWindow.querySelector(".tb-icon")) return;
 
         var titleEl = bannerWindow.querySelector(".tb-title-text");
         var bodyEl = bannerWindow.querySelector(".tb-body");
-        if (!titleEl || !bodyEl) {
-            ensureRatingBannerForExistingRightPopups();
-            return;
-        }
+        if (!titleEl || !bodyEl) return;
 
         var aestheticName = titleEl.textContent.replace(/\s+/g, " ").trim();
-        if (!aestheticName || aestheticName.toLowerCase() === "please read") {
-            ensureRatingBannerForExistingRightPopups();
-            return;
-        }
+        if (!aestheticName || aestheticName.toLowerCase() === "please read") return;
 
         var descriptionParts = [];
         var paragraphs = bodyEl.querySelectorAll("p");
@@ -654,7 +635,6 @@
         ensureTaskbar();
         ensureMobileMenu();
         normalizeExistingAestheticInfoBox();
-        ensureRatingBannerForExistingRightPopups();
         updateClock();
     }
 
@@ -680,6 +660,7 @@
                 rightPopups.style.left = "";
                 rightPopups.style.right = "";
                 rightPopups.style.top = "";
+                rightPopups.style.transform = "";
             }
 
             return;
@@ -702,17 +683,10 @@
         rightPopups = document.getElementById("rightPopups");
 
         if (rightPopups) {
-            var desktopRight = stageLeft + ((desktop.offsetLeft + desktop.offsetWidth) * scale);
-            var popupGap = 36;
-            var popupWidth = rightPopups.offsetWidth || 390;
-            var popupLeft = desktopRight + popupGap;
-            var maxPopupLeft = window.innerWidth - popupWidth - 16;
-
-            if (popupLeft > maxPopupLeft) popupLeft = maxPopupLeft;
-
-            rightPopups.style.left = popupLeft + "px";
-            rightPopups.style.right = "auto";
-            rightPopups.style.top = "50%";
+            rightPopups.style.left = "";
+            rightPopups.style.right = "";
+            rightPopups.style.top = "";
+            rightPopups.style.transform = "";
         }
     };
 
