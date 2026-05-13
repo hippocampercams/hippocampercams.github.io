@@ -438,11 +438,25 @@ img.full_image {
   gap: 16px;
   align-items: stretch;
   pointer-events: none;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
+}
+
+.right-popups *,
+.right-popups p,
+.right-popups div,
+.right-popups span,
+.right-popups a,
+.right-popups b,
+.right-popups i,
+.right-popups u,
+.right-popups button {
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .top-banner {
   pointer-events: auto;
   flex: 0 0 auto;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .top-banner-window {
@@ -452,6 +466,7 @@ img.full_image {
   background-color: #d4d0c8;
   box-shadow: 2px 2px 0 rgba(0,0,0,.4);
   color: #000;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .tb-titlebar {
@@ -465,13 +480,14 @@ img.full_image {
   box-sizing: border-box;
   color: #fff;
   font-size: 10.5px;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .tb-title-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: "Mouse Deco";
+  font-family: "Mouse Deco", Arial, sans-serif !important;
   font-size: 16.5px;
   font-weight: bold;
 }
@@ -490,7 +506,7 @@ img.full_image {
   font-size: 10px;
   cursor: default;
   box-sizing: border-box;
-  font-family: "Mouse Deco";
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .tb-body {
@@ -498,6 +514,7 @@ img.full_image {
   align-items: center;
   padding: 16px 16px 10px;
   box-sizing: border-box;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .tb-icon {
@@ -540,7 +557,7 @@ img.full_image {
 .tb-text b,
 .tb-text i,
 .tb-text u {
-  font-family: "Mouse Deco" !important;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
   font-size: 12.5px;
   line-height: 1.25;
   letter-spacing: .005em;
@@ -552,6 +569,7 @@ img.full_image {
   margin-top: -10px;
   text-align: center;
   box-sizing: border-box;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .tb-button {
@@ -564,13 +582,14 @@ img.full_image {
   border-left: 1px solid #fff;
   border-right: 1px solid #404040;
   border-bottom: 1px solid #404040;
-  font-family: "Mouse Deco" !important;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .right-popups.aesthetic-info-popups {
   width: 390px;
   max-width: 390px;
   display: flex !important;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .right-popups.aesthetic-info-popups .top-banner-window {
@@ -579,6 +598,7 @@ img.full_image {
 
 .right-popups.aesthetic-info-popups .tb-title-text {
   text-transform: uppercase;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .right-popups.aesthetic-info-popups .tb-body {
@@ -586,6 +606,7 @@ img.full_image {
   align-items: initial !important;
   padding: 14px 16px 16px !important;
   box-sizing: border-box;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .right-popups.aesthetic-info-popups .aesthetic-info-text,
@@ -601,6 +622,7 @@ img.full_image {
   line-height: 1.05 !important;
   font-weight: bold !important;
   text-transform: lowercase;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .right-popups.aesthetic-info-popups .aesthetic-info-description {
@@ -609,6 +631,7 @@ img.full_image {
   font-size: 12.5px !important;
   line-height: 1.25 !important;
   font-weight: normal !important;
+  font-family: "Mouse Deco", Arial, sans-serif !important;
 }
 
 .collection-heading-window,
