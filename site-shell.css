@@ -20,6 +20,10 @@ body {
   overflow-y: visible;
 }
 
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -103,7 +107,6 @@ label {
 .application_icons,
 .start_bar .start_button .logo,
 .start_bar .tray .calendar,
-.start_menu,
 .description .top,
 .description .ok_button,
 .description .bottom {
@@ -425,6 +428,13 @@ img.full_image {
   box-sizing: border-box;
 }
 
+.adopt-button:active {
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
 .right-popups {
   position: fixed;
   top: 50%;
@@ -556,12 +566,20 @@ img.full_image {
 .tb-text a,
 .tb-text b,
 .tb-text i,
-.tb-text u {
+.tb-text u,
+.aesthetic-info-text,
+.aesthetic-info-text p,
+.aesthetic-info-name,
+.aesthetic-info-description {
   font-family: "Mouse Deco", Arial, sans-serif !important;
   font-size: 12.5px;
   line-height: 1.25;
   letter-spacing: .005em;
   box-sizing: border-box;
+}
+
+.tb-text p {
+  margin-top: 0;
 }
 
 .tb-footer {
@@ -583,6 +601,13 @@ img.full_image {
   border-right: 1px solid #404040;
   border-bottom: 1px solid #404040;
   font-family: "Mouse Deco", Arial, sans-serif !important;
+}
+
+.tb-button:active {
+  border-top: 1px solid #404040;
+  border-left: 1px solid #404040;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .right-popups.aesthetic-info-popups {
@@ -660,6 +685,13 @@ img.full_image {
   display: block;
 }
 
+.start_menu {
+  position: fixed;
+  z-index: 3;
+  bottom: 28px;
+  display: none;
+}
+
 .start_bar {
   position: fixed;
   background-color: rgb(192,192,192);
@@ -679,38 +711,66 @@ img.full_image {
 }
 
 .start_bar .start_button {
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  height: 22px;
-  min-width: 64px;
-  padding: 2px 7px 2px 6px;
-  box-sizing: border-box;
-  background: #d4d0c8;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
-  border-right: 1px solid #404040;
-  border-bottom: 1px solid #404040;
-  color: #000;
-  font-size: 12px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-family: "Mouse Deco", Arial, sans-serif;
-}
-
-.start_bar .start_button .logo {
-  width: 16px;
-  height: 16px;
-  background-position: -633px -103px;
-  margin: 0;
-  flex: 0 0 auto;
+  float: left;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray;
+  height: 18px;
+  width: 54px;
+  margin-left: 2px;
+  margin-top: 2px;
 }
 
 .start_bar .start_button .text {
+  float: right;
+  display: inline;
+  margin-right: 4px;
+  line-height: 18px;
   font-weight: bold;
-  line-height: 16px;
+  font-family: "Mouse Deco";
+  color: #000;
+}
+
+.start_bar .start_button .logo {
+  float: left;
+  margin-top: 2px;
+  margin-left: 2px;
+  width: 16px;
+  height: 14px;
+  background-position: -633px -103px;
+}
+
+.start_bar .big_seperator {
+  float: left;
+  border-left: 1px solid rgb(128,128,128);
+  border-right: 1px solid rgb(255,255,255);
+  height: 22px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.start_bar .small_seperator {
+  float: left;
+  border-left: 1px solid rgb(255,255,255);
+  border-top: 1px solid rgb(255,255,255);
+  border-right: 1px solid rgb(128,128,128);
+  border-bottom: 1px solid rgb(128,128,128);
+  background-color: rgb(192,192,192);
+  width: 1px;
+  height: 16px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.start_bar .application_icons {
+  float: left;
+  margin-top: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  height: 16px;
+  width: 84px;
+  background-position: -565px -69px;
 }
 
 .taskbar-center-text {
@@ -727,36 +787,64 @@ img.full_image {
 }
 
 .start_bar .tray {
-  position: absolute;
-  right: 3px;
-  top: 3px;
-  height: 22px;
-  min-width: 78px;
-  padding: 2px 6px;
-  box-sizing: border-box;
-  border-top: 1px solid #808080;
-  border-left: 1px solid #808080;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 12px;
-  line-height: 16px;
+  float: right;
+  border-top: 1px solid rgb(128,128,128);
+  border-left: 1px solid rgb(128,128,128);
+  border-bottom: 1px solid rgb(255,255,255);
+  border-right: 1px solid rgb(255,255,255);
+  height: 18px;
+  width: 79px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.start_bar .tray .time {
+  line-height: 18px;
+  float: right;
+  font-size: 10px;
+  margin-right: 10px;
+  font-family: "Mouse Deco";
   color: #000;
 }
 
 .start_bar .tray .calendar {
+  float: left;
+  margin-top: 1px;
+  margin-left: 3px;
+  width: 16px;
+  height: 16px;
+  background-position: -632px -87px;
+}
+
+.mobile-menu-button {
   display: none;
 }
 
-.start_bar .tray .time {
-  font-family: "Mouse Deco", Arial, sans-serif;
+.mobile-menu-overlay {
+  display: none;
 }
 
 @media (max-width: 900px) {
-  .icons {
-    display: none;
+  body {
+    overflow-x: hidden;
+  }
+
+  .icons,
+  .right-popups,
+  .start_menu,
+  .start_bar {
+    display: none !important;
+  }
+
+  .desktop-stage {
+    position: static;
+    width: 100%;
+    transform: none !important;
+  }
+
+  .desktop-stage-shell {
+    min-height: 100vh;
+    height: auto !important;
   }
 
   #desktop {
@@ -789,6 +877,10 @@ img.full_image {
     object-fit: cover;
   }
 
+  .condition-details {
+    width: 100%;
+  }
+
   .adopt-button {
     min-width: 0;
     width: 100%;
@@ -803,50 +895,88 @@ img.full_image {
     white-space: nowrap;
   }
 
-  .right-popups {
+  .mobile-menu-button {
+    position: fixed;
+    left: 8px;
+    bottom: 8px;
+    z-index: 10020;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 48px;
+  }
+
+  .mobile-menu-button .folder {
+    margin: 0 auto;
+  }
+
+  .mobile-menu-button .icon_label {
+    padding-top: 4px;
+    font-size: 12px;
+  }
+
+  .mobile-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 10030;
     display: none;
   }
 
-  .right-popups.aesthetic-info-popups {
-    display: flex !important;
-    position: fixed !important;
-    top: auto !important;
-    left: 8px !important;
-    right: 8px !important;
-    bottom: 38px !important;
-    transform: none !important;
-    width: auto !important;
-    max-width: none !important;
-    z-index: 50 !important;
-    gap: 0 !important;
+  .mobile-menu-overlay.is-open {
+    display: block;
   }
 
-  .right-popups.aesthetic-info-popups .top-banner {
-    width: 100% !important;
+  .mobile-menu-panel {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 170px;
+    max-width: 80vw;
+    background: #008080;
+    padding: 12px 10px 16px 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
   }
 
-  .right-popups.aesthetic-info-popups .top-banner-window {
-    width: 100% !important;
+  .mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
   }
 
-  .right-popups.aesthetic-info-popups .tb-body {
-    padding: 10px 12px 12px !important;
+  .mobile-menu-close {
+    width: 16px;
+    height: 14px;
+    background-color: #d4d0c8;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    text-align: center;
+    line-height: 12px;
+    color: #000;
+    font-size: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Mouse Deco";
   }
 
-  .right-popups.aesthetic-info-popups .aesthetic-info-name {
-    font-size: 20px !important;
-    margin-bottom: 6px !important;
+  .mobile-menu-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Mouse Deco" !important;
   }
 
-  .right-popups.aesthetic-info-popups .aesthetic-info-description {
-    font-size: 12px !important;
+  .mobile-menu-icons a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
   }
 
-  .start_bar {
-    height: 28px;
-  }
-
-  .taskbar-center-text {
-    display: none;
+  .mobile-menu-icons .icon_label {
+    color: #fff;
   }
 }
