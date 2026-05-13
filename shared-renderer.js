@@ -3,6 +3,8 @@
     window.HPC_LIGHTBOX_IMAGES = [];
     window.HPC_LIGHTBOX_INDEX = -1;
 
+    var TASKBAR_TEXT = "°˖✧* learn and shop all things y2k digicams and film cameras ·ﾟ✧*。";
+
     var TAG_LABELS = {
         sunsetglow: "sunset glow",
         goldenhour: "golden hour",
@@ -29,6 +31,47 @@
         minimalistic: "simple, refined digicams for pared-back styling, clean lines, and understated everyday photos."
     };
 
+    var MAIN_RIGHT_POPUPS_HTML =
+        '<div class="top-banner">' +
+            '<div class="top-banner-window">' +
+                '<div class="tb-titlebar">' +
+                    '<span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>' +
+                    '<span class="tb-close">x</span>' +
+                '</div>' +
+                '<div class="tb-body">' +
+                    '<div class="tb-icon"></div>' +
+                    '<div class="tb-text">' +
+                        '<p>our cameras are lovingly sourced &amp; tested</p>' +
+                        '<p>we do our best to get digicams to you in the best condition possible, but they&apos;re <i>✧ genuinely vintage &amp; pre-loved ✧</i> &amp; have signs of use &amp; age (scuffs, dinks &amp; imperfections).</p>' +
+                        '<p>🙏🏻<b><u>please read all our notices, the full description of each cam &amp; examine all pics carefully before purchase.</u></b>🙏🏻</p>' +
+                        '<p>we sell digicams only; if any accessories are included, they&apos;re freebies &amp; we cannot guarantee/be liable for condition/usability.</p>' +
+                        '<p>♡ enjoy finding your forever cam ♡</p>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="tb-footer">' +
+                    '<button class="tb-button">ok</button>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+        '<div class="top-banner">' +
+            '<div class="top-banner-window">' +
+                '<div class="tb-titlebar">' +
+                    '<span class="tb-title-text">♡ tiny vintage tech, big main character energy ♡</span>' +
+                    '<span class="tb-close">x</span>' +
+                '</div>' +
+                '<div class="tb-body">' +
+                    '<div class="tb-icon"></div>' +
+                    '<div class="tb-text">' +
+                        '<p>each cam has its own quirks, colours, softness, flash feel &amp; y2k magic.</p>' +
+                        '<p>shop slowly, read carefully, and pick the cam that matches your vibe.</p>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="tb-footer">' +
+                    '<button class="tb-button">ok</button>' +
+                '</div>' +
+            '</div>' +
+        '</div>';
+
     function escapeHtml(text) {
         return String(text == null ? "" : text)
             .replace(/&/g, "&amp;")
@@ -51,33 +94,183 @@
         return "collection.html?type=" + encodeURIComponent(type) + "&value=" + encodeURIComponent(value);
     }
 
-    function ensureTaskbar() {
-        if (document.querySelector(".start_bar")) return;
+    function ensureMainRightPopups() {
+        var path = window.location.pathname.split("/").pop() || "index.html";
+        var isPostPage = path === "post.html";
 
-        var taskbar = document.createElement("div");
-        taskbar.className = "start_bar";
-        taskbar.innerHTML =
-            '<div class="start_button">' +
-                '<div class="logo"></div>' +
-                '<span class="text">start</span>' +
-            '</div>' +
-            '<div class="taskbar-center-text">hippocampercams</div>' +
-            '<div class="tray"><span class="time">00:00</span></div>';
+        if (!isPostPage) return;
 
-        document.body.appendChild(taskbar);
+        var shell = document.getElementById("desktopStageShell") || document.querySelector(".wrapper") || document.body;
+        var rightPopups = document.getElementById("rightPopups");
 
-        function updateTime() {
-            var timeEl = taskbar.querySelector(".time");
-            if (!timeEl) return;
-
-            var now = new Date();
-            var hours = String(now.getHours()).padStart(2, "0");
-            var minutes = String(now.getMinutes()).padStart(2, "0");
-            timeEl.textContent = hours + ":" + minutes;
+        if (!rightPopups) {
+            rightPopups = document.createElement("div");
+            rightPopups.id = "rightPopups";
+            rightPopups.className = "right-popups";
+            shell.insertBefore(rightPopups, shell.firstChild);
         }
 
-        updateTime();
-        window.setInterval(updateTime, 30000);
+        rightPopups.className = "right-popups";
+        rightPopups.innerHTML = MAIN_RIGHT_POPUPS_HTML;
+    }
+
+    function ensureTaskbar() {
+        var existingTaskbar = document.getElementById("taskbar") || document.querySelector(".start_bar");
+
+        if (!existingTaskbar) {
+            var wrapper = document.querySelector(".wrapper") || document.body;
+
+            var startMenu = document.createElement("div");
+            startMenu.className = "start_menu";
+
+            var taskbar = document.createElement("div");
+            taskbar.className = "start_bar";
+            taskbar.id = "taskbar";
+            taskbar.innerHTML =
+                '<div class="top_border"></div>' +
+                '<div class="start_button">' +
+                    '<span class="logo"></span>' +
+                    '<span class="text">Start</span>' +
+                '</div>' +
+                '<span class="big_seperator"></span>' +
+                '<span class="small_seperator"></span>' +
+                '<span class="application_icons"></span>' +
+                '<div class="taskbar-center-text">' + TASKBAR_TEXT + '</div>' +
+                '<span class="big_seperator"></span>' +
+                '<span class="small_seperator"></span>' +
+                '<div class="tray">' +
+                    '<span class="calendar"></span>' +
+                    '<span class="time" id="showClock">00:00 AM</span>' +
+                '</div>';
+
+            wrapper.appendChild(startMenu);
+            wrapper.appendChild(taskbar);
+            existingTaskbar = taskbar;
+        }
+
+        var startText = existingTaskbar.querySelector(".start_button .text");
+        var centerText = existingTaskbar.querySelector(".taskbar-center-text");
+        var timeEl = existingTaskbar.querySelector(".time");
+
+        if (startText) startText.textContent = "Start";
+        if (centerText) centerText.textContent = TASKBAR_TEXT;
+        if (timeEl && !timeEl.id) timeEl.id = "showClock";
+
+        updateClock();
+    }
+
+    function updateClock() {
+        var now = new Date();
+        var h = now.getHours();
+        var m = now.getMinutes();
+        var ampm = h >= 12 ? "PM" : "AM";
+
+        h = h % 12;
+        if (h === 0) h = 12;
+        if (m < 10) m = "0" + m;
+
+        var el = document.getElementById("showClock") || document.querySelector(".start_bar .tray .time");
+        if (el) el.textContent = h + ":" + m + " " + ampm;
+    }
+
+    function ensureMobileMenu() {
+        var wrapper = document.querySelector(".wrapper") || document.body;
+
+        if (!document.getElementById("mobileMenuButton")) {
+            var button = document.createElement("a");
+            button.href = "#";
+            button.className = "mobile-menu-button";
+            button.id = "mobileMenuButton";
+            button.innerHTML =
+                '<div class="folder"></div>' +
+                '<div class="icon_label">menu</div>';
+            wrapper.appendChild(button);
+        }
+
+        if (!document.getElementById("mobileMenuOverlay")) {
+            var overlay = document.createElement("div");
+            overlay.className = "mobile-menu-overlay";
+            overlay.id = "mobileMenuOverlay";
+            overlay.innerHTML =
+                '<div class="mobile-menu-panel">' +
+                    '<div class="mobile-menu-header">' +
+                        '<button type="button" class="mobile-menu-close" id="mobileMenuClose">x</button>' +
+                    '</div>' +
+                    '<div class="mobile-menu-icons">' +
+                        '<a href="https://hippocampercams.github.io" class="home">' +
+                            '<div class="my_computer"></div>' +
+                            '<div class="icon_label">hippocampercams</div>' +
+                        '</a>' +
+                        '<a href="readme.html" class="ask">' +
+                            '<div class="my_documents"></div>' +
+                            '<div class="icon_label">READ ME</div>' +
+                        '</a>' +
+                        '<a href="masterlist.html" class="submit">' +
+                            '<div class="network_neighborhood"></div>' +
+                            '<div class="icon_label">masterlist</div>' +
+                        '</a>' +
+                        '<a href="faqs.html" class="listings">' +
+                            '<img src="img/icons/faqs.png" alt="FAQs icon" class="icon-img">' +
+                            '<div class="icon_label">FAQs</div>' +
+                        '</a>' +
+                        '<a href="adoptacam.html" class="mustread">' +
+                            '<img src="img/icons/adoptacam.png" alt="" class="icon-img">' +
+                            '<div class="icon_label">adopt a cam</div>' +
+                        '</a>' +
+                        '<a href="https://instagram.com/hippocampercams" class="insta" target="_blank" rel="noopener">' +
+                            '<img src="img/icons/insta.png" alt="" class="icon-img">' +
+                            '<div class="icon_label">insta</div>' +
+                        '</a>' +
+                        '<a href="https://www.tiktok.com/@hippocampercams" target="_blank" rel="noopener" class="tiktok">' +
+                            '<img src="img/icons/tiktok.png" alt="" class="icon-img">' +
+                            '<div class="icon_label">tiktok</div>' +
+                        '</a>' +
+                        '<a href="lemon8.html" target="_blank" rel="noopener" class="lemon8">' +
+                            '<img src="img/icons/lemon8.png" alt="lemon8" class="icon-img">' +
+                            '<div class="icon_label">lemon8</div>' +
+                        '</a>' +
+                        '<a href="contact.html" class="contact">' +
+                            '<img src="img/icons/contact.png" alt="" class="icon-img">' +
+                            '<div class="icon_label">contact</div>' +
+                        '</a>' +
+                    '</div>' +
+                '</div>';
+            wrapper.appendChild(overlay);
+        }
+
+        var mobileMenuButton = document.getElementById("mobileMenuButton");
+        var mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+        var mobileMenuClose = document.getElementById("mobileMenuClose");
+
+        function openMobileMenu(event) {
+            if (event) event.preventDefault();
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.add("is-open");
+            document.body.classList.add("mobile-menu-open");
+        }
+
+        function closeMobileMenu() {
+            if (!mobileMenuOverlay) return;
+            mobileMenuOverlay.classList.remove("is-open");
+            document.body.classList.remove("mobile-menu-open");
+        }
+
+        if (mobileMenuButton && mobileMenuButton.getAttribute("data-bound") !== "true") {
+            mobileMenuButton.addEventListener("click", openMobileMenu);
+            mobileMenuButton.setAttribute("data-bound", "true");
+        }
+
+        if (mobileMenuClose && mobileMenuClose.getAttribute("data-bound") !== "true") {
+            mobileMenuClose.addEventListener("click", closeMobileMenu);
+            mobileMenuClose.setAttribute("data-bound", "true");
+        }
+
+        if (mobileMenuOverlay && mobileMenuOverlay.getAttribute("data-bound") !== "true") {
+            mobileMenuOverlay.addEventListener("click", function (event) {
+                if (event.target === mobileMenuOverlay) closeMobileMenu();
+            });
+            mobileMenuOverlay.setAttribute("data-bound", "true");
+        }
     }
 
     window.openHpcLightbox = function (imgEl) {
@@ -129,9 +322,7 @@
 
             html += '<u><a href="' + escapeHtml(getCollectionPageUrl("tag", tag)) + '">#' + escapeHtml(label) + '</a></u>';
 
-            if (i < tags.length - 1) {
-                html += " • ";
-            }
+            if (i < tags.length - 1) html += " • ";
         }
 
         html += "</p></div>";
@@ -156,9 +347,7 @@
     function renderTitle(post, clickableTitle) {
         var titleHtml = post.titleHtml || "";
 
-        if (!clickableTitle) {
-            return titleHtml;
-        }
+        if (!clickableTitle) return titleHtml;
 
         return '<a class="title-link" href="' + escapeHtml(getPostPageUrl(post)) + '">' + titleHtml + "</a>";
     }
@@ -243,7 +432,7 @@
         }
 
         container.innerHTML = html;
-        ensureTaskbar();
+        ensureSharedChrome();
     }
 
     function renderSinglePostInto(containerId) {
@@ -270,13 +459,14 @@
                     '</div>' +
                     '<div class="bottom"></div>' +
                 '</div>';
-            ensureTaskbar();
+            ensureSharedChrome();
             return;
         }
 
         document.title = "hippocampercams • " + (match.id || "post");
         container.innerHTML = renderPost(match, false);
-        ensureTaskbar();
+        ensureMainRightPopups();
+        ensureSharedChrome();
     }
 
     function closestWindow(el) {
@@ -309,7 +499,7 @@
             shell.insertBefore(existing, shell.firstChild);
         }
 
-        existing.classList.add("aesthetic-info-popups");
+        existing.className = "right-popups aesthetic-info-popups";
         existing.innerHTML =
             '<div class="top-banner">' +
                 '<div class="top-banner-window">' +
@@ -374,7 +564,7 @@
         }
 
         renderPostsInto(containerId, filtered, true);
-        ensureTaskbar();
+        ensureSharedChrome();
     }
 
     function normalizeExistingAestheticInfoBox() {
@@ -413,6 +603,13 @@
         rightPopups.setAttribute("data-aesthetic-normalized", "true");
     }
 
+    function ensureSharedChrome() {
+        ensureTaskbar();
+        ensureMobileMenu();
+        normalizeExistingAestheticInfoBox();
+        updateClock();
+    }
+
     window.updateDesktopStage = function () {
         var desktop = document.getElementById("desktop");
         var stage = document.getElementById("desktopStage");
@@ -420,8 +617,7 @@
         var icons = document.getElementById("desktopIcons");
         var rightPopups = document.getElementById("rightPopups");
 
-        ensureTaskbar();
-        normalizeExistingAestheticInfoBox();
+        ensureSharedChrome();
 
         if (!desktop || !stage || !shell) return;
 
@@ -463,9 +659,7 @@
             var popupLeft = desktopRight + popupGap;
             var maxPopupLeft = window.innerWidth - popupWidth - 16;
 
-            if (popupLeft > maxPopupLeft) {
-                popupLeft = maxPopupLeft;
-            }
+            if (popupLeft > maxPopupLeft) popupLeft = maxPopupLeft;
 
             rightPopups.style.left = popupLeft + "px";
             rightPopups.style.right = "auto";
@@ -479,7 +673,7 @@
     };
 
     document.addEventListener("DOMContentLoaded", function () {
-        ensureTaskbar();
-        normalizeExistingAestheticInfoBox();
+        ensureSharedChrome();
+        setInterval(updateClock, 60000);
     });
 })();
