@@ -31,8 +31,30 @@
         minimalistic: "simple, refined digicams for pared-back styling, clean lines, and understated everyday photos."
     };
 
+    var RATING_SYSTEM_BANNER_HTML =
+        '<div class="top-banner rating-system-banner mobile-rating-banner">' +
+            '<div class="top-banner-window">' +
+                '<div class="tb-titlebar">' +
+                    '<span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>' +
+                    '<span class="tb-close">x</span>' +
+                '</div>' +
+                '<div class="tb-body">' +
+                    '<div class="tb-icon"></div>' +
+                    '<div class="tb-text">' +
+                        '<p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>' +
+                        '<p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>' +
+                        '<p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>' +
+                        '<p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>' +
+                        '<p>⋆⋆ - it&apos;s seen things &amp; is a little worn out &amp;/or minor functional issues</p>' +
+                        '<p>⋆ - it&apos;s a veteran with battle scars &amp;/or functional issues</p>' +
+                        '<p>♻️ - pretty display piece, may work if you fix it?</p>' +
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+        '</div>';
+
     var MAIN_RIGHT_POPUPS_HTML =
-        '<div class="top-banner">' +
+        '<div class="top-banner please-read-banner">' +
             '<div class="top-banner-window">' +
                 '<div class="tb-titlebar">' +
                     '<span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>' +
@@ -53,26 +75,7 @@
                 '</div>' +
             '</div>' +
         '</div>' +
-        '<div class="top-banner">' +
-            '<div class="top-banner-window">' +
-                '<div class="tb-titlebar">' +
-                    '<span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>' +
-                    '<span class="tb-close">x</span>' +
-                '</div>' +
-                '<div class="tb-body">' +
-                    '<div class="tb-icon"></div>' +
-                    '<div class="tb-text">' +
-                        '<p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>' +
-                        '<p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>' +
-                        '<p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>' +
-                        '<p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>' +
-                        '<p>⋆⋆ - it&apos;s seen things &amp; is a little worn out &amp;/or minor functional issues</p>' +
-                        '<p>⋆ - it&apos;s a veteran with battle scars &amp;/or functional issues</p>' +
-                        '<p>♻️ - pretty display piece, may work if you fix it?</p>' +
-                    '</div>' +
-                '</div>' +
-            '</div>' +
-        '</div>';
+        RATING_SYSTEM_BANNER_HTML;
 
     function escapeHtml(text) {
         return String(text == null ? "" : text)
@@ -101,7 +104,7 @@
         return path === "post.html";
     }
 
-    function ensureMainRightPopupsForPostPage() {
+    function ensureMainRightPopups() {
         if (!isPostPage()) return;
 
         var shell = document.getElementById("desktopStageShell") || document.querySelector(".wrapper") || document.body;
@@ -116,6 +119,15 @@
 
         rightPopups.className = "right-popups";
         rightPopups.innerHTML = MAIN_RIGHT_POPUPS_HTML;
+    }
+
+    function ensureRatingBannerForExistingRightPopups() {
+        var rightPopups = document.getElementById("rightPopups");
+        if (!rightPopups) return;
+
+        if (rightPopups.querySelector(".rating-system-banner")) return;
+
+        rightPopups.insertAdjacentHTML("beforeend", RATING_SYSTEM_BANNER_HTML);
     }
 
     function ensureTaskbar() {
@@ -471,14 +483,14 @@
                     '</div>' +
                     '<div class="bottom"></div>' +
                 '</div>';
-            ensureMainRightPopupsForPostPage();
+            ensureMainRightPopups();
             ensureSharedChrome();
             return;
         }
 
         document.title = "hippocampercams • " + (match.id || "post");
         container.innerHTML = renderPost(match, false);
-        ensureMainRightPopupsForPostPage();
+        ensureMainRightPopups();
         ensureSharedChrome();
     }
 
@@ -514,7 +526,7 @@
 
         existing.className = "right-popups aesthetic-info-popups";
         existing.innerHTML =
-            '<div class="top-banner">' +
+            '<div class="top-banner aesthetic-info-banner">' +
                 '<div class="top-banner-window">' +
                     '<div class="tb-titlebar">' +
                         '<span class="tb-title-text">PLEASE READ</span>' +
@@ -527,7 +539,8 @@
                         '</div>' +
                     '</div>' +
                 '</div>' +
-            '</div>';
+            '</div>' +
+            RATING_SYSTEM_BANNER_HTML;
     }
 
     function renderCollectionInto(containerId, headingId, subheadingId) {
@@ -584,22 +597,40 @@
         if (isPostPage()) return;
 
         var rightPopups = document.getElementById("rightPopups");
-        if (!rightPopups || rightPopups.getAttribute("data-aesthetic-normalized") === "true") return;
+        if (!rightPopups || rightPopups.getAttribute("data-aesthetic-normalized") === "true") {
+            ensureRatingBannerForExistingRightPopups();
+            return;
+        }
 
         var banners = rightPopups.querySelectorAll(".top-banner");
-        if (banners.length !== 1) return;
+        if (banners.length !== 1) {
+            ensureRatingBannerForExistingRightPopups();
+            return;
+        }
 
         var bannerWindow = banners[0].querySelector(".top-banner-window");
-        if (!bannerWindow) return;
+        if (!bannerWindow) {
+            ensureRatingBannerForExistingRightPopups();
+            return;
+        }
 
-        if (bannerWindow.querySelector(".tb-footer") || bannerWindow.querySelector(".tb-icon")) return;
+        if (bannerWindow.querySelector(".tb-footer") || bannerWindow.querySelector(".tb-icon")) {
+            ensureRatingBannerForExistingRightPopups();
+            return;
+        }
 
         var titleEl = bannerWindow.querySelector(".tb-title-text");
         var bodyEl = bannerWindow.querySelector(".tb-body");
-        if (!titleEl || !bodyEl) return;
+        if (!titleEl || !bodyEl) {
+            ensureRatingBannerForExistingRightPopups();
+            return;
+        }
 
         var aestheticName = titleEl.textContent.replace(/\s+/g, " ").trim();
-        if (!aestheticName || aestheticName.toLowerCase() === "please read") return;
+        if (!aestheticName || aestheticName.toLowerCase() === "please read") {
+            ensureRatingBannerForExistingRightPopups();
+            return;
+        }
 
         var descriptionParts = [];
         var paragraphs = bodyEl.querySelectorAll("p");
@@ -615,13 +646,15 @@
         }
 
         renderAestheticInfoBox(aestheticName, descriptionParts.join(" "));
-        rightPopups.setAttribute("data-aesthetic-normalized", "true");
+        rightPopups = document.getElementById("rightPopups");
+        if (rightPopups) rightPopups.setAttribute("data-aesthetic-normalized", "true");
     }
 
     function ensureSharedChrome() {
         ensureTaskbar();
         ensureMobileMenu();
         normalizeExistingAestheticInfoBox();
+        ensureRatingBannerForExistingRightPopups();
         updateClock();
     }
 
@@ -646,6 +679,7 @@
             if (rightPopups) {
                 rightPopups.style.left = "";
                 rightPopups.style.right = "";
+                rightPopups.style.top = "";
             }
 
             return;
@@ -670,7 +704,7 @@
         if (rightPopups) {
             var desktopRight = stageLeft + ((desktop.offsetLeft + desktop.offsetWidth) * scale);
             var popupGap = 36;
-            var popupWidth = rightPopups.offsetWidth || 410;
+            var popupWidth = rightPopups.offsetWidth || 390;
             var popupLeft = desktopRight + popupGap;
             var maxPopupLeft = window.innerWidth - popupWidth - 16;
 
@@ -678,6 +712,7 @@
 
             rightPopups.style.left = popupLeft + "px";
             rightPopups.style.right = "auto";
+            rightPopups.style.top = "50%";
         }
     };
 
