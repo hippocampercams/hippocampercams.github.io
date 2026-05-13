@@ -438,7 +438,7 @@ img.full_image {
 .right-popups {
   position: fixed !important;
   top: 50% !important;
-  right: 6px !important;
+  right: 72px !important;
   left: auto !important;
   transform: translateY(-50%) !important;
   width: 410px;
