@@ -19,63 +19,17 @@
     };
 
     var TAG_DESCRIPTIONS = {
-        sunsetglow: "sunset-ready digicams for glowing warmth, dusky tones, and dreamy evening nostalgia.",
-        goldenhour: "digicams give give us warm, glowy photos with dreamy light, honey tones, and soft nostalgic warmth.",
-        softpastel: "dreamy pastels with soft colour washes, airy tones, and sweet vintage light.",
-        softpastels: "dreamy pastels with soft colour washes, airy tones, and sweet vintage light.",
-        cooltones: "digicams for crisp cool, hues, striking blacks, clean contrast, and moody city and night life vibes.",
-        grainyanalogue: "digicams for grainy, film-like texture, crunchy detail, and retro analogue vibes.",
-        "2000s": "digicams that give true y2k-era vibes - think flash-heavy, nostalgic, early-2000s party-cam energy.",
-        clean: "digicams that produce clean, minimal, elegant vibes for fresh, polished, easy everyday photos.",
-        cinematographic: "digicams that give cinematic photos and emphasise mood, contrast, atmosphere, and frame-worthy storybook shots.",
-        minimalistic: "simple and refined, these get these digicams for pared-back styling, clean lines, and understated everyday photos."
+        sunsetglow: "sunset-ready digicams for glowing warmth, dusk tones, and dreamy evening nostalgia.",
+        goldenhour: "warm, glowy digicams for dreamy light, honey tones, and soft nostalgic warmth.",
+        softpastel: "dreamy pastel digicams for soft colour washes, airy tones, and sweet vintage light.",
+        softpastels: "dreamy pastel digicams for soft colour washes, airy tones, and sweet vintage light.",
+        cooltones: "cool-toned digicams for crisp blues, striking blacks, clean contrast, and moody city vibes.",
+        grainyanalogue: "nostalgic digicams for grainy, film-like texture, crunchy detail, and retro analogue vibes.",
+        "2000s": "true y2k-era digicams for flash-heavy, nostalgic, early-2000s party-cam energy.",
+        clean: "clean, minimal, elegant digicams for fresh, polished, easy everyday photos.",
+        cinematographic: "cinematic digicams for mood, contrast, atmosphere, and frame-worthy storybook shots.",
+        minimalistic: "simple, refined digicams for pared-back styling, clean lines, and understated everyday photos."
     };
-
-    var RATING_SYSTEM_BANNER_HTML =
-        '<div class="top-banner rating-system-banner mobile-rating-banner">' +
-            '<div class="top-banner-window">' +
-                '<div class="tb-titlebar">' +
-                    '<span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>' +
-                    '<span class="tb-close">x</span>' +
-                '</div>' +
-                '<div class="tb-body">' +
-                    '<div class="tb-icon"></div>' +
-                    '<div class="tb-text">' +
-                        '<p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>' +
-                        '<p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>' +
-                        '<p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>' +
-                        '<p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>' +
-                        '<p>⋆⋆ - it&apos;s seen things &amp; is a little worn out &amp;/or minor functional issues</p>' +
-                        '<p>⋆ - it&apos;s a veteran with battle scars &amp;/or functional issues</p>' +
-                        '<p>♻️ - pretty display piece, may work if you fix it?</p>' +
-                    '</div>' +
-                '</div>' +
-            '</div>' +
-        '</div>';
-
-    var MAIN_RIGHT_POPUPS_HTML =
-        '<div class="top-banner please-read-banner">' +
-            '<div class="top-banner-window">' +
-                '<div class="tb-titlebar">' +
-                    '<span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>' +
-                    '<span class="tb-close">x</span>' +
-                '</div>' +
-                '<div class="tb-body">' +
-                    '<div class="tb-icon"></div>' +
-                    '<div class="tb-text">' +
-                        '<p>our cameras are lovingly sourced &amp; tested</p>' +
-                        '<p>we do our best to get digicams to you in the best condition possible, but they&apos;re <i>✧ genuinely vintage &amp; pre-loved ✧</i> &amp; have signs of use &amp; age (scuffs, dinks &amp; imperfections).</p>' +
-                        '<p>🙏🏻<b><u>please read all our notices, the full description of each cam &amp; examine all pics carefully before purchase.</u></b>🙏🏻</p>' +
-                        '<p>we sell digicams only; if any accessories are included, they&apos;re freebies &amp; we cannot guarantee/be liable for condition/usability.</p>' +
-                        '<p>♡ enjoy finding your forever cam ♡</p>' +
-                    '</div>' +
-                '</div>' +
-                '<div class="tb-footer">' +
-                    '<button class="tb-button">ok</button>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-        RATING_SYSTEM_BANNER_HTML;
 
     function escapeHtml(text) {
         return String(text == null ? "" : text)
@@ -118,16 +72,48 @@
         }
 
         rightPopups.className = "right-popups";
-        rightPopups.innerHTML = MAIN_RIGHT_POPUPS_HTML;
-    }
-
-    function ensureRatingBannerForExistingRightPopups() {
-        var rightPopups = document.getElementById("rightPopups");
-        if (!rightPopups) return;
-
-        if (rightPopups.querySelector(".rating-system-banner")) return;
-
-        rightPopups.insertAdjacentHTML("beforeend", RATING_SYSTEM_BANNER_HTML);
+        rightPopups.innerHTML =
+            '<div class="top-banner please-read-banner">' +
+                '<div class="top-banner-window">' +
+                    '<div class="tb-titlebar">' +
+                        '<span class="tb-title-text">⚠️ PLEASE READ ⚠️</span>' +
+                        '<span class="tb-close">x</span>' +
+                    '</div>' +
+                    '<div class="tb-body">' +
+                        '<div class="tb-icon"></div>' +
+                        '<div class="tb-text">' +
+                            '<p>our cameras are lovingly sourced &amp; tested</p>' +
+                            '<p>we do our best to get digicams to you in the best condition possible, but they&apos;re <i>✧ genuinely vintage &amp; pre-loved ✧</i> &amp; have signs of use &amp; age (scuffs, dinks &amp; imperfections).</p>' +
+                            '<p>🙏🏻<b><u>please read all our notices, the full description of each cam &amp; examine all pics carefully before purchase.</u></b>🙏🏻</p>' +
+                            '<p>we sell digicams only; if any accessories are included, they&apos;re freebies &amp; we cannot guarantee/be liable for condition/usability.</p>' +
+                            '<p>♡ enjoy finding your forever cam ♡</p>' +
+                        '</div>' +
+                    '</div>' +
+                    '<div class="tb-footer">' +
+                        '<button class="tb-button">ok</button>' +
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+            '<div class="top-banner rating-system-banner mobile-rating-banner">' +
+                '<div class="top-banner-window">' +
+                    '<div class="tb-titlebar">' +
+                        '<span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>' +
+                        '<span class="tb-close">x</span>' +
+                    '</div>' +
+                    '<div class="tb-body">' +
+                        '<div class="tb-icon"></div>' +
+                        '<div class="tb-text">' +
+                            '<p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>' +
+                            '<p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>' +
+                            '<p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>' +
+                            '<p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>' +
+                            '<p>⋆⋆ - it&apos;s seen things &amp; is a little worn out &amp;/or minor functional issues</p>' +
+                            '<p>⋆ - it&apos;s a veteran with battle scars &amp;/or functional issues</p>' +
+                            '<p>♻️ - pretty display piece, may work if you fix it?</p>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>' +
+            '</div>';
     }
 
     function ensureTaskbar() {
@@ -529,7 +515,7 @@
             '<div class="top-banner aesthetic-info-banner">' +
                 '<div class="top-banner-window">' +
                     '<div class="tb-titlebar">' +
-                        '<span class="tb-title-text">PLEASE READ</span>' +
+                        '<span class="tb-title-text">shop by aesthetic</span>' +
                         '<span class="tb-close">x</span>' +
                     '</div>' +
                     '<div class="tb-body">' +
