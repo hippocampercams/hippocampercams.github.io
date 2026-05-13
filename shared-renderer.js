@@ -56,18 +56,20 @@
         '<div class="top-banner">' +
             '<div class="top-banner-window">' +
                 '<div class="tb-titlebar">' +
-                    '<span class="tb-title-text">♡ tiny vintage tech, big main character energy ♡</span>' +
+                    '<span class="tb-title-text">⊹ ₊❤︎ rating system ❤︎₊ ⊹</span>' +
                     '<span class="tb-close">x</span>' +
                 '</div>' +
                 '<div class="tb-body">' +
                     '<div class="tb-icon"></div>' +
                     '<div class="tb-text">' +
-                        '<p>each cam has its own quirks, colours, softness, flash feel &amp; y2k magic.</p>' +
-                        '<p>shop slowly, read carefully, and pick the cam that matches your vibe.</p>' +
+                        '<p>🏆 - absurdly perfect (for a preloved item); almost no noticeable flaws</p>' +
+                        '<p>⋆⋆⋆⋆⋆ - as good as it gets for a preloved cam; super minor cosmetic flaws</p>' +
+                        '<p>⋆⋆⋆⋆ - super; minor cosmetic flaws</p>' +
+                        '<p>⋆⋆⋆ - pretty good; cosmetic flaws characteristic of preloved vintage cams</p>' +
+                        '<p>⋆⋆ - it&apos;s seen things &amp; is a little worn out &amp;/or minor functional issues</p>' +
+                        '<p>⋆ - it&apos;s a veteran with battle scars &amp;/or functional issues</p>' +
+                        '<p>♻️ - pretty display piece, may work if you fix it?</p>' +
                     '</div>' +
-                '</div>' +
-                '<div class="tb-footer">' +
-                    '<button class="tb-button">ok</button>' +
                 '</div>' +
             '</div>' +
         '</div>';
@@ -94,11 +96,13 @@
         return "collection.html?type=" + encodeURIComponent(type) + "&value=" + encodeURIComponent(value);
     }
 
-    function ensureMainRightPopups() {
+    function isPostPage() {
         var path = window.location.pathname.split("/").pop() || "index.html";
-        var isPostPage = path === "post.html";
+        return path === "post.html";
+    }
 
-        if (!isPostPage) return;
+    function ensureMainRightPopupsForPostPage() {
+        if (!isPostPage()) return;
 
         var shell = document.getElementById("desktopStageShell") || document.querySelector(".wrapper") || document.body;
         var rightPopups = document.getElementById("rightPopups");
@@ -148,12 +152,20 @@
             existingTaskbar = taskbar;
         }
 
+        if (existingTaskbar.id !== "taskbar") existingTaskbar.id = "taskbar";
+
         var startText = existingTaskbar.querySelector(".start_button .text");
         var centerText = existingTaskbar.querySelector(".taskbar-center-text");
         var timeEl = existingTaskbar.querySelector(".time");
 
+        if (!centerText) {
+            centerText = document.createElement("div");
+            centerText.className = "taskbar-center-text";
+            existingTaskbar.appendChild(centerText);
+        }
+
         if (startText) startText.textContent = "Start";
-        if (centerText) centerText.textContent = TASKBAR_TEXT;
+        centerText.textContent = TASKBAR_TEXT;
         if (timeEl && !timeEl.id) timeEl.id = "showClock";
 
         updateClock();
@@ -459,13 +471,14 @@
                     '</div>' +
                     '<div class="bottom"></div>' +
                 '</div>';
+            ensureMainRightPopupsForPostPage();
             ensureSharedChrome();
             return;
         }
 
         document.title = "hippocampercams • " + (match.id || "post");
         container.innerHTML = renderPost(match, false);
-        ensureMainRightPopups();
+        ensureMainRightPopupsForPostPage();
         ensureSharedChrome();
     }
 
@@ -568,6 +581,8 @@
     }
 
     function normalizeExistingAestheticInfoBox() {
+        if (isPostPage()) return;
+
         var rightPopups = document.getElementById("rightPopups");
         if (!rightPopups || rightPopups.getAttribute("data-aesthetic-normalized") === "true") return;
 
@@ -655,7 +670,7 @@
         if (rightPopups) {
             var desktopRight = stageLeft + ((desktop.offsetLeft + desktop.offsetWidth) * scale);
             var popupGap = 36;
-            var popupWidth = rightPopups.offsetWidth || 390;
+            var popupWidth = rightPopups.offsetWidth || 410;
             var popupLeft = desktopRight + popupGap;
             var maxPopupLeft = window.innerWidth - popupWidth - 16;
 
