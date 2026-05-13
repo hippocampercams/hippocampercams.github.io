@@ -806,9 +806,13 @@ img.full_image {
   }
 
   .icons,
-  .right-popups,
   .start_menu,
   .start_bar {
+    display: none !important;
+  }
+
+  .right-popups .please-read-banner,
+  .right-popups .aesthetic-info-banner {
     display: none !important;
   }
 
