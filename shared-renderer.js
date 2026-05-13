@@ -596,8 +596,10 @@
         var bodyEl = bannerWindow.querySelector(".tb-body");
         if (!titleEl || !bodyEl) return;
 
-        var aestheticName = titleEl.textContent.replace(/\s+/g, " ").trim();
-        if (!aestheticName || aestheticName.toLowerCase() === "please read") return;
+        var titleText = titleEl.textContent.replace(/\s+/g, " ").trim();
+        var lowerTitleText = titleText.toLowerCase();
+
+        if (!titleText || lowerTitleText === "please read" || lowerTitleText === "shop by aesthetic") return;
 
         var descriptionParts = [];
         var paragraphs = bodyEl.querySelectorAll("p");
@@ -612,7 +614,7 @@
             if (bodyText) descriptionParts.push(bodyText);
         }
 
-        renderAestheticInfoBox(aestheticName, descriptionParts.join(" "));
+        renderAestheticInfoBox(titleText, descriptionParts.join(" "));
         rightPopups = document.getElementById("rightPopups");
         if (rightPopups) rightPopups.setAttribute("data-aesthetic-normalized", "true");
     }
@@ -669,10 +671,21 @@
         rightPopups = document.getElementById("rightPopups");
 
         if (rightPopups) {
-            rightPopups.style.left = "";
-            rightPopups.style.right = "";
-            rightPopups.style.top = "";
-            rightPopups.style.transform = "";
+            var popupWidth = rightPopups.offsetWidth || 410;
+            var popupGap = 36;
+            var desktopRight = stageLeft + ((desktop.offsetLeft + desktop.offsetWidth) * scale);
+            var popupLeft = desktopRight + popupGap;
+            var maxPopupLeft = window.innerWidth - popupWidth - 72;
+
+            if (popupLeft > maxPopupLeft) {
+                popupLeft = desktopRight + popupGap;
+            }
+
+            rightPopups.style.setProperty("position", "fixed", "important");
+            rightPopups.style.setProperty("left", popupLeft + "px", "important");
+            rightPopups.style.setProperty("right", "auto", "important");
+            rightPopups.style.setProperty("top", "50%", "important");
+            rightPopups.style.setProperty("transform", "translateY(-50%)", "important");
         }
     };
 
