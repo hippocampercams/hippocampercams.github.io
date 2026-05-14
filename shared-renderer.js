@@ -25,7 +25,7 @@
         softpastels: "love dreamy pastels? grab these digicams for soft colour washes, airy tones, and sweet vintage light.",
         cooltones: "if you love crisp, cool hues, striking blacks, clean contrast, moody city vibes, and the beauty of gritty night life, these digicams are for you.",
         grainyanalogue: "these digicams make getting photos with grainy, film-like texture, crunchy detail, and retro analogue vibes easy.",
-        "2000s": "🦋❤️‍🔥🦇🥀🖤💋🔥<br><br> want photos featuring that flash-heavy, nostalgic, early-2000s party-cam energy? these digicams are for you.",
+        "2000s": "want photos featuring that flash-heavy, nostalgic, early-2000s party-cam energy? these digicams are for you.",
         clean: "clean, elegant, understated - pick these digicams for fresh, polished, easy everyday photos.",
         cinematographic: "shooting cinematic photos is easy with these digicams which produce moody, atmospheric, and frame-worthy storybook shots.",
         minimalistic: "simple and refined photos more your style? these digicams give pared-back styling, clean lines, and understated everyday photos."
