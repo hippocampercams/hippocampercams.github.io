@@ -12,7 +12,7 @@
         softpastels: "soft pastels",
         cooltones: "cool tones",
         grainyanalogue: "grainy analogue",
-        "2000s": "2000s 🦋🖤👽💋🦇🥀❤️‍🔥",
+        "2000s": "2000s",
         clean: "clean",
         cinematographic: "cinematographic",
         minimalistic: "minimalistic"
