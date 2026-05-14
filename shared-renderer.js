@@ -19,16 +19,16 @@
     };
 
     var TAG_DESCRIPTIONS = {
-        sunsetglow: "sunset-ready digicams for glowing warmth, dusk tones, and dreamy evening nostalgia.",
-        goldenhour: "warm, glowy digicams for dreamy light, honey tones, and soft nostalgic warmth.",
-        softpastel: "dreamy pastel digicams for soft colour washes, airy tones, and sweet vintage light.",
-        softpastels: "dreamy pastel digicams for soft colour washes, airy tones, and sweet vintage light.",
-        cooltones: "cool-toned digicams for crisp blues, striking blacks, clean contrast, and moody city vibes.",
-        grainyanalogue: "nostalgic digicams for grainy, film-like texture, crunchy detail, and retro analogue vibes.",
-        "2000s": "true y2k-era digicams for flash-heavy, nostalgic, early-2000s party-cam energy.",
-        clean: "clean, minimal, elegant digicams for fresh, polished, easy everyday photos.",
-        cinematographic: "cinematic digicams for mood, contrast, atmosphere, and frame-worthy storybook shots.",
-        minimalistic: "simple, refined digicams for pared-back styling, clean lines, and understated everyday photos."
+        sunsetglow: "these digicams are for you if you want your photos full of glowing warmth, dusky tones, and dreamy evening nostalgia.",
+        goldenhour: "these digicams give warm, glowy colour grading for dreamy light, honey tones, and soft nostalgic warmth.",
+        softpastel: "love dreamy pastels? grab these digicams for soft colour washes, airy tones, and sweet vintage light.",
+        softpastels: "love dreamy pastels? grab these digicams for soft colour washes, airy tones, and sweet vintage light.",
+        cooltones: "if you love crisp, cool hues, striking blacks, clean contrast, moody city vibes, and the beauty of gritty night life, these digicams are for you.",
+        grainyanalogue: "these digicams make getting photos with grainy, film-like texture, crunchy detail, and retro analogue vibes easy.",
+        "2000s": "want photos featuring that flash-heavy, nostalgic, early-2000s party-cam energy? these digicams are for you.",
+        clean: "clean, elegant, understated - pick these digicams for fresh, polished, easy everyday photos.",
+        cinematographic: "shooting cinematic photos is easy with these digicams which produce moody, atmospheric, and frame-worthy storybook shots.",
+        minimalistic: "simple and refined photos more your style? these digicams give pared-back styling, clean lines, and understated everyday photos."
     };
 
     function escapeHtml(text) {
