@@ -463,7 +463,7 @@ window.HPC_POSTS = [
   id: "fujifilm-finepix-4700z",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $120.00</p><p><i>rare, analogue vibes, retro</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX 4700Z</b> $130.00</p><p><i>rare, analogue vibes, retro</i></p>',
   captionHtml: '3x optical zoom・rare and unique statement piece・AA battery-powered (one less charger!)',
   tags: ["grainyanalogue", "2000s"],
   brand: "fujifilm",
