@@ -389,6 +389,18 @@ window.HPC_POSTS = [
     {
       src: "https://64.media.tumblr.com/62327bcdf79be24e785b44c87428d607/c0bc3423ff8b7304-d2/s2048x3072/07f9ec466803f6b4933e7d43c2dc9dd0645b5844.jpg",
       alt: "SONY CYBERSHOT DSC-T100 photo 3"
+    },
+        {
+      src: "https://64.media.tumblr.com/07d860632766a7a4f60d267e006de8cb/4ba4da1e404127c2-24/s2048x3072/56cb7ea8ff18ef9dc378391bd4fd8bafa2f4452c.jpg",
+      alt: "SONY CYBERSHOT DSC-T100 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/e3aa998c73c54647c9b57b3576689d88/4ba4da1e404127c2-fd/s2048x3072/ceeaebc7f936610a2a5fc0a3c27c04da25dd6cc1.jpg",
+      alt: "SONY CYBERSHOT DSC-T100 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/40d88e131c3b708f0efb45a3888750b9/4ba4da1e404127c2-d6/s2048x3072/e30e182993c3cd57955f351d55a4422952eab01e.jpg",
+      alt: "SONY CYBERSHOT DSC-T100 photo 6"
     }
   ],
   conditionSummaryHtml: "<p> item condition: ⋆⋆⋆ (pretty good!)</p>",
