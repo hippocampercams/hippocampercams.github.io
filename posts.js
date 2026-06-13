@@ -1,5 +1,60 @@
 window.HPC_POSTS = [
 {
+  id: "casio-exilim-ex-z300",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>CASIO EXILIM EX-Z300</b> $170.00</p><p><i>retro, striking, clear</i></p>',
+  captionHtml: '10.1 mp・4x wide angle optical zoom・CCD-shift image stabilisation',
+  tags: ["2000s", "cinematographic", "clean", "grainyanalogue", "cooltones"],
+  brand: "sony",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/27af7408cfb0649092c0b9c52a27fa0d/5e33cddae478d9c5-bf/s2048x3072/f188f5b1e97080191a5768db8fd0f05b81c4d86f.jpg",
+      alt: "CASIO EXILIM EX-Z300 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/6cd30a5690d2b7e5a575acbef4f5f4a5/b0c860c8336cab5a-c3/s2048x3072/ef61e6e655ea004824451b13b49de33511b2e6c4.jpg",
+      alt: "CASIO EXILIM EX-Z300 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/4f8e3be3bfa365d392d3d99b1e9e4434/f763aab97a1706a7-fd/s2048x3072/16c1e94645edf6aabce417595bf0b6428c93d576.jpg",
+      alt: "CASIO EXILIM EX-Z300 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/0ffc5c676226d4b59ca7ec9a3f6ece8b/5e33cddae478d9c5-f4/s2048x3072/9cf96a3fe6c4ba37b9dd24c56dceeb0b276a7c2a.jpg",
+      alt: "CASIO EXILIM EX-Z300 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/7adc2d3843336c1e5a06a3c78d6c731c/f763aab97a1706a7-1a/s2048x3072/754b7471cf8bccec90fb0764ef77e028e8acd369.jpg",
+      alt: "CASIO EXILIM EX-Z300 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/0dc612616f9e6e09ad63c65801e5beb9/5e33cddae478d9c5-b1/s2048x3072/fb26ececbbc63cf73a8323dba0cd26accb182c5a.jpg",
+      alt: "CASIO EXILIM EX-Z300 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>with a clean, sleek silhouette, this digicam looks great AND takes fire pics!<br>this digicam shows signs of age and use. the corners has minor chipping, dents and dinks, and there are scuffs, dinks and scratches. the lens extends and retracts in two stages, but doesn't seem to affect function.</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/6b257870394214741649681f0ce71c72/14518766062a6c24-37/s2048x3072/66a2a1ecdfbb66b8527948d4d9e2bb840dce9155.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4b5ed311591d7cb82f2bb8a6a80af743/14518766062a6c24-03/s2048x3072/c82c7eb462ebb9224b1f21c32d6b70b46b517022.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/69a8ecec2a927f7f9d7bd118892103f3/14518766062a6c24-fd/s2048x3072/d8f78844c14dbf6853942dd934df4b506202f5df.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d52931f159382876863800a5d2e116c5/14518766062a6c24-43/s2048x3072/dca235c5e7cd322bcac68d937a960e7b973a685b.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c8e82bc0c2b56f59c8a594497cb5f961/14518766062a6c24-e8/s2048x3072/9609fde6b0ed01d8f4a868783ceee8546afaf6f2.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b950ff73f5fbc14307e6be7609b1c8e3/14518766062a6c24-91/s2048x3072/fd0ac55d24daa5a5f1b62b33f7a77b64c79ab65b.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/33896e1549f5e5c20c0a804ff8160f26/14518766062a6c24-39/s2048x3072/30450ab3eba9e36f9d12f0042030d3963d9516b9.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/eee6f5b69fda486764506ec85db6637b/14518766062a6c24-54/s2048x3072/47c815dea4ebc3e6da5c9bba894af97425ede1a5.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a53b1eeabf0acd8e2a4572c506cae215/14518766062a6c24-86/s2048x3072/1c647c40489942eb8c211bcd3e0fd04ca525acae.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 9" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/61322c6c577c68e07de6ebdfc98d1afb/14518766062a6c24-04/s2048x3072/33644fc6443b7d7bb4f2ea53db02d797d206e8e1.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 10" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2ba7083d844309cedf3878e48a02237a/f763aab97a1706a7-0c/s2048x3072/2c82739b94e97184cee3ba43369c7859dfcf4913.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 11" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/8ad4f090bf817d9f6dcfd12de9ec2c21/f763aab97a1706a7-ca/s2048x3072/3e9980a6a8dd5b94f06ec5950d7901c6f23cf5c9.jpg" class="full_image" alt="CASIO EXILIM EX-Z300 condition 12" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=CASIO%20EXILIM%20EX-Z300%20"
+},
+
+{
   id: "sony-cybershot-dsc-t50-red",
   type: "photo",
   meta: "Posted just now • 0 notes",
