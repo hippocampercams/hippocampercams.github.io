@@ -109,6 +109,7 @@ window.HPC_POSTS = [
 
 {
   id: "nikon-coolpix-s4000",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S4000</b> $190.00</p><p><i>warm, striking, nostalgic, afterparty vibes</i></p>',
