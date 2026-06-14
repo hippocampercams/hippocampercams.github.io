@@ -333,15 +333,16 @@
         .top-banner {
             position: fixed;
             top: 50%;
-            right: 72px;
+            left: 1156px;
+            right: auto;
             transform: translateY(-50%);
             z-index: 5;
             pointer-events: auto;
         }
 
         .top-banner-window {
-            width: 410px;
-            max-width: 90%;
+            width: min(410px, calc(100vw - 1188px));
+            max-width: min(410px, calc(100vw - 1188px));
             border: 1px solid #000000;
             background-color: #d4d0c8;
             box-shadow: 2px 2px 0 rgba(0,0,0,0.4);
@@ -622,6 +623,7 @@
             }
 
             .top-banner {
+                left: auto;
                 right: 32px;
             }
 
@@ -641,6 +643,7 @@
             }
 
             .top-banner {
+                left: auto;
                 right: 20px;
             }
 
