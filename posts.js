@@ -67,11 +67,11 @@ window.HPC_POSTS = [
       alt: "CASIO EXILIM EX-Z300 photo 3"
     },
     {
-      src: "https://64.media.tumblr.com/0ffc5c676226d4b59ca7ec9a3f6ece8b/5e33cddae478d9c5-f4/s2048x3072/9cf96a3fe6c4ba37b9dd24c56dceeb0b276a7c2a.jpg",
+      src: "https://64.media.tumblr.com/7adc2d3843336c1e5a06a3c78d6c731c/f763aab97a1706a7-1a/s2048x3072/754b7471cf8bccec90fb0764ef77e028e8acd369.jpg",
       alt: "CASIO EXILIM EX-Z300 photo 4"
     },
     {
-      src: "https://64.media.tumblr.com/7adc2d3843336c1e5a06a3c78d6c731c/f763aab97a1706a7-1a/s2048x3072/754b7471cf8bccec90fb0764ef77e028e8acd369.jpg",
+      src: "https://64.media.tumblr.com/0ffc5c676226d4b59ca7ec9a3f6ece8b/5e33cddae478d9c5-f4/s2048x3072/9cf96a3fe6c4ba37b9dd24c56dceeb0b276a7c2a.jpg",
       alt: "CASIO EXILIM EX-Z300 photo 5"
     },
     {
