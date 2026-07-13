@@ -1,5 +1,51 @@
 window.HPC_POSTS = [
-{
+  {
+  id: "nikon-coolpix-s60",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>NIKON COOLPIX S60</b> $210.00</p><p><i>cool hues, striking blacks, clean</i></p>',
+  captionHtml: '10 mp・5x zoom・touchscreen・in an elegant chocolate colour',
+  tags: ["clean", "sunsetglow", "cinematographic"],
+  brand: "nikon",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/b10655a5f8be72eadac241b06548bc95/a7ee8022c92a8ab6-d4/s1280x1920/7b24063ecec1071cd0346d286c303b612f3dbfc6.jpg",
+      alt: "NIKON COOLPIX S60 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/db9523a384a769d0c88b0c754698c81b/41d4bc4642e2bb8c-50/s2048x3072/0f75baffeaaaa9a4fdf113f6364690ab063eef8c.jpg",
+      alt: "NIKON COOLPIX S60 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/24e9f907bf6e55b4c3110e9444d8c369/41d4bc4642e2bb8c-f5/s2048x3072/8aae70593a2108af5851558fb056d0c049035ea7.jpg",
+      alt: "NIKON COOLPIX S60 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/4461558399776a1cd3df30ac888df403/a7ee8022c92a8ab6-bd/s2048x3072/67e99fc11c7159afaa62adfc682da8cb137fa684.jpg",
+      alt: "NIKON COOLPIX S60 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/f70f776b4eba4b22b69adb2355476c6a/41d4bc4642e2bb8c-bd/s2048x3072/de3e000db545879abad8448d7995d49fbfe4aec5.jpg",
+      alt: "NIKON COOLPIX S60 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/9638f173513de538ca255314b1faa163/41d4bc4642e2bb8c-a0/s2048x3072/46cc8ddea910da2045f9b73d7ac375556813ec24.jpg",
+      alt: "NIKON COOLPIX S60 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: strap<br> item condition: 🏆 (almost perfect!)</p>",
+  conditionDetailsHtml: `
+    <p>sleek and in a luxurious chocolate brown - the perfect cool girl accessory<br>condition is immaculate, as good as it gets for preloved digicams - just normal signs of age and minor wear, and extremely minor scuffs, scratches and dinks characteristic of preloved vintage items!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/586aa7ab0baca95c56fc90c5533f8446/a7ee8022c92a8ab6-2b/s2048x3072/9077a688bb41fb4825b2fc4f7ba5471ff02e4f0c.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/242d66fe423066dc23239cb72e0c3d8f/a7ee8022c92a8ab6-c3/s2048x3072/332eab74c48d6049028b89d4ee8d2bfdfb7b1959.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d07960ec5225b3c6eb0542093bac6f9b/a7ee8022c92a8ab6-dc/s2048x3072/298225952e41c9891aa7a35d43b9e3aee1c78e0f.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/8f9bf58e48433da9c072027e6b21f385/a7ee8022c92a8ab6-8e/s2048x3072/85df8b0c9a5da9f6117920db613652ee9bbe7c88.jpg" class="full_image" alt="NIKON COOLPIX S60 condition 4" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S60"
+},
+  {
   id: "casio-exilim-ex-z300",
   type: "photo",
   meta: "Posted just now • 0 notes",
