@@ -91,6 +91,55 @@ window.HPC_POSTS = [
   `,
   adoptUrl: "adoptacam.html?newbaby=NIKON%20COOLPIX%20S60"
 },
+      {
+  id: "fujifilm-finepix-z3-silver",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z3 (SILVER)</b> $180.00</p><p><i>elegant, warm, dynamic</i></p>',
+  captionHtml: '5.1 mp・3x optical zoom・good in low light conditions',
+  tags: ["clean", "minimalistic"],
+  brand: "fujifilm",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/0c2640a41010c52edeefc700225d00ae/fab800c49e64a484-06/s1280x1920/f2216474d750990195a3e1363d19f4fc1895becf.jpg",
+      alt: "FUJIFILM FINEPIX Z3 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/708336165c1cecb05bb09ef0c90cf2ff/b2aa43d4dcd7c162-a4/s2048x3072/9856f2cb4a4f051b6ac6a676e463d61851c1ff27.jpg",
+      alt: "FUJIFILM FINEPIX Z3 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/3140fedc4b080bc412635e8b73806dfc/407657ac064b2595-f8/s2048x3072/de5f887913ecd0b1f67a2b1442ec7f5d2578ba8d.jpg",
+      alt: "FUJIFILM FINEPIX Z3 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/a6e4706bc95cf10a9a12d67100ee0e8d/fab800c49e64a484-30/s1280x1920/ce2338db6e099e87e06cc2588795ea5b34d55d29.jpg",
+      alt: "FUJIFILM FINEPIX Z3 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/84581578d49f59aa7bc69d041e93a168/407657ac064b2595-2e/s2048x3072/28b05500176e90a4a73d95bec5c90c836d744031.jpg",
+      alt: "FUJIFILM FINEPIX Z3 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/67d47bf9a4deb9f725a2b395829dd414/407657ac064b2595-f8/s2048x3072/39b059d2f5a494b36c16ba90ad4431fd231dbe8e.jpg",
+      alt: "FUJIFILM FINEPIX Z3 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: strap, charging dock <br> item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>fuji colours on a budget and in your pocket! she's in really great condition with some normal signs of her preloved, vintage nature. slight fog in screen (doesn't affect photographs), and has really minor scratches, scuffs and dinks, but nothing too noticeable!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/0efcf5ed23c26855dacb7e1b4091d12a/407657ac064b2595-5f/s2048x3072/0f2fbf294d7e7f4a5c77f6bcc3e373f391cc0173.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ad6d73f780f836d34759644aea6f27aa/407657ac064b2595-1f/s2048x3072/c1879995ea5789dcef8167ebe70b43a8a2ddfd37.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/14ee00801a8cf5b4e3af2e3e6385b1db/562d2dbfcb2bf66f-93/s2048x3072/f11466eb5e21df12a04a1de143717cf94e5ad20c.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/e05aacb1cfe50375611901a0f1e3bb98/562d2dbfcb2bf66f-9d/s2048x3072/f74c7c09572e12af845bee6ace71829ee2dc3a33.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/bab785b1904c0394155f1e6d3a242c79/562d2dbfcb2bf66f-ef/s2048x3072/501e31bba1ba6b16160370443ad2db7fddba2083.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c495d50d8125cb96c23a8fe057155dd4/b2aa43d4dcd7c162-84/s2048x3072/faac1e1820e0e6c2940fa9e9624b9ee8b687bc2f.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/f12998d939879c1434112c09d41a0a55/b2aa43d4dcd7c162-84/s2048x3072/d16de4c832acf823db515efc56817751cb828013.jpg" class="full_image" alt="FUJIFILM FINEPIX Z3 condition 7" onclick="openHpcLightbox(this)">
+    </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20Z3%20SILVER"
+},
   {
   id: "casio-exilim-ex-z300",
   type: "photo",
