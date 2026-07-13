@@ -249,6 +249,58 @@ window.HPC_POSTS = [
 },
 
 {
+  id: "sony-cybershot-dsc-p100",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-P100</b> $150.00</p><p><i>warm, dreamy, striking colours</i></p>',
+  captionHtml: '5.1 mp・3x optical zoom・zeiss lens・unique build',
+  tags: ["sunsetglow", "goldenhour", "2000s", "cinematographic"],
+  brand: "sony",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/3978004566f23a8f9a2155f868204b42/dc10304ef651b595-29/s2048x3072/e5f0da2b23ce40a29eb399a24188b9712b3116b0.jpg",
+      alt: "SONY CYBERSHOT DSC-P100 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/2dd3db1230b166b3fefd4a178d9edbb5/036b97332cb067af-35/s2048x3072/88aaac6e6ecd4b510a6f922ffed77c5be6226f44.jpg",
+      alt: "SONY CYBERSHOT DSC-P100 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/52d73aa2b91c84fa069178d94280139a/dc10304ef651b595-e1/s2048x3072/d1855a213edfd33754e36770fe419a5b4a97b068.jpg",
+      alt: "SONY CYBERSHOT DSC-P100 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/ab7cceb0016219193c46e23aef288c08/c4aef9dfd0e9d3f0-c6/s2048x3072/fe7e5cfea6a5f6c704624e4ec7846c42ac1f6af9.jpg",
+      alt: "SONY CYBERSHOT DSC-P100 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/1ea41862263a05635ea54dff30bd7482/0a924e83514b72be-99/s2048x3072/a60f19ff86e3b66cc57fd8a6f40f392a775e9e52.jpg",
+      alt: "SONY CYBERSHOT DSC-P100 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/2be2d00a69220569a25b8b7904ffdd51/0a924e83514b72be-a0/s2048x3072/15d2d0a6b393dcb458cd7ea159e3dbbd41bdc43f.jpg",
+      alt: "SONY CYBERSHOT DSC-P100 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆ (pretty good!)</p>",
+  conditionDetailsHtml: `
+    <p>this uniquely shaped digicam packs a punch with a quality zeiss lens, and it produces striking photos with gorgeous, vibrant, warm colours.<br>has signs of wear characteristic of preloved vintage digicams. there are also a few visible scratches, chips and dents, particularly at the right side of the cam, but functionality doesnt appear to be affected!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/51b1fe2ac32a4daed33c55c303a0a827/036b97332cb067af-f1/s2048x3072/5c24ebe4bd297db3545e22158aa1cdde0ce81cd2.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/5136ec2ad158cd425ac32b00170da86e/036b97332cb067af-65/s2048x3072/2d336e9ea4804e57ed74ca0d80a852a051112ed3.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/c15a7dfdce777f82c300e646108acd40/036b97332cb067af-fe/s2048x3072/2b09d16745240a33d4304fa0d58c397ad060cce2.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/88d0e474f5fddd09b406bcb52be00c4b/036b97332cb067af-59/s2048x3072/13f87729e5f96acfa14a82d4d378aa64a719f33e.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2070b71415ee44b9d7a99ecc73baf4cc/036b97332cb067af-c7/s2048x3072/5dd45b60dc8aae140af789e921cb06a41c94351e.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2f50bfb0c7ecdb9c28650766412dbe2c/036b97332cb067af-f4/s2048x3072/0d872eb0c11a3e88579eacbc2f72338d6a72ec5e.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/e24a167626a98dd886cb03cc5051c9f2/6717328964888330-9a/s2048x3072/45df3af70bb385751ff6ae7260e36ef798e39136.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/ec8ebc19a052cf16897f55795639b6b1/6717328964888330-cf/s2048x3072/2f4939b9a5c86a41918dec91cd5236984b35601f.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/d17684bb2f9b431b32735c823365ddda/6717328964888330-06/s2048x3072/5d4383fc7db3816a95d1394f39d313ef3d58f63a.jpg" class="full_image" alt="SONY CYBERSHOT DSC-P100 condition 9" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-P100"
+},
+    
+{
   id: "nikon-coolpix-s4000",
   sold: true,
   type: "photo",
