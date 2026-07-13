@@ -1,7 +1,6 @@
 window.HPC_POSTS = [
     {
   id: "fujifilm-finepix-z300",
-  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $200.00</p><p><i>cool, moody, striking</i></p>',
