@@ -1,4 +1,51 @@
 window.HPC_POSTS = [
+    {
+  id: "fujifilm-finepix-z300",
+  sold: true,
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $200.00</p><p><i>cool, moody, striking</i></p>',
+  captionHtml: '10 mp・5x optical zoom・touchscreen・beautiful peach pink',
+  tags: ["grainyanalogue", "2000s", "cooltones"],
+  brand: "fujifilm",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/2de21a7a3b16aec98eacedde9d0147f3/40b7e471ea1b679e-ab/s1280x1920/ddfa791e83fba6df6c2b36aaf3a51425d3647c42.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/87068304eb04b7a7b66b2262cd71c392/3c0933a23966375c-60/s1280x1920/0a77377761996b1cf0b330e33ee42dc9d80ab7bf.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/59d90eea4fb32f97c1f776c2beb37e08/40b7e471ea1b679e-e1/s1280x1920/99a22cec2fd97b799f3db568d27e1546b38cb496.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/5fcb62878b242cfd258e943e4c9f36a1/40b7e471ea1b679e-c8/s1280x1920/13830cbd65afd9004fef153536972c6f237d6e23.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/39326812aab4d2718ea1b2b469e9a67b/40b7e471ea1b679e-5f/s1280x1920/e62779565232f724fab800662d5f6ef02dd8112d.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/1f863e9c6e3ad4b909e0261efef4e84b/40b7e471ea1b679e-e6/s1280x1920/04efbce0ae71b4e58e747df877a740f0637975b1.jpg",
+      alt: "FUJIFILM FINEPIX Z300 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>a sweet, peachy pink fuji cam in super good condition! it has a few normal signs of its preloved vintage nature including tiny paint chips (lens cover), and minor dinks, scruffs and scratches, but none are too obvious.</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/8c54f1c8b0de30414cc4fc1ff8d4d809/1e7be336b8ca17da-30/s2048x3072/650571ec746db0ababbe3678d4a573190952033c.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/bab16ee4dc906b9686845c0cc5d5b598/1e7be336b8ca17da-e5/s2048x3072/1e9a353ed5901d70f7b7ef39ea54346da1a845ba.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/b25254ecadad9d50b96e274d71b2c159/1e7be336b8ca17da-e0/s2048x3072/2f7ab59010ca027171158b9071159153588f045d.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/e5ffcf58a0e537b5ee28d50f1c9a76a5/1e7be336b8ca17da-b1/s2048x3072/d99d09a9bed0b0d45a4ff29fe31acc7f1cf93ea5.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 4" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20Z300"
+},
   {
   id: "nikon-coolpix-s60",
   type: "photo",
@@ -158,7 +205,7 @@ window.HPC_POSTS = [
   sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>NIKON COOLPIX S4000</b> $190.00</p><p><i>warm, striking, nostalgic, afterparty vibes</i></p>',
+  titleHtml: '<p><b>NIKON COOLPIX S4000</b></p><p><i>warm, striking, nostalgic, afterparty vibes</i></p>',
   captionHtml: '12.0 mp・4x optical zoom・touchscreen・highly sought-after model!',
   tags: ["sunsetglow", "goldenhour", "2000s", "cinematographic"],
   brand: "nikon",
@@ -428,7 +475,7 @@ window.HPC_POSTS = [
   sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>NIKON COOLPIX S60</b> $200.00</p><p><i>cool hues, striking blacks, clean</i></p>',
+  titleHtml: '<p><b>NIKON COOLPIX S60</b> </p><p><i>cool hues, striking blacks, clean</i></p>',
   captionHtml: '10 mp・5x zoom・touchscreen・in an elegant chocolate colour',
   tags: ["clean", "sunsetglow", "cinematographic"],
   brand: "nikon",
@@ -1253,7 +1300,7 @@ window.HPC_POSTS = [
   sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b> $200.00</p><p><i>cool, moody, striking</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z300</b></p><p><i>cool, moody, striking</i></p>',
   captionHtml: '10 mp・5x optical zoom・touchscreen・beautiful peach pink',
   tags: ["grainyanalogue", "2000s", "cooltones"],
   brand: "fujifilm",
@@ -1470,7 +1517,7 @@ window.HPC_POSTS = [
     sold: true,
     type: "photo",
     meta: "Posted just now • 0 notes",
-    titleHtml: '<p><b>NIKON COOLPIX S510 #2</b> $130.00 </p><p><i>moody, enigmatic, stiking</i></p>',
+    titleHtml: '<p><b>NIKON COOLPIX S510 #2</b> </p><p><i>moody, enigmatic, stiking</i></p>',
     captionHtml: '8.1 mp・3x optical zoom + digital zoom・super compact',
     tags: ["2000s", "cinematographic", "cooltones", "grainyanalogue"],
     brand: "nikon",
