@@ -147,7 +147,7 @@ window.HPC_POSTS = [
   titleHtml: '<p><b>CASIO EXILIM EX-Z300</b> $170.00</p><p><i>retro, striking, clear</i></p>',
   captionHtml: '10.1 mp・4x wide angle optical zoom・CCD-shift image stabilisation',
   tags: ["2000s", "cinematographic", "clean", "grainyanalogue", "cooltones"],
-  brand: "sony",
+  brand: "casio",
   images: [
     {
       src: "https://64.media.tumblr.com/27af7408cfb0649092c0b9c52a27fa0d/5e33cddae478d9c5-bf/s2048x3072/f188f5b1e97080191a5768db8fd0f05b81c4d86f.jpg",
