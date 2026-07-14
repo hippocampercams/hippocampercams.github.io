@@ -1098,6 +1098,7 @@ window.HPC_POSTS = [
 
   {
   id: "canon-powershot-a570-is",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>CANON POWERSHOT A570 IS</b> $150.00</p><p><i>rare, analogue vibes, retro</i></p>',
