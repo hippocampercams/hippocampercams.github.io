@@ -1249,6 +1249,7 @@ window.HPC_POSTS = [
   
   {
   id: "nikon-coolpix-L6",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX L6</b> $140.00</p><p><i>cinematic, striking, dreamy</i></p>',
