@@ -1448,9 +1448,10 @@ window.HPC_POSTS = [
 
   {
   id: "fujifilm-finepix-z3",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>FUJIFILM FINEPIX Z3</b> $180.00</p><p><i>elegant, warm, dynamic</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z3</b> </p><p><i>elegant, warm, dynamic</i></p>',
   captionHtml: '5.1 mp・3x optical zoom・good in low light conditions・gorgeous baby pink',
   tags: ["clean", "minimalistic"],
   brand: "fujifilm",
