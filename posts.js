@@ -400,7 +400,7 @@ window.HPC_POSTS = [
   ],
   conditionSummaryHtml: "<p>accessories: original charger, strap<br> item condition: 🏆 (almost perfect!)</p>",
   conditionDetailsHtml: `
-    <p>slim, sleek, and chic, this digicam is in the classic cybershot build!<br>condition is pretty much as good as it gets for preloved digicams - just normal signs of use, age and minor wear and minor scratches.</p>
+    <p>slim, sleek, and chic, this digicam is in the classic cybershot build!<br>condition is pretty much as good as it gets for preloved digicams - just normal signs of use, age and minor wear and minor scratches, zoom buttons slightly loose but functional.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/0ac4d23d60629a9d97c5bc441b3ab881/6a806373135c0204-19/s2048x3072/7eed970111e21d0bd7a3ec172ee0399559d1ba8a.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/c64a52ade52b34d5c3cfd40df643a6a7/6a806373135c0204-68/s2048x3072/79a88fd4babc7ae993ac93b40aee62ac6e5c0ecf.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Silver) condition 2" onclick="openHpcLightbox(this)">
