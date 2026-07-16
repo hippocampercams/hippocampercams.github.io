@@ -366,6 +366,7 @@ window.HPC_POSTS = [
   
   {
   id: "sony-cybershot-dsc-t50-silver",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>SONY CYBERSHOT DSC-T50 (Silver)</b> $180.00</p><p><i>warm, nostalgic, dreamy</i></p>',
