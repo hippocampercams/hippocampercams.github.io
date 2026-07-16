@@ -369,7 +369,7 @@ window.HPC_POSTS = [
   sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>SONY CYBERSHOT DSC-T50 (Silver)</b> $180.00</p><p><i>warm, nostalgic, dreamy</i></p>',
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-T50 (Silver)</b> </p><p><i>warm, nostalgic, dreamy</i></p>',
   captionHtml: '7.2 mp・3x optical zoom・zeiss lens・super steadyshot tech・classic cybershot build',
   tags: ["sunsetglow", "goldenhour", "minimalistic", "2000s", "cinematographic", "clean"],
   brand: "sony",
