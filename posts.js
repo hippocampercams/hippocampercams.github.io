@@ -894,7 +894,7 @@ window.HPC_POSTS = [
   id: "panasonic-lumix-dmc-ls75",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $140.00</p><p><i>warm, nostalgic, dreamy</i></p>',
+  titleHtml: '<p><b>PANASONIC LUMIX DMC-LS75</b> $145.00</p><p><i>warm, nostalgic, dreamy</i></p>',
   captionHtml: '7.2 mp・3x optical zoom・fuji colours on a budget・AA battery-powered (one less charger!)',
   tags: ["goldenhour", "cinematographic", "sunsetglow", "minimalistic"],
   brand: "panasonic",
