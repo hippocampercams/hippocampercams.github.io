@@ -1,5 +1,53 @@
 window.HPC_POSTS = [
     {
+  id: "sony-cybershot-dsc-tx5-pastel-mint",
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-TX5 (PASTEL MINT)</b> $230.00</p><p><i>clean, striking, nostalgic</i></p>',
+  captionHtml: '10.2 mp・4x optical zoom・touchscreen・quality Zeiss lens・waterproof, shockproof, dustproof, freezeproof・RARE PASTEL MINT BODY',
+  tags: ["clean", "2000s", "sunset glow", "golden hour", "cinematographic", "minimalistic"],
+  brand: "sony",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/eea7885800302c64ac28b344e74a11b1/9b12d1383942f1c7-e9/s2048x3072/5096898044f271c5e672f3b015d24d46b0944b1f.jpg",
+      alt: "SONY CYBERSHOT DSC-TX5 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/afeaa420b4087b448630aec8a2069a88/e884f33c463bd95a-f7/s2048x3072/0668a0b26090d3a90c9a1401f7a845ac065e57b0.jpg",
+      alt: "SONY CYBERSHOT DSC-TX5 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/5f82c6f1f3f9d17a135d167a8f315c4e/9b12d1383942f1c7-a7/s2048x3072/c65ec0613a1d6de7c3ff026c217cc3fa02eafc1f.jpg",
+      alt: "SONY CYBERSHOT DSC-TX5 photo 3"
+    },
+    {
+      src: "https://64.media.tumblr.com/40ecadb2fd0c75de8ee164c5432e2ade/9b12d1383942f1c7-51/s2048x3072/2f3e302dabe9340daed779b7e27865f0fe5a5e7f.jpg",
+      alt: "SONY CYBERSHOT DSC-TX5 photo 4"
+    },
+    {
+      src: "https://64.media.tumblr.com/8ea5a57b926bccf9f6fb6d7c2c430b5e/9b12d1383942f1c7-5e/s2048x3072/f5d6891269add5af36d95c11764cc619a1393755.jpg",
+      alt: "SONY CYBERSHOT DSC-TX5 photo 5"
+    },
+    {
+      src: "https://64.media.tumblr.com/d8910a8ab96cc41db2ffdd7182b26093/9b12d1383942f1c7-73/s2048x3072/95a3fe8a649c434f64f8cf184090988d51ebd4c4.jpg",
+      alt: "SONY CYBERSHOT DSC-TX5 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>accessories: original battery, charger, stylus, box, strap, manuals, 1 set of wires<br> item condition: 🏆 (absurdly perfect for a preloved item!)</p>",
+  conditionDetailsHtml: `
+    <p>THIS IS NOT A DRILL we sourced a like-new Sony DSC-TX5 in the RARE PASTEL MINT BODY!!! she's absolutely STUNNING in subtle pastel green! RUN!!!<br> although she's preloved, she's almost like new with close to no physical flaws - just a tiiiny dink here and there as proof of her past life! during testing, we noticed very minor optical artefacts in the form of faint lines appearing when photographing, but this does not appear to affect shooting or the photos and the artefacts only appear extremely briefly. this is a Japanese domestic model that operates only in Japanese.</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/dccfd424c357dd615ab4b948d74403c4/e884f33c463bd95a-91/s2048x3072/f5a5d37d8ec2d655f129ab58abdbdd3caf3591aa.jpg" class="full_image" alt="SONY CYBERSHOT DSC-TX5 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/f644bdfb9c28b43c357dda854262e502/e884f33c463bd95a-51/s2048x3072/52e84e99d6ccb19c356c4a8324bf37cc6e0fb42c.jpg" class="full_image" alt="SONY CYBERSHOT DSC-TX5 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/83cf4f0b1a53a988909b62e7adb287b1/e884f33c463bd95a-53/s2048x3072/0a741c84c68e14bcb799a6ad54b9ae63537d4c95.jpg" class="full_image" alt="SONY CYBERSHOT DSC-TX5 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/249ba2ab653bfa4ac57f07104c8aed39/e884f33c463bd95a-aa/s2048x3072/16c596060c97bf07b6fa0a6ed3dd75c01fa29de3.jpg" class="full_image" alt="SONY CYBERSHOT DSC-TX5 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/3eb7a9cd6350288771e62140b1bc3024/e884f33c463bd95a-eb/s2048x3072/9f4187bc1bc657f961933095a5d638d48f92bba8.jpg" class="full_image" alt="SONY CYBERSHOT DSC-TX5 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/37eaa81814b48656d099a37808a6b611/e884f33c463bd95a-ef/s2048x3072/fbeb1b12256caa19f4cd6995493894b4531127b4.jpg" class="full_image" alt="SONY CYBERSHOT DSC-TX5 condition 5" onclick="openHpcLightbox(this)">
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=SONY%20CYBERSHOT%20DSC-TX5%20PASTEL%20MINT"
+},
+    {
   id: "fujifilm-finepix-z300",
   type: "photo",
   meta: "Posted just now • 0 notes",
@@ -942,6 +990,7 @@ window.HPC_POSTS = [
   
   {
   id: "nikon-coolpix-s9",
+sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S9</b> $180.00</p><p><i>nostalgic, striking, warm</i></p>',
