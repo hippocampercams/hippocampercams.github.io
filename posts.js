@@ -1,10 +1,62 @@
 window.HPC_POSTS = [
-    {
-  id: "sony-cybershot-dsc-tx5-pastel-mint",
-sold: true
+{
+  id: "fujifilm-finepix-z90-black",
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>SONY CYBERSHOT DSC-TX5 (PASTEL MINT)</b> $230.00</p><p><i>clean, striking, nostalgic</i></p>',
+  titleHtml: '<p><b>FUJIFILM FINEPIX Z90 (BLACK)</b> $230.00</p><p><i>cool hues, nostalgic, wistful</i></p>',
+  captionHtml: '14.2 mp・5x optical zoom・touchscreen・fuji colours',
+  tags: ["softpastel", "grainyanalogue", "2000s", "cooltones", "clean", "cinematographic"],
+  brand: "fujifilm",
+  images: [
+    {
+      src: "https://64.media.tumblr.com/494274edd16678c4d20e500dbc581c65/c7c169562a5a6c08-f1/s2048x3072/369fc5d4199ebb291db89cf4b93e14daa1196259.jpg",
+      alt: "FUJIFILM FINEPIX Z90 photo 1"
+    },
+    {
+      src: "https://64.media.tumblr.com/320a39839886b2d8c38d06230f270d3d/c7c169562a5a6c08-39/s2048x3072/ec1d90d3ba90d27d63e06722823a0abee139fc9e.jpg",
+      alt: "FUJIFILM FINEPIX Z90 photo 2"
+    },
+    {
+      src: "https://64.media.tumblr.com/4cf020b81dbde4e2ded7dd39f45ba02e/c7c169562a5a6c08-94/s2048x3072/d4918e09ddcbdd96bed1ebb844ab5fc5adb66cac.jpg",
+      alt: "FUJIFILM FINEPIX Z90 photo 3"
+    },
+    {
+      src: "",
+      alt: "FUJIFILM FINEPIX Z90 photo 4"
+    },
+    {
+      src: "",
+      alt: "FUJIFILM FINEPIX Z90 photo 5"
+    },
+    {
+      src: "",
+      alt: "FUJIFILM FINEPIX Z90 photo 6"
+    }
+  ],
+  conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
+  conditionDetailsHtml: `
+    <p>she's the chic, sleek cool girl on the block and she's ready to be your new bestie! she has normal signs of her preloved vintage nature including minor dinks, scuffs and scratches, but she's in great condition!</p>
+    <div class="photo-grid">
+      <img src="https://64.media.tumblr.com/b3dfbf69534bade731fa5b67482a0e93/633877cb241d5dc4-92/s2048x3072/6c5c67fbb46396f754c151132f5d4cc425bbaeaf.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 1" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/2444976533ff0b8646ed3e431970e8a1/633877cb241d5dc4-ff/s2048x3072/8e699364208ff77d43bdc8681a55bead0834c815.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 2" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/a5a5a9ec859dc82cd92c81608f7ca115/633877cb241d5dc4-cf/s2048x3072/4e0e652993605dfb5fdf53650277bdc8da0bc478.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 3" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/847e30e1b7a09487d79225d97253f1f1/633877cb241d5dc4-5e/s2048x3072/e701efe947290ec459c16460e2eb5579a3498039.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 4" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/93c7d7c9b4a94cbbba7d0a0d44a4ae20/633877cb241d5dc4-b9/s2048x3072/e53b565b6d5af998d9a9f078daf7948c53cda297.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 5" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/872147594922a6b82a21b10df8a71609/633877cb241d5dc4-1c/s2048x3072/d18fbfb3bb1ab929c2ff42c5b932e5409f212342.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 6" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/58adf9cecb70570d21d965a526d1ddae/633877cb241d5dc4-10/s2048x3072/a1f0283040b4acf1c07436678f746f64bb14dbc8.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 7" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/bda1a65b0b0f8a146b6bc300e0bb5025/633877cb241d5dc4-d3/s2048x3072/eea1eddc8a78493b48905457b75e1aae6d880b3a.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 8" onclick="openHpcLightbox(this)">
+      <img src="https://64.media.tumblr.com/4bef50183f9c558bb28b87780672ffd5/633877cb241d5dc4-2b/s2048x3072/215194e05f1f94b8e2849e3b7dbc1c9f73feec07.jpg" class="full_image" alt="FUJIFILM FINEPIX Z90 condition 9" onclick="openHpcLightbox(this)">
+
+      </div>
+  `,
+  adoptUrl: "adoptacam.html?newbaby=FUJIFILM%20FINEPIX%20Z90%20BLACK"
+},
+    {
+  id: "sony-cybershot-dsc-tx5-pastel-mint",
+sold: true,
+  type: "photo",
+  meta: "Posted just now • 0 notes",
+  titleHtml: '<p><b>SONY CYBERSHOT DSC-TX5 (PASTEL MINT)</b></p><p><i>clean, striking, nostalgic</i></p>',
   captionHtml: '10.2 mp・4x optical zoom・touchscreen・quality Zeiss lens・waterproof, shockproof, dustproof, freezeproof・RARE PASTEL MINT BODY',
   tags: ["clean", "2000s", "sunset glow", "golden hour", "cinematographic", "minimalistic"],
   brand: "sony",
@@ -84,7 +136,7 @@ sold: true
   ],
   conditionSummaryHtml: "<p>item condition: ⋆⋆⋆⋆⋆ (super!)</p>",
   conditionDetailsHtml: `
-    <p>a sweet, peachy pink fuji cam in super good condition! it has a few normal signs of its preloved vintage nature including tiny paint chips (lens cover), and minor dinks, scruffs and scratches, but none are too obvious.</p>
+    <p>a sweet, peachy pink fuji cam in super good condition! it has a few normal signs of its preloved vintage nature including tiny paint chips (lens cover), and minor dinks, scuffs and scratches, but none are too obvious.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/8c54f1c8b0de30414cc4fc1ff8d4d809/1e7be336b8ca17da-30/s2048x3072/650571ec746db0ababbe3678d4a573190952033c.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/bab16ee4dc906b9686845c0cc5d5b598/1e7be336b8ca17da-e5/s2048x3072/1e9a353ed5901d70f7b7ef39ea54346da1a845ba.jpg" class="full_image" alt="FUJIFILM FINEPIX Z300 condition 2" onclick="openHpcLightbox(this)">
