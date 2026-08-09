@@ -21,15 +21,15 @@ window.HPC_POSTS = [
       alt: "FUJIFILM FINEPIX Z90 photo 3"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/a007d02dfc1418fb00fa4085da117864/c7c169562a5a6c08-42/s2048x3072/0c537e1e1f6e80fbad44d2758e64ac06ed4c2751.jpg",
       alt: "FUJIFILM FINEPIX Z90 photo 4"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/9ea0664492cf25854430b4c94fa67825/c7c169562a5a6c08-21/s2048x3072/8e77f8f386de8e65e397364351522c6c4b8f5d8d.jpg",
       alt: "FUJIFILM FINEPIX Z90 photo 5"
     },
     {
-      src: "",
+      src: "https://64.media.tumblr.com/26b7133c2526d9cab2c6e8863f791a1e/c7c169562a5a6c08-b3/s2048x3072/ef0641219b102b85511959b6cb67b07edc3bd9d8.jpg",
       alt: "FUJIFILM FINEPIX Z90 photo 6"
     }
   ],
