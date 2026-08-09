@@ -1,6 +1,7 @@
 window.HPC_POSTS = [
     {
   id: "sony-cybershot-dsc-tx5-pastel-mint",
+sold: true
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>SONY CYBERSHOT DSC-TX5 (PASTEL MINT)</b> $230.00</p><p><i>clean, striking, nostalgic</i></p>',
