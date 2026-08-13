@@ -937,9 +937,10 @@ sold: true,
 
     {
   id: "olympus-µ-1050-SW",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
-  titleHtml: '<p><b>OLYMPUS µ 1050 SW</b> $155.00</p><p><i>moody, grungy, sharp, warm, nostalgic</i></p>',
+  titleHtml: '<p><b>OLYMPUS µ 1050 SW</b> </p><p><i>moody, grungy, sharp, warm, nostalgic</i></p>',
   captionHtml: '10.1 mp・3x optical zoom・durable: waterproof  up to 3m, shockproof up to 1.5m, freezeproof・super macro mode available',
   tags: ["grainyanalogue", "2000s", "goldenhour", "cinematographic", "minimalistic"],
   brand: "olympus",
