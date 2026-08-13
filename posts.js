@@ -332,7 +332,7 @@ sold: true,
   ],
   conditionSummaryHtml: "<p>item condition: 🏆 (almost perfect!)</p>",
   conditionDetailsHtml: `
-    <p>get this slim, sleek, classic cybershot digicam in bold fire engine red!<br>condition is pretty much as good as it gets for preloved digicams - while it has just a few tiny specks of paint chips, for the most part, it only has normal signs of use, age and minor wear and minor scratches.</p>
+    <p>get this slim, sleek, classic cybershot digicam in bold fire engine red!<br>condition is pretty much as good as it gets for preloved digicams - while it has just a few tiny specks of paint chips, for the most part, it only has normal signs of use, age, minor wear and minor scratches/scuffs. this is a Japanese domestic model and operates only in Japanese.</p>
     <div class="photo-grid">
       <img src="https://64.media.tumblr.com/7e49f57aba4ef1a66c2c5678511fdf74/929a3fe9c6000ae2-0d/s2048x3072/cd87574f2cfdabaf117c83ce14fd58bba8ac6f64.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 1" onclick="openHpcLightbox(this)">
       <img src="https://64.media.tumblr.com/43146643452c63f68bf0c945cd3696c0/929a3fe9c6000ae2-21/s2048x3072/0cdc6ff7687962f7f37abb33005543bb9457256e.jpg" class="full_image" alt="SONY CYBERSHOT DSC-T50 (Red) condition 2" onclick="openHpcLightbox(this)">
