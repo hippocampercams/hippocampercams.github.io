@@ -777,6 +777,7 @@ sold: true,
   
   {
   id: "OLYMPUS-FE-46",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>OLYMPUS FE-46</b> $160.00</p><p><i>cinematographic, warm, nostalgic</i></p>',
