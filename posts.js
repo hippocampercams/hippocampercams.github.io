@@ -148,6 +148,7 @@ sold: true,
 },
   {
   id: "nikon-coolpix-s60",
+  sold: true,
   type: "photo",
   meta: "Posted just now • 0 notes",
   titleHtml: '<p><b>NIKON COOLPIX S60</b> $210.00</p><p><i>cool hues, striking blacks, clean</i></p>',
